@@ -62,110 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const importBtn = document.getElementById("import-btn");
   const importFile = document.getElementById("import-file");
 
-  // --- POMOCNÉ FUNKCE PRO GENEROVÁNÍ OBSAHU ---
-
-  // Dynamická šablona výkladu pro otázky bez explicitního detailu
-  function getDynamicStudyContent(q) {
-    const keywordsHTML = q.keyTerms.map(k => `<li><strong>${k}</strong>: Klíčový patofyziologický koncept.</li>`).join("");
-    return `
-      <div class="medical-detail">
-        <section>
-          <h3>1. Obecná charakteristika a definice</h3>
-          <p>Téma <strong>${q.title}</strong> představuje důležitou součást patofyziologie. Zahrnuje poruchy homeostázy a buněčných funkcí, které vedou k rozvoji specifických symptomů a komplikací.</p>
-        </section>
-        
-        <section>
-          <h3>2. Klíčové etiopatogenetické body</h3>
-          <p>Při studiu tohoto tématu je nutné se zaměřit na následující aspekty a mechanismy:</p>
-          <ul>
-            ${keywordsHTML}
-          </ul>
-        </section>
-
-        <section class="diagram-section">
-          <h3>Patofyziologická kaskáda (schéma)</h3>
-          <pre class="ascii-diagram">
-[Vyvolávající příčina / Etiologický faktor]
-                 │
-                 ▼
-     [Funkční / Strukturální změna]
-                 │
-                 ▼
-[Reakce organismu & Kompenzační mechanismy]
-                 │
-                 ▼
-  [Klinické projevy a možné komplikace]
-          </pre>
-        </section>
-        
-        <section>
-          <h3>3. Klinické projevy a diagnostika</h3>
-          <p>Klinický obraz se odvíjí od závažnosti postižení a rychlosti rozvoje poruchy. Diagnostika se opírá o kombinaci klinického vyšetření, laboratorních testů (funkční vyšetření, markery poškození) a zobrazovacích metod.</p>
-          <blockquote>
-            <strong>Tip pro studenty:</strong> V záložce <em>"Moje poznámky"</em> si můžete sepsat vlastní podrobné výpisky z přednášek či učebnice. Vaše poznámky budou trvale uloženy v tomto prohlížeči.
-          </blockquote>
-        </section>
-      </div>
-    `;
-  }
-
-  // Dynamický kvíz pro otázky bez explicitního kvízu
-  function getDynamicQuiz(q) {
-    const term1 = q.keyTerms[0] || "Etiopatogeneze";
-    const term2 = q.keyTerms[1] || "Klinický obraz";
-    const term3 = q.keyTerms[2] || "Diagnostika";
-
-    return [
-      {
-        question: `Který z následujících konceptů je primárním patofyziologickým rysem tématu "${q.title}"?`,
-        options: [
-          `Abnormální proces spojený s: ${term1}`,
-          "Náhlá nadprodukce kortizolu bez zpětné vazby",
-          "Selektivní ztráta chuti k jídlu",
-          "Fibrotizace nehtového lůžka"
-        ],
-        correct: 0,
-        explanations: [
-          `Správně! ${term1} představuje klíčový pilíř patogeneze u tohoto tématu.`,
-          "Nesprávně. Toto je specifický projev Cushingova syndromu.",
-          "Nesprávně. Anorexie může doprovázet chronické nemoci, ale není primárním rysem.",
-          "Nesprávně. Toto není patofyziologický nález u této otázky."
-        ]
-      },
-      {
-        question: `Který z následujících projevů je bezprostředně spojen s: "${term2}"?`,
-        options: [
-          "Hypertrofie nehtů",
-          `Klinické a patofyziologické změny v rámci konceptu: ${term2}`,
-          "Zvýšení sekrece enzymu reninu v plicích",
-          "Kompletní blokáda glukózových transportérů GLUT-1 v erytrocytech"
-        ],
-        correct: 1,
-        explanations: [
-          "Nesprávně. Hypertrofie nehtů sem nepatří.",
-          `Správně! ${term2} přímo ovlivňuje klinické symptomy a průběh onemocnění u pacienta.`,
-          "Nesprávně. Renin je syntetizován v juxtaglomerulárním aparátu ledvin, nikoli v plicích (v plicích je ACE).",
-          "Nesprávně. Transportéry GLUT-1 v erytrocytech nejsou u tohoto stavu typicky blokovány."
-        ]
-      },
-      {
-        question: `Jaký je význam parametru "${term3}" v kontextu studovaného tématu?`,
-        options: [
-          "Jedná se o kosmetický ukazatel bez klinického dopadu.",
-          "Slouží jako vedlejší symptom bez patogenetické role.",
-          `Představuje důležitý bod pro diagnostiku, pochopení rozvoje a následků: ${term3}`,
-          "Způsobuje okamžitý rozpad hemoglobinových řetězců."
-        ],
-        correct: 2,
-        explanations: [
-          "Nesprávně. Jde o významný medicínský koncept.",
-          "Nesprávně. Tento bod má zásadní patogenetický a klinický význam.",
-          `Správně! Identifikace a pochopení ${term3} je nezbytné pro správné určení diagnózy a vedení patofyziologické úvahy.`,
-          "Nesprávně. K rozpadu hemoglobinu dochází při specifických hemolytických stavech."
-        ]
-      }
-    ];
-  }
+  // --- DETAILED MEDICAL CONTENT LOADED MODULARLY FROM SCRIPTS ---
 
   // --- AKTUALIZACE STATISTIK ---
   const updateDashboard = () => {
@@ -366,11 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
     switchTab("panel-study");
 
     // Načtení výkladu
-    if (q.detailContent) {
-      studyContent.innerHTML = q.detailContent;
-    } else {
-      studyContent.innerHTML = getDynamicStudyContent(q);
-    }
+    studyContent.innerHTML = q.detailContent || "";
 
     // Načtení poznámek do editoru
     editorContent.innerHTML = state.userNotes[q.id] || "";
@@ -515,7 +408,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- LOGIKA INTERAKTIVNÍHO KVÍZU ---
   const renderQuiz = (q) => {
     quizContainer.innerHTML = "";
-    const quizQuestions = q.quiz || getDynamicQuiz(q);
+    const quizQuestions = q.quiz || [];
 
     quizQuestions.forEach((item, questionIndex) => {
       const quizCard = document.createElement("div");
