@@ -225,3 +225,67 @@ function buildCoreDatabase() {
 }
 
 window.COMPLETE_QUESTIONS = buildCoreDatabase();
+
+// Pomocná funkce pro zalamování textu na specifikovaný počet znaků
+function wrapText(text, maxLength) {
+  const cleanText = text.replace(/\*\*/g, '').replace(/\*/g, '');
+  const words = cleanText.split(' ');
+  const lines = [];
+  let currentLine = '';
+  
+  words.forEach(word => {
+    if (word.length > maxLength) {
+      if (currentLine) {
+        lines.push(currentLine);
+        currentLine = '';
+      }
+      let tempWord = word;
+      while (tempWord.length > maxLength) {
+        lines.push(tempWord.substring(0, maxLength));
+        tempWord = tempWord.substring(maxLength);
+      }
+      currentLine = tempWord;
+    } else if ((currentLine + (currentLine ? ' ' : '') + word).length <= maxLength) {
+      currentLine += (currentLine ? ' ' : '') + word;
+    } else {
+      if (currentLine) lines.push(currentLine);
+      currentLine = word;
+    }
+  });
+  if (currentLine) lines.push(currentLine);
+  return lines;
+}
+
+// Globální funkce pro dynamické generování ASCII diagramu patogeneze
+window.generatePathogenesisDiagram = function(pathogenesis) {
+  if (!pathogenesis || !pathogenesis.length) return '';
+  
+  const boxWidth = 54; // Celková šířka boxu
+  const contentWidth = boxWidth - 6; // Šířka textu uvnitř (s odsazením 2 znaky z každé strany)
+  const diagramParts = [];
+  
+  pathogenesis.forEach(step => {
+    const wrappedLines = wrapText(step, contentWidth);
+    
+    // Horní okraj
+    let boxStr = '┌' + '─'.repeat(boxWidth - 2) + '┐\n';
+    
+    // Obsahové řádky
+    wrappedLines.forEach(line => {
+      const paddedLine = line.padEnd(contentWidth, ' ');
+      boxStr += '│  ' + paddedLine + '  │\n';
+    });
+    
+    // Dolní okraj
+    boxStr += '└' + '─'.repeat(boxWidth - 2) + '┘';
+    
+    diagramParts.push(boxStr);
+  });
+  
+  // Vykreslení propojovacích šipek
+  const arrowPadding = ' '.repeat(Math.floor(boxWidth / 2) - 1);
+  const arrowStr = `\n${arrowPadding}│\n${arrowPadding}▼\n`;
+  
+  return diagramParts.join(arrowStr);
+};
+
