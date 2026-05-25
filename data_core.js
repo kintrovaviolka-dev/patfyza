@@ -143,6 +143,59 @@ const RAW_QUESTIONS_PRACTICAL = [
   "Srdeční katetrizace, vyšetření krevního tlaku v jednotlivých srdečních oddílech"
 ];
 
+const RAW_QUESTIONS_GENERAL = [
+  "Definice nemoci a zdraví - pojmy: etiologie, patogeneze, etiopatogeneze, symptom, syndrom. Průběh a zakončení nemocí. Iatrogenita. Psychosomatika.",
+  "Ateroskleróza. Poruchy metabolismu lipidů - etiopatogeneze, akutní a chronické komplikace, následky.",
+  "Poruchy bilance kalia (K+) - etiopatogeneze, následky.",
+  "Trombóza - rozdělení a příklady, projevy, následky.",
+  "Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.",
+  "Stres a všeobecný adaptační syndrom - charakteristika, fáze, etiopatogeneze.",
+  "Vliv celkové a částečné imobilizace.",
+  "Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+  "Nespecifický a specifický imunitní systém - poruchy funkce, principy.",
+  "Imunopatologické reakce - rozdělení, etiopatogeneze. Principy autoimunitních reakcí - mechanizmy. Atopie. Imunotolerance.",
+  "Poškození vlivem fyzikálních vlivů - chlad, teplo, el. proudu, elektromagnetické a ionizující záření.",
+  "Embolie - rozdělení. Plicní embolie - etiopatogeneze, projevy, následky. Periferní a paradoxní embolie.",
+  "Poruchy acidobazické rovnováhy - klasifikace poruch, kompenzace a korekce, příčiny a následky. Příčiny smrti při poruchách acidobazické rovnováhy.",
+  "Diseminovaná intravaskulární koagulace (DIC) - etiopatogeneze, projevy, následky.",
+  "Kardiogenní a obstrukční šok - etiopatogeneze a následky.",
+  "Dehydratace - etiopatogeneze, následky.",
+  "Reaktivní kyslíkové a dusíkové sloučeniny - role za fyziologického stavu a v patogenezi nemocí. Ischemicko-reperfúzní syndrom - etiopatogeneze, příklady.",
+  "Hyperhydratace - etiopatogeneze, následky.",
+  "Obezita - etiopatogeneze, následky, role v patogenezi nemocí.",
+  "Šok-definice, etiopatogeneze, rozdělení.",
+  "Poškození a smrt buňky - reversibilní a ireversibilní, nekróza, apoptóza, autofagie.",
+  "Horečka - etiopatogenze, průběh (fáze) horečky, pozitivní a negativní vliv horečky na organismus.",
+  "Nádorové bujení - teorie vzniku nádorů, růst nádoru, tvorba metastáz, příčiny smrti u nádorových onemocnění, nádorové markery, paraneoplastický syndrom.",
+  "Malnutrice - etiopatogeneze, následky, role v patogenezi nemocí.",
+  "Hypoxie a hyperoxie buňky - příčiny, adaptace, následky.",
+  "Edém - rozdělení, etiopatogeneze, klinická manifestace, následky.",
+  "Poruchy růstu. Poruchy puberty. Stárnutí a smrt organismu.",
+  "Respirační acidóza a alkalóza - etiopatogeneze, následky.",
+  "Metabolická acidóza a alkalóza - etiopatogeneze, následky.",
+  "Bolest - etiopatogeneze, klasifikace, poruchy vnímání bolesti, principy farmakologického ovlivnění.",
+  "Dušnost - rozdělení, etiopatogeneze, následky.",
+  "Septický a anafylaktický šok - etiopatogeneze a následky.",
+  "Obstipace a průjem - etiopatogeneze a následky. Syndrom dráždivého tračníku, pseudomembranózní kolitida.",
+  "Poruchy metabolismu železa (Fe2+/Fe3+) - etiopatogeneze a následky.",
+  "Ikterus- etiopatogeneze.",
+  "Poruchy bilance kalcia (Ca2+) a fosfátů - etiopatogeneze, projevy, následky.",
+  "Sepse, syndrom multiorgánové dysfunkce (MODS) - etiopatogeneze, projevy a následky.",
+  "Krvácení - etiopatogeneze, rozdělení, následky.",
+  "Poruchy bilance natria (Na+) a chloridů (Cl-) - etiopatogeneze, následky, regulace. Osmotický a onkotický tlak.",
+  "Lokální zánětová odpověď - princip a význam, složky zánětové odpovědi.",
+  "Poruchy vědomí - etiopatogeneze, základní rozdělení podle kvantity a kvality. Synkopa.",
+  "Ischemie - etiopatogeneze ischemie, změny na orgánové úrovni: myokard, centrální nervový systém, ledviny, GIT, končetiny.",
+  "Nauzea, zvracení - etiopatogeneze, následky.",
+  "Poškození vlivem chemických vlivů - intoxikace (paracetamol, metanol, oxid uhelnatý), alkohol, kouření.",
+  "Hyperglykemie - etiopatogeneze, akutní a chronické komplikace, následky.",
+  "Geneticky podmíněné nemoci - rozdělení, příklady. Monofaktoriální a multifaktoriální dědičnost.",
+  "Časový faktor v patogenezi nemocí, pojmy kompenzace a dekompenzace, strukturální a funkční orgánová/tkáňová dysfunkce.",
+  "Metabolický syndrom X - etiopatogeneze, projevy, následky.",
+  "Hypoglykemie - etiopatogeneze, komplikace, následky.",
+  "Poškození vlivem fyzikálních vlivů tlaku, crush syndrom (rhabdomyolýza), zvuk."
+];
+
 function getOrganSystem(title) {
   const lower = title.toLowerCase();
   
@@ -188,6 +241,17 @@ function estimateKeywords(cleanedTitle) {
 function buildCoreDatabase() {
   const list = [];
   
+  // Obecná
+  RAW_QUESTIONS_GENERAL.forEach((q, idx) => {
+    list.push({
+      id: `gen-${idx + 1}`,
+      category: "Obecná",
+      title: q.trim(),
+      organSystem: getOrganSystem(q),
+      keyTerms: estimateKeywords(q)
+    });
+  });
+
   // Speciální I.
   RAW_QUESTIONS_SPECIAL_1.forEach((q, idx) => {
     list.push({

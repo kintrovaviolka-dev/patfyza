@@ -169,6 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let catClass = "";
       if (q.category === "Speciální II.") catClass = "cat-ii";
       else if (q.category === "Praktická") catClass = "cat-pract";
+      else if (q.category === "Obecná") catClass = "cat-gen";
 
       cardContainer.innerHTML = `
         <div class="card-inner" data-id="${q.id}">
@@ -253,6 +254,9 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (q.category === "Praktická") {
       modalCategory.className = "modal-category cat-pract";
       modalCategory.style.color = "#0ea5e9";
+    } else if (q.category === "Obecná") {
+      modalCategory.className = "modal-category cat-gen";
+      modalCategory.style.color = "#10b981";
     } else {
       modalCategory.className = "modal-category";
       modalCategory.style.color = "var(--color-primary)";
