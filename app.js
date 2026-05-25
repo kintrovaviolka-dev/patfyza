@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardsGrid = document.getElementById("cards-grid");
   const searchInput = document.getElementById("search-input");
   const categoryFilter = document.getElementById("category-filter");
+  const systemFilter = document.getElementById("system-filter");
   const statusFilter = document.getElementById("status-filter");
   const themeToggle = document.getElementById("theme-toggle");
   
@@ -204,13 +205,17 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const searchVal = searchInput.value.toLowerCase().trim();
     const catVal = categoryFilter.value;
+    const systemVal = systemFilter.value;
     const statVal = statusFilter.value;
 
     const filtered = state.questions.filter(q => {
       // 1. Filtr kategorie
       if (catVal !== "all" && q.category !== catVal) return false;
 
-      // 2. Filtr stavu pokroku
+      // 2. Filtr orgánového systému
+      if (systemVal !== "all" && q.organSystem !== systemVal) return false;
+
+      // 3. Filtr stavu pokroku
       const currentStatus = state.userProgress[q.id] || "not-started";
       if (statVal !== "all" && currentStatus !== statVal) return false;
 
@@ -239,6 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
         resetBtn.addEventListener("click", () => {
           searchInput.value = "";
           categoryFilter.value = "all";
+          systemFilter.value = "all";
           statusFilter.value = "all";
           renderCards();
         });
@@ -262,13 +268,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const keywordsTags = q.keyTerms.map(k => `<span class="keyword-tag">${k}</span>`).join("");
-      const isCatII = q.category === "Speciální II.";
+      
+      let catClass = "";
+      if (q.category === "Speciální II.") catClass = "cat-ii";
+      else if (q.category === "Praktická") catClass = "cat-pract";
 
       cardContainer.innerHTML = `
         <div class="card-inner" data-id="${q.id}">
           <!-- Přední strana -->
           <div class="card-front">
-            <span class="card-category ${isCatII ? 'cat-ii' : ''}">${q.category}</span>
+            <div class="card-badges">
+              <span class="card-category ${catClass}">${q.category}</span>
+              <span class="card-system-badge">${q.organSystem}</span>
+            </div>
             <h3 class="card-title">${q.title}</h3>
             
             <div class="card-footer">
@@ -337,10 +349,13 @@ document.addEventListener("DOMContentLoaded", () => {
     state.activeQuestion = q;
     
     // Nastavení hlavičky
-    modalCategory.textContent = q.category.toUpperCase();
+    modalCategory.textContent = `${q.category.toUpperCase()} | ${q.organSystem.toUpperCase()}`;
     if (q.category === "Speciální II.") {
       modalCategory.className = "modal-category cat-ii";
       modalCategory.style.color = "#8b5cf6";
+    } else if (q.category === "Praktická") {
+      modalCategory.className = "modal-category cat-pract";
+      modalCategory.style.color = "#0ea5e9";
     } else {
       modalCategory.className = "modal-category";
       modalCategory.style.color = "var(--color-primary)";
@@ -574,6 +589,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- FILTROVÁNÍ A HLEDÁNÍ ---
   searchInput.addEventListener("input", renderCards);
   categoryFilter.addEventListener("change", renderCards);
+  systemFilter.addEventListener("change", renderCards);
   statusFilter.addEventListener("change", renderCards);
 
   // --- PŘEPÍNAČ TÉMATU ---

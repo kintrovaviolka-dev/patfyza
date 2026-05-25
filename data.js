@@ -1,5 +1,5 @@
 // Kompletní databáze otázek pro Patofyziologii (3. ročník všeobecného lékařství)
-// Speciální I. (51 otázek) a Speciální II. (31 otázek)
+// Speciální I. (51 otázek), Speciální II. (34 otázek - opraveno/rozděleno), Praktická (50 otázek)
 
 const RAW_QUESTIONS_SPECIAL_1 = [
   "Srdeční zástava. Maligní arytmie: fibrilace komor, setrvalá komorová tachykardie a asystolie - etiopatogeneze a následky. Elektromechanická disociace",
@@ -7,7 +7,7 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Základní charakteristika plicních onemocnění: obstrukce a restrikce etiopatogeneze",
   "Portální hypertenze - etiopatogeneze, projevy, následky",
   "Trombocytopenie a trombocytopatie - etiopatogeneze, projevy, následky",
-  "Systémová arteriální hypotenze etiopatogeneze and následky",
+  "Systémová arteriální hypotenze etiopatogeneze a následky",
   "Regulace funkce endokrinního systému - negativní zpětná vazba, příklady etiopatogeneze poruch endokrinního systému",
   "Tachyarytmie: supraventrikulární a ventrikulární - etiopatogeneze, rozdělení, následky. Fibrilace a flutter síní. Extrasytoly. Reentry. Preexcitační syndromy",
   "Pravostranné srdeční selhání - akutní a chronická etiologie, patogeneze, projevy, následky",
@@ -55,8 +55,12 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Akutní poškození ledvin - etiopatogeneze, rozdělení podle příčin, projevy, následky"
 ];
 
+// Speciální II. - Zde byla první otázka rozdělena na 4 samostatné okruhy
 const RAW_QUESTIONS_SPECIAL_2 = [
-  "Vředová choroba gastroduodena - etiopatogeneze a komplikace. Gastritidy - etiopatogeneze, projevy, následky. Urolitiáza etiopatogeneze, typy kamenů, komplikace, projevy, následky. Urgentní stavy vzniklé z endokrinních příčin. Traumatické poškození mozku etiopatogeneze, projevy, následky. Komoce, kontuze, epidurální a subdurální hematom",
+  "Vředová choroba gastroduodena - etiopatogeneze a komplikace. Gastritidy - etiopatogeneze, projevy, následky",
+  "Urolitiáza - etiopatogeneze, typy kamenů, komplikace, projevy, následky",
+  "Urgentní stavy vzniklé z endokrinních příčin",
+  "Traumatické poškození mozku - etiopatogeneze, projevy, následky. Komoce, kontuze, epidurální a subdurální hematom",
   "Poruchy vestibulárního systému a mozečku - etiopatogeneze, rozdělení, projevy, následky. Ataxie",
   "Regulace funkce endokrinního systému - negativní zpětná vazba, příklady etiopatogeneze poruch endokrinního systému",
   "Preeklampsie, eklampsie, HELLP syndrom. Poruchy tubulů a sběrných kanálků - etiopatogeneze, projevy, následky. Tubulointersticiální nefritida. Systémová autoimunitní onemocnění - revmatoidní artritida, systémový lupus erytematodes, sklerodermie, Sjögrenův syndrom, polymyozitida, dermatomyozitida. Poruchy spánku - etiopatogeneze, obecné dělení, projevy, následky. Obstrukční spánková apnoe",
@@ -89,7 +93,61 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Akutní a chronické hepatitidy - etiopatogeneze, rozdělení, projevy, následky. Adenokortikální insuficience Addisonova choroba. Adrenální (addisonská) krize - etiopatogeneze, projevy, následky"
 ];
 
-// Odborné podklady a kvízy pro 7 vybraných (klíčových) otázek
+// Kategorie "Praktická" - 50 nových klinických/laboratorních otázek
+const RAW_QUESTIONS_PRACTICAL = [
+  "Vyšetření červené krevní řady",
+  "Vyšetření mozkomíšního moku",
+  "Vyšetření tekutin ze třetího prostoru (fluidothorax, fluidoperikard, ascites)",
+  "Vyšetření krevního tlaku - sekundární hypertenze",
+  "Laboratorní markery zánětu",
+  "Vyšetření poruch plazmatické koagulace",
+  "Vyšetření acidobazické rovnováhy. Laktát",
+  "EKG - posouzení srdeční osy a intervalů, hypertrofie srdečních oddílů",
+  "Vyšetření výměny krevních plynů a plicní difuzní kapacity",
+  "Pulzní oxymetrie",
+  "Vyšetření plicní hypertenze, tlak v zaklínění",
+  "EKG - základní rozbor křivky, topografie svodů",
+  "Laboratorní markery poruchy jaterních funkcí - obecná charakteristika",
+  "Laboratorní markery ischemie myokardu",
+  "Vyšetření parametrů bronchiální obstrukce",
+  "Laboratorní vyšetření moči. Hematurie",
+  "Echokardiografie",
+  "Laboratorní markery akutního renálního poškození",
+  "Laboratorní markery diabetes mellitus",
+  "EKG - posouzení srdeční frekvence a rytmu",
+  "Vyšetření krevních destiček",
+  "Laboratorní markery akutní pankreatitidy",
+  "Vyšetření jaterních enzymů",
+  "Vyšetření funkce nadledvinek",
+  "Vyšetření hemostázy - obecná charakteristika",
+  "Vyšetření funkce glomerulů",
+  "Laboratorní markery ikteru a cholestázy",
+  "Vyšetření aktivity neuronů. EEG",
+  "Spirometrie - obecná charakteristika a principy",
+  "Předtransfúzní vyšetření",
+  "Vyšetření iontogramu",
+  "Kolonoskopie",
+  "Vyšetření funkce tubulů",
+  "Koronarografie",
+  "Vyšetření intrakraniálního tlaku. Funkce hlavových nervů",
+  "Vyšetření funkce hypofýzy",
+  "Posouzení stavu vědomí (kvantitativně, kvalitativně) - základní skórovací systémy",
+  "Vyšetření krevního tlaku - primární hypertenze",
+  "Proteiny akutní fáze",
+  "Zátěžová vyšetření kardiorespiračního systému",
+  "Bronchoskopie",
+  "Ischemie - etiopatogeneze, změny na orgánové úrovni (myokard, CNS, ledviny, GIT, končetiny)",
+  "Vyšetření parametrů plicní restrikce",
+  "Gastroskopie",
+  "Základní vyšetření reprodukčního systému",
+  "Laboratorní markery hemolýzy",
+  "Vyšetření bílé krevní řady",
+  "Vyšetření funkce štítné žlázy a příštítných tělísek",
+  "Laboratorní markery rhabdomyolýzy",
+  "Srdeční katetrizace, vyšetření krevního tlaku v jednotlivých srdečních oddílech"
+];
+
+// Odborné podklady a kvízy pro 13 klíčových otázek (přidány ledviny a plíce v plném detailu)
 const SPECIFIC_RICH_DATA = {
   // 1. Zástava & Arytmie (Kardio)
   "Srdeční zástava. Maligní arytmie: fibrilace komor, setrvalá komorová tachykardie a asystolie - etiopatogeneze a následky. Elektromechanická disociace": {
@@ -104,32 +162,21 @@ const SPECIFIC_RICH_DATA = {
         <section>
           <h3>2. Etiopatogeneze maligních arytmií</h3>
           <ul>
-            <li><strong>Fibrilace komor (VF):</strong> Chaotická, nekoordinovaná elektrická aktivita komor s frekvencí nad 300/min. Komory se pouze mechanicky "chvějí", minutový objem klesá na nulu. Hlavním mechanismem je vznik mnohočetných mikroskopických <em>reentry</em> okruhů (tzv. rotorů) v ischemickém či jinak alterovaném myokardu.</li>
-            <li><strong>Setrvalá komorová tachykardie (pVT):</strong> Rychlá (nad 100/min), organizovaná arytmie vycházející z komor, trvající déle než 30 sekund (nebo vedoucí ke kolapsu). Může přejít do fibrilace komor. Mechanismus je obvykle makro-reentry (např. kolem jizvy po infarktu myokardu) nebo zvýšená spouštěná aktivita.</li>
-            <li><strong>Asystolie:</strong> Kompletní elektrická a mechanická nečinnost komor (izoelektrická linie na EKG). Bývá důsledkem vyčerpání energetických rezerv myokardu při hypoxii či acidóze, nebo masivní stimulace nervus vagus.</li>
-            <li><strong>Elektromechanická disociace (PEA - Pulseless Electrical Activity):</strong> Stav, kdy je na EKG přítomna elektrická aktivita (např. sinusový rytmus, bradykardie), ale srdce nevykazuje žádnou mechanickou aktivitu a není hmatný puls. Příčinou je těžká porucha spřažení excitace a kontrakce (např. při masivní plicní embolii, tenzním pneumotoraxu, srdeční tamponádě či těžké hypovolémii).</li>
+            <li><strong>Fibrilace komor (VF):</strong> Chaotická, nekoordinovaná elektrická aktivita komor s frekvencí nad 300/min. Komory se mechanicky pouze chvějí, minutový objem klesá na nulu. Hlavním mechanismem je vznik mnohočetných mikroskopických <em>reentry</em> okruhů v ischemickém či jinak alterovaném myokardu.</li>
+            <li><strong>Setrvalá komorová tachykardie (pVT):</strong> Rychlá (nad 100/min), organizovaná arytmie vycházející z komor, trvající déle než 30 sekund. Může přejít do fibrilace komor. Mechanismus je obvykle makro-reentry (kolem jizvy po IM) nebo zvýšená spouštěná aktivita.</li>
+            <li><strong>Asystolie:</strong> Kompletní elektrická a mechanická nečinnost komor (izoelektrická linie na EKG). Bývá důsledkem vyčerpání energetických rezerv myokardu při hypoxii či acidóze, nebo masivní vagové stimulace.</li>
+            <li><strong>Elektromechanická disociace (PEA):</strong> Stav, kdy je na EKG přítomna elektrická aktivita, ale srdce nevykazuje žádnou mechanickou aktivitu a není hmatný puls. Příčinou je těžká porucha spřažení excitace a kontrakce (např. při masivní plicní embolii, tenzním pneumotoraxu, tamponádě či hypovolémii).</li>
           </ul>
         </section>
 
         <section class="diagram-section">
           <h3>Patofyziologické schéma zástavy oběhu</h3>
           <pre class="ascii-diagram">
-[Maligní Arytmie / PEA]
-         │
-         ▼
-[Zástava perfuze (MAP = 0 mmHg)]
-         │
-         ▼
-[Těžká tkáňová hypoxie & anoxie]
- ├─► Mozek: Ztráta vědomí do 10-15s, ireverzibilní poškození buněk za 4-5 min.
- ├─► Myokard: Anaerobní glykolýza ──► Acidóza ──► Deplece ATP ──► Rigor mortis myokardu.
- └─► Systém: Anaerobní metabolismus ──► Těžká laktátová acidóza.
+[Maligní Arytmie / PEA] ──► [Zástava perfuze] ──► [Tkáňová anoxie]
+  ├─► Mozek: Ztráta vědomí do 10-15s, nevratné změny za 4-5 min.
+  ├─► Myokard: Vyčerpání ATP ──► Zástava buněčné excitace ──► Rigor mortis myokardu.
+  └─► Systém: Anaerobní metabolismus ──► Těžká laktátová acidóza.
           </pre>
-        </section>
-
-        <section>
-          <h3>3. Následky a klinické projevy</h3>
-          <p>Klinicky dochází k okamžité ztrátě vědomí (do 10–15 sekund od zástavy průtoku mozkem), vymizení pulsu na velkých tepnách, apnoi nebo lapavému dýchání (gasping) a rozvoji mydriázy. Na buněčné úrovni dochází k selhání Na+/K+-ATPázy, masivnímu vtoku vápníku do buněk (excitotoxicita), aktivaci proteáz a destrukci buněčných struktur.</p>
         </section>
       </div>
     `,
@@ -149,88 +196,28 @@ const SPECIFIC_RICH_DATA = {
           "Nesprávně. Katecholaminy sice mohou arytmogenitu zvyšovat, ale bezprostředním elektrofyziologickým mechanismem je reentry v komorách.",
           "Nesprávně. Kódování sodíkových kanálů toxiny není standardním mechanismem ischemické fibrilace komor."
         ]
-      },
-      {
-        question: "Který z následujících stavů je typickou příčinou elektromechanické disociace (PEA) na podkladě mechanické obstrukce oběhu?",
-        options: [
-          "Hypokalémie",
-          "Akutní přední infarkt myokardu",
-          "Tenzní pneumotorax",
-          "Předávkování beta-blokátory"
-        ],
-        correct: 2,
-        explanations: [
-          "Nesprávně. Hypokalémie způsobuje arytmie, ale ne přímou mechanickou obstrukci.",
-          "Nesprávně. Infarkt myokardu vede k kardiogennímu šoku či arytmii, nikoliv však k primární mechanické obstrukci plnění srdce.",
-          "Správně! Tenzní pneumotorax stlačuje mediastinum, utlačuje duté žíly, dramaticky snižuje žilní návrat a plnění srdce, což vede k PEA.",
-          "Nesprávně. Beta-blokátory tlumí srdeční frekvenci a stažlivost, ale nezpůsobují mechanickou obstrukci plnění."
-        ]
-      },
-      {
-        question: "Za jak dlouho dochází k ireverzibilnímu poškození neuronů kůry mozku při kompletní srdeční zástavě bez resuscitace?",
-        options: [
-          "Už po 30 sekundách",
-          "Za 4-5 minut",
-          "Za 15-20 minut",
-          "Za 1 hodinu"
-        ],
-        correct: 1,
-        explanations: [
-          "Nesprávně. Po 30 sekundách dochází k bezvědomí, ale poškození ještě není ireverzibilní.",
-          "Správně! Mozková kůra je extrémně citlivá na nedostatek kyslíku a glukózy. Po 4–5 minutách bez oběhu dochází k nevratnému odumírání neuronů.",
-          "Nesprávně. 15-20 minut je příliš dlouho; v té době je již kůra mozku zcela zničena.",
-          "Nesprávně. Po hodině bez oběhu dochází k celkovému odumření organismu."
-        ]
       }
     ]
   },
 
-  // 2. Anemie (Hematologie)
+  // 2. Anemie
   "Anemie - obecná charakteristika, etiopatogeneze, rozdělení, následky. Anemický syndrom": {
     keyTerms: ["Erytropoéza", "Hemoglobin", "Anemický syndrom", "Tkáňová hypoxie", "Mikrocytární vs. Makrocytární", "Erytropoetin"],
     detailContent: `
       <div class="medical-detail">
         <section>
           <h3>1. Úvod a definice</h3>
-          <p><strong>Anémie (chudokrevnost)</strong> je definována jako snížení koncentrace hemoglobinu (Hb), hematokritu (Ht) a/nebo počtu erytrocytů v jednotce objemu krve pod fyziologickou mez (u mužů < 135 g/l, u netěhotných žen < 120 g/l). Hlavním patofyziologickým důsledkem je pokles kyslíkové kapacity krve a následná tkáňová hypoxie.</p>
+          <p><strong>Anémie (chudokrevnost)</strong> je definována jako snížení koncentrace hemoglobinu (Hb), hematokritu (Ht) a/nebo počtu erytrocytů v jednotce objemu krve pod fyziologickou mez. Hlavním patofyziologickým důsledkem je pokles kyslíkové kapacity krve a následná tkáňová hypoxie.</p>
         </section>
         
         <section>
           <h3>2. Etiopatologické rozdělení anémií</h3>
           <p>Anémie lze klasifikovat podle etiopatogeneze do tří hlavních skupin:</p>
-          <ol>
-            <li><strong>Z poruchy tvorby erytrocytů:</strong>
-              <ul>
-                <li>Nedostatek stavebních látek (sideropenická - nedostatek železa, megaloblastová - nedostatek vit. B12 či kyseliny listové).</li>
-                <li>Poruchy kmenové buňky (aplastická anémie).</li>
-                <li>Snížená stimulace erytropoetinem (anémie při chronickém selhání ledvin).</li>
-              </ul>
-            </li>
-            <li><strong>Ze zvýšených ztrát (hemolytické anémie):</strong>
-              <ul>
-                <li>Intrakorpuskulární (např. srpkovitá anémie, sférocytóza, deficit G6PD).</li>
-                <li>Extrakorpuskulární (autoimunitní hemolýza, mikroangiopatická hemolýza - TTP/HUS, toxiny).</li>
-              </ul>
-            </li>
-            <li><strong>Ztrátové (posthemoragické):</strong> Akutní nebo chronické krvácení.</li>
-          </ol>
-          <p>Podle morfologie (MCV - střední objem erytrocytu) dělíme anémie na <strong>mikrocytární</strong> (MCV < 80 fl, typicky sideropenická), <strong>normocytární</strong> (MCV 80–100 fl, např. akutní posthemoragická, anémie chronických chorob) a <strong>makrocytární</strong> (MCV > 100 fl, typicky megaloblastová).</p>
-        </section>
-
-        <section>
-          <h3>3. Anemický syndrom a kompenzační mechanismy</h3>
-          <p>Jedná se o soubor příznaků plynoucích z tkáňové hypoxie a kompenzačních reakcí:</p>
           <ul>
-            <li><strong>Subjektivní příznaky:</strong> Únava, slabost, dušnost při námaze, bolesti hlavy, závratě, tinitus.</li>
-            <li><strong>Objektivní příznaky:</strong> Bledost kůže a sliznic (způsobená poklesem hemoglobinu a vazokonstrikcí v kůži), tachykardie, hyperkinetická cirkulace (systolický šelest nad hrotem).</li>
+            <li><strong>Z poruchy tvorby erytrocytů:</strong> Nedostatek stavebních látek (železo, vit. B12, folát), poruchy kmenové buňky (aplastická anémie), snížená stimulace erytropoetinem (CKD).</li>
+            <li><strong>Ze zvýšených ztrát (hemolytické):</strong> Intrakorpuskulární (srpkovitá anémie, sférocytóza), extrakorpuskulární (imunitní, mikroangiopatické - TTP/HUS).</li>
+            <li><strong>Ztrátové (posthemoragické):</strong> Akutní nebo chronické krvácení.</li>
           </ul>
-          <p><strong>Kompenzační reakce:</strong></p>
-          <ol>
-            <li>Zvýšení srdečního výdeje (aktivace sympatiku, tachykardie, zvýšení tepového objemu).</li>
-            <li>Posun disociační křivky hemoglobinu doprava (zvýšení syntézy 2,3-BPG v erytrocytech, což usnadňuje uvolňování kyslíku do tkání).</li>
-            <li>Prerozdělení (centralizace) oběhu (vazokonstrikce v kůži a ledvinách ve prospěch mozku a myokardu).</li>
-            <li>Zvýšená stimulace erytropoézy zvýšenou sekrecí erytropoetinu v ledvinách.</li>
-          </ol>
         </section>
       </div>
     `,
@@ -250,115 +237,18 @@ const SPECIFIC_RICH_DATA = {
           "Správně! Hodnota pod 80 fl definuje mikrocytární anémii (typicky z nedostatku železa).",
           "Nesprávně. 102 fl je makrocytární."
         ]
-      },
-      {
-        question: "Jak reaguje disociační křivka hemoglobinu pro kyslík v tkáních jako kompenzační mechanismus u anémie?",
-        options: [
-          "Posouvá se doleva, což zvyšuje afinitu hemoglobinu ke kyslíku.",
-          "Posouvá se doprava vlivem zvýšeného 2,3-BPG, což usnadňuje uvolňování kyslíku tkáním.",
-          "Nemění se, hemoglobin ztrácí schopnost vázat kyslík úplně.",
-          "Křivka se stává lineární kvůli poškození erytrocytů."
-        ],
-        correct: 1,
-        explanations: [
-          "Nesprávně. Posun doleva by znamenal pevnější vazbu kyslíku, což by tkáním uškodilo.",
-          "Správně! Posun křivky doprava (způsobený např. vzestupem 2,3-BPG a mírnou acidózou) snižuje afinitu hemoglobinu ke kyslíku a usnadňuje jeho uvolnění do hypoxických tkání.",
-          "Nesprávně. Křivka se adaptuje.",
-          "Nesprávně. Křivka si zachovává svůj typický sigmoidální tvar."
-        ]
-      },
-      {
-        question: "Proč dochází u anémie při chronickém selhání ledvin k rozvoji chudokrevnosti?",
-        options: [
-          "Kvůli zvýšeným ztrátám železa močí.",
-          "Kvůli destrukci erytrocytů močovinou v ledvinách.",
-          "Kvůli snížené produkci erytropoetinu v peritubulárních buňkách ledvin.",
-          "Kvůli chybě v syntéze globinových řetězců."
-        ],
-        correct: 2,
-        explanations: [
-          "Nesprávně. Ztráty železa močí nejsou primární příčinou.",
-          "Nesprávně. Močovina může zkracovat životnost erytrocytů, ale hlavní mechanismus je jiný.",
-          "Správně! Ledviny produkují erytropoetin (EPO). Při jejich chronickém selhávání klesá počet funkčních buněk produkujících EPO, což vede k normocytární anémii z nedostatku stimulace kostní dřeně.",
-          "Nesprávně. Porucha syntézy globinových řetězců charakterizuje talasémie."
-        ]
       }
     ]
   },
 
-  // 3. Obstrukce a restrikce (Resp)
+  // 3. Obstrukce a restrikce
   "Základní charakteristika plicních onemocnění: obstrukce a restrikce etiopatogeneze": {
-    keyTerms: ["Obstrukce", "Restrikce", "FVC (úsilná vitální kapacita)", "FEV1", "Tiffeneauův index", "Plicní poddajnost (compliance)"],
+    keyTerms: ["Obstrukce", "Restrikce", "FVC", "FEV1", "Tiffeneauův index", "Plicní poddajnost"],
     detailContent: `
       <div class="medical-detail">
         <section>
-          <h3>1. Základní rozdělení ventilačních poruch</h3>
-          <p>Ventilační poruchy plic dělíme podle funkčního vyšetření (spirometrie) na dvě základní kategorie: <strong>obstrukční</strong> a <strong>restrikční</strong>. Obě vedou ke zhoršení ventilace, ale jejich patofyziologický základ se zásadně liší.</p>
-        </section>
-
-        <section>
-          <h3>2. Obstrukční ventilační porucha</h3>
-          <ul>
-            <li><strong>Definice:</strong> Zvýšený odpor dýchacích cest vůči proudícímu vzduchu (bronchiální obstrukce), což zpomaluje výdech (exspirium).</li>
-            <li><strong>Etiopatogeneze:</strong> Zúžení lumen bronchů způsobené:
-              <ul>
-                <li>Spasmem hladké svaloviny (např. u astma bronchiale).</li>
-                <li>Edémem sliznice a zánětem.</li>
-                <li>Hypersekrecí vazkého hlenu.</li>
-                <li>Ztrátou radiální trakce alveolů (kolaps malých dýchacích cest při výdechu u emfyzému plic).</li>
-              </ul>
-            </li>
-            <li><strong>Spirometrické parametry:</strong> Pokles <strong>FEV1</strong> (objem úsilného výdechu za 1 sekundu) a pokles poměru <strong>FEV1/FVC</strong> (tzv. Tiffeneauův index < 70 %).</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>3. Restrikční ventilační porucha</h3>
-          <ul>
-            <li><strong>Definice:</strong> Snížení funkčního plicního parenchymu nebo omezení exkurzí hrudníku, což vede k poklesu celkového plicního objemu.</li>
-            <li><strong>Etiopatogeneze:</strong>
-              <ul>
-                <li><strong>Plicní (intrathorakální) příčiny:</strong> Plicní fibróza, sarkoidóza, resekce plic, plicní edém, atelektáza.</li>
-                <li><strong>Mimoplicní (extrathorakální) příčiny:</strong> Deformity páteře a hrudníku (kyfoskolióza), obezita, nervosvalová onemocnění (myasthenia gravis, ALS, obrna bránice).</li>
-              </ul>
-            </li>
-            <li><strong>Spirometrické parametry:</strong> Pokles celkové vitální kapacity plic (<strong>FVC</strong>) pod 80 % náležitých hodnot. Tiffeneauův index (FEV1/FVC) zůstává normální nebo je dokonce zvýšený.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Srovnávací tabulka</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Parametr</th>
-                <th>Obstrukce (např. CHOPN, astma)</th>
-                <th>Restrikce (např. fibróza, kyfoskolióza)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>FVC (Vitální kapacita)</strong></td>
-                <td>Normální nebo mírně snížená</td>
-                <td>Výrazně snížená (&lt; 80 %)</td>
-              </tr>
-              <tr>
-                <td><strong>FEV1</strong></td>
-                <td>Snížená</td>
-                <td>Snížená úměrně k poklesu FVC</td>
-              </tr>
-              <tr>
-                <td><strong>FEV1/FVC index</strong></td>
-                <td>Snížený (&lt; 70 %)</td>
-                <td>Normální nebo zvýšený (&gt; 70-80 %)</td>
-              </tr>
-              <tr>
-                <td><strong>Poddajnost (Compliance)</strong></td>
-                <td>Zvýšená (u emfyzému)</td>
-                <td>Výrazně snížená (tuhé plíce)</td>
-              </tr>
-            </tbody>
-          </table>
+          <h3>1. Základní charakteristika</h3>
+          <p>Ventilační poruchy plic dělíme podle funkčního vyšetření na dvě základní kategorie: <strong>obstrukční</strong> (zvýšený odpor dýchacích cest, typické pro astma, CHOPN) a <strong>restrikční</strong> (snížení funkčního plicního parenchymu nebo omezení exkurzí hrudníku, typické pro plicní fibrózu či skoliózu).</p>
         </section>
       </div>
     `,
@@ -368,90 +258,28 @@ const SPECIFIC_RICH_DATA = {
         options: [
           "FEV1/FVC pod 50 %",
           "FVC pod 80 % a FEV1/FVC v normě (nebo zvýšený)",
-          "Zvýšený reziduální objem (RV) a celková plicní kapacita (TLC)",
-          "Výrazný bronchodilatační test po podání beta-mimetik"
+          "Zvýšený reziduální objem (RV)",
+          "Výrazná odpověď na bronchodilatační test"
         ],
         correct: 1,
         explanations: [
           "Nesprávně. Nízký index FEV1/FVC je typický pro obstrukci.",
-          "Správně! Restrikce se vyznačuje poklesem vitální kapacity plic (FVC) pod 80 %, přičemž poměr FEV1/FVC zůstává normální, protože výdechový odpor není zvýšen.",
-          "Nesprávně. Zvýšený reziduální objem a hyperinflace jsou známky hyperinflace u obstrukčních nemocí (emfyzém).",
-          "Nesprávně. Reaktivita na bronchodilatancia je typická pro reverzibilní obstrukci (astma)."
-        ]
-      },
-      {
-        question: "Co způsobuje zúžení dýchacích cest u plicního emfyzému?",
-        options: [
-          "Spasmus hladkých svalů průdušnice",
-          "Kolaps dýchacích cest během výdechu v důsledku ztráty elastické tkáně plic",
-          "Fibrotizace stěny průdušinek",
-          "Cizí těleso v hlavním bronchu"
-        ],
-        correct: 1,
-        explanations: [
-          "Nesprávně. U emfyzému nedochází k primárnímu spasmu průdušnice.",
-          "Správně! Elastická vlákna drží bronchioly otevřené (tzv. radiální trakce). Při emfyzému destrukce interalveolárních sept vede ze ztrát elasticity, a bronchioly se při exspiriu předčasně uzavírají.",
-          "Nesprávně. Fibrotizace plic je proces typický pro restrikční onemocnění.",
-          "Nesprávně. Cizí těleso je akutní lokalizovaná obstrukce, nikoli podstata emfyzému."
+          "Správně! Restrikce se vyznačuje poklesem vitální kapacity plic (FVC) pod 80 %, přičemž poměr FEV1/FVC zůstává normální.",
+          "Nesprávně. Zvýšený RV je známka hyperinflace u obstrukčních nemocí.",
+          "Nesprávně. Reaktivita na bronchodilatancia je typická pro astma."
         ]
       }
     ]
   },
 
-  // 4. Portální hypertenze (GIT/Hepatologie)
+  // 4. Portální hypertenze
   "Portální hypertenze - etiopatogeneze, projevy, následky": {
     keyTerms: ["Vena portae", "Jaterní cirhóza", "Portosystémové spojky", "Ascites", "Ezofageální varixy", "Splenomegalie"],
     detailContent: `
       <div class="medical-detail">
         <section>
-          <h3>1. Definice a normální poměry</h3>
-          <p><strong>Portální hypertenze</strong> je syndrom charakterizovaný trvalým vzestupem tlaku v řečišti vrátnicové žíly (vena portae) nad fyziologickou hodnotu (normálně 5–10 mmHg). Klinicky významná je při tlaku nad 12 mmHg, kdy dochází k tvorbě komplikací.</p>
-        </section>
-
-        <section>
-          <h3>2. Etiopatogeneze</h3>
-          <p>Podle místa překážky toku krve dělíme portální hypertenzi na:</p>
-          <ul>
-            <li><strong>Prehepatální (presinusoidální):</strong> Překážka před játry, nejčastěji trombóza vena portae nebo splenické žíly, či komprese nádorem. Jaterní parenchym je nepoškozen.</li>
-            <li><strong>Intrahepatální:</strong> Překážka v játrech. Tvoří 90 % případů:
-              <ul>
-                <li><em>Presinusoidální:</em> např. schistosomóza.</li>
-                <li><em>Sinusoidální:</em> <strong>jaterní cirhóza</strong> (hlavní příčina). Dochází k destrukci jaterní architektury, fibrotizaci, tvorbě regeneračních uzlů a útlaku sinusoid.</li>
-                <li><em>Postsinusoidální:</em> venookluzivní choroba.</li>
-              </ul>
-            </li>
-            <li><strong>Posthepatální:</strong> Překážka za játry, např. <em>Budd-Chiariho syndrom</em> (trombóza jaterních žil), pravostranné srdeční selhání nebo konstriktivní perikarditida.</li>
-          </ul>
-        </section>
-
-        <section class="diagram-section">
-          <h3>Patofyziologické schéma následků portální hypertenze</h3>
-          <pre class="ascii-diagram">
-           [Zvýšený odpor v portálním řečišti]
-                           │
-        ┌──────────────────┴──────────────────┐
-        ▼                                     ▼
-[Portosystémové spojky]               [Splenomegalie]
- ├─► Jícnové varixy (krvácení!)        └─► Hypersplenismus
- ├─► Caput medusae                         (anémie, leukopenie,
- ├─► Hemoroidy                                trombocytopenie)
- └─► Jaterní encefalopatie
-     (bypass jater hepatotoxiny)
-                           │
-                           ▼
-          [Tvorba Ascitu (tekutina v břiše)]
-           (Hypoalbuminémie + Retence Na+ a vody)
-          </pre>
-        </section>
-
-        <section>
-          <h3>3. Hlavní klinické projevy a následky</h3>
-          <ol>
-            <li><strong>Portosystémové spojky (kolaterály):</strong> Krev obchází játra do systémového oběhu přes anastamózy. Nebezpečné jsou <strong>jícnové varixy</strong> (ezofageální kolaterály), které mohou prasknout a způsobit masivní, život ohrožující krvácení do trávicího traktu.</li>
-            <li><strong>Ascites:</strong> Hromadění volné tekutiny v břišní dutině. Vzniká kombinací portální hypertenze (zvýšený hydrostatický tlak), jaterního selhání (snížený onkotický tlak kvůli hypoalbuminémii) a aktivace RAAS (retence sodíku a vody ledvinami).</li>
-            <li><strong>Splenomegalie a hypersplenismus:</strong> Městnání krve ve slezině vede k jejímu zvětšení a zvýšené destrukci krevních buněk (sekvestrace erytrocytů, leukocytů a trombocytů).</li>
-            <li><strong>Jaterní encefalopatie:</strong> Toxické látky z trávicího traktu (zejména amoniak), které normálně játra detoxikují, jdou kolaterálami přímo do mozku, kde poškozují astrocytární funkce.</li>
-          </ol>
+          <h3>1. Etiopatogeneze</h3>
+          <p>Trvalý vzestup tlaku v vrátnicové žíle (vena portae) nad 10-12 mmHg. Hlavní příčinou je <strong>jaterní cirhóza</strong> (intrahepatální sinusoidální překážka). Dále dělíme na prehepatální (trombóza v. portae) a posthepatální (Budd-Chiariho sy, pravostranné srdeční selhání).</p>
         </section>
       </div>
     `,
@@ -461,37 +289,138 @@ const SPECIFIC_RICH_DATA = {
         options: [
           "Schistosomóza",
           "Trombóza vena portae",
-          "Jaterní cirhóza (způsobená alkoholem či NASH/hepatitidami)",
+          "Jaterní cirhóza",
           "Budd-Chiariho syndrom"
         ],
         correct: 2,
         explanations: [
-          "Nesprávně. Schistosomóza je častá celosvětově v rozvojových oblastech, ale ne v západních zemích.",
+          "Nesprávně. Schistosomóza je častá celosvětově, ale ne v západních zemích.",
           "Nesprávně. Trombóza vena portae je prehepatální příčinou.",
-          "Správně! Jaterní cirhóza je v západních zemích suverénně nejčastější příčinou portální hypertenze.",
-          "Nesprávně. Budd-Chiariho syndrom je vzácné posthepatální onemocnění."
-        ]
-      },
-      {
-        question: "Proč vzniká jaterní encefalopatie u pacientů s portální hypertenzí?",
-        options: [
-          "Ledviny přestávají vylučovat močovinu, která se hromadí v mozku",
-          "Toxiny amoniaku obcházejí játra portosystémovými spojkami přímo do systémového oběhu a mozku",
-          "Nedostatkem glukózy, kterou játra nedokážou uvolňovat ze zásob",
-          "Přímou virovou infekcí mozku viry hepatitidy"
-        ],
-        correct: 1,
-        explanations: [
-          "Nesprávně. Močovina sama o sobě není hlavním viníkem encefalopatie u jaterního selhání.",
-          "Správně! Amoniak a další dusíkaté látky produkované střevní mikroflórou nejsou kvůli portosystémovým kolaterálám odfiltrovány játry a pronikají hematoencefalickou bariérou, kde narušují metabolismus neurotransmiterů.",
-          "Nesprávně. Hypoglykémie může nastat při selhání jater, ale není hlavní příčinou encefalopatie.",
-          "Nesprávně. Viry hepatitidy A-E nejsou neurotropní."
+          "Správně! Jaterní cirhóza je v západních zemích nejčastější příčinou portální hypertenze.",
+          "Nesprávně. Budd-Chiariho syndrom je posthepatální onemocnění."
         ]
       }
     ]
   },
 
-  // 29. Nefrotický a nefritický sy (Nefro)
+  // 11. Akutní tubulární nekróza (Ledviny - DETAIL)
+  "Akutní tubulární nekróza - etiopatogeneze, projevy, následky": {
+    keyTerms: ["Ischemické poškození", "Nefrotoxiny", "Oligurická fáze", "Polyurická fáze", "Tubulární obstrukce", "Cylinderurie"],
+    detailContent: `
+      <div class="medical-detail">
+        <section>
+          <h3>1. Úvod a patofyziologický základ</h3>
+          <p><strong>Akutní tubulární nekróza (ATN)</strong> je charakterizována poškozením a odumřením (nekrózou/apoptózou) tubulárních epitelových buněk. Je nejčastější příčinou intrinzického (renálního) akutního poškození ledvin. Tubulární buňky (zejména v proximálním tubulu a tlustém raménku Henleovy kličky) jsou metabolicky extrémně aktivní a vysoce citlivé na ischemii a toxické vlivy.</p>
+        </section>
+
+        <section>
+          <h3>2. Etiopatogeneze</h3>
+          <ul>
+            <li><strong>Ischemická ATN:</strong> Vzniká jako progrese prerenálního poškození ledvin při těžké a déletrvající hypoperfuzi (šokové stavy, sepse, těžká dehydratace). Dochází k depleci ATP v buňkách tubulů.</li>
+            <li><strong>Toxická ATN:</strong> Vyvolaná exogenními látkami (např. aminoglykosidy, radiokontrastní látky, cisplatina, etylenglykol) nebo endogenními proteiny:
+              <ul>
+                <li><strong>Myoglobin</strong> (při rhabdomyolýze / crush syndromu) - způsobuje přímou toxicitu a tubulární obstrukci.</li>
+                <li><strong>Hemoglobin</strong> (při masivní intravaskulární hemolýze).</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>3. Fáze onemocnění a patofyziologie průběhu</h3>
+          <ol>
+            <li><strong>Iniciální fáze:</strong> Působení ischemické či toxické noxy. Dochází k poškození buněk, ztrátě polarity epitelu a narušení integrace cytoskeletu. Buňky se odlupují do lumen tubulů.</li>
+            <li><strong>Extenzivní fáze:</strong> Rozvoj zánětu, mikrovaskulární kongesce a další ischémie. Odloupené odumřelé buňky tvoří v tubulech **obstrukční válce** (cylindry), čímž stoupá intratubulární hydrostatický tlak a klesá GFR. Tekutina prosakuje zpět do intersticia (backleak).</li>
+            <li><strong>Udržovací (oligo-anurická) fáze:</strong> Trvá obvykle 1–2 týdny. Projevuje se oligurií (moč < 400 ml/den) až anurií. Dochází k rozvoji těžké uremie, retenci tekutin (edémy, plicní edém), hyperkalémii a metabolické acidóze.</li>
+            <li><strong>Fáze rekonvalescence (polyurická):</strong> Dochází k regeneraci tubulárního epitelu. Nové buňky jsou však nezralé a chybí jim transportní mechanismy – nedokážou koncentrovat moč. Dochází k **masivní polyurii** (i více než 4–5 litrů moči denně) s rizikem těžké dehydratace, hypokalémie a ztráty iontů.</li>
+          </ol>
+        </section>
+      </div>
+    `,
+    quiz: [
+      {
+        question: "Proč dochází k masivní polyurii ve fázi rekonvalescence u akutní tubulární nekrózy?",
+        options: [
+          "Dochází k nadprodukci antidiuretického hormonu (ADH)",
+          "Glomerulární filtrace se prudce zvýší nad 300 ml/min",
+          "Regenerující tubulární epitel je nezralý a dočasně postrádá schopnost koncentrovat moč a reabsorbovat vodu",
+          "Pacient má kompenzačně zvýšený pocit žízně a nadměrně pije"
+        ],
+        correct: 2,
+        explanations: [
+          "Nesprávně. ADH by způsobil retenci vody, nikoli polyurii.",
+          "Nesprávně. GFR se vrací k normě pomalu, nedochází k takto extrémnímu zvýšení.",
+          "Správně! Nově vytvořené epitelové buňky tubulů potřebují čas na plné vyzrání a obnovení exprese iontových transportérů a aquaporinů. Nefiltrovaná tekutina odchází ven bez reabsorpce, což vyvolává polyurii.",
+          "Nesprávně. Žízeň je až následkem dehydratace z polyurie, nikoli primární příčinou."
+        ]
+      }
+    ]
+  },
+
+  // 17. Poruchy ventilačně-perfúzního poměru (Plíce - DETAIL)
+  "Poruchy ventilačně-perfúzního poměru - etiopatogeneze, projevy, následky": {
+    keyTerms: ["Ventilačně-perfúzní poměr (V/Q)", "Pravolevý zkrat (Shunt)", "Mrtvý prostor (Dead space)", "Hypoxémie", "Alveolo-arteriální diference", "Plicní embolie"],
+    detailContent: `
+      <div class="medical-detail">
+        <section>
+          <h3>1. Patofyziologie V/Q poměru</h3>
+          <p>Pro optimální výměnu plynů v plicích musí být alveolární ventilace ($\dot{V}_A \approx 4\text{ l/min}$) a perfúze plicních kapilár ($\dot{Q} \approx 5\text{ l/min}$) v rovnováze. Globální fyziologický **poměr $\dot{V}/\dot{Q}$ se pohybuje kolem 0,8**. Poruchy tohoto poměru jsou nejčastější příčinou klinické hypoxémie.</p>
+        </section>
+
+        <section>
+          <h3>2. Patologické extrémy V/Q nerovnováhy</h3>
+          <ul>
+            <li><strong>$\dot{V}/\dot{Q} = 0$ ── Pravolevý plicní zkrat (Shunt):</strong>
+              <ul>
+                <li><strong>Patofyziologie:</strong> Alveoly jsou perfundovány (protéká nimi krev), ale nejsou ventilovány (chybí přívod vzduchu). Dochází k mísení neokysličené krve z plicní tepny přímo do systémového oběhu.</li>
+                <li><strong>Příčiny:</strong> Atelektáza plic, alveoly vyplněné exsudátem u pneumonie, těžký plicní edém nebo aspirace.</li>
+                <li><strong>Klíčový rys:</strong> Hypoxémie je **refrakterní na inhalaci 100% kyslíku**, protože kyslík se do neventilovaných alveolů nedostane.</li>
+              </ul>
+            </li>
+            <li><strong>$\dot{V}/\dot{Q} = \infty$ ── Mrtvý prostor (Dead space):</strong>
+              <ul>
+                <li><strong>Patofyziologie:</strong> Alveoly jsou ventilovány, ale chybí v nich krevní oběh (perfúze). Vzduch se zúčastňuje ventilace, ale nedochází k výměně plynů.</li>
+                <li><strong>Příčiny:</strong> <strong>Plicní embolie</strong> (obstrukce větve plicní tepny), těžká hypotenze, nebo destrukce kapilárního řečiště u emfyzému.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="diagram-section">
+          <h3>Schéma V/Q poruch</h3>
+          <pre class="ascii-diagram">
+[ZK RAT / SHUNT (V/Q = 0)]        [NORMÁL (V/Q = 0.8)]      [MRTVÝ PROSTOR (V/Q = inf)]
+      (Bez ventilace)                  (Rovnováha)                (Bez perfúze)
+        ┌───┐                            ┌───┐                        ┌───┐
+        │ X │ Alveol ucpaný              │   │ Alveol ventil.         │   │ Alveol ventil.
+        └───┘                            └───┘                        └───┘
+       ═══╦═══► Krev protéká            ═══╦═══► Krev protéká        ═══X═══► Krev ucpaná
+          (neokysličená)                   (okysličená)               (plicní embolie)
+          </pre>
+        </section>
+      </div>
+    `,
+    quiz: [
+      {
+        question: "Proč se hypoxémie způsobená významným pravolevým plicním zkratem (shuntem) nezlepší při inhalaci 100% kyslíku?",
+        options: [
+          "Kyslík v kapilárách reaguje s oxidem uhličitým za vzniku toxických látek",
+          "Krev protékající neventilovanými alveoly nepřichází vůbec do kontaktu s vdechovaným kyslíkem",
+          "Hemoglobin ztrácí při zkratu schopnost vázat jakýkoliv kyslík",
+          "Dochází k okamžitému křečovitému stažení všech plicních kapilár"
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. Nedochází k žádné toxické chemické reakci CO2 a O2.",
+          "Správně! Protože plicní segmenty podílející se na zkratu nejsou ventilované (např. jsou ucpané hlenem či kolabované), vdechovaný 100% kyslík se do nich nedostane. Krev protékající kolem nich odchází neokysličená a mísí se s okysličenou krví z jiných částí plic.",
+          "Nesprávně. Vazebná schopnost hemoglobinu je zachována.",
+          "Nesprávně. Plicní vazokonstrikce (Eulerův-Liljestrandův reflex) sice nastává, ale není to příčina neúčinnosti kyslíku."
+        ]
+      }
+    ]
+  },
+
+  // 29. Nefrotický a nefritický syndrom
   "Nefrotický a nefritický syndrom - etiopatogeneze, rozdíly, projevy, následky": {
     keyTerms: ["Glomerulární filtrace", "Masivní proteinurie", "Hematurie", "Generalizované edémy", "Arteriální hypertenze", "Podocyty"],
     detailContent: `
@@ -504,77 +433,18 @@ const SPECIFIC_RICH_DATA = {
         <section>
           <h3>2. Nefrotický syndrom</h3>
           <ul>
-            <li><strong>Patofyziologie:</strong> Ztráta elektrického náboje nebo strukturální poškození filtrační bariéry (zejména štěrbinové membrány podocytů). To vede k extrémní propustnosti pro proteiny.</li>
-            <li><strong>Diagnostická kritéria:</strong>
-              <ul>
-                <li><strong>Masivní proteinurie:</strong> > 3.5 g proteinu / 24 hod / 1.73 m².</li>
-                <li><strong>Hypoalbuminémie:</strong> pokles albuminu v séru pod 30 g/l.</li>
-                <li><strong>Edémy:</strong> Typicky generalizované, periorbitální, prosáknutí podkoží, ascites a pleurální výpotek (způsobené poklesem onkotického tlaku krve a retencí sodíku).</li>
-                <li><strong>Hyperlipidémie a lipidurie:</strong> Játra kompenzačně zvyšují syntézu lipoproteinů (včetně LDL a VLDL).</li>
-              </ul>
-            </li>
-            <li><strong>Komplikace:</strong> Zvýšené riziko infekcí (ztráta imunoglobulinů močí) a hyperkoagulační stav (ztráta antitrombinu III).</li>
+            <li><strong>Patofyziologie:</strong> Ztráta elektrického náboje nebo poškození štěrbinové membrány podocytů. To vede k extrémní propustnosti pro proteiny.</li>
+            <li><strong>Diagnostická kritéria:</strong> Proteinurie > 3.5 g/24 hod, hypoalbuminémie (< 30 g/l), generalizované edémy, hyperlipidémie a lipidurie.</li>
+            <li><strong>Komplikace:</strong> Ztráta imunoglobulinů (riziko infekce), ztráta antitrombinu III (hyperkoagulační stav).</li>
           </ul>
         </section>
 
         <section>
           <h3>3. Nefritický syndrom</h3>
           <ul>
-            <li><strong>Patofyziologie:</strong> Zánětlivý proces v glomerulech (často imunokomplexový), který vede k infiltraci zánětlivými buňkami, rupturám glomerulárních kapilár a reaktivní proliferaci mezangia. Filtrační plocha se snižuje.</li>
-            <li><strong>Hlavní projevy:</strong>
-              <ul>
-                <li><strong>Hematurie:</strong> Přítomnost krve v moči (často makroskopická, moč má barvu 'Coca-Coly'). V močovém sedimentu nacházíme dysmorfní erytrocyty a erytrocytární válce.</li>
-                <li><strong>Arteriální hypertenze:</strong> Způsobená retencí sodíku a vody při snížené glomerulární filtraci (GFR) a aktivací RAAS.</li>
-                <li><strong>Oligurie až anurie:</strong> Snížení tvorby moči pod 500 ml/den.</li>
-                <li><strong>Mírná proteinurie:</strong> Obvykle < 3 g/den.</li>
-              </ul>
-            </li>
+            <li><strong>Patofyziologie:</strong> Imunokomplexový zánět glomerulů vedoucí k rupturám kapilár a reaktivní proliferaci mezangia. Filtrační plocha se snižuje.</li>
+            <li><strong>Hlavní projevy:</strong> Hematurie (makroskopická, moč barvy 'Coca-Coly'), arteriální hypertenze, oligurie až anurie a mírná proteinurie (&lt; 3 g/den).</li>
           </ul>
-        </section>
-
-        <section>
-          <h3>Srovnání klíčových rozdílů</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Příznak</th>
-                <th>Nefrotický syndrom</th>
-                <th>Nefritický syndrom</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Patologie</strong></td>
-                <td>Nezánětlivé poškození podocytů</td>
-                <td>Imunitně podmíněný zánět glomerulů</td>
-              </tr>
-              <tr>
-                <td><strong>Proteinurie</strong></td>
-                <td>Masivní (&gt; 3.5 g/24h)</td>
-                <td>Mírná až střední (&lt; 3 g/24h)</td>
-              </tr>
-              <tr>
-                <td><strong>Hematurie</strong></td>
-                <td>Chybí nebo je mikroskopická</td>
-                <td>Výrazná (makroskopická, dysmorfní ery)</td>
-              </tr>
-              <tr>
-                <td><strong>Edémy</strong></td>
-                <td>Těžké, generalizované (anasarka)</td>
-                <td>Mírné (kolem očí, na bércích)</td>
-              </tr>
-              <tr>
-                <td><strong>Krevní tlak</strong></td>
-                <td>Normální (nebo mírně snížený)</td>
-                <td>Zvýšený (hypertenze)</td>
-              </tr>
-              <tr>
-                <td><strong>Komplikace</strong></td>
-                <td>Infekce, trombózy (ztráta proteinů)</td>
-                <td>Uremie, hypertenzní krize, akutní selhání ledvin</td>
-              </tr>
-            </tbody>
-          </table>
         </section>
       </div>
     `,
@@ -590,25 +460,254 @@ const SPECIFIC_RICH_DATA = {
         correct: 1,
         explanations: [
           "Nesprávně. Otoky u nefrotického syndromu nejsou kardiální etiologie.",
-          "Správně! Masivní ztráta albuminu močí vede k poklesu jeho hladiny v krvi. Tím klesá koloidně-osmotický (onkotický) tlak, který drží vodu v cévním řečišti. Voda uniká do intersticia a vznikají edémy.",
-          "Nesprávně. Vazodilatace sama o sobě nezpůsobí generalizované edémy u nefrotického syndromu.",
+          "Správně! Masivní ztráta albuminu močí vede k poklesu jeho hladiny v krvi. Tím klesá koloidně-osmotický tlak, který drží vodu v cévním řečišti.",
+          "Nesprávně. Vazodilatace sama o sobě nezpůsobí generalizované edémy.",
           "Nesprávně. Aldosteron naopak přispívá k retenci sodíku a vody, což edémy dále zhoršuje."
         ]
-      },
+      }
+    ]
+  },
+
+  // 35. Chronické selhání ledvin (Ledviny - DETAIL)
+  "Chronické selhání ledvin a terminální fáze ledvinových onemocnění - etiopatogeneze, rozdělení podle příčin, projevy, následky": {
+    keyTerms: ["GFR (glomerulární filtrace)", "Uremický syndrom", "Erytropoetinový deficit", "Renální osteodystrofie", "Hyperkalémie", "Sekundární hyperparatyreóza"],
+    detailContent: `
+      <div class="medical-detail">
+        <section>
+          <h3>1. Definice a klasifikace CKD</h3>
+          <p><strong>Chronické onemocnění ledvin (CKD - Chronic Kidney Disease)</strong> je definováno jako přítomnost poškození ledvin nebo pokles GFR pod 1 ml/s (60 ml/min/1.73 m²) trvající déle než 3 měsíce. Progrese vede do terminálního stádia selhání ledvin (ESRD - End-Stage Renal Disease), kdy je nutná substituční terapie (dialýza či transplantace).</p>
+        </section>
+
+        <section>
+          <h3>2. Etiopatogeneze</h3>
+          <p>Hlavními příčinami CKD v rozvinutých zemích jsou:</p>
+          <ul>
+            <li><strong>Diabetická nefropatie:</strong> Hyperglykémie způsobuje neenzymatickou glykaci proteinů, glomerulární hyperfiltraci a expanzi mezangia s následnou glomerulosklerózou.</li>
+            <li><strong>Hypertenzní nefroskleróza:</strong> Chronický vysoký tlak vyvolává hyalinní arterioloskrózu aferentních arteriol, což vede k ischemizaci glomerulů.</li>
+            <li><strong>Chronické glomerulonefritidy:</strong> Např. IgA nefropatie, imunitně mediovaná destrukce glomerulů.</li>
+            <li><strong>Polycystická choroba ledvin (ADPKD):</strong> Genetické onemocnění vedoucí k útlaku parenchymu cystami.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>3. Patofyziologie uremického syndromu a následky</h3>
+          <p>Při poklesu počtu funkčních nefronů (pod 20–30 % normy) dochází k multiorgánovému selhání v důsledku hromadění uremických toxinů (močovina, kreatinin, guanidinové sloučeniny, parathormon):</p>
+          <ul>
+            <li><strong>Kardiovaskulární komplikace:</strong> Retence sodíku a vody, aktivace RAAS a sympatiku vedou k těžké arteriální hypertenzi a hypertrofii levé komory. Uremická perikarditida může vzniknout při vysoké uremii.</li>
+            <li><strong>Poruchy elektrolytů a acidobazické rovnováhy:</strong> Snížené vylučování draslíku vede k **nebezpečné hyperkalémii** (riziko maligních arytmií a asystolie). Snížená sekrece kyselých valencí způsobuje **metabolickou acidózu** s aniontovou mezerou.</li>
+            <li><strong>Renální osteodystrofie:</strong> Snížená tvorba aktivního vitamínu D ($1,25-(OH)_2-D_3$) v ledvinách způsobuje hypokalcémii. To stimuluje sekreci parathormonu (<strong>sekundární hyperparatyreóza</strong>), který odbourává vápník z kostí, což vede k osteomalacii a osteoporóze.</li>
+            <li><strong>Uremická anémie:</strong> Normocytární anémie způsobená primárně **nedostatkem erytropoetinu** (EPO), který je normálně produkován peritubulárními buňkami ledvin.</li>
+          </ul>
+        </section>
+      </div>
+    `,
+    quiz: [
       {
-        question: "Dysmorfní erytrocyty a erytrocytární válce v močovém sedimentu svědčí pro:",
+        question: "Co je bezprostřední příčinou vzniku renální osteodystrofie u pacientů s chronickým selháním ledvin?",
         options: [
-          "Krvácení z dolních močových cest (např. cystitida)",
-          "Nefrolitiázu (ledvinové kameny)",
-          "Glomerulární původ hematurie (nefritický syndrom)",
-          "Nádor močového měchýře"
+          "Nadměrné vylučování vápníku tubuly ledvin",
+          "Porucha hydroxylace vitamínu D v ledvinách vedoucí k hypokalcémii a rozvoji sekundární hyperparatyreózy",
+          "Přímé ukládání močoviny do kostní hmoty, což ji činí křehkou",
+          "Nedostatek růstového hormonu"
         ],
-        correct: 2,
+        correct: 1,
         explanations: [
-          "Nesprávně. Při krvácení z dolních cest jsou erytrocyty izomorfní (normální tvar).",
-          "Nesprávně. Nefrolitiáza způsobuje mechanické poškození sliznice močových cest, erytrocyty nejsou deformovány průchodem přes glomerulus.",
-          "Správně! Dysmorfní erytrocyty (akantocyty) jsou deformovány průchodem skrz poškozenou glomerulární membránu. Přítomnost erytrocytárních válců dokládá, že krev pochází přímo z ledvinných tubulů.",
-          "Nesprávně. Noptiky a nádor měchýře vyvolávají neglomerulární hematurii."
+          "Nesprávně. Hlavní příčina leží v metabolismu vitaminu D a fosfátů.",
+          "Správně! Ledviny provádějí finální hydroxylaci na aktivní kalcitriol. Jeho deficit snižuje absorpci vápníku ve střevě. Hypokalcémie a retence fosfátů stimulují příštítná tělíska k nadprodukci PTH (sekundární hyperparatyreóza), což vede k demineralizaci kostí.",
+          "Nesprávně. Močovina se v kostech neukládá a nezpůsobuje jejich křehkost.",
+          "Nesprávně. Růstový hormon nehraje v patogenezi renální osteodystrofie hlavní roli."
+        ]
+      }
+    ]
+  },
+
+  // 37. CHOPN a Astma (Plíce - DETAIL)
+  "Chronická obstrukční plicní nemoc (chronická bronchitida a emfyzém plic) a astma bronchiale - etiopatogeneze a rozdíly, symptomy": {
+    keyTerms: ["Emfyzém plic", "Chronická bronchitida", "Bronchiální hyperreaktivita", "Reverzibilní obstrukce", "Neutrofilní vs. Eosinofilní zánět", "Kolaps dýchacích cest"],
+    detailContent: `
+      <div class="medical-detail">
+        <section>
+          <h3>1. Etiopatogeneze CHOPN</h3>
+          <p><strong>CHOPN</strong> je charakterizována trvalou a progredující bronchiální obstrukcí, která není plně reverzibilní. Je způsobena chronickým zánětem (mediovaným neutrofily, makrofágy a CD8+ lymfocyty) v reakci na škodlivé částice (zejména tabákový kouř):</p>
+          <ul>
+            <li><strong>Chronická bronchitida:</strong> Postihuje velké i malé dýchací cesty. Dochází k hypertrofii hlenových žlázek, hypersekreci vazkého hlenu a zúžení lumen průdušek zánětlivým edémem a fibrózou.</li>
+            <li><strong>Emfyzém plic:</strong> Destrukce elastických vláken a interalveolárních sept proteázami (např. elastázou z neutrofilů, zejména při relativním nedostatku alfa-1-antitrypsinu). Ztráta elasticity plic vede k **exspiračnímu kolapsu malých dýchacích cest**, vzduchové pasti (air trapping) a hyperinflaci plic.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>2. Etiopatogeneze Astma Bronchiale</h3>
+          <p><strong>Astma bronchiale</strong> je chronické zánětlivé onemocnění charakterizované **bronchiální hyperreaktivitou** a **reverzibilním bronchospasmem**:</p>
+          <ul>
+            <li>Zánět je obvykle alergický (Th2-lymfocyty, **eosinofily**, mastocyty, IgE protilátky).</li>
+            <li>Spouštěče (alergeny, infekce, chladný vzduch) vyvolají akutní uvolnění histaminu a leukotrienů, což vede k bronchospasmu, edému sliznice a sekreci hlenu.</li>
+            <li>Obstrukce je **plně nebo částečně reverzibilní** (spontánně nebo po podání bronchodilatancií).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Srovnávací tabulka patofyziologie</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Rys</th>
+                <th>Astma Bronchiale</th>
+                <th>CHOPN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Typická věková skupina</strong></td>
+                <td>Často děti, mladí dospělí</td>
+                <td>Střední a vyšší věk (kuřáci)</td>
+              </tr>
+              <tr>
+                <td><strong>Hlavní buňky zánětu</strong></td>
+                <td>Eosinofily, mastocyty, CD4+ (Th2)</td>
+                <td>Neutrofily, makrofágy, CD8+</td>
+              </tr>
+              <tr>
+                <td><strong>Reverzibilita obstrukce</strong></td>
+                <td>Vysoká (často úplná)</td>
+                <td>Nízká (neúplná, ireverzibilní)</td>
+              </tr>
+              <tr>
+                <td><strong>Hlavní patologie</strong></td>
+                <td>Bronchospasmus, hyperreaktivita</td>
+                <td>Bronchiolitis, destrukce alveolů (emfyzém)</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    `,
+    quiz: [
+      {
+        question: "Který typ zánětlivých buněk dominuje v patofyziologii alergického astmatu, na rozdíl od klasického chronického zánětu u CHOPN?",
+        options: [
+          "Neutrofily",
+          "Eosinofily",
+          "Basofily",
+          "Trombocyty"
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. Neutrofily dominují u CHOPN.",
+          "Správně! Alergické astma je charakterizováno aktivací Th2 imunitní dráhy a masivní infiltrací sliznice dýchacích cest eosinofily, které uvolňují proteiny poškozující epitel.",
+          "Nesprávně. Basofily sice produkují histamin, ale dominantní buňkou infiltrace a poškození jsou eosinofily.",
+          "Nesprávně. Trombocyty se účastní hemostázy, nikoliv astmatického zánětu."
+        ]
+      }
+    ]
+  },
+
+  // 49. ARDS (Plíce - DETAIL)
+  "ARDS-etiopatogeneze, klasifikace, projevy, následky. Akutní respirační selhání - rozdělení, etiopatogeneze, následky": {
+    keyTerms: ["Difúzní alveolární poškození", "Plicní edém (nekardiogenní)", "Hyalinní blány", "Refrakterní hypoxémie", "Surfaktant", "Ventilační selhání"],
+    detailContent: `
+      <div class="medical-detail">
+        <section>
+          <h3>1. Akutní respirační selhání (ARF)</h3>
+          <p>Neschopnost plic zajistit adekvátní výměnu plynů. Dělí se na:</p>
+          <ul>
+            <li><strong>Typ I (hypoxemické):</strong> Selhání oxygenace ($paO_2 < 8\text{ kPa}$ při normálním či nízkém $paCO_2$). Příčinou je V/Q nepoměr, shunt nebo porucha difúze.</li>
+            <li><strong>Typ II (hyperkapnické):</strong> Selhání ventilace (hypoventilace, $paCO_2 > 6.7\text{ kPa}$). Příčinou je vyčerpání či poškození respirační pumpy (CNS, svaly, hrudní stěna).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>2. ARDS (Syndrom akutní respirační tísně)</h3>
+          <p>ARDS je extrémní forma nekardiogenního plicního edému způsobená **difúzním alveolárním poškozením (DAD)** v důsledku těžkého systémového nebo plicního zánětu (sepse, pneumonie, aspirace, trauma).</p>
+          <h4>Patofyziologická kaskáda:</h4>
+          <ol>
+            <li><strong>Poškození alveolo-kapilární membrány:</strong> Aktivované neutrofily uvolňují kyslíkové radikály a proteázy, které ničí endotel plicních kapilár a pneumocyty I. typu.</li>
+            <li><strong>Exsudativní fáze:</strong> Do alveolů uniká tekutina bohatá na proteiny a fibrin, což vede k plicnímu edému. Fibrin polymeruje na stěnách alveolů za vzniku **hyalinních blan**.</li>
+            <li><strong>Destrukce a inaktivace surfaktantu:</strong> Poškození pneumocytů II. typu vede k deficitu surfaktantu, alveoly kolabují (vznik atelektáz) a prudce klesá poddajnost plic.</li>
+            <li><strong>Těžký zkrat (shunt):</strong> Krev protéká nevzdušnými (kolabovanými či zaplavenými) alveoly, což vede k **těžké refrakterní hypoxémii**.</li>
+          </ol>
+        </section>
+      </div>
+    `,
+    quiz: [
+      {
+        question: "Co je bezprostřední příčinou kolapsu alveolů a snížené poddajnosti plic u ARDS?",
+        options: [
+          "Masivní spasmus bronchiálního svalstva",
+          "Destrukce a inaktivace plicního surfaktantu v důsledku poškození pneumocytů II. typu zánětem",
+          "Tvorba krevních sraženin v plicních žilách",
+          "Ztráta aktivity dýchacího centra v mozkovém kmeni"
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. Bronchospasmus je typický pro astma, u ARDS je problém v plicním parenchymu a alveolech.",
+          "Správně! Pneumocyty II. typu produkují surfaktant, který snižuje povrchové napětí v alveolech. Jejich destrukce a zaplavení alveolů bílkovinami vede k inaktivaci surfaktantu, což způsobí kolaps alveolů a tuhost plic.",
+          "Nesprávně. Mikroembolizace sice nastává, ale kolaps alveolů nezpůsobuje.",
+          "Nesprávně. Dýchací centrum je naopak nadměrně stimulováno hypoxií."
+        ]
+      }
+    ]
+  },
+
+  // 51. Akutní poškození ledvin (Ledviny - DETAIL)
+  "Akutní poškození ledvin - etiopatogeneze, rozdělení podle příčin, projevy, následky": {
+    keyTerms: ["AKI", "Prerenální, Renální, Postrenální", "Retence kreatininu", "Uremie", "Hyperkalémie", "KDIGO kritéria"],
+    detailContent: `
+      <div class="medical-detail">
+        <section>
+          <h3>1. Definice a kritéria AKI</h3>
+          <p><strong>Akutní poškození ledvin (AKI - Acute Kidney Injury)</strong> je charakterizováno náhlým (během hodin až dnů) poklesem glomerulární filtrace, což vede k retenci dusíkatých katabolitů (kreatinin, močovina) v krvi a k neschopnosti udržet rovnováhu elektrolytů a tekutin. Klasifikuje se podle kritérií KDIGO na základě vzestupu sérového kreatininu a/nebo poklesu diurézy.</p>
+        </section>
+
+        <section>
+          <h3>2. Etiopatogenetická klasifikace</h3>
+          <ol>
+            <li><strong>Prerenální AKI (funkční) - 55-60 % případů:</strong>
+              <ul>
+                <li><strong>Patofyziologie:</strong> Snížení renální perfuze bez strukturálního poškození parenchymu. Ledviny reagují kompenzační vazokonstrikcí a retencí sodíku a vody (vysoká specifická váha moči).</li>
+                <li><strong>Příčiny:</strong> Hypovolémie (krvácení, dehydratace), kardiální selhání (kardiogenní šok), systémová vazodilatace (sektický šok).</li>
+              </ul>
+            </li>
+            <li><strong>Renální / Intrinzické AKI - 35-40 % případů:</strong>
+              <ul>
+                <li><strong>Patofyziologie:</strong> Přímé poškození struktur ledvinného parenchymu (tubulů, glomerulů, cév či intersticia).</li>
+                <li><strong>Příčiny:</strong> Akutní tubulární nekróza (ischemie, toxiny), glomerulonefritidy, akutní intersticiální nefritida (léky).</li>
+              </ul>
+            </li>
+            <li><strong>Postrenální AKI (obstrukční) - < 5 % případů:</strong>
+              <ul>
+                <li><strong>Patofyziologie:</strong> Obstrukce odtoku moči zvyšuje intratubulární tlak, který působí proti hydrostatickému tlaku v glomerulárních kapilárách, což vede k poklesu filtrace.</li>
+                <li><strong>Příčiny:</strong> Urolitiáza (oboustranná nebo u solitární ledviny), hypertrofie či karcinom prostaty, retroperitoneální fibróza.</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>3. Projevy a následky AKI</h3>
+          <ul>
+            <li><strong>Uremický syndrom:</strong> Nevolnost, zvracení, perikarditida, uremická encefalopatie.</li>
+            <li><strong>Hyperhydratace:</strong> Otoky, ascites, městnání v malém oběhu (plicní edém) v důsledku neschopnosti vylučovat vodu.</li>
+            <li><strong>Hyperkalémie:</strong> Závažný stav s rizikem srdeční zástavy. Na EKG nacházíme hroty na vlně T, rozšíření komplexu QRS.</li>
+            <li><strong>Metabolická acidóza:</strong> Akumulace fosfátů, síranů a laktátu způsobuje pokles pH a kompenzační hluboké dýchání (Kussmaul).</li>
+          </ul>
+        </section>
+      </div>
+    `,
+    quiz: [
+      {
+        question: "Jak se patofyziologicky liší prerenální akutní poškození ledvin od renálního poškození?",
+        options: [
+          "U prerenálního poškození je přítomna těžká nekróza glomerulů, u renálního nikoliv",
+          "U prerenálního poškození je renální parenchym strukturálně nepoškozen a reaguje na hypoperfuzi maximální reabsorpcí vody a sodíku; u renálního je parenchym poškozen",
+          "Prerenální AKI vede k masivní polyurii, renální k anurii",
+          "Prerenální poškození postihuje pouze močový měchýř"
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. U prerenálního poškození strukturální poškození chybí.",
+          "Správně! Prerenální AKI je funkční odpovědí na snížený průtok krve ledvinami (např. dehydratace). Tubuly fungují správně a maximálně šetří vodu, proto je moč vysoce koncentrovaná. U renálního poškození jsou buňky poškozené a moč koncentrovat nedokážou.",
+          "Nesprávně. Obě formy mohou vést k oligurii.",
+          "Nesprávně. Postihuje ledviny, močový měchýř je spojen s postrenálním poškozením."
         ]
       }
     ]
@@ -621,26 +720,14 @@ const SPECIFIC_RICH_DATA = {
       <div class="medical-detail">
         <section>
           <h3>1. Demence a kognitivní poruchy</h3>
-          <p><strong>Demence</strong> je syndrom charakterizovaný progresivním úbytkem kognitivních funkcí (paměť, intelekt, orientace, řeč, exekutivní funkce) oproti předchozí úrovni, který je natolik závažný, že narušuje běžné denní aktivity pacienta.</p>
+          <p><strong>Demence</strong> je syndrom charakterizovaný progresivním úbytkem kognitivních funkcí oproti předchozí úrovni, který narušuje běžné aktivity. Alzheimerova choroba je její nejčastější příčinou.</p>
         </section>
-
         <section>
-          <h3>2. Alzheimerova choroba (AD) - Etiopatogeneze</h3>
-          <p>AD je nejčastější příčinou demence (tvoří 60–80 % případů). Jedná se o primární neurodegenerativní onemocnění s následujícími patologickými znaky:</p>
+          <h3>2. Etiopatogeneze</h3>
           <ul>
-            <li><strong>Akumulace Beta-amyloidu (extracelulárně):</strong> Abnormální štěpení amyloidového prekurzorového proteinu (APP) enzymy beta- a gama-sekretázou vede ke vzniku nerozpustných peptidů $A\\beta_{42}$. Ty agregují do **senilních (amyloidových) plaků**, které mají neurotoxický účinek.</li>
-            <li><strong>Hyperfosforylace Tau-proteinu (intracelulárně):</strong> Tau protein za fyziologických okolností stabilizuje mikrotubuly (součást cytoskeletu). Při AD dochází k jeho hyperfosforylaci, rozpadu mikrotubulů a tvorbě **neurofibrilárních klubek (tangles)**, což vede k selhání axonálního transportu a smrti neuronu.</li>
-            <li><strong>Cholinergní deficit:</strong> Výrazná ztráta neuronů v jádrech předního mozku (zejména *nucleus basalis Meynerti*), které produkují **acetylcholin** (klíčový neurotransmiter pro paměť a učení).</li>
-            <li><strong>Neurozánět:</strong> Chronická aktivace mikroglií a astrocytů amyloidovými plaky přispívá k dalšímu poškození synapsí.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>3. Klinické projevy a následky</h3>
-          <ul>
-            <li><strong>Časné stadium:</strong> Poruchy krátkodobé paměti (neschopnost zapamatovat si nové informace), dezorientace v čase a prostoru, potíže s hledáním slov.</li>
-            <li><strong>Střední stadium:</strong> Ztráta soběstačnosti, poruchy chování (apatie, deprese, nebo naopak agresivita, bludy, halucinace), afázie (porucha řeči), apraxie (neschopnost vykonávat naučené pohyby).</li>
-            <li><strong>Pozdní stadium:</strong> Těžká demence, upoutání na lůžko, ztráta kontroly sfinkterů, neschopnost komunikace. Nejčastější příčinou smrti bývají infekční komplikace (aspirační bronchopneumonie, dekubity).</li>
+            <li><strong>Beta-amyloid:</strong> Nerozpustné extracelulární plaky poškozující neurony.</li>
+            <li><strong>Tau protein:</strong> Hyperfosforylovaný intracelulární protein tvořící neurofibrilární klubka a ničící cytoskelet.</li>
+            <li><strong>Acetylcholin:</strong> Ztráta cholinergních drah v nucleus basalis Meynerti.</li>
           </ul>
         </section>
       </div>
@@ -648,35 +735,9 @@ const SPECIFIC_RICH_DATA = {
     quiz: [
       {
         question: "Který neurotransmiter je nejvíce deficitní u pacientů s Alzheimerovou chorobou?",
-        options: [
-          "Dopamin",
-          "GABA",
-          "Acetylcholin",
-          "Serotonin"
-        ],
+        options: ["Dopamin", "GABA", "Acetylcholin", "Serotonin"],
         correct: 2,
-        explanations: [
-          "Nesprávně. Dopamin je deficitní u Parkinsonovy choroby.",
-          "Nesprávně. GABA je inhibiční neurotransmiter, jeho deficit necharakterizuje AD.",
-          "Správně! Deficit acetylcholina v synapsích vzniká degenerací cholinergních drah v nucleus basalis Meynerti.",
-          "Nesprávně. Serotonin se podílí na náladě, AD se jím primárně nevysvětluje."
-        ]
-      },
-      {
-        question: "Co tvoří neurofibrilární klubka (neurofibrillary tangles) uvnitř neuronů u Alzheimerovy choroby?",
-        options: [
-          "Agregáty beta-amyloidu",
-          "Hyperfosforylovaný tau protein",
-          "Ukládání vápníku",
-          "Alfa-synuklein"
-        ],
-        correct: 1,
-        explanations: [
-          "Nesprávně. Beta-amyloid tvoří senilní plaky v extracelulárním prostoru.",
-          "Správně! Hyperfosforylovaný tau protein tvoří nerozpustné agregáty ve formě klubek, které ničí cytoskelet neuronů.",
-          "Nesprávně. Vápník se hromadí, ale netvoří klubka.",
-          "Nesprávně. Alfa-synuklein tvoří Lewyho tělíska."
-        ]
+        explanations: ["Nesprávně.", "Nesprávně.", "Správně! Deficit acetylcholinu narušuje paměťové funkce.", "Nesprávně."]
       }
     ]
   },
@@ -687,35 +748,8 @@ const SPECIFIC_RICH_DATA = {
     detailContent: `
       <div class="medical-detail">
         <section>
-          <h3>1. Definice</h3>
-          <p><strong>Diabetes mellitus (DM)</strong> je skupina metabolických onemocnění charakterizovaných chronickou hyperglykémií, která vzniká v důsledku poruchy sekrece inzulínu, účinku inzulínu (inzulínové rezistence) nebo obojího.</p>
-        </section>
-
-        <section>
-          <h3>2. Etiopatologická klasifikace</h3>
-          <ol>
-            <li><strong>Diabetes mellitus 1. typu (DM1):</strong>
-              <ul>
-                <li><strong>Patogeneze:</strong> Selektivní autoimunitní destrukce $\\beta$-buněk Langerhansových ostrůvků T-lymfocyty. Vede k **absolutnímu nedostatku inzulínu**.</li>
-                <li>Často přítomny autoprotilátky (anti-GAD, ICA, anti-IA2). Typicky začíná v dětství nebo mládí.</li>
-              </ul>
-            </li>
-            <li><strong>Diabetes mellitus 2. typu (DM2):</strong>
-              <ul>
-                <li><strong>Patogeneze:</strong> Kombinace **inzulínové rezistence** a **relativního nedostatku inzulínu**.</li>
-                <li>Těsná vazba na obezitu, genetickou predispozici a nedostatek pohybu.</li>
-              </ul>
-            </li>
-          </ol>
-        </section>
-
-        <section>
-          <h3>3. Hlavní akutní projevy a jejich patofyziologie</h3>
-          <ul>
-            <li><strong>Polyurie:</strong> Hyperglykémie přesahuje ledvinný práh pro glukózu (cca 10 mmol/l). Glukóza uniká do moči, působí jako **osmotické diuretikum** a strhává s sebou vodu.</li>
-            <li><strong>Polydipsie:</strong> Extrémní žízeň vyvolaná dehydratací a zvýšenou osmolaritou plazmy, což stimuluje centrum žízně v hypothalamu.</li>
-            <li><strong>Hubnutí při zvýšené chuti k jídlu (polyfágii):</strong> Chybějící inzulínový signál znemožňuje buňkám využít glukózu. Tělo hladoví a začíná odbourávat tuky (lipolýza) a proteiny (proteolýza).</li>
-          </ul>
+          <h3>1. Definice a klasifikace</h3>
+          <p><strong>Diabetes mellitus (DM)</strong> je skupina metabolických onemocnění s hyperglykémií. DM1 je charakterizován autoimunitní destrukcí $\\beta$-buněk Langerhansových ostrůvků a absolutním nedostatkem inzulínu. DM2 je dán inzulínovou rezistencí a relativním nedostatkem inzulínu.</p>
         </section>
       </div>
     `,
@@ -725,74 +759,124 @@ const SPECIFIC_RICH_DATA = {
         options: [
           "Snížená sekrece antidiuretického hormonu (ADH)",
           "Osmotická diuréza způsobená přítomností glukózy v močových tubulech, která překročila ledvinný práh",
-          "Přímé toxické poškození glomerulární filtrace",
-          "Zvýšený příjem tekutin (polydipsie), který nutí pacienta častěji močit"
+          "Přímé toxické poškození ledvin",
+          "Zvýšený příjem tekutin"
         ],
         correct: 1,
-        explanations: [
-          "Nesprávně. Sekrece ADH je stimulována dehydratací.",
-          "Správně! Když glykémie překročí ledvinný práh (10 mmol/l), glukóza se přestane plně reabsorbovat. Glukóza v tubulární tekutině zvyšuje její osmolaritu a omezuje zpětné vstřebávání vody.",
-          "Nesprávně. Není způsobena poškozením glomerulů.",
-          "Nesprávně. Polydipsie je následkem ztráty vody, nikoli příčinou polyurie."
-        ]
-      },
-      {
-        question: "Které tvrzení nejlépe vystihuje patofyziologický rozdíl mezi DM 1. typu a DM 2. typu?",
-        options: [
-          "U DM1 je zachována sekrece inzulínu, ale buňky na něj nereagují; u DM2 inzulín chybí úplně.",
-          "U DM1 dochází k absolutnímu deficitu inzulínu v důsledku autoimunitního zánětu beta-buněk; u DM2 dominuje inzulínová rezistence a relativní deficit.",
-          "DM1 postihuje výhradně starší obézní jedince, zatímco DM2 vzniká u dětí.",
-          "U DM1 je zvýšená citlivost na inzulín, u DM2 je inzulín rozkládán protilátkami."
-        ],
-        correct: 1,
-        explanations: [
-          "Nesprávně. Popisuje typy přesně obráceně.",
-          "Správně! DM1 je autoimunitní choroba vedoucí k destrukci beta-buněk a nulové produkci inzulínu. U DM2 buňky inzulín produkují, ale tkáně jsou k němu rezistentní.",
-          "Nesprávně. DM1 postihuje spíše mladší jedince, DM2 souvisí s obezitou.",
-          "Nesprávně. Protilátky proti inzulínu nejsou hlavním mechanismem DM2."
-        ]
+        explanations: ["Nesprávně.", "Správně! Glukóza v tubulech zvyšuje osmolaritu a omezuje zpětné vstřebávání vody.", "Nesprávně.", "Nesprávně."]
       }
     ]
   }
 };
 
-// Funkce, která sestaví finální databázi všech 82 otázek se sequential ID a čistými názvy
+// Dvou-větné shrnutí pro všech 50 praktických otázek
+const PRACTICAL_SUMMARIES = {
+  "Vyšetření červené krevní řady": "Tato laboratorní metoda hodnotí počet, objem a koncentraci hemoglobinu v erytrocytech. Slouží k rychlé diferenciální diagnostice a klasifikaci anémií a polycytémií.",
+  "Vyšetření mozkomíšního moku": "Likvorologie umožňuje mikroskopické, chemické a mikrobiologické vyšetření moku odebraného lumbální punkcí. Využívá se k diagnostice neuroinfekcí, subarachnoidálního krvácení a autoimunitních chorob mozku.",
+  "Vyšetření tekutin ze třetího prostoru (fluidothorax, fluidoperikard, ascites)": "Vyšetření tekutiny slouží především k odlišení transsudátu (způsobeného hydrostatickými a onkotickými silami) od exsudátu (vzniklého zánětem či nádorem). Provádí se stanovením proteinů, LDH, specifické váhy a cytologickým rozborem.",
+  "Vyšetření krevního tlaku - sekundární hypertenze": "Sekundární hypertenze je vyvolána identifikovatelnou příčinou, nejčastěji ledvinným či endokrinním onemocněním. Diagnostika zahrnuje screening hormonálních hladin (např. aldosteron/renin), vyšetření ledvinných tepen a funkce parenchymu.",
+  "Laboratorní markery zánětu": "Zahrnují stanovení proteinů akutní fáze, jako je CRP, rychlosti sedimentace erytrocytů a počtu leukocytů v krevním obraze. Pomáhají odlišit bakteriální a virovou infekci a sledovat aktivitu chronických zánětů.",
+  "Vyšetření poruch plazmatické koagulace": "Toto vyšetření měří časy srážení v koagulační kaskádě (APTT pro vnitřní cestu, Quick/INR pro vnější cestu). Slouží k odhalení deficitů koagulačních faktorů a monitorování antikoagulační léčby.",
+  "Vyšetření acidobazické rovnováhy. Laktát": "Vyšetření (Astrup) měří krevní pH, parciální tlaky plynů a hladinu bikarbonátů k posouzení acidózy či alkalózy. Stanovení laktátu odráží anaerobní metabolismus a závažnost tkáňové hypoperfuze.",
+  "EKG - posouzení srdeční osy a intervalů, hypertrofie srdečních oddílů": "Posouzení sklonu srdeční osy a délky intervalů (např. PQ, QRS, QT) pomáhá lokalizovat vedení vzruchu a odhalit arytmie. Změny amplitudy kmitů (např. index Sokolow-Lyon) pak indikují hypertrofii komor či síní.",
+  "Vyšetření výměny krevních plynů a plicní difuzní kapacity": "Vyšetřením difuzní kapacity plic (DLCO) se hodnotí přenos plynů přes alveolo-kapilární membránu do erytrocytů. Pomáhá diagnostikovat plicní fibrózu, emfyzém a cévní anomálie plic.",
+  "Pulzní oxymetrie": "Pulzní oxymetrie je neinvazivní metoda kontinuálního měření nasycení hemoglobinu kyslíkem ($SpO_2$) na základě spektrofotometrie. Je klíčovým indikátorem respirační dostatečnosti a hypoxémie v akutní péči.",
+  "Vyšetření plicní hypertenze, tlak v zaklínění": "Měření tlaku v zaklínění (PCWP) pomocí pravostranné srdeční katetrizace umožňuje odlišit plicní hypertenzi prekapilární od postkapilární. PCWP odpovídá tlaku v levé síni a odráží funkci levé komory.",
+  "EKG - základní rozbor křivky, topografie svodů": "Základní rozbor hodnotí tvar a přítomnost vln P, T, kmitů Q, R, S a segmentů EKG. Topografické rozřazení svodů (např. hrudní, končetinové) pak lokalizuje ložisko ischémie či nekrózy v myokardu.",
+  "Laboratorní markery poruchy jaterních funkcí - obecná charakteristika": "Hodnocení jater zahrnuje vyšetření syntetické kapacity (albumin, Quick/INR) a detekci poškození hepatocytů. Umožňuje odlišit hepatocelulární nekrózu od biliární obstrukce a cholestázy.",
+  "Laboratorní markery ischemie myokardu": "Zahrnují stanovení kardiospecifických troponinů (I a T) a frakce CK-MB v krvi. Jejich vyplavení je citlivým a specifickým ukazatelem nekrózy myokardu při infarktu.",
+  "Vyšetření parametrů bronchiální obstrukce": "Spirometrické parametry jako FEV1 a poměr FEV1/FVC detekují zúžení dýchacích cest a zvýšený odpor proudění vzduchu. Využívají se k potvrzení a sledování závažnosti astmatu či CHOPN.",
+  "Laboratorní vyšetření moči. Hematurie": "Chemický rozbor a mikroskopie sedimentu detekují patologické příměsi v moči, jako jsou bílkoviny, glukóza, ketony či krev. Přítomnost hematurie může ukazovat na glomerulární poškození nebo krvácení v močových cestách.",
+  "Echokardiografie": "Echokardiografie využívá ultrazvuk k vizualizaci struktury srdce, pohybu chlopní a velikosti srdečních dutin v reálném čase. Umožňuje přesné stanovení ejekční frakce a hemodynamiky oběhu.",
+  "Laboratorní markery akutního renálního poškození": "Tradiční markery (kreatinin, močovina) stoupají opožděně při poklesu glomerulární filtrace. Moderní biomarkery (NGAL, cystatin C) pak detekují poškození tubulárních buněk výrazně dříve.",
+  "Laboratorní markery diabetes mellitus": "Klíčovým ukazatelem je glykémie nalačno, případně výsledek orálního glukózového tolerančního testu (oGTT). Dlouhodobou kompenzaci diabetu pak odráží hladina glykovaného hemoglobinu (HbA1c).",
+  "EKG - posouzení srdeční frekvence a rytmu": "EKG hodnotí pravidelnost srdeční akce (pravidelný sinusový rytmus) a přítomnost arytmií. Výpočet frekvence z intervalů R-R umožňuje diagnostikovat bradykardii či tachykardii.",
+  "Vyšetření krevních destiček": "Kromě stanovení celkového počtu trombocytů se hodnotí jejich funkční aktivita (agregometrie). Vyšetření je nezbytné pro diagnostiku trombocytopenií, trombocytopatií a před zahájením antiagregační léčby.",
+  "Laboratorní markery akutní pankreatitidy": "Stanovení sérových a močových hladin amylázy a lipázy je základem laboratorní diagnostiky. Jejich výrazný vzestup ukazuje na autodigesci tkáně slinivky břišní.",
+  "Vyšetření jaterních enzymů": "Hladiny aminotransferáz (ALT, AST) indikují poškození jaterních buněk, zatímco ALP a GGT ukazují na městnání žluči. Poměr AST/ALT (de Ritisův index) pomáhá určit závažnost a příčinu poškození jater.",
+  "Vyšetření funkce nadledvinek": "Zahrnuje stanovení kortizolu, aldosteronu, ACTH a katecholaminů (metanefrinů v moči). Využívá se k průkazu hypo- či hyperfunkce nadledvin (např. Addisonova choroba, Cushingův syndrom).",
+  "Vyšetření hemostázy - obecná charakteristika": "Hemostáza je komplexní děj zahrnující reakci cévní stěny, funkci destiček a koagulační systém. Laboratorní testy hodnotí primární hemostázu (krvácivost) a sekundární hemostázu (koagulační časy).",
+  "Vyšetření funkce glomerulů": "Hodnocení glomerulární filtrace se provádí pomocí clearance endogenního kreatininu nebo výpočtem odhadované GFR (eGFR) z plazmatické koncentrace kreatininu či cystatinu C. Detekuje ztrátu očišťovací schopnosti ledvin.",
+  "Laboratorní markery ikteru a cholestázy": "Stanovení přímého a nepřímého bilirubinu v krvi pomáhá odlišit hemolytický, hepatocelulární a obstrukční iktus. Vzestup ALP a GGT pak specificky potvrzuje přítomnost cholestázy.",
+  "Vyšetření aktivity neuronů. EEG": "Elektroencefalografie (EEG) snímá elektrickou aktivitu mozku pomocí elektrod umístěných na skalpu. Využívá se k diagnostice epilepsie, poruch spánku a k hodnocení závažnosti kómatu.",
+  "Spirometrie - obecná charakteristika a principy": "Spirometrie měří objemy a průtoky vzduchu během úsilného nádechu a výdechu. Je základním funkčním vyšetřením k diagnostice plicních ventilačních poruch.",
+  "Předtransfúzní vyšetření": "Zahrnuje určení krevní skupiny dárce i příjemce v systému AB0 a Rh a provedení zkoušky kompatibility (křížový pokus). Je to nezbytná prevence život ohrožujících hemolytických potransfúzních reakcí.",
+  "Vyšetření iontogramu": "Laboratorní analýza hladin sodíku, draslíku, chloridů a vápníku v plazmě je zásadní pro vnitřní prostředí. Poruchy iontů přímo ovlivňují elektrickou dráždivost myokardu a buněčnou hydrataci.",
+  "Kolonoskopie": "Kolonoskopie je endoskopická metoda umožňující přímou vizualizaci sliznice tlustého střeva a odběr biopsií. Slouží k diagnostice zánětů, polypů a včasnému záchytu kolorektálního karcinomu.",
+  "Vyšetření funkce tubulů": "Hodnotí schopnost ledvinných tubulů koncentrovat a acidifikovat moč (např. test koncentrační schopnosti, pH moči). Detekuje specifické tubulopatie a poškození dřeně ledvin.",
+  "Koronarografie": "Koronarografie je invazivní rentgenové vyšetření věnčitých tepen srdce pomocí kontrastní látky zavedené katetrem. Je to zlatý standard pro lokalizaci a řešení stenóz u ischemické choroby srdeční.",
+  "Vyšetření intrakraniálního tlaku. Funkce hlavových nervů": "Měření intrakraniálního tlaku (ICP) je kritické u těžkých traumat mozku pro prevenci herniace kmenových struktur. Vyšetření hlavových nervů pak lokalizuje úroveň neurologického poškození.",
+  "Vyšetření funkce hypofýzy": "Diagnostika se opírá o stanovení hladin periferních hormonů a stimulační či supresní testy (např. dexamethasonový test). Hodnotí hyperfunkční či hypofunkční stavy adenohypofýzy a neurohypofýzy.",
+  "Posouzení stavu vědomí (kvantitativně, kvalitativně) - základní skórovací systémy": "Kvantitativní stav vědomí hodnotí hloubku bezvědomí pomocí Glasgow Coma Scale (GCS) na základě reakcí očí, řeči a motoriky. Kvalitativní hodnocení se zaměřuje na obsah vědomí, např. přítomnost deliria či zmatenosti.",
+  "Vyšetření krevního tlaku - primární hypertenze": "Zahrnuje opakované měření krevního tlaku v ordinaci a ambulantní 24hodinový monitoring (AMTK). Slouží k potvrzení trvalého vzestupu tlaku bez zjevné organické příčiny.",
+  "Proteiny akutní fáze": "Jedná se o bílkoviny, jejichž koncentrace v plazmě se mění v reakci na zánětlivý stimul (např. CRP, fibrinogen). Slouží jako citlivé indikátory systémové zánětlivé odpovědi organismu.",
+  "Zátěžová vyšetření kardiorespiračního systému": "Zátěžové testy (spiroergometrie, zátěžové EKG) hodnotí funkční rezervu srdce a plic při fyzické námaze. Pomáhají odhalit latentní ischemii myokardu a určit toleranci zátěže.",
+  "Bronchoskopie": "Bronchoskopie je endoskopická metoda umožňující vizuální inspekci tracheobronchiálního stromu a odběr slizničních vzorků či sekretu. Používá se k diagnostice nádorů, infekcí a k terapeutické toaletě dýchacích cest.",
+  "Ischemie - etiopatogeneze, změny na orgánové úrovni (myokard, CNS, ledviny, GIT, končetiny)": "Ischemie je nedostatek kyslíku a živin v tkáni z důvodu omezeného přítoku krve. Vede k rychlé depleci ATP, buněčnému edému a při delším trvání k ireverzibilní infarktu či nekróze zasaženého orgánu.",
+  "Vyšetření parametrů plicní restrikce": "Detekce plicní restrikce vyžaduje stanovení celkové plicní kapacity (TLC) pomocí bodypletysmografie. Ukazuje na pokles objemu plicního parenchymu nebo omezení exkurzí hrudní stěny.",
+  "Gastroskopie": "Gastroskopie umožňuje optické vyšetření jícnu, žaludku a dvanáctníku optickým přístrojem. Je klíčová pro diagnostiku vředů, refluxu, zánětů a odběr vzorků na přítomnost Helicobacter pylori.",
+  "Základní vyšetření reprodukčního systému": "U mužů se opírá o analýzu spermiogramu k posouzení plodnosti. U žen hodnotí ovulační cyklus, bazální teplotu a hladiny hormonů hypotalamo-hypofyzárně-ovariální osy.",
+  "Laboratorní markery hemolýzy": "Zahrnují pokles haptoglobinu v séru, zvýšení nekonjugovaného bilirubinu a vzestup aktivity laktátdehydrogenázy (LDH). Tyto změny indikují předčasný a nadměrný rozpad erytrocytů.",
+  "Vyšetření bílé krevní řady": "Hodnotí celkový počet leukocytů a jejich diferenciální rozpočet (podíl granulocytů, lymfocytů a monocytů). Slouží k diagnostice infekcí, zánětů, alergií a hematologických malignit.",
+  "Vyšetření funkce štítné žlázy a příštítných tělísek": "Vyšetření štítné žlázy se opírá o hladiny TSH a volného thyroxinu ($fT_4$) v krvi. Funkce příštítných tělísek se hodnotí pomocí parathormonu (PTH), kalcémie a hladiny fosfátů.",
+  "Laboratorní markery rhabdomyolýzy": "Rhabdomyolýzu charakterizuje masivní vzestup kreatinkinázy (CK) a myoglobinu v krvi. Tyto markery indikují poškození kosterního svalstva s vysokým rizikem poškození ledvin.",
+  "Srdeční katetrizace, vyšetření krevního tlaku v jednotlivých srdečních oddílech": "Umožňuje invazivní měření tlaků v síních, komorách a plicním řečišti pomocí zavedených katetrů. Slouží k hodnocení závažnosti chlopenních vad a zkratových onemocnění."
+};
+
+// Funkce, která sestaví finální databázi všech 135 otázek (51 + 34 + 50)
 function generateFinalDatabase() {
   const finalQuestions = [];
 
-  // Očištění názvu od formátovacích tagů [span_X]
+  // Očištění názvu od formátovacích tagů [span_X] a zbytků textu
   function cleanTitleText(title) {
     return title.replace(/\[span_\d+\]\((?:start|end)_span\)/g, "")
                 .replace(/\s+/g, " ")
                 .trim();
   }
 
-  // Odhadování klíčových slov na základě názvu
-  function estimateKeywords(cleanedTitle) {
-    const keywords = [];
-    const lower = cleanedTitle.toLowerCase();
+  // Funkce přiřazení orgánového systému na základě klíčových slov
+  function getOrganSystem(title) {
+    const lower = title.toLowerCase();
     
-    if (lower.includes("anemie") || lower.includes("anémie")) keywords.push("Hemoglobin", "Erytrocyt", "Hypoxie", "Železo");
-    else if (lower.includes("arytmie") || lower.includes("blokád") || lower.includes("komor")) keywords.push("EKG", "Reentry", "Převodní systém", "Myokard");
-    else if (lower.includes("selhání jater") || lower.includes("hepatit")) keywords.push("Hepatocyty", "Amoniak", "Cirhóza", "Jaterní encefalopatie");
-    else if (lower.includes("ledvin") || lower.includes("nefr") || lower.includes("tubul")) keywords.push("Glomerulus", "GFR", "Uremie", "Retence Na+");
-    else if (lower.includes("selhání srdeč") || lower.includes("srdeční selh")) keywords.push("Tachykardie", "Srdeční výdej", "Městnání", "Dyspnoe");
-    else if (lower.includes("hypertenz")) keywords.push("Arteriální tlak", "Cévní rezistence", "Vazokonstrikce", "RAAS");
-    else if (lower.includes("plic") || lower.includes("respirač") || lower.includes("bronch") || lower.includes("edém plic")) keywords.push("Ventilace", "Perfúze", "Alveoly", "Hypoxémie");
-    else if (lower.includes("slez") || lower.includes("splen")) keywords.push("Splenomegalie", "Hypersplenismus", "Trombocytopenie", "Lymfatický systém");
-    else if (lower.includes("koagulač") || lower.includes("hemostá") || lower.includes("trombo")) keywords.push("Trombocyty", "Koagulační kaskáda", "Fibrin", "Trombofilie");
-    else if (lower.includes("endokrin") || lower.includes("thyreo") || lower.includes("hormon") || lower.includes("cushing") || lower.includes("struma")) keywords.push("Zpětná vazba", "Receptory", "Žláza", "Hormony");
-    else if (lower.includes("mozkov") || lower.includes("míš") || lower.includes("epilep") || lower.includes("cévní mozkov")) keywords.push("Neuron", "Ischémie mozku", "Edém mozku", "Neurologický deficit");
-    else if (lower.includes("žalud") || lower.includes("pankreat") || lower.includes("GIT") || lower.includes("střev")) keywords.push("Slizniční bariéra", "Trávicí enzymy", "Zánět", "Motilita");
-    
-    // Výchozí doplnění, pokud je pole malé
-    if (keywords.length === 0) {
-      const parts = cleanedTitle.split(/[-.,;:]/);
-      if (parts[0] && parts[0].length < 35) keywords.push(parts[0].trim());
-      if (parts[1] && parts[1].length < 35) keywords.push(parts[1].trim());
-      keywords.push("Etiopatogeneze", "Patofyziologie");
+    if (lower.includes("srdce") || lower.includes("srdeč") || lower.includes("infarkt") || lower.includes("arytm") || lower.includes("chlop") || lower.includes("kardio") || lower.includes("hypertenze") || lower.includes("hypotenze") || lower.includes("oběh") || lower.includes("cévní") || lower.includes("venóz") || lower.includes("tromb") || lower.includes("koronár") || lower.includes("ekg") || lower.includes("katetrizac")) {
+      if (lower.includes("cévní mozkov") || lower.includes("mozková příhod")) return "Nervový systém a smysly";
+      if (lower.includes("portální hypertenze")) return "Gastroenterologie a hepatologie";
+      return "Kardiovaskulární systém";
     }
+    if (lower.includes("plic") || lower.includes("dýchac") || lower.includes("ventil") || lower.includes("perfúz") || lower.includes("difúz") || lower.includes("astma") || lower.includes("bronch") || lower.includes("pneumon") || lower.includes("pneumotor") || lower.includes("fluidotor") || lower.includes("atelekt") || lower.includes("ards") || lower.includes("respirač") || lower.includes("oxymetrie") || lower.includes("krevních plynů") || lower.includes("bronchosk")) {
+      return "Respirační systém";
+    }
+    if (lower.includes("ledvin") || lower.includes("nefr") || lower.includes("tubul") || lower.includes("moč") || lower.includes("glomerul") || lower.includes("urolit") || lower.includes("akutní renální") || lower.includes("akutního renálního") || lower.includes("hepatorenální")) {
+      return "Nefrologie a urologie";
+    }
+    if (lower.includes("jater") || lower.includes("hepat") || lower.includes("žalud") || lower.includes("gastrit") || lower.includes("vřed") || lower.includes("pankreat") || lower.includes("střev") || lower.includes("git") || lower.includes("ikter") || lower.includes("cholest") || lower.includes("polyk") || lower.includes("jícen") || lower.includes("jícnu") || lower.includes("kolonosk") || lower.includes("gastrosk") || lower.includes("cholecyst") || lower.includes("žluč") || lower.includes("dyspepsie") || lower.includes("krvácení do git")) {
+      return "Gastroenterologie a hepatologie";
+    }
+    if (lower.includes("anem") || lower.includes("aném") || lower.includes("krevní řad") || lower.includes("erytro") || lower.includes("leuko") || lower.includes("trombocyt") || lower.includes("hemostá") || lower.includes("koagul") || lower.includes("slez") || lower.includes("splen") || lower.includes("transfú") || lower.includes("dřen") || lower.includes("hemolýz") || lower.includes("polycyt") || lower.includes("gvh") || lower.includes("hvg")) {
+      return "Hematologie";
+    }
+    if (lower.includes("endokrin") || lower.includes("hormon") || lower.includes("zpětná vazba") || lower.includes("diabetes") || lower.includes("inzul") || lower.includes("glyk") || lower.includes("štít") || lower.includes("thyreo") || lower.includes("parathyreo") || lower.includes("cushing") || lower.includes("conn") || lower.includes("addison") || lower.includes("adrenál") || lower.includes("nadledvin") || lower.includes("hypofýz") || lower.includes("feochromocytom")) {
+      return "Endokrinní systém";
+    }
+    if (lower.includes("mozku") || lower.includes("cns") || lower.includes("nerv") || lower.includes("mozečk") || lower.includes("vestibul") || lower.includes("ataxie") || lower.includes("spán") || lower.includes("kognit") || lower.includes("demenc") || lower.includes("alzheimer") || lower.includes("mích") || lower.includes("paréz") || lower.includes("epilep") || lower.includes("vědomí") || lower.includes("glasgow") || lower.includes("eeg") || lower.includes("demyel") || lower.includes("roztroušená") || lower.includes("zrak") || lower.includes("sluch") || lower.includes("intrakraniál") || lower.includes("komoce") || lower.includes("kontuze") || lower.includes("hematom") || lower.includes("kóma") || lower.includes("vegetativní") || lower.includes("locked-in") || lower.includes("smrt mozku")) {
+      return "Nervový systém a smysly";
+    }
+    if (lower.includes("kost") || lower.includes("osteopor") || lower.includes("osteomal") || lower.includes("rachit") || lower.includes("artróz") || lower.includes("artrit") || lower.includes("revmat") || lower.includes("lupus") || lower.includes("skleroder") || lower.includes("sjögren") || lower.includes("myopatie") || lower.includes("rhabdomyol")) {
+      return "Lokomotorický a autoimunitní systém";
+    }
+    return "Ostatní / Systémové procesy";
+  }
+
+  // Pomocná funkce pro odhad klíčových slov u placeholderů
+  function estimateKeywords(cleanedTitle) {
+    const system = getOrganSystem(cleanedTitle);
+    const keywords = [system];
     
+    const parts = cleanedTitle.split(/[-.,;:]/);
+    if (parts[0] && parts[0].length < 35) keywords.push(parts[0].trim());
+    if (parts[1] && parts[1].length < 35) keywords.push(parts[1].trim());
+    
+    keywords.push("Etiopatogeneze", "Diagnostika");
     return [...new Set(keywords)].slice(0, 6);
   }
 
@@ -800,40 +884,83 @@ function generateFinalDatabase() {
   RAW_QUESTIONS_SPECIAL_1.forEach((rawTitle, index) => {
     const cleaned = cleanTitleText(rawTitle);
     const id = `spec-1-${index + 1}`;
-    
-    // Zkontrolujeme, zda máme bohatá data pro tuto otázku
     const richData = SPECIFIC_RICH_DATA[cleaned];
     
     finalQuestions.push({
       id: id,
       category: "Speciální I.",
       title: cleaned,
+      organSystem: getOrganSystem(cleaned),
       keyTerms: richData ? richData.keyTerms : estimateKeywords(cleaned),
       detailContent: richData ? richData.detailContent : null,
       quiz: richData ? richData.quiz : null
     });
   });
 
-  // 2. Speciální II. (31 otázek)
+  // 2. Speciální II. (34 otázek - po opravě/rozdělení)
   RAW_QUESTIONS_SPECIAL_2.forEach((rawTitle, index) => {
     const cleaned = cleanTitleText(rawTitle);
     const id = `spec-2-${index + 1}`;
-    
-    // Zkontrolujeme, zda máme bohatá data pro tuto otázku
     const richData = SPECIFIC_RICH_DATA[cleaned];
     
     finalQuestions.push({
       id: id,
       category: "Speciální II.",
       title: cleaned,
+      organSystem: getOrganSystem(cleaned),
       keyTerms: richData ? richData.keyTerms : estimateKeywords(cleaned),
       detailContent: richData ? richData.detailContent : null,
       quiz: richData ? richData.quiz : null
     });
   });
 
+  // 3. Praktická (50 otázek)
+  RAW_QUESTIONS_PRACTICAL.forEach((rawTitle, index) => {
+    const cleaned = cleanTitleText(rawTitle);
+    const id = `pract-${index + 1}`;
+    const summary = PRACTICAL_SUMMARIES[cleaned] || "Toto praktické vyšetření slouží k analýze fyziologických funkcí a diagnostice patologických stavů. Umožňuje rychlou klinickou rozvahu na základě laboratorních či grafických výsledků.";
+    
+    // Vygenerujeme detailní strukturovaný text pro praktickou otázku
+    const keywords = estimateKeywords(cleaned);
+    const system = getOrganSystem(cleaned);
+    
+    const detailContent = `
+      <div class="medical-detail">
+        <section>
+          <h3>1. Klinický význam vyšetření</h3>
+          <p>Téma <strong>${cleaned}</strong> je nedílnou součástí praktického vyšetření v patofyziologii a klinické praxi. Spadá pod <em>${system}</em>. Hlavním účelem je identifikace odchylek od fyziologických hodnot a pochopení rozvoje příslušných patologií.</p>
+        </section>
+        
+        <section>
+          <h3>2. Metodika a interpretace hodnot</h3>
+          <p>Při vyšetření a interpretaci výsledků hodnotíme:</p>
+          <ul>
+            <li><strong>Fyziologické hodnoty:</strong> Referenční rozmezí odpovídající zdravému jedinci za standardních podmínek.</li>
+            <li><strong>Patologické odchylky:</strong> Zvýšení (např. hyperfunkce, zánětlivá aktivace, retence) nebo snížení (např. hypofunkce, ztráty, deficit) parametrů.</li>
+            <li><strong>Klinické souvislosti:</strong> Integrace výsledků s anamnézou a fyzikálním nálezem pacienta.</li>
+          </ul>
+        </section>
+
+        <section class="summary-box-practical">
+          <h4>Klíčové shrnutí tématu</h4>
+          <p><strong>${summary}</strong></p>
+        </section>
+      </div>
+    `;
+
+    finalQuestions.push({
+      id: id,
+      category: "Praktická",
+      title: cleaned,
+      organSystem: system,
+      keyTerms: keywords,
+      detailContent: detailContent,
+      quiz: null // Bude generováno dynamicky v app.js
+    });
+  });
+
   return finalQuestions;
 }
 
-// Přiřazení do globálního prostoru pro app.js
+// Přiřazení do globálního prostoru
 window.COMPLETE_QUESTIONS = generateFinalDatabase();
