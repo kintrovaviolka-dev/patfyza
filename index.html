@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patofyziologie SPA - 3. ročník Všeobecného lékařství</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Havička aplikace -->
+    <header>
+      <div class="brand">
+        <div class="brand-icon">Φ</div>
+        <div class="brand-text">
+          <h1>Patofyziologie</h1>
+          <span>Studijní Portál Všeobecného Lékařství (3. ročník)</span>
+        </div>
+      </div>
+      
+      <div class="controls">
+        <!-- Export / Import Dat -->
+        <button id="export-btn" class="btn btn-secondary" title="Stáhnout poznámky a pokrok jako JSON">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Exportovat
+        </button>
+        <button id="import-btn" class="btn btn-secondary" title="Nahrát poznámky a pokrok z JSON">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+          Importovat
+        </button>
+        <input type="file" id="import-file" style="display: none;" accept=".json">
+        
+        <!-- Přepínač motivu -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Přepnout tmavý/světlý režim">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Dashboard statistik -->
+    <section class="dashboard">
+      <div class="stat-card">
+        <span class="stat-label">Celkem otázek</span>
+        <span class="stat-value" id="stat-total">82</span>
+        <span class="stat-desc">Otázky ve zkouškovém fondu</span>
+      </div>
+      <div class="stat-card stat-mastered">
+        <span class="stat-label">Zvládnuté (Umím)</span>
+        <span class="stat-value" id="stat-mastered">0</span>
+        <span class="stat-desc" id="stat-mastered-pct">0 % z celkového počtu</span>
+      </div>
+      <div class="stat-card stat-learning">
+        <span class="stat-label">Rozpracované (Učím se)</span>
+        <span class="stat-value" id="stat-learning">0</span>
+        <span class="stat-desc" id="stat-learning-pct">0 % z celkového počtu</span>
+      </div>
+      <div class="stat-card stat-quiz">
+        <span class="stat-label">Úspěšnost kvízů</span>
+        <span class="stat-value" id="stat-quiz-score">0 %</span>
+        <span class="stat-desc" id="stat-quiz-count">Zodpovězeno 0 otázek</span>
+      </div>
+    </section>
+
+    <!-- Filtry a Vyhledávání -->
+    <section class="filter-bar">
+      <div class="search-wrapper">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="search-input" class="search-input" placeholder="Vyhledat otázku, klíčová slova nebo ve svých poznámkách...">
+      </div>
+      
+      <div class="filter-groups">
+        <div class="filter-group">
+          <label class="filter-label" for="category-filter">Kategorie:</label>
+          <select id="category-filter" class="select-custom">
+            <option value="all">Všechny kategorie</option>
+            <option value="Speciální I.">Speciální I. (Kardio, Resp, Nefro, Hema)</option>
+            <option value="Speciální II.">Speciální II. (GIT, Endo, Neuro, Loko)</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label class="filter-label" for="status-filter">Stav učení:</label>
+          <select id="status-filter" class="select-custom">
+            <option value="all">Všechny stavy</option>
+            <option value="not-started">Nezačato</option>
+            <option value="learning">Učím se</option>
+            <option value="mastered">Umím</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid kartiček -->
+    <main class="cards-grid" id="cards-grid">
+      <!-- Kartičky se vygenerují dynamicky pomocí JavaScriptu -->
+    </main>
+  </div>
+
+  <!-- Detailní panel (Slide-over / Dialog) -->
+  <dialog id="detail-modal" class="slide-over">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title-area">
+          <span class="modal-category" id="modal-category">SPECIÁLNÍ I.</span>
+          <h2 class="modal-title" id="modal-title">Název otázky</h2>
+        </div>
+        <button class="modal-close-btn" id="modal-close" aria-label="Zavřít panel">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="detail-grid">
+          <!-- Nastavení stavu učení přímo v detailu -->
+          <div class="status-selector">
+            <span class="status-selector-label">Můj pokrok u této otázky:</span>
+            <div class="status-btn-group">
+              <button class="status-btn" data-status="not-started">Nezačato</button>
+              <button class="status-btn" data-status="learning">Učím se</button>
+              <button class="status-btn" data-status="mastered">Umím</button>
+            </div>
+          </div>
+          
+          <!-- Záložky -->
+          <div class="detail-tabs">
+            <button class="tab-btn active" data-tab="panel-study">Výklad & schémata</button>
+            <button class="tab-btn" data-tab="panel-notes">Moje poznámky</button>
+            <button class="tab-btn" data-tab="panel-quiz">Kontrolní kvíz</button>
+          </div>
+
+          <!-- Výklad a schémata -->
+          <div class="tab-panel active" id="panel-study">
+            <div id="study-content">
+              <!-- Zde bude dynamicky načten strukturovaný text -->
+            </div>
+          </div>
+
+          <!-- Moje poznámky (Rich Text Editor) -->
+          <div class="tab-panel" id="panel-notes">
+            <div class="editor-container">
+              <div class="editor-toolbar">
+                <button class="editor-btn" data-command="bold" title="Tučně" style="font-weight: bold;">B</button>
+                <button class="editor-btn" data-command="italic" title="Kurzíva" style="font-style: italic;">I</button>
+                <button class="editor-btn" data-command="underline" title="Podtržené" style="text-decoration: underline;">U</button>
+                <button class="editor-btn" data-command="insertUnorderedList" title="Odrážkový seznam">• List</button>
+                <button class="editor-btn" data-command="hiliteColor" data-value="#fef3c7" title="Zvýraznit žlutě" style="background-color: #fef3c7; color: #000; border: 1px solid #ccc; padding: 2px 6px; font-size: 0.8rem; border-radius: 4px;">Zvýraznit</button>
+                <button class="editor-btn" data-command="removeFormat" title="Vymazat formátování">Smazat formát</button>
+              </div>
+              <div class="editor-content" id="editor-content" contenteditable="true"></div>
+            </div>
+            <div class="editor-actions">
+              <span class="save-status" id="save-status">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Změny automaticky uloženy
+              </span>
+              <button id="save-notes-btn" class="btn btn-primary">Uložit poznámky</button>
+            </div>
+          </div>
+
+          <!-- Kvíz -->
+          <div class="tab-panel" id="panel-quiz">
+            <div class="quiz-section" id="quiz-container">
+              <!-- Kvíz se vygeneruje dynamicky -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Načtení dat a skriptů -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
