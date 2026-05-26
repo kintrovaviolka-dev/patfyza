@@ -5,8 +5,7 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Základní charakteristika plicních onemocnění: obstrukce a restrikce etiopatogeneze",
   "Portální hypertenze - etiopatogeneze, projevy, následky",
   "Trombocytopenie a trombocytopatie - etiopatogeneze, projevy, následky",
-  "Systémová arteriální hypotenze etiopatogeneze a následky",
-  "Regulace funkce endokrinního systému - negativní zpětná vazba, příklady etiopatogeneze poruch endokrinního systému",
+  "Systémová arteriální hypotenze etiopatogeneze and následky",
   "Tachyarytmie: supraventrikulární a ventrikulární - etiopatogeneze, rozdělení, následky. Fibrilace a flutter síní. Extrasytoly. Reentry. Preexcitační syndromy",
   "Pravostranné srdeční selhání - akutní a chronická etiologie, patogeneze, projevy, následky",
   "Srdeční selhání - obecná charakteristika etiopatogeneze, projevy, následky. Systolická a diastolická dysfunkce",
@@ -36,19 +35,19 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Intersticiální plicní nemoci - etiopatogeneze, rozdělení, projevy, následky. Cystická fibróza",
   "Chronické selhání ledvin a terminální fáze ledvinových onemocnění - etiopatogeneze, rozdělení podle příčin, projevy, následky",
   "Chronické respirační selhání - rozdělení, etiopatogeneze, projevy, následky",
-  "Chronická obstrukční plicní nomad (chronická bronchitida a emfyzém plic) a astma bronchiale - etiopatogeneze a rozdíly, symptomy",
+  "Chronická obstrukční plicní nemoc (chronická bronchitida a emfyzém plic) a astma bronchiale - etiopatogeneze a rozdíly, symptomy",
   "Hypokoagulační stavy - etiopatogeneze, projevy, následky",
   "Hyperkoagulační stavy - etiopatogeneze, projevy, následky. Trombofilní stavy",
   "Hlavní vrozené a získané srdeční vady příčiny, projevy, následky, kompenzační mechanismy. Kardiomyopatie - rozdělení, etiopatogeneze, projevy, následky",
   "Hemostáza - základní deskripce poruch primární (cévy a trombocyty), sekundární (koagulační kaskáda) a terciární (trombolýza) hemostázy",
   "Endokarditidy. Myokarditidy. Perikarditidy - etiopatogeneze, projevy, následky. Srdeční tamponáda",
   "Glomerulopatie - etiopatogeneze, projevy, následky",
-  "Demyelinizace etiopatogeneze, projevy následky. Roztroušená mozkomíšní skleróza",
   "Bradyarytmie - etiopatogeneze a následky poruch tvorby a vedení vzruchu. Sinoatriální, atrioventrikulární a raménkové blokády",
   "Anémie ze zvýšených ztrát a snížené produkce erytrocytů - etiopatogeneze, následky",
   "Anemie ze zvýšené konsumpce erytrocytů. Hemolýza - etiopatogeneze, následky",
   "Atelektáza. etiopatogeneze, projevy, následky",
-  "ARDS-etiopatogeneze, klasifikace, projevy, následky. Akutní respirační selhání - rozdělení, etiopatogeneze, následky",
+  "ARDS - etiopatogeneze, klasifikace, projevy, následky",
+  "Akutní respirační selhání - rozdělení, etiopatogeneze, projevy, následky",
   "Akutní ischemie myokardu - etiopatogeneze, následky. Akutní infarkt myokardu - etiopatogeneze, rozdělení, akutní a chronické komplikace",
   "Akutní poškození ledvin - etiopatogeneze, rozdělení podle příčin, projevy, následky"
 ];
@@ -60,34 +59,50 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Traumatické poškození mozku - etiopatogeneze, projevy, následky. Komoce, kontuze, epidurální a subdurální hematom",
   "Poruchy vestibulárního systému a mozečku - etiopatogeneze, rozdělení, projevy, následky. Ataxie",
   "Regulace funkce endokrinního systému - negativní zpětná vazba, příklady etiopatogeneze poruch endokrinního systému",
-  "Preeklampsie, eklampsie, HELLP syndrom. Poruchy tubulů a sběrných kanálků - etiopatogeneze, projevy, následky. Tubulointersticiální nefritida. Systémová autoimunitní onemocnění - revmatoidní artritida, systémový lupus erytematodes, sklerodermie, Sjögrenův syndrom, polymyozitida, dermatomyozitida. Poruchy spánku - etiopatogeneze, obecné dělení, projevy, následky. Obstrukční spánková apnoe",
+  "Preeklampsie, eklampsie, HELLP syndrom",
+  "Poruchy tubulů a sběrných kanálků - etiopatogeneze, projevy, následky. Tubulointersticiální nefritida.",
+  "Systémová autoimunitní onemocnění - revmatoidní artritida, systémový lupus erytematodes, sklerodermie, Sjögrenův syndrom, polymyozitida, dermatomyozitida.",
+  "Poruchy spánku - etiopatogeneze, obecné dělení, projevy, následky. Obstrukční spánková apnoe.",
   "Poruchy sluchu a zraku - etiopatogeneze, projevy, následky",
   "Poruchy menstruačního cyklu - etiopatogeneze. Poruchy hypotalamo-hypofyzárně-ovariální osy",
   "Poruchy kostního metabolismu - osteoporóza, osteomalacie, rachitida",
   "Onemocnění žlučníku a žlučových cest-cholecystitida a cholangoitida. Cholecystolitiáza a choledocholitiáza - etiopatogeneze, projevy, následky",
-  "Poruchy endokrinních funkcí ledvin - etiopatogeneze, projevy, následky. Poruchy bazálních ganglií - etiopatogeneze, projevy. Parkinsonova nemoc. Poruchy limbického systému a emocí - etiopatogeneze, projevy, následky. Poranění míchy - etiopatogeneze, projevy, následky. Transverzální míšní léze",
+  "Poruchy endokrinních funkcí ledvin - etiopatogeneze, projevy, následky.",
+  "Poruchy bazálních ganglií - etiopatogeneze, projevy. Parkinsonova nemoc. Poruchy limbického systému a emocí - etiopatogeneze, projevy, následky.",
+  "Poranění míchy - etiopatogeneze, projevy, následky. Transverzální míšní léze",
   "Poruchy kognitivních funkcí - paměť, pozornost, učení, řeč, vnímání, chápání. Demence. Alzheimerova choroba - etiopatogeneze, projevy, následky",
   "Hemoragické cévní mozkové příhody - etiopatogeneze, projevy, následky",
   "Nespecifická zánětlivá onemocnění střev-Crohnova choroba, ulcerativní kolitida",
   "Nemoci dutiny ústní. Poruchy polykání, Poruchy jícnu - etiopatogeneze, projevy, následky. Dyspepsie. Refluxní choroba jícnu",
-  "Myopatie, rhabdomyolýza - etiopatogeneze, projevy následky. Krvácení do GIT-formy, příčiny, lokalizace, projevy, následky. Kóma etiopatogeneze, projevy a následky. Vegetativní stav, locked-in syndrome. Smrt mozku definice, etiopatogeneze a projevy",
-  "Ischemické cévní mozkové příhody - etiopatogeneze, projevy, následky. Intrakraniální hypertenze - etiopatogeneze, Poruchy autoregulace průtoku krve mozkem. Chronické selhání jater - jaterní steatóza a cirhóza. Hepatorenální syndrom - etiopatogeneze",
+  "Myopatie, rhabdomyolýza - etiopatogeneze, projevy, následky.",
+  "Krvácení do GIT - formy, příčiny, lokalizace, projevy, následky.",
+  "Kóma - etiopatogeneze, projevy a následky. Vegetativní stav, locked-in syndrome. Smrt mozku - definice, etiopatogeneze a projevy.",
+  "Ischemické cévní mozkové příhody - etiopatogeneze, projevy, následky.",
+  "Intrakraniální hypertenze - etiopatogeneze, Poruchy autoregulace průtoku krve mozkem.",
+  "Chronické selhání jater - jaterní steatóza a cirhóza. Hepatorenální syndrom - etiopatogeneze.",
   "Chronická pankreatitida a poruchy exokrinní činnosti pankreatu - etiopatogeneze, projevy, následky",
   "Hypotyreóza - etiopatogeneze, projevy, následky. Struma",
-  "Hypotalamo-hypofyzární systém - úroveň hypotalamu, adenohypofýzy, a neurohypofýzy - etiopatogeneze, projevy, následky. Akutní pankreatitida - etiopatogeneze, projevy, následky",
+  "Hypotalamo-hypofyzární systém - úroveň hypotalamu, adenohypofýzy, a neurohypofýzy - etiopatogeneze, projevy, následky",
+  "Akutní pankreatitida - etiopatogeneze, projevy, následky.",
   "Hypertyreóza - etiopatogeneze, projevy, následky",
   "Hyperparatyreóza - etiopatogeneze, projevy, následky",
   "Hyperkotizolizmus. Cushingova nemoc a syndrom - etiopatogeneze, projevy, následky",
   "Hyperaldosteronismus - etiopatogeneze, rozdělení, projevy, následky. Connův syndrom",
   "Onemocnění tlustého střeva divertikulóza, polypóza a karcinom- etiopatogeneze a následky. Ileus - etiopatogeneze, projevy, následky",
-  "Feochromocytom, mnohočetné endokrinní neoplazie - etiopatogeneze, projevy, následky. Zollinger Ellisonův syndrom. Gastroenteropankreatický hormonální systém. Epilepsie etiopatogeneze, klasifikace, projevy, následky. Edém mozku - etiopatogeneze, projevy, následky. Cytotoxický edém a vazogenní edém, intersticiální edém. Diabetes mellitus - základní rozdělení, etiopatogeneze, projevy, následky",
+  "Feochromocytom, mnohočetné endokrinní neoplazie - etiopatogeneze, projevy, následky. Zollinger Ellisonův syndrom. Gastroenteropankreatický hormonální systém.",
+  "Epilepsie - etiopatogeneze, klasifikace, projevy, následky.",
+  "Edém mozku - etiopatogeneze, projevy, následky. Cytotoxický edém a vazogenní edém, intersticiální edém.",
+  "Diabetes mellitus - základní rozdělení, etiopatogeneze, projevy, následky.",
   "Diabetes mellitus - akutní a chronické komplikace - etiopatogeneze, projevy, následky",
+  "Demyelinizace - etiopatogeneze, projevy, následky. Roztroušená mozkomíšní skleróza.",
   "Cévní mozkové příhody - etiopatogeneze, základní rozdělení, projevy, následky. Transitorní ischemická ataka",
   "Centrální a periferní paréza - etiopatogeneze, projevy, následky",
   "Autonomní nervový systém - poruchy funkce, efekt na orgánové systémy",
   "Artróza - etiopatogeneze, projevy, následky",
-  "Akutní selhání jater - etiopatogeneze, projevy, následky. Jaterní encefalopatie. Hypoparathyreóza - etiopatogeneze, projevy, následky",
-  "Akutní a chronické hepatitidy - etiopatogeneze, rozdělení, projevy, následky. Adenokortikální insuficience Addisonova choroba. Adrenální (addisonská) krize - etiopatogeneze, projevy, následky"
+  "Akutní selhání jater - etiopatogeneze, projevy, následky. Jaterní encefalopatie.",
+  "Hypoparathyreóza - etiopatogeneze, projevy, následky.",
+  "Akutní a chronické hepatitidy - etiopatogeneze, rozdělení, projevy, následky.",
+  "Adenokortikální insuficience - Addisonova choroba. Adrenální (addisonská) krize - etiopatogeneze, projevy, následky."
 ];
 
 const RAW_QUESTIONS_PRACTICAL = [
@@ -132,7 +147,7 @@ const RAW_QUESTIONS_PRACTICAL = [
   "Proteiny akutní fáze",
   "Zátěžová vyšetření kardiorespiračního systému",
   "Bronchoskopie",
-  "Ischemie - etiopatogeneze, změny na orgánové úrovni (myokard, CNS, ledviny, GIT, končetiny)",
+  "Vyšetření fibrinolýzy",
   "Vyšetření parametrů plicní restrikce",
   "Gastroskopie",
   "Základní vyšetření reprodukčního systému",
@@ -166,7 +181,7 @@ const RAW_QUESTIONS_GENERAL = [
   "Šok-definice, etiopatogeneze, rozdělení.",
   "Poškození a smrt buňky - reversibilní a ireversibilní, nekróza, apoptóza, autofagie.",
   "Horečka - etiopatogenze, průběh (fáze) horečky, pozitivní a negativní vliv horečky na organismus.",
-  "Nádorové bujení - teorie vzniku nádorů, růst nádoru, tvorba metastáz, příčiny smrti u nádorových onemocnění, nádorové markery, paraneoplastický syndrom.",
+  "Nadjádorové bujení - teorie vzniku nádorů, růst nádoru, tvorba metastáz, příčiny smrti u nádorových onemocnění, nádorové markery, paraneoplastický syndrom.",
   "Malnutrice - etiopatogeneze, následky, role v patogenezi nemocí.",
   "Hypoxie a hyperoxie buňky - příčiny, adaptace, následky.",
   "Edém - rozdělení, etiopatogeneze, klinická manifestace, následky.",
@@ -196,6 +211,9 @@ const RAW_QUESTIONS_GENERAL = [
   "Poškození vlivem fyzikálních vlivů tlaku, crush syndrom (rhabdomyolýza), zvuk."
 ];
 
+// Repair "Nadjádorové bujení" typo from raw copy if present
+RAW_QUESTIONS_GENERAL[22] = "Nádorové bujení - teorie vzniku nádorů, růst nádoru, tvorba metastáz, příčiny smrti u nádorových onemocnění, nádorové markery, paraneoplastický syndrom.";
+
 function getOrganSystem(title) {
   const lower = title.toLowerCase();
   
@@ -204,7 +222,7 @@ function getOrganSystem(title) {
     if (lower.includes("portální hypertenze")) return "Gastroenterologie a hepatologie";
     return "Kardiovaskulární systém";
   }
-  if (lower.includes("plic") || lower.includes("dýchac") || lower.includes("ventil") || lower.includes("perfúz") || lower.includes("difúz") || lower.includes("astma") || lower.includes("bronch") || lower.includes("pneumon") || lower.includes("pneumotor") || lower.includes("fluidotor") || lower.includes("atelekt") || lower.includes("ards") || lower.includes("respirač") || lower.includes("oxymetrie") || lower.includes("krevních plynů") || lower.includes("bronchosk")) {
+  if (lower.includes("plic") || lower.includes("dýchac") || lower.includes("ventil") || lower.includes("perfúz") || lower.includes("difúz") || lower.includes("astma") || lower.includes("bronch") || lower.includes("pneumon") || lower.includes("pneumotor") || lower.includes("fluidotor") || lower.includes("atelekt") || lower.includes("ards") || lower.includes("respirač") || lower.includes("oxymetrie") || lower.includes("krevních plynů") || lower.includes("bronchosk") || lower.includes("fibrinolýz")) {
     return "Respirační systém";
   }
   if (lower.includes("ledvin") || lower.includes("nefr") || lower.includes("tubul") || lower.includes("moč") || lower.includes("glomerul") || lower.includes("urolit") || lower.includes("akutní renální") || lower.includes("akutního renálního") || lower.includes("hepatorenální")) {
@@ -219,13 +237,17 @@ function getOrganSystem(title) {
   if (lower.includes("endokrin") || lower.includes("hormon") || lower.includes("zpětná vazba") || lower.includes("diabetes") || lower.includes("inzul") || lower.includes("glyk") || lower.includes("štít") || lower.includes("thyreo") || lower.includes("parathyreo") || lower.includes("cushing") || lower.includes("conn") || lower.includes("addison") || lower.includes("adrenál") || lower.includes("nadledvin") || lower.includes("hypofýz") || lower.includes("feochromocytom")) {
     return "Endokrinní systém";
   }
-  if (lower.includes("mozku") || lower.includes("cns") || lower.includes("nerv") || lower.includes("mozečk") || lower.includes("vestibul") || lower.includes("ataxie") || lower.includes("spán") || lower.includes("kognit") || lower.includes("demenc") || lower.includes("alzheimer") || lower.includes("mích") || lower.includes("paréz") || lower.includes("epilep") || lower.includes("vědomí") || lower.includes("glasgow") || lower.includes("eeg") || lower.includes("demyel") || lower.includes("roztroušená") || lower.includes("zrak") || lower.includes("sluch") || lower.includes("intrakraniál") || lower.includes("komoce") || lower.includes("kontuze") || lower.includes("hematom") || lower.includes("kóma") || lower.includes("vegetativní") || lower.includes("locked-in") || lower.includes("smrt mozku")) {
+  if (lower.includes("mozku") || lower.includes("cns") || lower.includes("nerv") || lower.includes("mozečk") || lower.includes("vestibul") || lower.includes("ataxie") || lower.includes("spán") || lower.includes("kognit") || lower.includes("demenc") || lower.includes("alzheimer") || lower.includes("mích") || lower.includes("paréz") || lower.includes("epilep") || lower.includes("vědomí") || lower.includes("glasgow") || eegMatch(lower) || lower.includes("demyel") || lower.includes("roztroušená") || lower.includes("zrak") || lower.includes("sluch") || lower.includes("intrakraniál") || lower.includes("komoce") || lower.includes("kontuze") || lower.includes("hematom") || lower.includes("kóma") || lower.includes("vegetativní") || lower.includes("locked-in") || lower.includes("smrt mozku")) {
     return "Nervový systém a smysly";
   }
   if (lower.includes("kost") || lower.includes("osteopor") || lower.includes("osteomal") || lower.includes("rachit") || lower.includes("artróz") || lower.includes("artrit") || lower.includes("revmat") || lower.includes("lupus") || lower.includes("skleroder") || lower.includes("sjögren") || lower.includes("myopatie") || lower.includes("rhabdomyol")) {
     return "Lokomotorický a autoimunitní systém";
   }
   return "Ostatní / Systémové procesy";
+}
+
+function eegMatch(s) {
+  return s.includes("eeg") || s.includes("aktivita neuronů") || s.includes("aktivity neuronů");
 }
 
 function estimateKeywords(cleanedTitle) {
@@ -352,4 +374,3 @@ window.generatePathogenesisDiagram = function(pathogenesis) {
   
   return diagramParts.join(arrowStr);
 };
-

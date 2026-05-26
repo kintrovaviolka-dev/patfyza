@@ -1150,29 +1150,29 @@ const PRACTICAL_DETAILS = {
     ]
   },
   "pract-42": {
-    summary: "Ischemie je stav nedostatečného prokrvení tkáně vedoucí k hypoxii a nedostatku živin. Vyvolává rychlé selhání buněčného metabolismu, depleci ATP a riziko infarktu postižení tkáně.",
-    keyTerms: ["Ischemie", "Hypoxie vs. Anoxie", "Deplece ATP", "Infarkt (nekróza)", "Laktát v tkáni", "Anaerobóza"],
+    summary: "Vyšetření fibrinolýzy hodnotí funkční stav systému odbourávání fibrinových sraženin. Zahrnuje stanovení D-dimerů, euglobulinové lýzy a hladiny plazminogenu k diagnostice hyperfibrinolýzy či vyloučení tromboembolických stavů.",
+    keyTerms: ["Fibrinolýza", "D-dimer", "Plazminogen", "Euglobulinová lýza", "t-PA", "Plazmin"],
     richContent: {
-      significance: "Patofyziologie tkáňového poškození vyvolaného uzávěrem přívodné tepny. Postihuje myokard (infarkt), CNS (mrtvice), ledviny (ATN), GIT (mezenteriální ischemie) a končetiny (ICHDK).",
-      high: "Vzestup laktátu v ischemické zóně (anaerobní glykolýza), uvolnění nitrobuněčných markerů poškození (troponin, CK, transaminázy, LDH, myoglobin) do systémového oběhu.",
-      low: "Pokles parciálního tlaku kyslíku ($pO_2$), pokles intracelulárního pH (acidóza) a vyčerpání zásob ATP v buňkách.",
-      method: "Kombinace angiografie, duplexní ultrasonografie, stanovení tkáňových markerů nekrózy."
+      significance: "Posouzení schopnosti organismu rozpouštět krevní sraženiny a vyloučení akutní trombózy či plicní embolie.",
+      high: "Zvýšená hladina D-dimerů (marker degradace stabilizovaného fibrinu) u hluboké žilní trombózy, plicní embolie, DIC, zánětů, těhotenství či malignit.",
+      low: "Snížená aktivita fibrinolytických faktorů (např. deficit t-PA) přispívá k trombofilnímu stavu.",
+      method: "Euglobulinová lýza (klasický test), stanovení D-dimerů latexovou aglutinací nebo ELISA, fotometrické stanovení plazminogenu."
     },
     quiz: [
       {
-        question: "Jaký je primární biochemický důsledek buněčné ischemie na úrovni mitochondrií?",
+        question: "Která z následujících látek je hlavním enzymem přímo zodpovědným za štěpení fibrinu při fibrinolýze?",
         options: [
-          "Zvýšená syntéza glykogenu",
-          "Zástava oxidační fosforylace kvůli nedostatku kyslíku, což vede k prudkému poklesu syntézy ATP a selhání iontových pump (Na+/K+-ATPázy)",
-          "Nadprodukce oxidu dusnatého",
-          "Zrychlení aerobního metabolismu na maximum"
+          "Trombin",
+          "Plazmin (aktivovaný z plazminogenu pomocí t-PA)",
+          "Faktor VIII",
+          "Fibrinogen"
         ],
         correct: 1,
         explanations: [
-          "Nesprávně. Bez energie se glykogen nesyntetizuje, naopak se odbourává.",
-          "Správně! Kyslík je konečným akceptorem elektronů v dýchacím řetězci. Bez něj se zastaví tvorba ATP. Nedostatek ATP ochromí sodíkovou pumpu, do buňky vtéká sodík a voda, což vyvolá buněčný edém, influx vápníku a následnou nekrózu.",
-          "Nesprávně. Oxid dusnatý s mitochondriální zástavou přímo nesouvisí.",
-          "Nesprávně. Aerobní metabolismus bez kyslíku běžet nemůže."
+          "Nesprávně. Trombin fibrin naopak tvoří z fibrinogenu.",
+          "Správně! Plazmin je serinová proteáza, která selektivně štěpí fibrinová a fibrinogenová vlákna na degradační produkty (FDP), včetně D-dimerů.",
+          "Nesprávně. Faktor VIII je kofaktor koagulační kaskády.",
+          "Nesprávně. Fibrinogen je prekurzor fibrinu."
         ]
       }
     ]
