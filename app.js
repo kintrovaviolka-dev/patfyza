@@ -454,6 +454,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // Zvýraznění správné a nesprávné odpovědi
           if (isCorrect) {
             btn.classList.add("correct");
+            triggerConfetti(btn);
             // Kvízové statistiky - připočtení
             state.quizStats.correctCount++;
             state.quizStats.totalCount++;
@@ -544,6 +545,49 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     reader.readAsText(file);
   });
+
+  // --- FUNKCE PRO EFEKT KONFET ---
+  const triggerConfetti = (element) => {
+    const rect = element.getBoundingClientRect();
+    const xCenter = rect.left + rect.width / 2 + window.scrollX;
+    const yCenter = rect.top + rect.height / 2 + window.scrollY;
+
+    const colors = ['#2563eb', '#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899'];
+    const shapes = ['50%', '0%', '0% 50%'];
+
+    for (let i = 0; i < 35; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'confetti-particle';
+      
+      particle.style.borderRadius = shapes[Math.floor(Math.random() * shapes.length)];
+      particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      
+      const size = 6 + Math.random() * 8;
+      particle.style.width = `${size}px`;
+      particle.style.height = `${size}px`;
+      
+      particle.style.left = `${xCenter}px`;
+      particle.style.top = `${yCenter}px`;
+      
+      const angle = Math.random() * Math.PI * 2;
+      const distance = 40 + Math.random() * 90;
+      const xDest = Math.cos(angle) * distance;
+      const yDest = Math.sin(angle) * distance - 20; 
+      const rotation = (Math.random() * 360) + 'deg';
+      
+      particle.style.setProperty('--x', `${xDest}px`);
+      particle.style.setProperty('--y', `${yDest}px`);
+      particle.style.setProperty('--r', rotation);
+      
+      particle.style.animationDelay = `${Math.random() * 0.15}s`;
+      
+      document.body.appendChild(particle);
+      
+      setTimeout(() => {
+        particle.remove();
+      }, 1300);
+    }
+  };
 
   // --- INICIALIZACE STRÁNKY ---
   renderCards();
