@@ -1,0 +1,250 @@
+Row 1:
+  Col 1: Vyšetření červené krevní řady
+  Col 2: Definice nemoci a zdraví - pojmy: etiologie, patogeneze, etiopatogeneze, symptom, syndrom. Průběh a zakončení nemocí. Iatrogenita. Psychosomatika
+  Col 3: Srdeční zástava. Maligní arytmie: fibrilace komor, setrvalá komorová tachykardie a asystolie - etiopatogeneze a následky. Elektromechanická disociace
+  Col 4: Vředová choroba gastroduodena - etiopatogeneze a komplikace. Gastritidy - etiopatogeneze, projevy, následky
+Row 2:
+  Col 1: Vyšetření mozkomíšního moku
+  Col 2: None
+  Col 3: Anemie - obecná charakteristika, etiopatogeneze, rozdělení, následky. Anemický syndrom
+  Col 4: Urolitiáza - etiopatogeneze, typy kamenů, komplikace, projevy, následky
+Row 3:
+  Col 1: Vyšetření tekutin ze třetího prostoru (fluidothorax, fluidoperikard, ascites)
+  Col 2: Poruchy bilance kalia (K+) - etiopatogeneze, následky
+  Col 3: None
+  Col 4: Urgentní stavy vzniklé z endokrinních příčin
+Row 4:
+  Col 1: Vyšetření krevního tlaku - sekundární hypertenze
+  Col 2: Trombóza - rozdělení a příklady, projevy, následky
+  Col 3: Portální hypertenze - etiopatogeneze, projevy, následky
+  Col 4: Traumatické poškození mozku - etiopatogeneze, projevy, následky. Komoce, kontuze, epidurální a subdurální hematom
+Row 5:
+  Col 1: Laboratorní markery zánětu
+  Col 2: None
+  Col 3: Trombocytopenie a trombocytopatie - etiopatogeneze, projevy, následky
+  Col 4: Poruchy vestibulárního systému a mozečku - etiopatogeneze, rozdělení, projevy, následky. Ataxie
+Row 6:
+  Col 1: Vyšetření poruch plazmatické koagulace
+  Col 2: Stres a všeobecný adaptační syndrom - charakteristika, fáze, etiopatogeneze
+  Col 3: Regulace funkce endokrinního systému - negativní zpětná vazba, příklady etiopatogeneze poruch endokrinního systému
+  Col 4: Regulace funkce endokrinního systému - negativní zpětná vazba, příklady etiopatogeneze poruch endokrinního systému
+Row 7:
+  Col 1: Vyšetření acidobazické rovnováhy. Laktát
+  Col 2: Vliv celkové a částečné imobilizace
+  Col 3: Tachyarytmie: supraventrikulární a ventrikulární - etiopatogeneze, rozdělení, následky. Fibrilace a flutter síní. Extrasytoly. Reentry. Preexcitační syndromy
+  Col 4: None
+Row 8:
+  Col 1: EKG - posouzení srdeční osy a intervalů, hypertrofie srdečních oddílů
+  Col 2: Systémová zánětlivá odpověď- etiopatogeneze, následky
+  Col 3: Pravostranné srdeční selhání - akutní a chronická etiologie, patogeneze, projevy, následky
+  Col 4: None
+Row 9:
+  Col 1: Vyšetření výměny krevních plynů a plicní difuzní kapacity
+  Col 2: Nespecifický a specifický imunitní systém - poruchy funkce, principy
+  Col 3: Srdeční selhání - obecná charakteristika etiopatogeneze, projevy, následky. Systolická a diastolická dysfunkce
+  Col 4: None
+Row 10:
+  Col 1: Pulzní oxymetrie
+  Col 2: Imunopatologické reakce - rozdělení, etiopatogeneze. Principy autoimunitních reakcí - mechanizmy. Atopie. Imunotolerance
+  Col 3: Akutní tubulární nekróza - etiopatogeneze, projevy, následky
+  Col 4: None
+Row 11:
+  Col 1: Vyšetření plicní hypertenze, tlak v zaklínění
+  Col 2: Poškození vlivem fyzikálních vlivů - chlad, teplo, el. proudu, elektromagnetické a ionizující záření
+  Col 3: Srdeční arytmie - etiopatogeneze, klasifikace, projevy, následky
+  Col 4: Poruchy sluchu a zraku - etiopatogeneze, projevy, následky
+Row 12:
+  Col 1: EKG - základní rozbor křivky, topografie svodů
+  Col 2: Embolie - rozdělení. Plicní embolie - etiopatogeneze, projevy, následky. Periferní a paradoxní embolie
+  Col 3: Sekundární hypertenze - etiopatogeneze, akutní a chronické komplikace, následky
+  Col 4: Poruchy menstruačního cyklu - etiopatogeneze. Poruchy hypotalamo-hypofyzárně-ovariální osy
+Row 13:
+  Col 1: Laboratorní markery zánětu
+  Col 2: Poruchy acidobazické rovnováhy - klasifikace poruch, kompenzace a korekce, příčiny a následky. Příčiny smrti při poruchách acidobazické rovnováhy
+  Col 3: Restrikční plicní nemoci - etiopatogeneze, symptomy a následky. Vnější a vnitřní příčiny restrikce
+  Col 4: Poruchy kostního metabolismu - osteoporóza, osteomalacie, rachitida
+Row 14:
+  Col 1: Laboratorní markery zánětu
+  Col 2: Diseminovaná intravaskulární koagulace (DIC) - etiopatogeneze, projevy, následky
+  Col 3: None
+  Col 4: None
+Row 15:
+  Col 1: Vyšetření parametrů bronchiální obstrukce
+  Col 2: Kardiogenní a obstrukční šok - etiopatogeneze a následky
+  Col 3: Transfúze krve a krevních derivátů - etiopatogeneze nejčastějších komplikací. Základy problematiky transplantace kostní dřeně. GvH a HvG reakce
+  Col 4: None
+Row 16:
+  Col 1: Laboratorní vyšetření moči. Hematurie
+  Col 2: Dehydratace - etiopatogeneze, následky
+  Col 3: Poruchy ventilačně-perfúzního poměru - etiopatogeneze, projevy, následky
+  Col 4: None
+Row 17:
+  Col 1: Echokardiografie
+  Col 2: Reaktivní kyslíkové a dusíkové sloučeniny - role za fyziologického stavu a v patogenezi nemocí. Ischemicko-reperfúzní syndrom - etiopatogeneze, příklady
+  Col 3: Poruchy venózního řečiště. - etiopatogeneze, projevy, následky. Poruchy lymfatického cévního systému - etiopatogeneze, projevy, následky
+  Col 4: None
+Row 18:
+  Col 1: Laboratorní markery zánětu
+  Col 2: Hyperhydratace - etiopatogeneze, následky
+  Col 3: Poruchy plicní difúze - etiopatogeneze, symptomy a následky. Poruchy alveolo-kapilární membrány. Alveolo-arteriální diference
+  Col 4: Poruchy kognitivních funkcí - paměť, pozornost, učení, řeč, vnímání, chápání. Demence. Alzheimerova choroba - etiopatogeneze, projevy, následky
+Row 19:
+  Col 1: Laboratorní markery zánětu
+  Col 2: Obezita - etiopatogeneze, následky, role v patogenezi nemocí
+  Col 3: None
+  Col 4: Hemoragické cévní mozkové příhody - etiopatogeneze, projevy, následky
+Row 20:
+  Col 1: EKG - posouzení srdeční osy a intervalů, hypertrofie srdečních oddílů
+  Col 2: None
+  Col 3: None
+  Col 4: None
+Row 21:
+  Col 1: Vyšetření krevních destiček
+  Col 2: Poškození a smrt buňky - reversibilní a ireversibilní, nekróza, apoptóza, autofagie
+  Col 3: Polycytémie - etiopatogeneze, následky. Hyperviskózní syndrom
+  Col 4: Nemoci dutiny ústní. Poruchy polykání, Poruchy jícnu - etiopatogeneze, projevy, následky. Dyspepsie. Refluxní choroba jícnu
+Row 22:
+  Col 1: Laboratorní markery zánětu
+  Col 2: Horečka - etiopatogenze, průběh (fáze) horečky, pozitivní a negativní vliv horečky na organismus
+  Col 3: None
+  Col 4: None
+Row 23:
+  Col 1: Vyšetření jaterních enzymů
+  Col 2: Nádorové bujení - teorie vzniku nádorů, růst nádoru, tvorba metastáz, příčiny smrti u nádorových onemocnění, nádorové markery, paraneoplastický syndrom
+  Col 3: Pneumonie - etiopatogeneze, rozdělení, projevy, následky
+  Col 4: None
+Row 24:
+  Col 1: Vyšetření funkce nadledvinek
+  Col 2: Malnutrice - etiopatogeneze, následky, role v patogenezi nemocí
+  Col 3: None
+  Col 4: None
+Row 25:
+  Col 1: Vyšetření hemostázy - obecná charakteristika
+  Col 2: Hypoxie a hyperoxie buňky - příčiny, adaptace, následky
+  Col 3: Patofyziologie sleziny - splenomegalie, hypersplenismus, následky splenektomie
+  Col 4: None
+Row 26:
+  Col 1: Vyšetření funkce glomerulů
+  Col 2: Edém - rozdělení, etiopatogeneze, klinická manifestace, následky
+  Col 3: Obstrukční plicní nemoci - obecná charakteristika, etiopatogeneze, projevy, následky
+  Col 4: None
+Row 27:
+  Col 1: Laboratorní markery zánětu
+  Col 2: Poruchy růstu. Poruchy puberty. Stárnutí a smrt organismu
+  Col 3: Obstrukce horních dýchacích cest - etiopatogeneze, projevy, následky
+  Col 4: None
+Row 28:
+  Col 1: Vyšetření aktivity neuronů. EEG
+  Col 2: Respirační acidóza a alkalóza - etiopatogeneze, následky
+  Col 3: Nefrotický a nefritický syndrom - etiopatogeneze, rozdíly, projevy, následky
+  Col 4: Chronická pankreatitida a poruchy exokrinní činnosti pankreatu - etiopatogeneze, projevy, následky
+Row 29:
+  Col 1: Spirometrie - obecná charakteristika a principy
+  Col 2: Metabolická acidóza a alkalóza - etiopatogeneze, následky
+  Col 3: Leukopenie - etiopatogeneze, projevy, následky
+  Col 4: Hypotyreóza - etiopatogeneze, projevy, následky. Struma
+Row 30:
+  Col 1: Předtransfúzní vyšetření
+  Col 2: Bolest - etiopatogeneze, klasifikace, poruchy vnímání bolesti, principy farmakologického ovlivnění
+  Col 3: Levostranné srdeční selhání - akutní a chronická etiologie, patogeneze, projevy, následky
+  Col 4: None
+Row 31:
+  Col 1: Vyšetření iontogramu
+  Col 2: Dušnost - rozdělení, etiopatogeneze, následky
+  Col 3: Leukocytóza - nenádorová i nádorová, etiopatogeneze. Leukemie a lymfomy. Myelopatie - myeloproliferace, myeloftíza, myelofibróza
+  Col 4: None
+Row 32:
+  Col 1: Kolonoskopie
+  Col 2: Septický a anafylaktický šok - etiopatogeneze a následky
+  Col 3: Ischemická choroba srdeční - etiopatogeneze, formy, akutní a chronické komplikace, následky. Angina pectoris. Akutní koronární syndrom
+  Col 4: Hypertyreóza - etiopatogeneze, projevy, následky
+Row 33:
+  Col 1: Vyšetření funkce tubulů
+  Col 2: Obstipace a průjem - etiopatogeneze a následky. Syndrom dráždivého tračníku, pseudomembranózní kolitida
+  Col 3: Intersticiální plicní nemoci - etiopatogeneze, rozdělení, projevy, následky. Cystická fibróza
+  Col 4: Hyperparatyreóza - etiopatogeneze, projevy, následky
+Row 34:
+  Col 1: Koronarografie
+  Col 2: Poruchy metabolismu železa (Fe2+/Fe3+) - etiopatogeneze a následky
+  Col 3: Chronické selhání ledvin a terminální fáze ledvinových onemocnění - etiopatogeneze, rozdělení podle příčin, projevy, následky
+  Col 4: Hyperkotizolizmus. Cushingova nemoc a syndrom - etiopatogeneze, projevy, následky
+Row 35:
+  Col 1: Vyšetření intrakraniálního tlaku. Funkce hlavových nervů
+  Col 2: None
+  Col 3: Chronické respirační selhání - rozdělení, etiopatogeneze, projevy, následky
+  Col 4: None
+Row 36:
+  Col 1: Vyšetření funkce hypofýzy
+  Col 2: Poruchy bilance kalcia (Ca2+) a fosfátů - etiopatogeneze, projevy, následky
+  Col 3: None
+  Col 4: None
+Row 37:
+  Col 1: Posouzení stavu vědomí (kvantitativně, kvalitativně) - základní skórovací systémy
+  Col 2: Sepse, syndrom multiorgánové dysfunkce (MODS) - etiopatogeneze, projevy a následky
+  Col 3: Hypokoagulační stavy - etiopatogeneze, projevy, následky
+  Col 4: None
+Row 38:
+  Col 1: Vyšetření krevního tlaku - sekundární hypertenze
+  Col 2: Krvácení - etiopatogeneze, rozdělení, následky
+  Col 3: Hyperkoagulační stavy - etiopatogeneze, projevy, následky. Trombofilní stavy
+  Col 4: None
+Row 39:
+  Col 1: Proteiny akutní fáze
+  Col 2: None
+  Col 3: None
+  Col 4: None
+Row 40:
+  Col 1: Zátěžová vyšetření kardiorespiračního systému
+  Col 2: Lokální zánětová odpověď - princip a význam, složky zánětové odpovědi
+  Col 3: Hemostáza - základní deskripce poruch primární (cévy a trombocyty), sekundární (koagulační kaskáda) a terciární (trombolýza) hemostázy
+  Col 4: None
+Row 41:
+  Col 1: Bronchoskopie
+  Col 2: Poruchy vědomí - etiopatogeneze, základní rozdělení podle kvantity a kvality. Synkopa
+  Col 3: Endokarditidy. Myokarditidy. Perikarditidy - etiopatogeneze, projevy, následky. Srdeční tamponáda
+  Col 4: Diabetes mellitus - akutní a chronické komplikace - etiopatogeneze, projevy, následky
+Row 42:
+  Col 1: None
+  Col 2: None
+  Col 3: Glomerulopatie - etiopatogeneze, projevy, následky
+  Col 4: None
+Row 43:
+  Col 1: Vyšetření parametrů bronchiální obstrukce
+  Col 2: Nauzea, zvracení - etiopatogeneze, následky
+  Col 3: Bradyarytmie - etiopatogeneze a následky poruch tvorby a vedení vzruchu. Sinoatriální, atrioventrikulární a raménkové blokády
+  Col 4: Cévní mozkové příhody - etiopatogeneze, základní rozdělení, projevy, následky. Transitorní ischemická ataka
+Row 44:
+  Col 1: Gastroskopie
+  Col 2: Poškození vlivem chemických vlivů - intoxikace (paracetamol, metanol, oxid uhelnatý), alkohol, kouření
+  Col 3: Anémie ze zvýšených ztrát a snížené produkce erytrocytů - etiopatogeneze, následky
+  Col 4: Centrální a periferní paréza - etiopatogeneze, projevy, následky
+Row 45:
+  Col 1: Základní vyšetření reprodukčního systému
+  Col 2: Hyperglykemie - etiopatogeneze, akutní a chronické komplikace, následky
+  Col 3: Anemie ze zvýšené konsumpce erytrocytů. Hemolýza - etiopatogeneze, následky
+  Col 4: Autonomní nervový systém - poruchy funkce, efekt na orgánové systémy
+Row 46:
+  Col 1: Laboratorní markery zánětu
+  Col 2: Geneticky podmíněné nemoci - rozdělení, příklady. Monofaktoriální a multifaktoriální dědičnost
+  Col 3: None
+  Col 4: Artróza - etiopatogeneze, projevy, následky
+Row 47:
+  Col 1: Vyšetření bílé krevní řady
+  Col 2: Časový faktor v patogenezi nemocí, pojmy kompenzace a dekompenzace, strukturální a funkční orgánová/tkáňová dysfunkce
+  Col 3: None
+  Col 4: None
+Row 48:
+  Col 1: Vyšetření funkce štítné žlázy a příštítných tělísek
+  Col 2: Metabolický syndrom X - etiopatogeneze, projevy, následky
+  Col 3: None
+  Col 4: None
+Row 49:
+  Col 1: Laboratorní markery zánětu
+  Col 2: Hypoglykemie - etiopatogeneze, komplikace, následky
+  Col 3: Akutní ischemie myokardu - etiopatogeneze, následky. Akutní infarkt myokardu - etiopatogeneze, rozdělení, akutní a chronické komplikace
+  Col 4: None
+Row 50:
+  Col 1: None
+  Col 2: None
+  Col 3: Akutní poškození ledvin - etiopatogeneze, rozdělení podle příčin, projevy, následky
+  Col 4: None

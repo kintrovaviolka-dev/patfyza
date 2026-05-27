@@ -1,6 +1,8 @@
-// data_special1.js - Podrobné popisy, schémata a kvízy pro Speciální I.
+// data_special1.js
+// Obsahuje bohaté texty a kvízy pro "Speciální patofyziologii I."
+
 const SPECIAL_1_DETAILS = {
-"spec-1-1": {
+  "spec-1-1": {
     detailContent: `
       <div class="medical-detail">
         <section>
@@ -42,6 +44,11 @@ const SPECIAL_1_DETAILS = {
         <section>
           <h3>3. Diagnostické a klinické konsekvence</h3>
           <p>Okamžitá klinická manifestace zahrnuje ztrátu vědomí, vymizení pulsu na krkavicích (a. carotis), lapavé dýchání (gasping) a následnou apnoi. Mydriáza se rozvíjí do 60–90 sekund od zástavy. Léčba vyžaduje neodkladnou kardiopulmonální resuscitaci (KPR) a u VF/pVT okamžitou elektrickou defibrilaci pro zrušení reentry okruhů.</p>
+        </section>
+      
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
         </section>
       </div>
     `,
@@ -97,9 +104,7 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-  // Anemie,
-
-"spec-1-2": {
+  "spec-1-2": {
     detailContent: `
       <div class="medical-detail">
         <section>
@@ -123,6 +128,11 @@ const SPECIAL_1_DETAILS = {
           <h3>3. Kompenzační mechanismy hypoxie</h3>
           <p>Tělo reaguje na hypoxii aktivací transkripčního faktoru <strong>HIF-1</strong>. Dochází k produkci <strong>erytropoetinu</strong> v ledvinách a aktivaci sympatiku. Zvýšením srdeční frekvence a kontraktility roste srdeční výdej. V erytrocytech stoupá koncentrace <strong>2,3-bifosfoglycerátu (2,3-BPG)</strong>, což posouvá disociační křivku hemoglobinu doprava a usnadňuje uvolňování kyslíku do tkání.</p>
         </section>
+      
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+        </section>
       </div>
     `,
     quiz: [
@@ -145,9 +155,7 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-  // Obstrukce a restrikce,
-
-"spec-1-3": {
+  "spec-1-3": {
     detailContent: `
       <div class="medical-detail">
         <section>
@@ -161,6 +169,11 @@ const SPECIAL_1_DETAILS = {
         <section>
           <h3>3. Restrikční porucha plic</h3>
           <p>Dochází k poklesu celkové plicní kapacity (TLC) a úsilné vitální kapacity (FVC < 80 % normy) v důsledku redukce funkčního plicního parenchymu (plicní fibróza, atelektáza, resekce) nebo omezení mechaniky dýchání (skolióza, obezita, myasthenia gravis). Poddajnost plic (compliance) klesá. Tiffeneauův index zůstává fyziologický nebo stoupá.</p>
+        </section>
+      
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
         </section>
       </div>
     `,
@@ -184,9 +197,7 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-  // Portální hypertenze,
-
-"spec-1-4": {
+  "spec-1-4": {
     detailContent: `
       <div class="medical-detail">
         <section>
@@ -208,6 +219,11 @@ const SPECIAL_1_DETAILS = {
             <li><strong>Ascites:</strong> Hromadění tekutiny v peritoneální dutině. Podílí se portální hypertenze, hypoalbuminémie (pokles onkotického tlaku) a aktivace RAAS (renální retence Na+ a vody v důsledku splanchnické vazodilatace a relativní hypovolémie).</li>
             <li><strong>Splenomegalie a hypersplenismus:</strong> Zvětšení sleziny z městnání krve, což vede k nadměrnému vychytávání a destrukci erytrocytů, leukocytů a destiček.</li>
           </ol>
+        </section>
+      
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
         </section>
       </div>
     `,
@@ -231,10 +247,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-  // Akutní tubulární nekróza,
-
-"spec-1-5": {
+  "spec-1-5": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Trombocytopenie (pokles počtu trombocytů pod 150x10^9/l) a trombocytopatie (kvalitativní dysfunkce destiček při normálním počtu). Způsobují poruchy primární hemostázy a sklon k petechiálnímu krvácení.",
       etiology: [
         "Trombocytopenie z poruchy tvorby: aplastická anémie, infiltrace dřeně nádorem (myeloftíza), deficit B12/folátu.",
@@ -278,8 +294,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-6": {
+  "spec-1-6": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Systémová arteriální hypotenze je definována poklesem krevního tlaku pod 90 mmHg systoly a 60 mmHg diastoly. Způsobuje snížení perfuzního tlaku ve tkáních a rozvoj orgánové hypoperfuze.",
       etiology: [
         "Ortostatická hypotenze: porucha baroreflexu (autonomní neuropatie u diabetu, Parkinsonova choroba, starší věk).",
@@ -323,8 +341,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-7": {
+  "spec-1-7": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Tachyarytmie jsou poruchy srdečního rytmu s frekvencí nad 100/min. Dělí se na supraventrikulární (SVT - nad Hissovým svazkem) a ventrikulární (VT - komorové, ohrožující život).",
       etiology: [
         "Ischemie myokardu: akutní infarkt myokardu a jizvy (hlavní spouštěč komorových tachykardií).",
@@ -368,8 +388,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-8": {
+  "spec-1-8": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Pravostranné srdeční selhání je charakterizováno neschopností pravé komory přečerpat krev z venózního systému do plicního řečiště, což vede k městnání krve ve velkém oběhu.",
       etiology: [
         "Levostranné srdeční selhání (nejčastější příčina - retrográdní přenos tlaku přes plicní cirkulaci).",
@@ -413,8 +435,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-9": {
+  "spec-1-9": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Srdeční selhání je klinický syndrom charakterizovaný neschopností srdce zajistit dostatečný minutový výdej pro metabolické potřeby tkání, nebo jen za cenu zvýšení plnicích tlaků.",
       etiology: [
         "Ischemická choroba srdeční (ICHS) a prodělaný infarkt myokardu (ztráta funkčního parenchymu).",
@@ -458,7 +482,7 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-10": {
+  "spec-1-10": {
     detailContent: `
       <div class="medical-detail">
         <section>
@@ -500,6 +524,11 @@ const SPECIAL_1_DETAILS = {
             <li><strong>Fáze rekonvalescence (polyurická):</strong> Tubulární buňky regenerují, ale chybí jim funkční transportéry (nezralý epitel). Nedokážou koncentrovat moč a reabsorbovat vodu a ionty, což vede k **masivní polyurii** (i &gt; 4 litry/den) a hrozí dehydratace, hypokalémie a hyponatrémie.</li>
           </ol>
         </section>
+      
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+        </section>
       </div>
     `,
     quiz: [
@@ -522,10 +551,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-  // Poruchy ventilačně-perfúzního poměru,
-
-"spec-1-11": {
+  "spec-1-11": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Srdeční arytmie jsou poruchy tvorby a/nebo vedení srdečního vzruchu, které narušují pravidelnost a frekvenci srdeční akce.",
       etiology: [
         "Ischemie a nekróza myokardu (hlavní vyvolávající faktor arytmií).",
@@ -569,8 +598,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-12": {
+  "spec-1-12": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Sekundární hypertenze je arteriální hypertenze s identifikovatelnou organickou příčinou. Představuje cca 5-10 % všech případů hypertenze.",
       etiology: [
         "Renální příčiny: chronická parenchymová onemocnění ledvin (glomerulonefritidy, polycystóza).",
@@ -614,8 +645,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-13": {
+  "spec-1-13": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Restrikční plicní nemoci jsou charakterizovány snížením celkové plicní kapacity (TLC) v důsledku omezení expanze plicního parenchymu.",
       etiology: [
         "Intropulmonální příčiny (plicní fibrózy): idiopatická plicní fibróza, pneumokoniózy (křemík, azbest), sarkoidóza.",
@@ -658,8 +691,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-14": {
+  "spec-1-14": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Primární (esenciální) hypertenze je chronické zvýšení krevního tlaku bez zřejmé jediné organické příčiny. Představuje cca 90-95 % všech hypertenzí.",
       etiology: [
         "Genetická predispozice (polygenní dědičnost).",
@@ -703,8 +738,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-15": {
+  "spec-1-15": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Transfúzní reakce jsou komplikace spojené s podáním cizí krve nebo krevních derivátů. Imunologická kompatibilita a správná transplantace kmenových buněk jsou klíčové pro prevenci rejekcí.",
       etiology: [
         "Akutní hemolytická transfúzní reakce: inkompatibilita v systému AB0 (selhání lidského faktoru).",
@@ -748,7 +785,7 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-16": {
+  "spec-1-16": {
     detailContent: `
       <div class="medical-detail">
         <section>
@@ -777,6 +814,11 @@ const SPECIAL_1_DETAILS = {
           <h3>Eulerův-Liljestrandův reflex (Kompenzace hypoxie)</h3>
           <p>Při lokální hypoxii v neventilovaných alveolech dochází k **hypoxické plicní vazokonstrikci** (Eulerův-Liljestrandův reflex). Plicní arterioly se stáhnou, aby odklonily krev do dobře ventilovaných částí plic a minimalizovaly zkrat. Pokud je však hypoxie globální (např. ve vysokých výškách), stahují se všechny kapiláry, což vede k **plicní hypertenzi** a pravostrannému srdečnímu selhání (cor pulmonale).</p>
         </section>
+      
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+        </section>
       </div>
     `,
     quiz: [
@@ -799,10 +841,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-  // Nefrotický a nefritický syndrom,
-
-"spec-1-17": {
+  "spec-1-17": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Poruchy venózního řečiště (zejména hluboká žilní trombóza - HŽT) a lymfatického systému (lymfedém) narušují odtok tekutiny z tkání, což vede k rozvoji specifických otoků.",
       etiology: [
         "HŽT (Virchowova triáda): stagnační proudění (imobilizace, sádra), hyperkoagulační stav (leiden, antikoncepce, malignita), poškození endotelu (trauma, operace).",
@@ -846,8 +888,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-18": {
+  "spec-1-18": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Poruchy plicní difúze jsou charakterizovány zhoršeným přestupem plynů (zejména kyslíku) přes alveolo-kapilární membránu z důvodu jejího zesílení nebo zmenšení celkové plochy.",
       etiology: [
         "Zesílení alveolo-kapilární membrány (intersticiální plicní procesy): idiopatická plicní fibróza, sarkoidóza, plicní edém (tekutina v intersticiu).",
@@ -890,8 +934,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-19": {
+  "spec-1-19": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Poruchy plicní cirkulace a plicní hypertenze (PH) představují stavy zvýšeného krevního tlaku v plicním cévním řečišti (střední tlak v plicnici mPAP > 20 mmHg), které zatěžují pravou komoru.",
       etiology: [
         "Skupina 1 (plicní arteriální hypertenze): idiopatická, poléková, remodelace plicních arterií.",
@@ -935,8 +981,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-20": {
+  "spec-1-20": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Trombotické mikroangiopatie (TMA) jsou skupina život ohrožujících stavů charakterizovaných triádou: mikroangiopatická hemolytická anémie (MAHA), konzumpční trombocytopenie a orgánové poškození mikrotromby.",
       etiology: [
         "Trombotická trombocytopenická purpura (TTP): deficit metaloproteázy **ADAMTS13** (vrozený nebo autoimunitní protilátkami).",
@@ -979,8 +1027,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-21": {
+  "spec-1-21": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Polycytémie (erytrocytóza) je stav zvýšené koncentrace erytrocytů, hemoglobinu a hematokritu v krvi. Způsobuje výrazné zvýšení viskozity krve a rozvoj hyperviskózního syndromu.",
       etiology: [
         "Primární polycytémie (polycytemia vera): klonální myeloproliferativní novotvar spojený s mutací genu **JAK2 (V617F)**.",
@@ -1023,8 +1073,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-22": {
+  "spec-1-22": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Pneumothorax (PNO) je přítomnost vzduchu v pleurální dutině vedoucí k parciálnímu nebo úplnému kolapsu plíce. Fluidothorax je přítomnost tekutiny v pleurálním prostoru.",
       etiology: [
         "Spontánní primární PNO: ruptura subpleurálních bul (často u mladých, vysokých, štíhlých mužů, kuřáků).",
@@ -1068,8 +1120,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-23": {
+  "spec-1-23": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Pneumonie je akutní zánětlivé onemocnění plicního parenchymu (alveolů a intersticia) infekční etiologie, které narušuje výměnu plynů.",
       etiology: [
         "Komunitní bakterie: *Streptococcus pneumoniae* (nejčastější), *Haemophilus influenzae*, *Moraxella catarrhalis*.",
@@ -1113,8 +1167,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-24": {
+  "spec-1-24": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Plicní edém je stav nadměrného hromadění tekutiny v plicním intersticiu a alveolech, který vážně narušuje difúzi plynů. Dělí se na kardiogenní a nekardiogenní.",
       etiology: [
         "Kardiogenní (hydrostatický): levostranné srdeční selhání (akutní infarkt, hypertenzní krize, chlopenní vady).",
@@ -1158,8 +1214,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-25": {
+  "spec-1-25": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Patofyziologie sleziny zahrnuje stavy splenomegalie (zvětšení sleziny), hypersplenismu (patologické zvýšení odbourávání krevních elementů) a následky splenektomie (odstranění sleziny).",
       etiology: [
         "Splenomegalie z městnání: portální hypertenze při jaterní cirhóze, trombóza v. lienalis.",
@@ -1203,8 +1261,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-26": {
+  "spec-1-26": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Obstrukční plicní nemoci jsou charakterizovány omezením proudění vzduchu v dýchacích cestách (zvýšeným bronchiálním odporem) během výdechu.",
       etiology: [
         "Vdechování škodlivých částic: tabákový kouř (hlavní příčina CHOPN), znečištěné ovzduší, průmyslový prach.",
@@ -1248,8 +1308,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-27": {
+  "spec-1-27": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Obstrukce horních dýchacích cest (OHDC) představuje mechanické zúžení nebo uzávěr dýchacích cest nad úrovní hlavních bronchů, které bezprostředně ohrožuje život pacienta udušením.",
       etiology: [
         "Aspirace cizího tělesa (nejčastěji u dětí a starších osob – jídlo, hračky).",
@@ -1293,7 +1355,7 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-28": {
+  "spec-1-28": {
     detailContent: `
       <div class="medical-detail">
         <section>
@@ -1329,6 +1391,11 @@ const SPECIAL_1_DETAILS = {
             </li>
           </ul>
         </section>
+      
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+        </section>
       </div>
     `,
     quiz: [
@@ -1351,10 +1418,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-  // Chronické selhání ledvin,
-
-"spec-1-29": {
+  "spec-1-29": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Leukopenie je pokles počtu bílých krvinek pod 4x10^9/l. Nejvýznamnější formou je neutropenie (pokles granulocytů), která dramaticky snižuje obranyschopnost těla.",
       etiology: [
         "Polékový útlum (myelotoxicita): chemoterapie (cytostatika), imunosupresiva, metamizol (riziko agranulocytózy).",
@@ -1398,8 +1465,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-30": {
+  "spec-1-30": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Levostranné srdeční selhání je charakterizováno neschopností levé komory přečerpat krev ze systémového plicního oběhu do aorty, což vede k plicnímu městnání a systémové hypoperfuzi.",
       etiology: [
         "Ischemická choroba srdeční: akutní infarkt myokardu levé komory, chronická ischemická kardiomyopatie.",
@@ -1443,8 +1512,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-31": {
+  "spec-1-31": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Leukocytóza je zvýšení počtu bílých krvinek nad 10x10^9/l. Může být reaktivní (nenádorová, např. při infekci) nebo neoplastická (leukémie a lymfomy). Myelopatie označují poruchy kostní dřeně.",
       etiology: [
         "Reaktivní leukocytóza: akutní bakteriální infekce (neutrofilie), virové infekce (lymfocytóza), popáleniny, stres.",
@@ -1488,8 +1559,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-32": {
+  "spec-1-32": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Ischemická choroba srdeční (ICHS) je onemocnění myokardu vyvolané nepoměrem mezi dodávkou kyslíku (věnčitými tepnami) a jeho spotřebou. Dělí se na stabilní formy a akutní koronární syndromy.",
       etiology: [
         "Ateroskleróza věnčitých tepen (hlavní příčina - fixní stenóza nebo ruptura plátu).",
@@ -1532,8 +1605,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-33": {
+  "spec-1-33": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Intersticiální plicní nemoci (IPN) jsou skupina různorodých chorob postihujících alveolární stěny a perialveolární intersticium. Cystická fibróza je autozomálně recesivní onemocnění charakterizované viskózním exkretem.",
       etiology: [
         "IPN - známé příčiny: expozice prachům (křemík - silikóza, azbest - azbestóza, uhelný prach), léky (amiodaron).",
@@ -1576,7 +1651,7 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-34": {
+  "spec-1-34": {
     detailContent: `
       <div class="medical-detail">
         <section>
@@ -1616,6 +1691,11 @@ const SPECIAL_1_DETAILS = {
             <li><strong>Metabolická acidóza:</strong> Ledviny ztrácejí schopnost vylučovat vodíkové ionty a reabsorbovat hydrogenuhličitany. Rozvíjí se metabolická acidóza s normální nebo zvýšenou aniontovou mezerou (retence sulfátů, fosfátů). Pacient kompenzuje hlubokým, zrychleným dýcháním (Kussmaulovo dýchání).</li>
           </ul>
         </section>
+      
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+        </section>
       </div>
     `,
     quiz: [
@@ -1638,10 +1718,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-  // Chronická obstrukční plicní nemoc,
-
-"spec-1-35": {
+  "spec-1-35": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Chronické respirační selhání (CRF) je dlouhodobý stav, kdy plíce nejsou schopny zajistit adekvátní výměnu plynů v klidu nebo při běžné zátěži. Dělí se na hypoxemické (typ I) a globální (typ II).",
       etiology: [
         "Chronická obstrukční plicní nemoc (CHOPN - nejčastější příčina rozvoje typu II).",
@@ -1685,7 +1765,7 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-36": {
+  "spec-1-36": {
     detailContent: `
       <div class="medical-detail">
         <section>
@@ -1745,6 +1825,11 @@ const SPECIAL_1_DETAILS = {
             </tbody>
           </table>
         </section>
+      
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+        </section>
       </div>
     `,
     quiz: [
@@ -1767,10 +1852,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-  // ARDS,
-
-"spec-1-37": {
+  "spec-1-37": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Hypokoagulační stavy jsou poruchy charakterizované sníženou schopností srážení krve, což vede k abnormálnímu krvácení z důvodu deficitu koagulačních faktorů.",
       etiology: [
         "Vrozené deficity: hemofilie A (deficit f. VIII), hemofilie B (deficit f. IX), von Willebrandova choroba (deficit vWF - nejčastější).",
@@ -1814,8 +1899,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-38": {
+  "spec-1-38": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Hyperkoagulační stavy (trombofilie) jsou vrozené nebo získané poruchy hemokoagulace predisponující pacienta k rozvoji trombóz (zejména hluboké žilní trombózy a plicní embolie).",
       etiology: [
         "Vrozené trombofilie (mutace): **Leidenská mutace faktoru V** (nejčastější), mutace genu pro protrombin (G20210A).",
@@ -1859,8 +1946,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-39": {
+  "spec-1-39": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Srdeční vady jsou strukturální anomálie chlopní či přepážek (vrozené/získané). Kardiomyopatie jsou primární onemocnění myokardu spojená s mechanickou nebo elektrickou dysfunkcí.",
       etiology: [
         "Získané vady chlopní: degenerativní kalcifikace (aortální stenóza u seniorů), porematická horečka, infekční endokarditida.",
@@ -1903,8 +1992,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-40": {
+  "spec-1-40": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Hemostáza je komplexní systém udržující krev v tekutém stavu a zamezující krvácení při poškození cév. Dělí se na primární (cévy a destičky), sekundární (koagulace) a terciární (fibrinolýza).",
       etiology: [
         "Poruchy primární hemostázy: trombocytopenie, trombocytopatie, vaskulopatie (syndrom Rendu-Osler-Weber).",
@@ -1947,8 +2038,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-41": {
+  "spec-1-41": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Zánětlivá onemocnění srdečních stěn zahrnují endokarditidu (postižení chlopní), myokarditidu (postižení svaloviny) a perikarditidu (postižení osrdečníku, hrozící tamponádou).",
       etiology: [
         "Infekční endokarditida: bakteriální infekce chlopní (často *Staphylococcus aureus* u I.V. narkomanů, *Streptococcus viridans* po zubařských výkonech).",
@@ -1992,8 +2085,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-42": {
+  "spec-1-42": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Glomerulopatie jsou onemocnění postihující strukturu a funkci ledvinných glomerulů. Mohou být primární (omezené na ledviny) nebo sekundární (součást systémových chorob).",
       etiology: [
         "Imunitní mechanismy: depozice cirkulujících imunokomplexů (poststreptokoková GN) nebo protilátky in situ proti GBM (Goodpasteurův syndrom).",
@@ -2037,8 +2132,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-43": {
+  "spec-1-43": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Bradyarytmie jsou poruchy srdečního rytmu s frekvencí pod 50-60/min. Vznikají v důsledku poruchy tvorby vzruchu v SA uzlu nebo poruchy vedení vzruchu v AV uzlu a Hissově svazku.",
       etiology: [
         "Degenerativní fibróza převodního systému věkem (Lenégrova choroba).",
@@ -2082,8 +2179,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-44": {
+  "spec-1-44": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Anémie z nedostatečné produkce (sideropenická, megaloblastová) a ze zvýšených ztrát (akutní posthemoragická) představují stavy snížené kyslíkové kapacity krve s odlišnou etiopatogenezí.",
       etiology: [
         "Sideropenická anémie: chronické ztráty krve (okultní krvácení z GIT u nádorů, menoragie), nedostatečný příjem železa stravou, malabsorpce (celiakie).",
@@ -2126,8 +2225,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-45": {
+  "spec-1-45": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Anémie ze zvýšené spotřeby (destrukce) červených krvinek představují hemolytické anémie. Životnost erytrocytů je zkrácena pod 120 dní a dřeň nestačí ztráty kompenzovat.",
       etiology: [
         "Intrakorpuskulární (vrozené): hereditární sférocytóza (porucha spektrinu/ankyrenu cytoskeletu), srpkovitá anémie (abnormální řetězec HbS), deficit G6PD (enzymopatie).",
@@ -2170,8 +2271,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-46": {
+  "spec-1-46": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Atelektáza je kolaps plicních alveolů, který vede k nevzdušnosti části nebo celé plíce. Způsobuje rozvoj plicního zkratu a hypoxémie.",
       etiology: [
         "Obstrukční (resorpční) atelektáza: ucpání lumen bronchu cizím tělesem, hlenovou zátkou (pooperační stavy), nebo nádorem.",
@@ -2217,6 +2320,8 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-47": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "ARDS (Syndrom akutní respirační tísně) je závažná forma nekardiogenního plicního edému charakterizovaná difúzním alveolárním poškozením (DAD) a těžkou hypoxémií refrakterní k oxygenoterapii.",
       etiology: [
         "Přímé poškození plic: aspirace žaludečního obsahu, těžká pneumonie, tonutí, inhalace toxických plynů, plicní kontuze.",
@@ -2261,6 +2366,8 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-48": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Akutní respirační selhání je stav, kdy plíce náhle nedokážou zajistit adekvátní výměnu plynů, což vede k hypoxémii (typ I) a/nebo hyperkapnii (typ II).",
       etiology: [
         "Typ I (hypoxemické): poruchy ventilačně-perfúzního poměru (např. CHOPN, astma, plicní edém), plicní zkraty (ARDS, atelektázy), difuzní bariéra.",
@@ -2301,8 +2408,10 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
-"spec-1-49": {
+  "spec-1-49": {
     richContent: {
+      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+
       definition: "Akutní ischemie a infarkt myokardu (AIM) představují kritické stavy způsobené náhlým přerušením krevního toku věnčitou tepnou, což vede k ischemické nekróze kardiomyocytů.",
       etiology: [
         "Aterotrombóza: ruptura nebo eroze aterosklerotického plátu s nasedající trombózou (90 % případů).",
@@ -2344,127 +2453,9 @@ const SPECIAL_1_DETAILS = {
         ]
       }
     ]
-  }
-};
+  },
 
-// Pomocná funkce pro vygenerování klinicky bohatého textu pro ostatní otázky
-function getExtendedSpecial1Content(q) {
-  return `
-    <div class="medical-detail">
-      <section>
-        <h3>1. Etiologie a patofyziologický úvod</h3>
-        <p>Otázka <strong>${q.title}</strong> představuje závažný patofyziologický okruh v rámci <em>${q.organSystem}</em>. Tento stav vzniká působením různých vnějších a vnitřních etiologických faktorů, které narušují homeostázu a vedou k rozvoji kompenzačních i patologických kaskád.</p>
-        <p>Etiologické faktory mohou zahrnovat ischemické poškození tkání, toxické vlivy, autoimunitní reakce nebo geneticky podmíněné poruchy transportních mechanismů a buněčné signalizace.</p>
-      </section>
-      
-      <section>
-        <h3>2. Patofyziologické mechanismy na buněčné a tkáňové úrovni</h3>
-        <p>Rozvoj tohoto onemocnění/poruchy je charakterizován řetězcem dějů:</p>
-        <ol>
-          <li><strong>Primární inzult:</strong> Zásah buněčného metabolismu, poškození membrán, porucha mitochondriální respirace nebo receptorová dysfunkce.</li>
-          <li><strong>Aktivace kompenzačních drah:</strong> Snaha organismu minimalizovat poškození (např. aktivace sympatického nervového systému, osa RAAS, sekrece specifických cytokinů, zvýšení exprese stresových proteinů).</li>
-          <li><strong>Přechod do dekompenzace:</strong> Pokud patologický podnět trvá, dochází k vyčerpání kompenzačních rezerv, strukturálnímu poškození buněk (apoptóza/nekróza) a fibrotizaci tkáně s následnou ztrátou funkce.</li>
-        </ol>
-      </section>
-
-      <section class="diagram-section">
-        <h3>Patofyziologická kaskáda rozvoje stavu</h3>
-        <pre class="ascii-diagram">
-[Etiologický podnět / Inzult] ──► [Porucha buněčné homeostázy]
-                                        │
-                                        ▼
-[Vyčerpání kompenzačních mechanismů] ◄── [Buněčný stres a poškození]
-                 │
-                 ▼
-[Strukturální a funkční selhání orgánu] ──► [Klinické symptomy]
-        </pre>
-      </section>
-
-      <section>
-        <h3>3. Klinická manifestace a principy diagnostiky</h3>
-        <p>Klinický obraz je dán rozsahem poškození a rychlostí jeho vzniku. Mezi hlavní symptomy patří jak subjektivní obtíže pacienta (únava, bolest, dyspnoe, nauzea), tak objektivní nálezy (změny tlaku, teploty, laboratorních parametrů). Diagnostika se opírá o stanovení specifických biomarkerů (enzymy, proteiny, ionty), funkční vyšetření a moderní zobrazovací metody.</p>
-      </section>
-    </div>
-  `;
-}
-
-// Dynamické doplnění pro chybějící otázky ze Speciální I.
-function mergeSpecial1Details() {
-  const completeList = window.COMPLETE_QUESTIONS || [];
-  
-  completeList.forEach(q => {
-    if (q.category === "Speciální I.") {
-      const rich = SPECIAL_1_DETAILS[q.id];
-      if (rich) {
-        if (rich.detailContent) {
-          q.detailContent = rich.detailContent;
-        } else if (rich.richContent) {
-          const keywordsHTML = q.keyTerms.map(k => `<span class="keyword-tag">${k}</span>`).join(" ");
-          const etiolHTML = rich.richContent.etiology.map(e => `<li>${e}</li>`).join("");
-          const pathoHTML = rich.richContent.pathogenesis.map(p => `<li>${p}</li>`).join("");
-          const clinHTML = rich.richContent.clinicalManifestation.map(c => `<li>${c}</li>`).join("");
-          const diagHTML = rich.richContent.diagnostics.map(d => `<li>${d}</li>`).join("");
-          
-          const diagramHTML = window.generatePathogenesisDiagram ? window.generatePathogenesisDiagram(rich.richContent.pathogenesis) : `
-[Vyvolávající příčina / Inzult]
-               │
-               ▼
-   [Buněčný a metabolický stres]
-               │
-               ▼
-[Rozvoj klinických symptomů a komplikací]
-          `;
-
-          q.detailContent = `
-            <div class="medical-detail">
-              <section>
-                <h3>1. Definice a úvod do patofyziologie</h3>
-                <p><strong>${q.title}</strong>: ${rich.richContent.definition}</p>
-              </section>
-              
-              <section>
-                <h3>2. Etiologie a rizikové faktory</h3>
-                <ul>
-                  ${etiolHTML}
-                </ul>
-              </section>
-
-              <section>
-                <h3>3. Patofyziologické mechanismy (Patogeneze)</h3>
-                <ol>
-                  ${pathoHTML}
-                </ol>
-              </section>
-
-              <section class="diagram-section">
-                <h3>Patofyziologické schéma rozvoje stavu</h3>
-                <pre class="ascii-diagram">${diagramHTML}</pre>
-              </section>
-
-              <section>
-                <h3>4. Klinické projevy a patofyziologické komplikace</h3>
-                <ul>
-                  ${clinHTML}
-                </ul>
-              </section>
-
-              <section>
-                <h3>5. Diagnostické principy a vyšetřovací metody</h3>
-                <ul>
-                  ${diagHTML}
-                </ul>
-              </section>
-            </div>
-          `;
-        } else {
-          q.detailContent = getExtendedSpecial1Content(q);
-        }
-        q.quiz = rich.quiz;
-      }
-    }
-  });,
-
-"spec-1-50": {
+  "spec-1-50": {
     detailContent: `
       <div class="medical-detail">
         <section>
@@ -2503,6 +2494,11 @@ function mergeSpecial1Details() {
             <li><strong>Hyperkalémie:</strong> Závažná akumulace draslíku (K+ > 6.0 mmol/l) ohrožuje pacienta maligními arytmiemi. Na EKG nacházíme vysoké, hrotité T vlny a rozšíření QRS.</li>
           </ul>
         </section>
+      
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+        </section>
       </div>
     `,
     quiz: [
@@ -2523,10 +2519,44 @@ function mergeSpecial1Details() {
         ]
       }
     ]
-  },
-
-  // ZBÝVAJÍCÍ OTÁZKY SPECIÁLNÍ I. (S bohatým richContent a kvízy)
+  }
 };
+
+// Pomocná funkce pro vygenerování klinicky bohatého textu pro ostatní otázky
+function getExtendedSpecial1Content(q) {
+  return `
+    <div class="medical-detail">
+      <section>
+        <h3>1. Etiologie a patofyziologický úvod</h3>
+        <p>Otázka <strong>${q.title}</strong> představuje závažný patofyziologický okruh v rámci <em>${q.organSystem}</em>. Tento stav vzniká působením různých vnějších a vnitřních etiologických faktorů, které narušují homeostázu a vedou k rozvoji kompenzačních i patologických kaskád.</p>
+        <p>Etiologické faktory mohou zahrnovat ischemické poškození tkání, toxické vlivy, autoimunitní reakce nebo geneticky podmíněné poruchy transportních mechanismů a buněčné signalizace.</p>
+      </section>
+      
+      <section>
+        <h3>2. Patofyziologické mechanismy na buněčné a tkáňové úrovni</h3>
+        <p>Rozvoj tohoto onemocnění/poruchy je charakterizován řetězcem dějů:</p>
+        <ol>
+          <li><strong>Primární inzult:</strong> Zásah buněčného metabolismu, poškození membrán, porucha mitochondriální respirace nebo receptorová dysfunkce.</li>
+          <li><strong>Aktivace kompenzačních drah:</strong> Snaha organismu minimalizovat poškození (např. aktivace sympatického nervového systému, osa RAAS, sekrece specifických cytokinů, zvýšení exprese stresových proteinů).</li>
+          <li><strong>Přechod do dekompenzace:</strong> Pokud patologický podnět trvá, dochází k vyčerpání kompenzačních rezerv, strukturálnímu poškození buněk (apoptóza/nekróza) a fibrotizaci tkáně s následnou ztrátou funkce.</li>
+        </ol>
+      </section>
+
+      <section class="diagram-section">
+        <h3>Patofyziologická kaskáda rozvoje stavu</h3>
+        <pre class="ascii-diagram">
+[Etiologický podnět / Inzult] ──► [Porucha buněčné homeostázy]
+                                        │
+                                        ▼
+[Vyčerpání kompenzačních mechanismů] ◄── [Buněčný stres a poškození]
+                 │
+                 ▼
+[Strukturální a funkční selhání orgánu] ──► [Klinické symptomy]
+        </pre>
+      </section>
+    </div>
+  `;
+}
 
 function mergeSpecial1Details() {
   const completeList = window.COMPLETE_QUESTIONS || [];
@@ -2538,11 +2568,12 @@ function mergeSpecial1Details() {
         if (rich.detailContent) {
           q.detailContent = rich.detailContent;
         } else if (rich.richContent) {
-          const keywordsHTML = q.keyTerms.map(k => `<span class="keyword-tag">${k}</span>`).join(" ");
-          const etiolHTML = rich.richContent.etiology.map(e => `<li>${e}</li>`).join("");
-          const pathoHTML = rich.richContent.pathogenesis.map(p => `<li>${p}</li>`).join("");
-          const clinHTML = rich.richContent.clinicalManifestation.map(c => `<li>${c}</li>`).join("");
-          const diagHTML = rich.richContent.diagnostics.map(d => `<li>${d}</li>`).join("");
+          const keywordsHTML = (q.keyTerms || []).map(k => `<span class="keyword-tag">${k}</span>`).join(" ");
+          const etiolHTML = (rich.richContent.etiology || []).map(e => `<li>${e}</li>`).join("");
+          const pathoHTML = (rich.richContent.pathogenesis || []).map(p => `<li>${p}</li>`).join("");
+          const clinHTML = (rich.richContent.clinicalManifestation || []).map(c => `<li>${c}</li>`).join("");
+          const diagHTML = (rich.richContent.diagnostics || []).map(d => `<li>${d}</li>`).join("");
+          const pearlHTML = rich.richContent.clinicalPearl ? `<section class="clinical-pearl"><h3>Klinická perla</h3><p>${rich.richContent.clinicalPearl}</p></section>` : "";
           
           const diagramHTML = window.generatePathogenesisDiagram ? window.generatePathogenesisDiagram(rich.richContent.pathogenesis) : `
 [Vyvolávající příčina / Inzult]
@@ -2593,6 +2624,7 @@ function mergeSpecial1Details() {
                   ${diagHTML}
                 </ul>
               </section>
+              ${pearlHTML}
             </div>
           `;
         } else {

@@ -1,0 +1,44 @@
+"spec-2-42": {
+    richContent: {
+      definition: "Roztroušená skleróza (RS) je chronické autoimunitní demyelinizační onemocnění centrálního nervového systému (CNS), které vede k postupné neurodegeneraci a neurologickému deficitu.",
+      etiology: [
+        "Autoimunitní reakce vyvolaná kombinací genetické náchylnosti (HLA-DRB1) a faktorů prostředí.",
+        "Environmentální faktory: nedostatek vitamínu D, kouření, geografická šířka (mírné pásmo).",
+        "Spouštěcí infekce: virus Epsteina-Barrové (EBV) vykazující molekulární mimikry.",
+        "Častější výskyt u žen v mladém věku (20-40 let)."
+      ],
+      pathogenesis: [
+        "Autoreaktivní CD4+ T-lymfocyty (Th1, Th17) překonají hematoencefalickou bariéru do CNS.",
+        "Rozpoznají antigeny myelinové pochvy (např. myelinový bazický protein) a vyvolají zánět za účasti B-lymfocytů a makrofágů.",
+        "Dochází k **demyelinizaci** (ztrátě myelinové pochvy), což zpomaluje nebo blokuje vedení akčních potenciálů v axonech. Později dochází k ireverzibilnímu poškození samotných axonů a vzniku gliových jizev (skleróza)."
+      ],
+      clinicalManifestation: [
+        "Retrobulbární neuritida (zánět očního nervu): náhlá porucha vizu, bolest při pohybu oka, výpadek zorného pole.",
+        "Senzitivní poruchy: parestezie (brnění), hypestezie končetin, Lhermitteův příznak (pocit elektrického proudu v zádech při předklonu hlavy).",
+        "Motorické poruchy: spastická paraparéza dolních končetin, mozečková ataxie (poruchy koordinace), intenční třes, únava."
+      ],
+      diagnostics: [
+        "Magnetická rezonance (MRI) mozku a míchy (průkaz demyelinizačních plaků dispergovaných v prostoru a čase).",
+        "Vyšetření likvoru: průkaz **oligoklonálních IgG pásů** (izoelektrická fokusace likvoru vykazuje intratékální syntézu protilátek, které v séru chybí).",
+        "Evokované potenciály (VEP) – průkaz zpomalení vedení zrakovou dráhou."
+      ]
+    },
+    quiz: [
+      {
+        question: "Nález kterého parametru v mozkomíšním moku je typickým diagnostickým znakem roztroušené sklerózy?",
+        options: [
+          "Extrémně nízká bílkovina a vysoký laktát",
+          "Přítomnost oligoklonálních pásů IgG (intratékální syntéza imunoglobulinů)",
+          "Polymorfonukleární pleocytóza nad 1000/ul",
+          "Nález nádorových buněk"
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. Nízká bílkovina a vysoký laktát značí bakteriální infekci.",
+          "Správně! Oligoklonální pásy IgG v likvoru (které nejsou přítomny v séru) potvrzují, že uvnitř CNS dochází k chronické aktivaci B-lymfocytů a lokální produkci imunoglobulinů namířených proti myelinu.",
+          "Nesprávně. Neutrofilní pleocytóza je známkou purulentní meningitidy.",
+          "Nesprávně. RS je zánětlivé, nikoliv primárně neoplastické onemocnění."
+        ]
+      }
+    ]
+  }
