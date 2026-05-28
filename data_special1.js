@@ -2393,7 +2393,7 @@ const SPECIAL_1_DETAILS = {
         question: "Která z následujících definic a kritérií charakterizuje ventilaci u II. typu (hyperkapnického) akutního respiračního selhání?",
         options: [
           "Selhání oxygenace s paO2 < 8 kPa při nízkém nebo normálním paCO2",
-          "Alveolární hypoventilace a selhání respirační pumpy projevující se hromaděním CO2 s paCO2 > 6.7 kPa and acidózou",
+          "Alveolární hypoventilace a selhání respirační pumpy projevující se hromaděním CO2 s paCO2 > 6.7 kPa a acidózou",
           "Zvýšená plicní poddajnost bez ovlivnění plynů",
           "Pravolevý srdeční zkrat s normálním paCO2"
         ],

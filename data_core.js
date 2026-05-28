@@ -5,7 +5,7 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Základní charakteristika plicních onemocnění: obstrukce a restrikce etiopatogeneze",
   "Portální hypertenze - etiopatogeneze, projevy, následky",
   "Trombocytopenie a trombocytopatie - etiopatogeneze, projevy, následky",
-  "Systémová arteriální hypotenze etiopatogeneze and následky",
+  "Systémová arteriální hypotenze etiopatogeneze a následky",
   "Tachyarytmie: supraventrikulární a ventrikulární - etiopatogeneze, rozdělení, následky. Fibrilace a flutter síní. Extrasytoly. Reentry. Preexcitační syndromy",
   "Pravostranné srdeční selhání - akutní a chronická etiologie, patogeneze, projevy, následky",
   "Srdeční selhání - obecná charakteristika etiopatogeneze, projevy, následky. Systolická a diastolická dysfunkce",
@@ -180,8 +180,8 @@ const RAW_QUESTIONS_GENERAL = [
   "Obezita - etiopatogeneze, následky, role v patogenezi nemocí.",
   "Šok-definice, etiopatogeneze, rozdělení.",
   "Poškození a smrt buňky - reversibilní a ireversibilní, nekróza, apoptóza, autofagie.",
-  "Horečka - etiopatogenze, průběh (fáze) horečky, pozitivní a negativní vliv horečky na organismus.",
-  "Nadjádorové bujení - teorie vzniku nádorů, růst nádoru, tvorba metastáz, příčiny smrti u nádorových onemocnění, nádorové markery, paraneoplastický syndrom.",
+  "Horečka - etiopatogeneze, průběh (fáze) horečky, pozitivní a negativní vliv horečky na organismus.",
+  "Nádorové bujení - teorie vzniku nádorů, růst nádoru, tvorba metastáz, příčiny smrti u nádorových onemocnění, nádorové markery, paraneoplastický syndrom.",
   "Malnutrice - etiopatogeneze, následky, role v patogenezi nemocí.",
   "Hypoxie a hyperoxie buňky - příčiny, adaptace, následky.",
   "Edém - rozdělení, etiopatogeneze, klinická manifestace, následky.",
@@ -211,8 +211,7 @@ const RAW_QUESTIONS_GENERAL = [
   "Poškození vlivem fyzikálních vlivů tlaku, crush syndrom (rhabdomyolýza), zvuk."
 ];
 
-// Repair "Nadjádorové bujení" typo from raw copy if present
-RAW_QUESTIONS_GENERAL[22] = "Nádorové bujení - teorie vzniku nádorů, růst nádoru, tvorba metastáz, příčiny smrti u nádorových onemocnění, nádorové markery, paraneoplastický syndrom.";
+
 
 function getOrganSystem(title) {
   const lower = title.toLowerCase();
