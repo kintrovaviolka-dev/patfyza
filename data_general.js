@@ -486,7 +486,7 @@ const GENERAL_DETAILS = {
     richContent: {
       definition: `Stres je stav nespecifické reakce organismu na jakýkoliv působící stresor (fyzikální, chemický, psychický), popsaný Hansem Selyem jako Všeobecný adaptační syndrom (GAS).`,
       etiology: [`Fyzikální stresory: chlad, horko, trauma, infekce, bolest, nadměrná fyzická zátěž.`, `Psychogenní stresory: úzkost, strach, sociální konflikty, dlouhodobá duševní zátěž.`, `Narušení biologických rytmů a spánková deprivace.`],
-      pathogenesis: [`Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradreanalin). Reakce 'boj nebo útěk'.`, `Fáze 2: Rezistence. Aktivace osy hypothalamus-hypofýza-kůra nadledvin (osa HPA). Uvolnění CRH, ACTH a následně kortizolu, který mobilizuje energetické zásoby.`, `Fáze 3: Vyčerpání. Nastává při dlouhodobém působení stresoru. Dochází k depleci glukokortikoidů, atrofii kůry nadledvin a selhání adaptace.`],
+      pathogenesis: [`Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradrenalin). Reakce 'boj nebo útěk'.`, `Fáze 2: Rezistence. Aktivace osy hypothalamus-hypofýza-kůra nadledvin (osa HPA). Uvolnění CRH, ACTH a následně kortizolu, který mobilizuje energetické zásoby.`, `Fáze 3: Vyčerpání. Nastává při dlouhodobém působení stresoru. Dochází k depleci glukokortikoidů, atrofii kůry nadledvin a selhání adaptace.`],
       clinicalManifestation: [`Poplachová fáze: tachykardie, arteriální hypertenze, mydriáza, zvýšení glykémie, potlačení GIT motility.`, `Fáze rezistence: chronicky zvýšený kortizol způsobuje supresi imunitního systému (involuce thymu, lymfopenie), katabolismus.`, `Fáze vyčerpání: úzkost, deprese, rozvoj stresových vředů v žaludku (Curlingovy vředy), hypertenze a metabolický rozvrat.`],
       diagnostics: [`Měření hladin kortizolu v séru, slinách (ztráta diurnálního rytmu) a volného kortizolu v moči.`, `Stanovení plazmatických katecholaminů a ACTH.`, `Sledování imunitního profilu (leukocytární vzorec, pokles počtu eosinofilů a lymfocytů).`]
     },
@@ -534,7 +534,7 @@ const GENERAL_DETAILS = {
                   "Regulace: pokles Ca2+ stimuluje sekreci **PTH**. PTH zvyšuje uvolňování Ca2+ z kostí, reabsorpci Ca2+ v ledvinách a vylučování fosfátů (fosfaturie).",
                   "Dekompresní nemoc: rychlý vzestup z hloubky uvolňuje plynný dusík z tkání ve formě bublin, které ucpávají kapiláry.",
                   "Plicní embolie (PE): trombus projde pravým srdcem do plicní arterie, kde mechanicky ucpe větve řečiště.",
-                  "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradreanalin). Reakce 'boj nebo útěk'."
+                  "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradrenalin). Reakce 'boj nebo útěk'."
             ],
             "correct": 3,
             "explanations": [
@@ -1016,7 +1016,7 @@ const GENERAL_DETAILS = {
                   "RAC: alveolární hypoventilace vede k vzestupu pCO2 v krvi (hyperkapnie). Hromadění CO2 zvyšuje koncentraci kyseliny uhličité a snižuje pH.",
                   "Chlad: vazokonstrikce, tvorba ledových krystalů v buňkách (dehydratace a destrukce membrán), krystalizace vody v cévách (trombóza).",
                   "Bdělost je udržována ascendentním retikulárním aktivačním systémem (ARAS) v mozkovém kmeni, který stimuluje kůru.",
-                  "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradreanalin). Reakce 'boj nebo útěk'."
+                  "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradrenalin). Reakce 'boj nebo útěk'."
             ],
             "correct": 1,
             "explanations": [
@@ -1210,7 +1210,7 @@ const GENERAL_DETAILS = {
                   "Při arteriální trombóze dominuje adheze a agregace destiček na obnažený subendotelový kolagen (bílý destičkový trombus).",
                   "pH krve je určeno poměrem bikarbonátu a parciálního tlaku CO2 podle Hendersonovy-Hasselbalchovy rovnice.",
                   "Izotonická: tekutina se hromadí v extracelulárním prostoru (ECF) a filtruje se do intersticia, objem buněk (ICF) se nemění.",
-                  "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradreanalin). Reakce 'boj nebo útěk'."
+                  "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradrenalin). Reakce 'boj nebo útěk'."
             ],
             "correct": 1,
             "explanations": [
@@ -1688,7 +1688,7 @@ const GENERAL_DETAILS = {
       {
             "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Hyperhydratace?",
             "options": [
-                  "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradreanalin). Reakce 'boj nebo útěk'.",
+                  "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradrenalin). Reakce 'boj nebo útěk'.",
                   "Izotonická: úbytek tekutiny postihuje pouze extracelulární prostor (ECF), objem buněk (ICF) se nemění.",
                   "Izotonická: tekutina se hromadí v extracelulárním prostoru (ECF) a filtruje se do intersticia, objem buněk (ICF) se nemění.",
                   "Dekompresní nemoc: rychlý vzestup z hloubky uvolňuje plynný dusík z tkání ve formě bublin, které ucpávají kapiláry."
@@ -2078,7 +2078,7 @@ const GENERAL_DETAILS = {
                   "Zvracení je koordinováno **centrem pro zvracení** v prodloužené míše, které přijímá signály z GIT, CTZ, vestibulárního aparátu a kůry.",
                   "Cytokiny stimulují buňky organum vasculosum laminae terminalis (OVLT) v hypothalamu k produkci prostaglandinu E2 (PGE2).",
                   "MAC: nadbytek fixních kyselin spotřebovává hydrogenuhličitanové pufry, což vede k poklesu pH.",
-                  "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradreanalin). Reakce 'boj nebo útěk'."
+                  "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradrenalin). Reakce 'boj nebo útěk'."
             ],
             "correct": 1,
             "explanations": [
@@ -3230,7 +3230,7 @@ const GENERAL_DETAILS = {
             "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Poruchy metabolismu železa (Fe2+/Fe3+)?",
             "options": [
                   "Deficit GH/IGF-1 tlumí proliferaci chondrocytů v růstových ploténkách. Nadbytek GH před uzávěrem plotének vede k gigantismu, po uzávěru k akromegalii.",
-                  "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradreanalin). Reakce 'boj nebo útěk'.",
+                  "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradrenalin). Reakce 'boj nebo útěk'.",
                   "Deficit: vyčerpání zásob železa tlumí tvorbu hemu, což vede k poruše syntézy hemoglobinu a rozvoji mikrocytární anémie.",
                   "Systémové vyplavení PAMPs a DAMPs aktivuje imunocyty k uvolnění cytokinové bouře (TNF-alfa, IL-1, IL-6)."
             ],
