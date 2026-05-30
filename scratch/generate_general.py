@@ -167,7 +167,7 @@ TOPICS = [
             "Narušení biologických rytmů a spánková deprivace."
         ],
         "pathogenesis": [
-            "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradreanalin). Reakce 'boj nebo útěk'.",
+            "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradrenalin). Reakce 'boj nebo útěk'.",
             "Fáze 2: Rezistence. Aktivace osy hypothalamus-hypofýza-kůra nadledvin (osa HPA). Uvolnění CRH, ACTH a následně kortizolu, který mobilizuje energetické zásoby.",
             "Fáze 3: Vyčerpání. Nastává při dlouhodobém působení stresoru. Dochází k depleci glukokortikoidů, atrofii kůry nadledvin a selhání adaptace."
         ],
