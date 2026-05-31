@@ -14,7 +14,7 @@ const SPECIAL_1_DETAILS = {
           <h3>2. Etiopatogeneze maligních arytmií</h3>
           <ul>
             <li><strong>Fibrilace komor (VF):</strong> Chaotická, nesynchronizovaná elektrická aktivita komor s frekvencí 300–500/min. Mechanicky komory pouze fibrilují (chvějí se) bez efektivního tepového objemu. Vzniká na podkladě mikro-reentry okruhů (tzv. rotorů) v elektricky heterogenním myokardu (ischemie, jizva, elektrolytová dysbalance).</li>
-            <li><strong>Setrvalá komorová tachykardie bez hmatného pulsu (pVT):</strong> Rychlý, organizovaný komorový rytmus (frekvence > 100/min, obvykle > 180/min) vycházející z ektopického ložiska pod bifurkací Hissova svazku. Způsobuje zástavu, protože zkrácená diastola znemožňuje plnění komor. Mechanismus je nejčastěji makro-reentry kolem infarktové jizvy.</li>
+            <li><strong>Setrvalá komorová tachykardie bez hmatného pulsu (pVT):</strong> Rychlý, organizovaný komorový rytmus (frekvence > 100/min, obvykle > 180/min) vycházející z ektopického ložiska pod bifurkací Hisova svazku. Způsobuje zástavu, protože zkrácená diastola znemožňuje plnění komor. Mechanismus je nejčastěji makro-reentry kolem infarktové jizvy.</li>
             <li><strong>Asystolie:</strong> Kompletní elektrické i mechanické ticho v komorách (izoelektrická linie). Je to obvykle terminální stádium neléčené VF nebo důsledek kritické deplece ATP v myokardu, těžké acidózy, hypoxie nebo extrémního tonu vagu.</li>
             <li><strong>Bezpulsová elektrická aktivita (PEA / Elektromechanická disociace):</strong> Stav, kdy je na EKG registrován elektrický rytmus (včetně sinusového), ale chybí mechanická kontrakce a minutový výdej. Vzniká při selhání spřažení excitace a kontrakce (např. deplece intracelulárního vápníku) nebo mechanické obstrukci plnění (tenzní pneumotorax, srdeční tamponáda, masivní plicní embolie).</li>
           </ul>
@@ -345,7 +345,7 @@ const SPECIAL_1_DETAILS = {
     richContent: {
       clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
 
-      definition: "Tachyarytmie jsou poruchy srdečního rytmu s frekvencí nad 100/min. Dělí se na supraventrikulární (SVT - nad Hissovým svazkem) a ventrikulární (VT - komorové, ohrožující život).",
+      definition: "Tachyarytmie jsou poruchy srdečního rytmu s frekvencí nad 100/min. Dělí se na supraventrikulární (SVT - nad Hisovým svazkem) a ventrikulární (VT - komorové, ohrožující život).",
       etiology: [
         "Ischemie myokardu: akutní infarkt myokardu a jizvy (hlavní spouštěč komorových tachykardií).",
         "Strukturální onemocnění srdce: kardiomyopatie, chlopenní vady, myokarditida.",
@@ -2136,7 +2136,7 @@ const SPECIAL_1_DETAILS = {
     richContent: {
       clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
 
-      definition: "Bradyarytmie jsou poruchy srdečního rytmu s frekvencí pod 50-60/min. Vznikají v důsledku poruchy tvorby vzruchu v SA uzlu nebo poruchy vedení vzruchu v AV uzlu a Hissově svazku.",
+      definition: "Bradyarytmie jsou poruchy srdečního rytmu s frekvencí pod 50-60/min. Vznikají v důsledku poruchy tvorby vzruchu v SA uzlu nebo poruchy vedení vzruchu v AV uzlu a Hisově svazku.",
       etiology: [
         "Degenerativní fibróza převodního systému věkem (Lenégrova choroba).",
         "Ischemie myokardu: akutní infarkt spodní stěny (často postihuje a. nodi atrioventricularis).",
