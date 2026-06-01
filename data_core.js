@@ -86,7 +86,7 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Akutní pankreatitida - etiopatogeneze, projevy, následky.",
   "Hypertyreóza - etiopatogeneze, projevy, následky",
   "Hyperparatyreóza - etiopatogeneze, projevy, následky",
-  "Hyperkotizolizmus. Cushingova nemoc a syndrom - etiopatogeneze, projevy, následky",
+  "Hyperkortizolismus. Cushingova nemoc a syndrom - etiopatogeneze, projevy, následky",
   "Hyperaldosteronismus - etiopatogeneze, rozdělení, projevy, následky. Connův syndrom",
   "Onemocnění tlustého střeva divertikulóza, polypóza a karcinom- etiopatogeneze a následky. Ileus - etiopatogeneze, projevy, následky",
   "Feochromocytom, mnohočetné endokrinní neoplazie - etiopatogeneze, projevy, následky. Zollinger Ellisonův syndrom. Gastroenteropankreatický hormonální systém.",
@@ -100,7 +100,7 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Autonomní nervový systém - poruchy funkce, efekt na orgánové systémy",
   "Artróza - etiopatogeneze, projevy, následky",
   "Akutní selhání jater - etiopatogeneze, projevy, následky. Jaterní encefalopatie.",
-  "Hypoparathyreóza - etiopatogeneze, projevy, následky.",
+  "Hypoparatyreóza - etiopatogeneze, projevy, následky.",
   "Akutní a chronické hepatitidy - etiopatogeneze, rozdělení, projevy, následky.",
   "Adenokortikální insuficience - Addisonova choroba. Adrenální (addisonská) krize - etiopatogeneze, projevy, následky."
 ];

@@ -9,7 +9,7 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Trombocytopenie a trombocytopatie - etiopatogeneze, projevy, následky",
   "Systémová arteriální hypotenze etiopatogeneze a následky",
   "Regulace funkce endokrinního systému - negativní zpětná vazba, příklady etiopatogeneze poruch endokrinního systému",
-  "Tachyarytmie: supraventrikulární a ventrikulární - etiopatogeneze, rozdělení, následky. Fibrilace a flutter síní. Extrasytoly. Reentry. Preexcitační syndromy",
+  "Tachyarytmie: supraventrikulární a ventrikulární - etiopatogeneze, rozdělení, následky. Fibrilace a flutter síní. Extrasystoly. Reentry. Preexcitační syndromy",
   "Pravostranné srdeční selhání - akutní a chronická etiologie, patogeneze, projevy, následky",
   "Srdeční selhání - obecná charakteristika etiopatogeneze, projevy, následky. Systolická a diastolická dysfunkce",
   "Akutní tubulární nekróza - etiopatogeneze, projevy, následky",
@@ -80,7 +80,7 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Hypotalamo-hypofyzární systém - úroveň hypotalamu, adenohypofýzy, a neurohypofýzy - etiopatogeneze, projevy, následky. Akutní pankreatitida - etiopatogeneze, projevy, následky",
   "Hypertyreóza - etiopatogeneze, projevy, následky",
   "Hyperparatyreóza - etiopatogeneze, projevy, následky",
-  "Hyperkotizolizmus. Cushingova nemoc a syndrom - etiopatogeneze, projevy, následky",
+  "Hyperkortizolismus. Cushingova nemoc a syndrom - etiopatogeneze, projevy, následky",
   "Hyperaldosteronismus - etiopatogeneze, rozdělení, projevy, následky. Connův syndrom",
   "Onemocnění tlustého střeva divertikulóza, polypóza a karcinom- etiopatogeneze a následky. Ileus - etiopatogeneze, projevy, následky",
   "Feochromocytom, mnohočetné endokrinní neoplazie - etiopatogeneze, projevy, následky. Zollinger Ellisonův syndrom. Gastroenteropankreatický hormonální systém. Epilepsie etiopatogeneze, klasifikace, projevy, následky. Edém mozku - etiopatogeneze, projevy, následky. Cytotoxický edém a vazogenní edém, intersticiální edém. Diabetes mellitus - základní rozdělení, etiopatogeneze, projevy, následky",
@@ -89,7 +89,7 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Centrální a periferní paréza - etiopatogeneze, projevy, následky",
   "Autonomní nervový systém - poruchy funkce, efekt na orgánové systémy",
   "Artróza - etiopatogeneze, projevy, následky",
-  "Akutní selhání jater - etiopatogeneze, projevy, následky. Jaterní encefalopatie. Hypoparathyreóza - etiopatogeneze, projevy, následky",
+  "Akutní selhání jater - etiopatogeneze, projevy, následky. Jaterní encefalopatie. Hypoparatyreóza - etiopatogeneze, projevy, následky",
   "Akutní a chronické hepatitidy - etiopatogeneze, rozdělení, projevy, následky. Adenokortikální insuficience Addisonova choroba. Adrenální (addisonská) krize - etiopatogeneze, projevy, následky"
 ];
 
