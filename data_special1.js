@@ -2091,7 +2091,7 @@ const SPECIAL_1_DETAILS = {
 
       definition: "Glomerulopatie jsou onemocnění postihující strukturu a funkci ledvinných glomerulů. Mohou být primární (omezené na ledviny) nebo sekundární (součást systémových chorob).",
       etiology: [
-        "Imunitní mechanismy: depozice cirkulujících imunokomplexů (poststreptokoková GN) nebo protilátky in situ proti GBM (Goodpasteurův syndrom).",
+        "Imunitní mechanismy: depozice cirkulujících imunokomplexů (poststreptokoková GN) nebo protilátky in situ proti GBM (Goodpastureův syndrom).",
         "Systémová onemocnění: diabetes mellitus (diabetická glomeruloskleróza), systémový lupus erythematodes (lupusová nefritida).",
         "Genetické vlivy: Alportův syndrom (mutace kolagenu IV).",
         "Léky a toxiny: zlato, penicilamin, NSAID."
@@ -2104,7 +2104,7 @@ const SPECIAL_1_DETAILS = {
       clinicalManifestation: [
         "Nefrotický syndrom: proteinurie > 3.5 g/24h, těžké otoky, hypoalbuminémie, hyperlipidémie.",
         "Nefritický syndrom: makroskopická hematurie (barvy čaje), hypertenze, oligurie.",
-        "Plicní krvácení a hemoptýza (u Goodpasteurova syndromu z důvodu zkřížené reakce protilátek proti plicním alveolům)."
+        "Plicní krvácení a hemoptýza (u Goodpastureova syndromu z důvodu zkřížené reakce protilátek proti plicním alveolům)."
       ],
       diagnostics: [
         "Renální biopsie s imunofluorescenčním a elektronovým mikroskopickým vyšetřením (zlatý standard).",
