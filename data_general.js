@@ -40,7 +40,7 @@ const GENERAL_DETAILS = {
             ],
             "correct": 3,
             "explanations": [
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Imunopatologické reakce.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Hypoglykemie.",
                   "Správně! Toto je klíčový etiologický faktor u tématu: Definice nemoci a zdraví."
@@ -138,7 +138,7 @@ const GENERAL_DETAILS = {
             "correct": 0,
             "explanations": [
                   "Správně! Toto je klíčový etiologický faktor u tématu: Ateroskleróza.",
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Vliv celkové a částečné imobilizace.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Edém."
             ]
@@ -172,7 +172,7 @@ const GENERAL_DETAILS = {
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Sepse, syndrom multiorgánové dysfunkce (MODS).",
                   "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Ateroskleróza.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Ischemie.",
-                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Šok-definice, etiopatogeneze, rozdělení."
+                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Šok - definice, etiopatogeneze, rozdělení."
             ]
       },
       {
@@ -220,7 +220,7 @@ const GENERAL_DETAILS = {
                   "Správně! Toto je přesná patofyziologická definice pro: Poruchy bilance kalia (K+).",
                   "Nesprávně. Tato definice popisuje téma: Edém.",
                   "Nesprávně. Tato definice popisuje téma: Dehydratace.",
-                  "Nesprávně. Tato definice popisuje téma: Systémová zánětlivá odpověď- etiopatogeneze, následky."
+                  "Nesprávně. Tato definice popisuje téma: Systémová zánětlivá odpověď - etiopatogeneze, následky."
             ]
       },
       {
@@ -444,7 +444,7 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Lokální zánětová odpověď.",
                   "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Hypovolemický šok.",
-                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Ikterus- etiopatogeneze.",
+                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Dušnost."
             ]
       },
@@ -474,7 +474,7 @@ const GENERAL_DETAILS = {
             ],
             "correct": 1,
             "explanations": [
-                  "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Šok - definice, etiopatogeneze, rozdělení.",
                   "Správně! Toto je důležitá referenční hodnota, rozmezí nebo kritérium pro téma: Hypovolemický šok.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Metabolická acidóza a alkalóza.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Nespecifický a specifický imunitní systém."
@@ -690,7 +690,7 @@ const GENERAL_DETAILS = {
     ],
     quiz: [
       {
-            "question": "Které tvrzení nejlépe definuje nebo popisuje téma: Systémová zánětlivá odpověď- etiopatogeneze, následky?",
+            "question": "Které tvrzení nejlépe definuje nebo popisuje téma: Systémová zánětlivá odpověď - etiopatogeneze, následky?",
             "options": [
                   "Trombóza je patologická intravaskulární koagulace krve zaživa, která vede k tvorbě sraženiny (trombu) a může způsobit částečnou či úplnou obstrukci cévy.",
                   "Ischemie je lokální omezení nebo úplné zastavení přítoku arteriální krve do tkáně, což vede k nedostatku kyslíku a živin a k hromadění metabolitů.",
@@ -701,12 +701,12 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Nesprávně. Tato definice popisuje téma: Trombóza.",
                   "Nesprávně. Tato definice popisuje téma: Ischemie.",
-                  "Správně! Toto je přesná patofyziologická definice pro: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Správně! Toto je přesná patofyziologická definice pro: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tato definice popisuje téma: Časový faktor v patogenezi nemocí, pojmy kompenzace a dekompenzace, strukturální a funkční orgánová/tkáňová dysfunkce."
             ]
       },
       {
-            "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Systémová zánětlivá odpověď- etiopatogeneze, následky?",
+            "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Systémová zánětlivá odpověď - etiopatogeneze, následky?",
             "options": [
                   "Infekční příčiny (sepse, těžká pneumonie, urosepse).",
                   "Hemoragický šok: zevní nebo vnitřní krvácení (trauma, prasklé varixy, gastrointestinální vředy).",
@@ -715,14 +715,14 @@ const GENERAL_DETAILS = {
             ],
             "correct": 0,
             "explanations": [
-                  "Správně! Toto je klíčový etiologický faktor u tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Správně! Toto je klíčový etiologický faktor u tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Hypovolemický šok.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Poruchy metabolismu železa (Fe2+/Fe3+).",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Nádorové bujení."
             ]
       },
       {
-            "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky?",
+            "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky?",
             "options": [
                   "Regulace: pokles Ca2+ stimuluje sekreci **PTH**. PTH zvyšuje uvolňování Ca2+ z kostí, reabsorpci Ca2+ v ledvinách a vylučování fosfátů (fosfaturie).",
                   "Kardiogenní: pokles kontraktility -> pokles tepového objemu a srdečního indexu -> městnání v plicním oběhu (plicní edém) + systémová hypotenze.",
@@ -733,12 +733,12 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Poruchy bilance kalcia (Ca2+) a fosfátů.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Kardiogenní a obstrukční šok.",
-                  "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Imunopatologické reakce."
             ]
       },
       {
-            "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Systémová zánětlivá odpověď- etiopatogeneze, následky?",
+            "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Systémová zánětlivá odpověď - etiopatogeneze, následky?",
             "options": [
                   "Rozvoj hluboké žilní trombózy (HŽT) z venostázy a následná plicní embolie.",
                   "RAC: somnolence, bolesti hlavy, poruchy soustředění (CO2 působí jako anestetikum), periferní vazodilatace, hyperkalémie.",
@@ -750,11 +750,11 @@ const GENERAL_DETAILS = {
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Vliv celkové a částečné imobilizace.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Respirační acidóza a alkalóza.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Diseminovaná intravaskulární koagulace (DIC).",
-                  "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Systémová zánětlivá odpověď- etiopatogeneze, následky."
+                  "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Systémová zánětlivá odpověď - etiopatogeneze, následky."
             ]
       },
       {
-            "question": "Která z následujících hodnot, referenčních rozmezí nebo kritérií je správná pro téma: Systémová zánětlivá odpověď- etiopatogeneze, následky?",
+            "question": "Která z následujících hodnot, referenčních rozmezí nebo kritérií je správná pro téma: Systémová zánětlivá odpověď - etiopatogeneze, následky?",
             "options": [
                   "Sérový albumin značící těžkou proteinkalorickou malnutrici je: < 25 g/l",
                   "Teplota pro kritérium SIRS je: < 36 °C nebo > 38 °C",
@@ -764,7 +764,7 @@ const GENERAL_DETAILS = {
             "correct": 1,
             "explanations": [
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Malnutrice.",
-                  "Správně! Toto je důležitá referenční hodnota, rozmezí nebo kritérium pro téma: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Správně! Toto je důležitá referenční hodnota, rozmezí nebo kritérium pro téma: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Metabolická acidóza a alkalóza.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Respirační acidóza a alkalóza."
             ]
@@ -941,7 +941,7 @@ const GENERAL_DETAILS = {
             "correct": 3,
             "explanations": [
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Trombóza.",
-                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Kardiogenní a obstrukční šok.",
                   "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Imunopatologické reakce."
             ]
@@ -1006,7 +1006,7 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Krvácení.",
                   "Správně! Toto je klíčový etiologický faktor u tématu: Poškození vlivem fyzikálních vlivů.",
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Poruchy růstu."
             ]
       },
@@ -1473,7 +1473,7 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Správně! Toto je přesná patofyziologická definice pro: Dehydratace.",
                   "Nesprávně. Tato definice popisuje téma: Hyperhydratace.",
-                  "Nesprávně. Tato definice popisuje téma: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Nesprávně. Tato definice popisuje téma: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tato definice popisuje téma: Ateroskleróza."
             ]
       },
@@ -1570,7 +1570,7 @@ const GENERAL_DETAILS = {
                   "Správně! Toto je přesná patofyziologická definice pro: Reaktivní kyslíkové a dusíkové sloučeniny.",
                   "Nesprávně. Tato definice popisuje téma: Poškození vlivem chemických vlivů.",
                   "Nesprávně. Tato definice popisuje téma: Metabolický syndrom X.",
-                  "Nesprávně. Tato definice popisuje téma: Systémová zánětlivá odpověď- etiopatogeneze, následky."
+                  "Nesprávně. Tato definice popisuje téma: Systémová zánětlivá odpověď - etiopatogeneze, následky."
             ]
       },
       {
@@ -1633,7 +1633,7 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Správně! Toto je důležitá referenční hodnota, rozmezí nebo kritérium pro téma: Reaktivní kyslíkové a dusíkové sloučeniny.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Poškození a smrt buňky.",
-                  "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Diseminovaná intravaskulární koagulace (DIC)."
             ]
       }
@@ -1810,7 +1810,7 @@ const GENERAL_DETAILS = {
             "correct": 0,
             "explanations": [
                   "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Obezita.",
-                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Ikterus- etiopatogeneze.",
+                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Dušnost.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Poškození vlivem chemických vlivů."
             ]
@@ -1848,7 +1848,7 @@ const GENERAL_DETAILS = {
     ],
     quiz: [
       {
-            "question": "Které tvrzení nejlépe definuje nebo popisuje téma: Šok-definice, etiopatogeneze, rozdělení?",
+            "question": "Které tvrzení nejlépe definuje nebo popisuje téma: Šok - definice, etiopatogeneze, rozdělení?",
             "options": [
                   "Šok je akutní, život ohrožující syndrom charakterizovaný generalizovanou hypoperfuzí tkání, která vede k deficitu kyslíku a živin v buňkách a k metabolickému rozvratu.",
                   "Patologické změny tlaku prostředí vyvolávají dekompresní nemoc nebo barotrauma. Crush syndrom (syndrom zasypání) vzniká dlouhodobým stlačením svalů s jejich následnou nekrózou (rhabdomyolýzou) a uvolněním myoglobinu do oběhu.",
@@ -1857,14 +1857,14 @@ const GENERAL_DETAILS = {
             ],
             "correct": 0,
             "explanations": [
-                  "Správně! Toto je přesná patofyziologická definice pro: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Správně! Toto je přesná patofyziologická definice pro: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tato definice popisuje téma: Poškození vlivem fyzikálních vlivů tlaku, crush syndrom (rhabdomyolýza), zvuk.",
                   "Nesprávně. Tato definice popisuje téma: Ischemie.",
                   "Nesprávně. Tato definice popisuje téma: Dehydratace."
             ]
       },
       {
-            "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Šok-definice, etiopatogeneze, rozdělení?",
+            "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Šok - definice, etiopatogeneze, rozdělení?",
             "options": [
                   "Izotonická: rovnoměrná ztráta vody a soli (zvracení, průjmy, popáleniny).",
                   "Uzávěr lumen tepny trombem nasedajícím na prasklý aterosklerotický plát (infarkt).",
@@ -1875,12 +1875,12 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Dehydratace.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Ischemie.",
-                  "Správně! Toto je klíčový etiologický faktor u tématu: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Správně! Toto je klíčový etiologický faktor u tématu: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Hyperhydratace."
             ]
       },
       {
-            "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Šok-definice, etiopatogeneze, rozdělení?",
+            "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Šok - definice, etiopatogeneze, rozdělení?",
             "options": [
                   "Izotonická: úbytek tekutiny postihuje pouze extracelulární prostor (ECF), objem buněk (ICF) se nemění.",
                   "Fáze 1: Kompenzovaný šok. Centralizace oběhu (sympatikus, RAAS) udržuje perfuzní tlak v mozku a srdci na úkor periferie.",
@@ -1890,13 +1890,13 @@ const GENERAL_DETAILS = {
             "correct": 1,
             "explanations": [
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Dehydratace.",
-                  "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Nádorové bujení.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Hyperhydratace."
             ]
       },
       {
-            "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Šok-definice, etiopatogeneze, rozdělení?",
+            "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Šok - definice, etiopatogeneze, rozdělení?",
             "options": [
                   "Časté, neobvyklé nebo na léčbu refrakterní infekce (pneumonie, sinusitidy, oportunní infekce u HIV).",
                   "Hypotenze (MAP < 65 mmHg), tachykardie, tachypnoe.",
@@ -1906,13 +1906,13 @@ const GENERAL_DETAILS = {
             "correct": 1,
             "explanations": [
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Nespecifický a specifický imunitní systém.",
-                  "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Imunopatologické reakce.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Kardiogenní a obstrukční šok."
             ]
       },
       {
-            "question": "Která z následujících hodnot, referenčních rozmezí nebo kritérií je správná pro téma: Šok-definice, etiopatogeneze, rozdělení?",
+            "question": "Která z následujících hodnot, referenčních rozmezí nebo kritérií je správná pro téma: Šok - definice, etiopatogeneze, rozdělení?",
             "options": [
                   "Kritická hranice středního arteriálního tlaku (MAP) je: < 65 mmHg",
                   "Kritická hranice fibrinogenu u DIC je: < 1.0 g/l",
@@ -1921,7 +1921,7 @@ const GENERAL_DETAILS = {
             ],
             "correct": 0,
             "explanations": [
-                  "Správně! Toto je důležitá referenční hodnota, rozmezí nebo kritérium pro téma: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Správně! Toto je důležitá referenční hodnota, rozmezí nebo kritérium pro téma: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Diseminovaná intravaskulární koagulace (DIC).",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Časový faktor v patogenezi nemocí, pojmy kompenzace a dekompenzace, strukturální a funkční orgánová/tkáňová dysfunkce.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Hypovolemický šok."
@@ -2243,7 +2243,7 @@ const GENERAL_DETAILS = {
             "correct": 3,
             "explanations": [
                   "Nesprávně. Tato definice popisuje téma: Vliv celkové a částečné imobilizace.",
-                  "Nesprávně. Tato definice popisuje téma: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Nesprávně. Tato definice popisuje téma: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tato definice popisuje téma: Poškození vlivem fyzikálních vlivů.",
                   "Správně! Toto je přesná patofyziologická definice pro: Malnutrice."
             ]
@@ -2275,7 +2275,7 @@ const GENERAL_DETAILS = {
             "correct": 3,
             "explanations": [
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Vliv celkové a částečné imobilizace.",
-                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Geneticky podmíněné nemoci.",
                   "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Malnutrice."
             ]
@@ -2357,7 +2357,7 @@ const GENERAL_DETAILS = {
                   "Správně! Toto je klíčový etiologický faktor u tématu: Hypoxie a hyperoxie buňky.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Metabolický syndrom X.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Nauzea, zvracení.",
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Ikterus- etiopatogeneze."
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Ikterus - etiopatogeneze."
             ]
       },
       {
@@ -2450,7 +2450,7 @@ const GENERAL_DETAILS = {
             ],
             "correct": 2,
             "explanations": [
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Ikterus- etiopatogeneze.",
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Definice nemoci a zdraví.",
                   "Správně! Toto je klíčový etiologický faktor u tématu: Edém.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Sepse, syndrom multiorgánové dysfunkce (MODS)."
@@ -2531,7 +2531,7 @@ const GENERAL_DETAILS = {
             "correct": 0,
             "explanations": [
                   "Správně! Toto je přesná patofyziologická definice pro: Poruchy růstu.",
-                  "Nesprávně. Tato definice popisuje téma: Ikterus- etiopatogeneze.",
+                  "Nesprávně. Tato definice popisuje téma: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tato definice popisuje téma: Septický a anafylaktický šok.",
                   "Nesprávně. Tato definice popisuje téma: Sepse, syndrom multiorgánové dysfunkce (MODS)."
             ]
@@ -2562,7 +2562,7 @@ const GENERAL_DETAILS = {
             ],
             "correct": 1,
             "explanations": [
-                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Poruchy růstu.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Metabolický syndrom X.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Kardiogenní a obstrukční šok."
@@ -2723,7 +2723,7 @@ const GENERAL_DETAILS = {
             ],
             "correct": 2,
             "explanations": [
-                  "Nesprávně. Tato definice popisuje téma: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Nesprávně. Tato definice popisuje téma: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tato definice popisuje téma: Hypovolemický šok.",
                   "Správně! Toto je přesná patofyziologická definice pro: Metabolická acidóza a alkalóza.",
                   "Nesprávně. Tato definice popisuje téma: Edém."
@@ -2741,7 +2741,7 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Imunopatologické reakce.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Krvácení.",
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Šok - definice, etiopatogeneze, rozdělení.",
                   "Správně! Toto je klíčový etiologický faktor u tématu: Metabolická acidóza a alkalóza."
             ]
       },
@@ -2771,7 +2771,7 @@ const GENERAL_DETAILS = {
             ],
             "correct": 1,
             "explanations": [
-                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Šok - definice, etiopatogeneze, rozdělení.",
                   "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Metabolická acidóza a alkalóza.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Bolest.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Poruchy bilance natria (Na+) a chloridů (Cl-)."
@@ -2951,7 +2951,7 @@ const GENERAL_DETAILS = {
                   "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Dušnost.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Metabolická acidóza a alkalóza.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Bolest.",
-                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky."
+                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky."
             ]
       },
       {
@@ -3127,7 +3127,7 @@ const GENERAL_DETAILS = {
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Poškození a smrt buňky.",
                   "Správně! Toto je klíčový etiologický faktor u tématu: Obstipace a průjem.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Reaktivní kyslíkové a dusíkové sloučeniny.",
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky."
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky."
             ]
       },
       {
@@ -3157,7 +3157,7 @@ const GENERAL_DETAILS = {
             "correct": 0,
             "explanations": [
                   "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Obstipace a průjem.",
-                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Ikterus- etiopatogeneze.",
+                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Malnutrice.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Poruchy vědomí."
             ]
@@ -3253,7 +3253,7 @@ const GENERAL_DETAILS = {
             "correct": 0,
             "explanations": [
                   "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Poruchy metabolismu železa (Fe2+/Fe3+).",
-                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Nauzea, zvracení.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Imunopatologické reakce."
             ]
@@ -3291,7 +3291,7 @@ const GENERAL_DETAILS = {
     ],
     quiz: [
       {
-            "question": "Které tvrzení nejlépe definuje nebo popisuje téma: Ikterus- etiopatogeneze?",
+            "question": "Které tvrzení nejlépe definuje nebo popisuje téma: Ikterus - etiopatogeneze?",
             "options": [
                   "Bolest je nepříjemná smyslová a citová zkušenost spojená s existujícím nebo potenciálním poškozením tkáně. Plní ochrannou roli, ale chronická bolest se stává nemocí sama o sobě.",
                   "Ikterus (žloutenka) je žluté zbarvení tkání (sklér, kůže) způsobené zvýšenou koncentrací bilirubinu v krvi (hyperbilirubinémií). Dělí se na prehepatální, hepatocelulární a posthepatální.",
@@ -3301,13 +3301,13 @@ const GENERAL_DETAILS = {
             "correct": 1,
             "explanations": [
                   "Nesprávně. Tato definice popisuje téma: Bolest.",
-                  "Správně! Toto je přesná patofyziologická definice pro: Ikterus- etiopatogeneze.",
+                  "Správně! Toto je přesná patofyziologická definice pro: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tato definice popisuje téma: Sepse, syndrom multiorgánové dysfunkce (MODS).",
                   "Nesprávně. Tato definice popisuje téma: Dehydratace."
             ]
       },
       {
-            "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Ikterus- etiopatogeneze?",
+            "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Ikterus - etiopatogeneze?",
             "options": [
                   "Obstipace: nedostatek vlákniny a tekutin, snížená fyzická aktivita, hypokalémie, hypotyreóza, mechanická překážka (nádor).",
                   "U diabetiků: předávkování inzulínem nebo perorálními antidiabetiky (zejména sulfonylureou), vynechání jídla, alkohol, těžká fyzická zátěž.",
@@ -3318,12 +3318,12 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Obstipace a průjem.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Hypoglykemie.",
-                  "Správně! Toto je klíčový etiologický faktor u tématu: Ikterus- etiopatogeneze.",
+                  "Správně! Toto je klíčový etiologický faktor u tématu: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Lokální zánětová odpověď."
             ]
       },
       {
-            "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Ikterus- etiopatogeneze?",
+            "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Ikterus - etiopatogeneze?",
             "options": [
                   "Obstipace: zpomalení střevní pasáže vede k nadměrné reabsorpci vody v tlustém střevě, stolice se stává suchou a tuhou.",
                   "Deficit GH/IGF-1 tlumí proliferaci chondrocytů v růstových ploténkách. Nadbytek GH před uzávěrem plotének vede k gigantismu, po uzávěru k akromegalii.",
@@ -3334,12 +3334,12 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Obstipace a průjem.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Poruchy růstu.",
-                  "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Ikterus- etiopatogeneze.",
+                  "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Horečka."
             ]
       },
       {
-            "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Ikterus- etiopatogeneze?",
+            "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Ikterus - etiopatogeneze?",
             "options": [
                   "Hypotenze (MAP < 65 mmHg), tachykardie, tachypnoe.",
                   "Abdominální (viscerální) obezita (postava typu jablka).",
@@ -3348,14 +3348,14 @@ const GENERAL_DETAILS = {
             ],
             "correct": 2,
             "explanations": [
-                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Metabolický syndrom X.",
-                  "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Ikterus- etiopatogeneze.",
+                  "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Poruchy bilance natria (Na+) a chloridů (Cl-)."
             ]
       },
       {
-            "question": "Která z následujících hodnot, referenčních rozmezí nebo kritérií je správná pro téma: Ikterus- etiopatogeneze?",
+            "question": "Která z následujících hodnot, referenčních rozmezí nebo kritérií je správná pro téma: Ikterus - etiopatogeneze?",
             "options": [
                   "Fyziologický celkový bilirubin v séru je: 3 - 20 umol/l",
                   "Referenční rozmezí celkového kalcia v séru je: 2.2 - 2.6 mmol/l",
@@ -3364,7 +3364,7 @@ const GENERAL_DETAILS = {
             ],
             "correct": 0,
             "explanations": [
-                  "Správně! Toto je důležitá referenční hodnota, rozmezí nebo kritérium pro téma: Ikterus- etiopatogeneze.",
+                  "Správně! Toto je důležitá referenční hodnota, rozmezí nebo kritérium pro téma: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Poruchy bilance kalcia (Ca2+) a fosfátů.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Nádorové bujení.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Dušnost."
@@ -3527,7 +3527,7 @@ const GENERAL_DETAILS = {
                   "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Sepse, syndrom multiorgánové dysfunkce (MODS).",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Hyperglykemie.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Horečka.",
-                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Ikterus- etiopatogeneze."
+                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Ikterus - etiopatogeneze."
             ]
       },
       {
@@ -3541,7 +3541,7 @@ const GENERAL_DETAILS = {
             "correct": 3,
             "explanations": [
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Poruchy bilance kalia (K+).",
-                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Ikterus- etiopatogeneze.",
+                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Poruchy vědomí.",
                   "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Sepse, syndrom multiorgánové dysfunkce (MODS)."
             ]
@@ -3702,7 +3702,7 @@ const GENERAL_DETAILS = {
             "correct": 3,
             "explanations": [
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Poškození vlivem fyzikálních vlivů.",
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Ikterus- etiopatogeneze.",
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Hyperglykemie.",
                   "Správně! Toto je klíčový etiologický faktor u tématu: Poruchy bilance natria (Na+) a chloridů (Cl-)."
             ]
@@ -3719,7 +3719,7 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Poruchy bilance natria (Na+) a chloridů (Cl-).",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Krvácení.",
-                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Ischemie."
             ]
       },
@@ -3733,7 +3733,7 @@ const GENERAL_DETAILS = {
             ],
             "correct": 1,
             "explanations": [
-                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Nesprávně. Tento projev/symptom je typickým znakem tématu: Šok - definice, etiopatogeneze, rozdělení.",
                   "Správně! Tento klinický projev, symptom nebo následek je typický pro téma: Poruchy bilance natria (Na+) a chloridů (Cl-).",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Bolest.",
                   "Nesprávně. Tento projev/symptom je typickým znakem tématu: Poruchy acidobazické rovnováhy."
@@ -3910,7 +3910,7 @@ const GENERAL_DETAILS = {
             "correct": 2,
             "explanations": [
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Poruchy metabolismu železa (Fe2+/Fe3+).",
-                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Ikterus- etiopatogeneze.",
+                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Ikterus - etiopatogeneze.",
                   "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Poruchy vědomí.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Malnutrice."
             ]
@@ -3990,9 +3990,9 @@ const GENERAL_DETAILS = {
             "correct": 0,
             "explanations": [
                   "Správně! Toto je klíčový etiologický faktor u tématu: Ischemie.",
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Ikterus- etiopatogeneze.",
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Ikterus - etiopatogeneze.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Bolest.",
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky."
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky."
             ]
       },
       {
@@ -4069,7 +4069,7 @@ const GENERAL_DETAILS = {
             ],
             "correct": 2,
             "explanations": [
-                  "Nesprávně. Tato definice popisuje téma: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Nesprávně. Tato definice popisuje téma: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tato definice popisuje téma: Poruchy růstu.",
                   "Správně! Toto je přesná patofyziologická definice pro: Nauzea, zvracení.",
                   "Nesprávně. Tato definice popisuje téma: Ischemie."
@@ -4085,9 +4085,9 @@ const GENERAL_DETAILS = {
             ],
             "correct": 3,
             "explanations": [
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Septický a anafylaktický šok.",
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Správně! Toto je klíčový etiologický faktor u tématu: Nauzea, zvracení."
             ]
       },
@@ -4184,7 +4184,7 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Nádorové bujení.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Ischemie.",
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Ikterus- etiopatogeneze.",
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Ikterus - etiopatogeneze.",
                   "Správně! Toto je klíčový etiologický faktor u tématu: Poškození vlivem chemických vlivů."
             ]
       },
@@ -4200,7 +4200,7 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Poruchy acidobazické rovnováhy.",
                   "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Bolest.",
-                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Nesprávně. Tento patofyziologický mechanismus se uplatňuje u tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Správně! Tento patofyziologický mechanismus je hlavní součástí patogeneze tématu: Poškození vlivem chemických vlivů."
             ]
       },
@@ -4473,7 +4473,7 @@ const GENERAL_DETAILS = {
             "explanations": [
                   "Správně! Toto je klíčový etiologický faktor u tématu: Časový faktor v patogenezi nemocí, pojmy kompenzace a dekompenzace, strukturální a funkční orgánová/tkáňová dysfunkce.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Hyperglykemie.",
-                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tento etiologický bod (příčina) patří k tématu: Vliv celkové a částečné imobilizace."
             ]
       },
@@ -4746,7 +4746,7 @@ const GENERAL_DETAILS = {
             ],
             "correct": 3,
             "explanations": [
-                  "Nesprávně. Tato definice popisuje téma: Šok-definice, etiopatogeneze, rozdělení.",
+                  "Nesprávně. Tato definice popisuje téma: Šok - definice, etiopatogeneze, rozdělení.",
                   "Nesprávně. Tato definice popisuje téma: Časový faktor v patogenezi nemocí, pojmy kompenzace a dekompenzace, strukturální a funkční orgánová/tkáňová dysfunkce.",
                   "Nesprávně. Tato definice popisuje téma: Poškození a smrt buňky.",
                   "Správně! Toto je přesná patofyziologická definice pro: Poškození vlivem fyzikálních vlivů tlaku, crush syndrom (rhabdomyolýza), zvuk."
@@ -4811,7 +4811,7 @@ const GENERAL_DETAILS = {
             "correct": 0,
             "explanations": [
                   "Správně! Toto je důležitá referenční hodnota, rozmezí nebo kritérium pro téma: Poškození vlivem fyzikálních vlivů tlaku, crush syndrom (rhabdomyolýza), zvuk.",
-                  "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+                  "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Systémová zánětlivá odpověď - etiopatogeneze, následky.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Obezita.",
                   "Nesprávně. Tato hodnota, rozmezí či kritérium platí pro téma: Poškození vlivem chemických vlivů."
             ]
