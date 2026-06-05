@@ -48,7 +48,7 @@ const SPECIAL_1_DETAILS = {
       
         <section class="clinical-pearl">
           <h3>Klinická perla</h3>
-          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+          <p>U bezpulsové elektrické aktivity (PEA) vždy aktivně pátrejte po reverzibilních příčinách (4H: hypoxie, hypovolémie, hypokalémie/hyperkalémie, hypotermie; a 4T: tenzní PNO, tamponáda srdeční, trombóza koronární/plicní, toxiny).</p>
         </section>
       </div>
     `,
@@ -131,7 +131,7 @@ const SPECIAL_1_DETAILS = {
       
         <section class="clinical-pearl">
           <h3>Klinická perla</h3>
-          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+          <p>Anémie chronických chorob je způsobena zánětlivým cytokinem IL-6, který stimuluje syntézu hepcidinu v játrech. Hepcidin blokuje ferroportin, což vede k 'uzamčení' železa v makrofázích.</p>
         </section>
       </div>
     `,
@@ -173,7 +173,7 @@ const SPECIAL_1_DETAILS = {
       
         <section class="clinical-pearl">
           <h3>Klinická perla</h3>
-          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+          <p>U čisté restrikční poruchy (např. plicní fibrózy) je Tiffeneauův index (FEV1/FVC) normální nebo zvýšený, protože elasticita plic sice klesá, ale dýchací cesty nejsou zúženy.</p>
         </section>
       </div>
     `,
@@ -223,7 +223,7 @@ const SPECIAL_1_DETAILS = {
       
         <section class="clinical-pearl">
           <h3>Klinická perla</h3>
-          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+          <p>Nebezpečné jícnové varixy vznikají v důsledku kolaterálního oběhu mezi vena portae a vena cava superior přes vena gastrica sinistra a žíly jícnu (vena azygos).</p>
         </section>
       </div>
     `,
@@ -249,7 +249,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-5": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Trombocytopenie se typicky projevuje petechiemi a krvácením do sliznic (primární hemostáza), na rozdíl od koagulopatií, které vedou k hematomům a krvácení do kloubů (sekundární hemostáza).",
 
       definition: "Trombocytopenie (pokles počtu trombocytů pod 150x10^9/l) a trombocytopatie (kvalitativní dysfunkce destiček při normálním počtu). Způsobují poruchy primární hemostázy a sklon k petechiálnímu krvácení.",
       etiology: [
@@ -296,7 +296,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-6": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Při podezření na ortostatickou hypotenzi měřte krevní tlak po 1. a 3. minutě stání; pokles systolického tlaku o ≥ 20 mmHg nebo diastolického o ≥ 10 mmHg diagnózu potvrzuje.",
 
       definition: "Systémová arteriální hypotenze je definována poklesem krevního tlaku pod 90 mmHg systoly a 60 mmHg diastoly. Způsobuje snížení perfuzního tlaku ve tkáních a rozvoj orgánové hypoperfuze.",
       etiology: [
@@ -343,7 +343,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-7": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "U fibrilace síní je zásadní antikoagulační terapie (skóre CHA2DS2-VASc), protože turbulence krve v oušku levé síně výrazně zvyšuje riziko tvorby trombů a embolizace do mozku.",
 
       definition: "Tachyarytmie jsou poruchy srdečního rytmu s frekvencí nad 100/min. Dělí se na supraventrikulární (SVT - nad Hisovým svazkem) a ventrikulární (VT - komorové, ohrožující život).",
       etiology: [
@@ -390,7 +390,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-8": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Chronické pravostranné selhání (cor pulmonale) vzniká nejčastěji retrográdním přenosem tlaku při levostranném srdečním selhání, nikoli izolovaným plicním onemocněním.",
 
       definition: "Pravostranné srdeční selhání je charakterizováno neschopností pravé komory přečerpat krev z venózního systému do plicního řečiště, což vede k městnání krve ve velkém oběhu.",
       etiology: [
@@ -437,7 +437,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-9": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Ejekční frakce (EF) levé komory rozlišuje srdeční selhání se sníženou EF (HFrEF, pod 40 %, systolická dysfunkce) a se zachovanou EF (HFpEF, nad 50 %, diastolická dysfunkce).",
 
       definition: "Srdeční selhání je klinický syndrom charakterizovaný neschopností srdce zajistit dostatečný minutový výdej pro metabolické potřeby tkání, nebo jen za cenu zvýšení plnicích tlaků.",
       etiology: [
@@ -527,7 +527,7 @@ const SPECIAL_1_DETAILS = {
       
         <section class="clinical-pearl">
           <h3>Klinická perla</h3>
-          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+          <p>Akutní tubulární nekróza se vyznačuje oligurickou fází s rizikem hyperkalémie a převodnění, a následnou polyurickou fází, kdy regenerující nezralé buňky neumí koncentrovat moč a hrozí dehydratace a hypokalémie.</p>
         </section>
       </div>
     `,
@@ -553,7 +553,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-11": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Vznik reentry okruhu vyžaduje přítomnost anatomického či funkčního okruhu, jednosměrného bloku v jedné z drah a dostatečně pomalého vedení v dráze druhé.",
 
       definition: "Srdeční arytmie jsou poruchy tvorby a/nebo vedení srdečního vzruchu, které narušují pravidelnost a frekvenci srdeční akce.",
       etiology: [
@@ -600,7 +600,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-12": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "U sekundární hypertenze z důvodu Connova syndromu (hyperaldosteronismus) nacházíme v laboratoři typickou kombinaci arteriální hypertenze, hypokalémie a metabolické alkalózy.",
 
       definition: "Sekundární hypertenze je arteriální hypertenze s identifikovatelnou organickou příčinou. Představuje cca 5-10 % všech případů hypertenze.",
       etiology: [
@@ -647,7 +647,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-13": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "U plicních restrikcí (fibróz) se výrazně snižuje plicní poddajnost (compliance) a difuzní kapacita pro oxid uhelnatý (DLCO) v důsledku zesílení alveolo-kapilární membrány.",
 
       definition: "Restrikční plicní nemoci jsou charakterizovány snížením celkové plicní kapacity (TLC) v důsledku omezení expanze plicního parenchymu.",
       etiology: [
@@ -693,7 +693,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-14": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Esenciální hypertenze je často spojena s inzulínovou rezistencí a obezitou, které zvyšují tonus sympatického nervového systému a stimulují retenci sodíku v tubulech ledvin.",
 
       definition: "Primární (esenciální) hypertenze je chronické zvýšení krevního tlaku bez zřejmé jediné organické příčiny. Představuje cca 90-95 % všech hypertenzí.",
       etiology: [
@@ -740,7 +740,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-15": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "GvHD (reakce štěpu proti hostiteli) vzniká, když imunokompetentní T-lymfocyty dárce napadnou HLA antigeny imunokompromitovaného příjemce, nejčastěji v kůži, játrech a GIT.",
 
       definition: "Transfúzní reakce jsou komplikace spojené s podáním cizí krve nebo krevních derivátů. Imunologická kompatibilita a správná transplantace kmenových buněk jsou klíčové pro prevenci rejekcí.",
       etiology: [
@@ -817,7 +817,7 @@ const SPECIAL_1_DETAILS = {
       
         <section class="clinical-pearl">
           <h3>Klinická perla</h3>
-          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+          <p>Při pravolevém zkratu (shunt, např. zaplavení alveolů u pneumonie) je hypoxémie refrakterní na inhalaci 100% kyslíku, protože krev protéká zcela neventilovanými úseky plic.</p>
         </section>
       </div>
     `,
@@ -843,7 +843,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-17": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Otok u lymfedému je typicky bledý, tuhý a nebolestivý a na rozdíl od žilního otoku u něj nelze řasit kůži na druhém prstci nohy (tzv. Stemmerovo znamení).",
 
       definition: "Poruchy venózního řečiště (zejména hluboká žilní trombóza - HŽT) a lymfatického systému (lymfedém) narušují odtok tekutiny z tkání, což vede k rozvoji specifických otoků.",
       etiology: [
@@ -890,7 +890,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-18": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Kyslík difunduje přes alveolo-kapilární membránu 20krát pomaleji než oxid uhličitý, proto se poruchy difúze projevují hypoxémií při normální nebo snížené hladině paCO2 (hypokapnii).",
 
       definition: "Poruchy plicní difúze jsou charakterizovány zhoršeným přestupem plynů (zejména kyslíku) přes alveolo-kapilární membránu z důvodu jejího zesílení nebo zmenšení celkové plochy.",
       etiology: [
@@ -936,7 +936,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-19": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Plicní hypertenze (mPAP > 20 mmHg) vede k chronickému tlakovému přetížení pravé komory, což vyvolá její hypertrofii a následnou dilataci s rizikem dekompenzace.",
 
       definition: "Poruchy plicní cirkulace a plicní hypertenze (PH) představují stavy zvýšeného krevního tlaku v plicním cévním řečišti (střední tlak v plicnici mPAP > 20 mmHg), které zatěžují pravou komoru.",
       etiology: [
@@ -983,7 +983,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-20": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Pro rozlišení TMA (TTP/HUS) od DIC je klíčové, že u TMA jsou běžné koagulační časy (Quick/INR, APTT) i hladina fibrinogenu zcela v normě, přestože je přítomna těžká trombocytopenie.",
 
       definition: "Trombotické mikroangiopatie (TMA) jsou skupina život ohrožujících stavů charakterizovaných triádou: mikroangiopatická hemolytická anémie (MAHA), konzumpční trombocytopenie a orgánové poškození mikrotromby.",
       etiology: [
@@ -1029,7 +1029,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-21": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Primární polycytémie (polycythemia vera) je charakterizována mutací JAK2 (V617F), která způsobuje nezávislost erytropoézy na erytropoetinu, jehož hladina je v séru snížená.",
 
       definition: "Polycytémie (erytrocytóza) je stav zvýšené koncentrace erytrocytů, hemoglobinu a hematokritu v krvi. Způsobuje výrazné zvýšení viskozity krve a rozvoj hyperviskózního syndromu.",
       etiology: [
@@ -1075,7 +1075,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-22": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Tenzní pneumothorax je život ohrožující stav, kdy ventilový mechanismus umožňuje vstup vzduchu do pleurální dutiny, ale brání jeho úniku, což vede k útlaku mediastina a PEA.",
 
       definition: "Pneumothorax (PNO) je přítomnost vzduchu v pleurální dutině vedoucí k parciálnímu nebo úplnému kolapsu plíce. Fluidothorax je přítomnost tekutiny v pleurálním prostoru.",
       etiology: [
@@ -1122,7 +1122,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-23": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "U pneumonie dochází k tvorbě zánětlivého exsudátu v alveolech, což vede k lokálnímu pravolevému zkratu (shunt) a hypoxémii z důvodu perfúze neventilované tkáně.",
 
       definition: "Pneumonie je akutní zánětlivé onemocnění plicního parenchymu (alveolů a intersticia) infekční etiologie, které narušuje výměnu plynů.",
       etiology: [
@@ -1169,7 +1169,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-24": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Rozlišení kardiogenního (vysoký hydrostatický tlak) a nekardiogenního (poškození membrány - např. ARDS) plicního edému je klíčové pro správné zacílení terapie (diuretika vs. protektivní ventilace).",
 
       definition: "Plicní edém je stav nadměrného hromadění tekutiny v plicním intersticiu a alveolech, který vážně narušuje difúzi plynů. Dělí se na kardiogenní a nekardiogenní.",
       etiology: [
@@ -1216,7 +1216,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-25": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Po splenektomii jsou pacienti doživotně ohroženi syndromem OPSI (overwhelming post-splenectomy infection) vyvolaným opouzdřenými bakteriemi (pneumokok, meningokok, hemofil).",
 
       definition: "Patofyziologie sleziny zahrnuje stavy splenomegalie (zvětšení sleziny), hypersplenismu (patologické zvýšení odbourávání krevních elementů) a následky splenektomie (odstranění sleziny).",
       etiology: [
@@ -1263,7 +1263,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-26": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "U obstrukčních plicních nemocí dochází k omezení průtoku vzduchu (exspiračnímu limitu), což vede k zachycení vzduchu v plicích (air trapping) a následné plicní hyperinflaci.",
 
       definition: "Obstrukční plicní nemoci jsou charakterizovány omezením proudění vzduchu v dýchacích cestách (zvýšeným bronchiálním odporem) během výdechu.",
       etiology: [
@@ -1310,7 +1310,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-27": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Akutní obstrukce horních dýchacích cest se typicky projevuje inspiračním stridorem a zatahováním pomocných dýchacích svalů, což vyžaduje okamžité zajištění dýchacích cest.",
 
       definition: "Obstrukce horních dýchacích cest (OHDC) představuje mechanické zúžení nebo uzávěr dýchacích cest nad úrovní hlavních bronchů, které bezprostředně ohrožuje život pacienta udušením.",
       etiology: [
@@ -1394,7 +1394,7 @@ const SPECIAL_1_DETAILS = {
       
         <section class="clinical-pearl">
           <h3>Klinická perla</h3>
-          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+          <p>Nefrotický syndrom je charakterizován masivní proteinurií (>3.5g/den) a hypoalbuminémií vedoucí k otokům, zatímco nefritický se projevuje hematurií, hypertenzí a oligurií.</p>
         </section>
       </div>
     `,
@@ -1420,7 +1420,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-29": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Při poklesu absolutního počtu neutrofilů pod 0.5 x 10^9/l (těžká neutropenie) je pacient v extrémním riziku rozvoje febrilní neutropenie a život ohrožující sepse.",
 
       definition: "Leukopenie je pokles počtu bílých krvinek pod 4x10^9/l. Nejvýznamnější formou je neutropenie (pokles granulocytů), která dramaticky snižuje obranyschopnost těla.",
       etiology: [
@@ -1467,7 +1467,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-30": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Akutní levostranné srdeční selhání se projevuje plicním městnáním (dušnost, ortopnoe, poslechově vlhké fenomény) v důsledku retrográdního hromadění krve před levou síní.",
 
       definition: "Levostranné srdeční selhání je charakterizováno neschopností levé komory přečerpat krev ze systémového plicního oběhu do aorty, což vede k plicnímu městnání a systémové hypoperfuzi.",
       etiology: [
@@ -1514,7 +1514,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-31": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Reaktivní leukocytóza (např. posun doleva s vyplavením tyčí při bakteriální infekci) se od leukémie odliší vyšetřením alkalické fosfatázy v neutrofilech (u leukémie bývá nízká).",
 
       definition: "Leukocytóza je zvýšení počtu bílých krvinek nad 10x10^9/l. Může být reaktivní (nenádorová, např. při infekci) nebo neoplastická (leukémie a lymfomy). Myelopatie označují poruchy kostní dřeně.",
       etiology: [
@@ -1561,7 +1561,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-32": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Akutní koronární syndrom vzniká rupturou vulnerabilního aterosklerotického plátu s nasedající trombózou, což vede k náhlé ischemii a případné nekróze myokardu.",
 
       definition: "Ischemická choroba srdeční (ICHS) je onemocnění myokardu vyvolané nepoměrem mezi dodávkou kyslíku (věnčitými tepnami) a jeho spotřebou. Dělí se na stabilní formy a akutní koronární syndromy.",
       etiology: [
@@ -1607,7 +1607,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-33": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "U cystické fibrózy vede mutace CFTR k produkci extrémně vazkého hlenu, což způsobuje chronickou obstrukci a infekce dýchacích cest i exokrinní insuficienci pankreatu.",
 
       definition: "Intersticiální plicní nemoci (IPN) jsou skupina různorodých chorob postihujících alveolární stěny a perialveolární intersticium. Cystická fibróza je autozomálně recesivní onemocnění charakterizované viskózním exkretem.",
       etiology: [
@@ -1694,7 +1694,7 @@ const SPECIAL_1_DETAILS = {
       
         <section class="clinical-pearl">
           <h3>Klinická perla</h3>
-          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+          <p>U pacientů s chronickým selháním ledvin je anémie způsobena primárně nedostatkem erytropoetinu, který za fyziologických okolností tvoří peritubulární buňky ledvinné kůry.</p>
         </section>
       </div>
     `,
@@ -1720,7 +1720,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-35": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Dlouhodobá hypoxémie u chronického respiračního selhání stimuluje erytropoézu (sekundární polycytémie) a vyvolává hypoxickou plicní vazokonstrikci s rozvojem cor pulmonale.",
 
       definition: "Chronické respirační selhání (CRF) je dlouhodobý stav, kdy plíce nejsou schopny zajistit adekvátní výměnu plynů v klidu nebo při běžné zátěži. Dělí se na hypoxemické (typ I) a globální (typ II).",
       etiology: [
@@ -1828,7 +1828,7 @@ const SPECIAL_1_DETAILS = {
       
         <section class="clinical-pearl">
           <h3>Klinická perla</h3>
-          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+          <p>Zatímco bronchiální obstrukce u astmatu je v čase vysoce variabilní a reverzibilní po podání bronchodilatancia, u CHOPN je obstrukce fixovaná a progresivní.</p>
         </section>
       </div>
     `,
@@ -1854,7 +1854,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-37": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Deficit koagulačních faktorů u hemofilie A (faktor VIII) nebo B (faktor IX) vede k prodloužení APTT, zatímco protrombinový čas (Quick/INR) zůstává zcela normální.",
 
       definition: "Hypokoagulační stavy jsou poruchy charakterizované sníženou schopností srážení krve, což vede k abnormálnímu krvácení z důvodu deficitu koagulačních faktorů.",
       etiology: [
@@ -1901,7 +1901,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-38": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Leidenská mutace (rezistence k aktivovanému proteinu C) je nejčastější vrozenou trombofilií; protein C nedokáže inaktivovat mutovaný faktor Va, což zvyšuje srážlivost.",
 
       definition: "Hyperkoagulační stavy (trombofilie) jsou vrozené nebo získané poruchy hemokoagulace predisponující pacienta k rozvoji trombóz (zejména hluboké žilní trombózy a plicní embolie).",
       etiology: [
@@ -1948,7 +1948,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-39": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "U hypertrofické kardiomyopatie dochází k asymetrické hypertrofii septa, což může způsobit obstrukci výtokového traktu levé komory (HOCM) a je příčinou náhlé smrti mladých sportovců.",
 
       definition: "Srdeční vady jsou strukturální anomálie chlopní či přepážek (vrozené/získané). Kardiomyopatie jsou primární onemocnění myokardu spojená s mechanickou nebo elektrickou dysfunkcí.",
       etiology: [
@@ -1994,7 +1994,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-40": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Prodloužení krvácivosti při normálním počtu destiček a normálních koagulačních časech (Quick, APTT) svědčí pro trombocytopatii nebo von Willebrandovu chorobu.",
 
       definition: "Hemostáza je komplexní systém udržující krev v tekutém stavu a zamezující krvácení při poškození cév. Dělí se na primární (cévy a destičky), sekundární (koagulace) a terciární (fibrinolýza).",
       etiology: [
@@ -2040,7 +2040,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-41": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Srdeční tamponáda je urgentní komplikací perikarditidy, kdy hromadění tekutiny v perikardu stlačuje pravé srdce, což znemožňuje plnění komor a vede k hypotenzi a šoku.",
 
       definition: "Zánětlivá onemocnění srdečních stěn zahrnují endokarditidu (postižení chlopní), myokarditidu (postižení svaloviny) a perikarditidu (postižení osrdečníku, hrozící tamponádou).",
       etiology: [
@@ -2087,7 +2087,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-42": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Imunokomplexová glomerulonefritida (např. poststreptokoková) poškozuje filtrační bariéru zánětem, což vede k hematurii s přítomností dysmorfních erytrocytů a erytrocytárních válců.",
 
       definition: "Glomerulopatie jsou onemocnění postihující strukturu a funkci ledvinných glomerulů. Mohou být primární (omezené na ledviny) nebo sekundární (součást systémových chorob).",
       etiology: [
@@ -2134,7 +2134,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-43": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "AV blokáda III. stupně (kompletní disociace síní a komor) vyžaduje implantaci kardiostimulátoru, protože náhradní komorový rytmus je pomalý a nespolehlivý.",
 
       definition: "Bradyarytmie jsou poruchy srdečního rytmu s frekvencí pod 50-60/min. Vznikají v důsledku poruchy tvorby vzruchu v SA uzlu nebo poruchy vedení vzruchu v AV uzlu a Hisově svazku.",
       etiology: [
@@ -2181,7 +2181,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-44": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Megaloblastová anémie (deficit B12 či folátu) je charakterizována makrocytózou (vysoké MCV) a přítomností hypersegmentovaných neutrofilů v nátěru periferní krve.",
 
       definition: "Anémie z nedostatečné produkce (sideropenická, megaloblastová) a ze zvýšených ztrát (akutní posthemoragická) představují stavy snížené kyslíkové kapacity krve s odlišnou etiopatogenezí.",
       etiology: [
@@ -2227,7 +2227,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-45": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Laboratorními známkami intravaskulární hemolýzy jsou zvýšený nekonjugovaný bilirubin, zvýšená laktátdehydrogenáza (LDH), pokles haptoglobinu a přítomnost hemoglobinurie.",
 
       definition: "Anémie ze zvýšené spotřeby (destrukce) červených krvinek představují hemolytické anémie. Životnost erytrocytů je zkrácena pod 120 dní a dřeň nestačí ztráty kompenzovat.",
       etiology: [
@@ -2273,7 +2273,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-46": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Obstrukční atelektáza vzniká uzávěrem průdušky (např. nádorem či cizím tělesem) s následným vstřebáním vzduchu za překážkou, což vede ke kolapsu plicní tkáně a přetažení mediastina k postižené straně.",
 
       definition: "Atelektáza je kolaps plicních alveolů, který vede k nevzdušnosti části nebo celé plíce. Způsobuje rozvoj plicního zkratu a hypoxémie.",
       etiology: [
@@ -2320,7 +2320,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-47": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "ARDS se vyznačuje difúzním alveolárním poškozením (DAD) s tvorbou hyalinních blan, ztrátou surfaktantu a těžkou refrakterní hypoxémií (paO2/FiO2 < 300 mmHg).",
 
       definition: "ARDS (Syndrom akutní respirační tísně) je závažná forma nekardiogenního plicního edému charakterizovaná difúzním alveolárním poškozením (DAD) a těžkou hypoxémií refrakterní k oxygenoterapii.",
       etiology: [
@@ -2366,7 +2366,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-48": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Akutní respirační selhání typu I (hypoxemické) je způsobeno poruchou V/Q poměru nebo zkratem, zatímco typ II (hyperkapnické) vzniká selháním respirační pumpy.",
 
       definition: "Akutní respirační selhání je stav, kdy plíce náhle nedokážou zajistit adekvátní výměnu plynů, což vede k hypoxémii (typ I) a/nebo hyperkapnii (typ II).",
       etiology: [
@@ -2410,7 +2410,7 @@ const SPECIAL_1_DETAILS = {
 
   "spec-1-49": {
     richContent: {
-      clinicalPearl: "Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.",
+      clinicalPearl: "Při STEMI dochází k transmurální ischemii myokardu, což se na EKG projevuje elevacemi ST segmentu, zatímco u NSTEMI je ischemie subendokardiální s depresemi ST či T inverzí.",
 
       definition: "Akutní ischemie a infarkt myokardu (AIM) představují kritické stavy způsobené náhlým přerušením krevního toku věnčitou tepnou, což vede k ischemické nekróze kardiomyocytů.",
       etiology: [
@@ -2497,7 +2497,7 @@ const SPECIAL_1_DETAILS = {
       
         <section class="clinical-pearl">
           <h3>Klinická perla</h3>
-          <p>Nezapomeňte, že včasná diagnóza a rychlá intervence mohou u tohoto stavu odvrátit ireverzibilní orgánové poškození a zachránit život pacienta.</p>
+          <p>Prerenální AKI je funkční odpovědí na hypoperfuzi ledvin (vysoká osmolalita a nízká koncentrace sodíku v moči), na rozdíl od renálního AKI (např. ATN), kde jsou tubulární funkce poškozeny.</p>
         </section>
       </div>
     `,
