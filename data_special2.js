@@ -29,6 +29,11 @@ const SPECIAL_2_DETAILS = {
             <li><strong>Stenóza pyloru:</strong> Jizvení po chronických vředech zužuje výtokový trakt žaludku.</li>
           </ol>
         </section>
+
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Inhibice COX-1 nesteroidními antirevmatiky (NSAID) blokuje syntézu prostaglandinů, což oslabuje žaludeční slizniční bariéru a vede k vysokému riziku asymptomatického, náhlého krvácení.</p>
+        </section>
       </div>
     `,
     quiz: [
@@ -77,6 +82,11 @@ const SPECIAL_2_DETAILS = {
           <h3>3. Projevy a následky</h3>
           <p>Hlavním projevem je **renální kolika** – krutá, záchvatovitá bolest vyvolaná spasmy hladké svaloviny močovodu při snaze posunout uvízlý kámen. Bolest se propaguje do třísel. Obstrukce odtoku moči vede k **hydronefróze** (rozšíření pánvičky a kalichů) a hrozí postrenální akutní poškození ledvin nebo rozvoj urosepse.</p>
         </section>
+
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Struvitové (infekční) kameny vznikají výhradně v alkalické moči při infekcích bakteriemi produkujícími ureázu (např. Proteus), které štěpí močovinu na amoniak.</p>
+        </section>
       </div>
     `,
     quiz: [
@@ -118,6 +128,11 @@ const SPECIAL_2_DETAILS = {
         <section>
           <h3>3. Adrenální (addisonská) krize</h3>
           <p>Akutní nedostatek glukokortikoidů (kortizolu) a mineralokortikoidů (aldosteronu) u pacientů s insuficiencí nadledvin při stresu. Projevy: těžká refrakterní hypotenze (kardiogenní a distribuční šok), těžká hyponatrémie, hyperkalémie a hypoglykémie.</p>
+        </section>
+
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Při tyreotoxické krizi dochází k život ohrožujícímu vystupňování účinků hormonů štítné žlázy na cílové tkáně, což se projevuje hypertermií, těžkou tachykardii a deliriem.</p>
         </section>
       </div>
     `,
@@ -194,6 +209,11 @@ const SPECIAL_2_DETAILS = {
           <h3>3. Patofyziologie nitrolební hypertenze</h3>
           <p>Podle **Monro-Kellyho doktríny** je objem lebky konstantní. Hromadění krve (hematom) vede k vytlačení likvoru a venózní krve. Po vyčerpání kompenzačních možností dochází k prudkému vzestupu **intrakraniálního tlaku (ICP)**, poklesu mozkového perfuzního tlaku ($CPP = MAP - ICP$) a hrozí herniace (vklínění) mozkového kmene do týlního otvoru (foramen magnum) – Cushingův reflex (hypertenze, bradykardie, nepravidelné dýchání).</p>
         </section>
+
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>Epidurální hematom (krvácení z a. meningea media) se typicky projevuje lucidním intervalem (přechodné probrání k vědomí) před rozvojem nitrolební hypertenze.</p>
+        </section>
       </div>
     `,
     quiz: [
@@ -220,6 +240,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-5": {
     richContent: {
+      clinicalPearl: "U mozečkových poruch je Rombergův stoj nestabilní bez ohledu na to, zda má pacient otevřené či zavřené oči, na rozdíl od vestibulárních a proprioreceptivních poruch.",
       definition: "Poruchy vestibulárního systému a mozečku způsobují narušení rovnováhy, koordinace cílených pohybů a svalového tonu. Ataxie je hlavním projevem motorické inkoordinace.",
       etiology: [
         "Cerebelární ischémie/krvácení, roztroušená skleróza (demyelinizační plaky v mozečku).",
@@ -267,6 +288,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-6": {
     richContent: {
+      clinicalPearl: "Při podezření na endokrinní hyperfunkci (např. Cushingův syndrom) provádíme supresní testy, zatímco u suspektní hypofunkce (např. Addisonova choroba) používáme testy stimulační.",
       definition: "Endokrinní regulace je založena na principu negativní zpětné vazby, kde zvýšená koncentrace periferního hormonu tlumí produkci regulačních hormonů v hypothalamu a hypofýze.",
       etiology: [
         "Primární poruchy: destrukce periferní žlázy (autoimunitní, infekční, operační) nebo autonomní adenom.",
@@ -314,6 +336,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-7": {
     richContent: {
+      clinicalPearl: "Preeklampsie je charakterizována triádou hypertenze, proteinurie a otoků po 20. týdnu těhotenství; patofyziologickým základem je porucha placentace a endoteliální dysfunkce.",
       definition: "Preeklampsie je multiorgánový syndrom specifický pro těhotenství, charakterizovaný nově vzniklou hypertenzí a proteinuriou po 20. týdnu gestace, způsobený generalizovanou dysfunkcí mateřského cévního endotelu.",
       etiology: [
         "Porucha invaze trofoblastu do mateřských spirálních arterií v děloze, což brání jejich adekvátní remodelaci.",
@@ -360,6 +383,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-8": {
     richContent: {
+      clinicalPearl: "Tubulointersticiální nefritida (často indukovaná léky - např. NSAID či antibiotiky) se projevuje sterilní pyurií, eosinofilií a mírnou proteinurií při poklesu renálních funkcí.",
       definition: "Poruchy tubulárního transportu a tubulointersticiální nefritidy představují skupinu onemocnění poškozujících renální tubuly a okolní intersticiální tkáň, což vede k narušení koncentrační schopnosti ledvin, acidobazické rovnováhy a resorpce elektrolytů.",
       etiology: [
         "Tubulointersticiální nefritida (TIN): nejčastěji poléková (NSAID, peniciliny, sulfonamidy, kličková diuretika) nebo infekční (pyelonefritida).",
@@ -404,6 +428,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-9": {
     richContent: {
+      clinicalPearl: "U systémového lupus erytematodes (SLE) jsou tkáňová poškození způsobena ukládáním cirkulujících imunokomplexů (reakce III. typu) v cévách, kloubech, kůži a ledvinách.",
       definition: "Systémová autoimunitní onemocnění (kolagenózy) jsou chronická zánětlivá onemocnění způsobená ztrátou autotolerance, při nichž imunitní systém napadá různé tkáně a orgány vlastního těla, což vede k multiorgánovému poškození.",
       etiology: [
         "Genetická predispozice (zejména asociace s určitými HLA alelami, např. HLA-DR4 u revmatoidní artritidy).",
@@ -451,6 +476,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-10": {
     richContent: {
+      clinicalPearl: "Obstrukční spánková apnoe (OSA) vede k opakované noční hypoxii, což stimuluje sympatikus, vyvolává endoteliální dysfunkce a je významným rizikovým faktorem pro hypertenzi.",
       definition: "Poruchy spánku zahrnují stavy narušující kvalitu, délku a časování spánku. Obstrukční spánková apnoe (OSA) je závažné onemocnění charakterizované opakovaným kolapsem horních dýchacích cest během spánku, což vede k zástavám dechu (apnoím) a chronické intermitentní hypoxii.",
       etiology: [
         "Obezita (zejména akumulace tuku v oblasti krku zvyšující mechanický tlak na hltan).",
@@ -496,6 +522,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-11": {
     richContent: {
+      clinicalPearl: "Věkem podmíněná makulární degenerace (VPMD) postihuje oblast žluté skvrny a vede ke ztrátě centrálního vidění, přičemž periferní vidění zůstává zachováno.",
       definition: "Sensorické deficity postihující analyzátor sluchu (převodní a percepční vady) a zraku (glaukom, katarakta, retinopatie).",
       etiology: [
         "Presbyakuze (stárnutím navozená ztráta sluchu), dlouhodobá expozice hluku (akustické trauma).",
@@ -544,6 +571,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-12": {
     richContent: {
+      clinicalPearl: "Syndrom polycystických ovárií (PCOS) je spojen s inzulínovou rezistencí a hyperandrogenismem, což narušuje zrání folikulů a vede k anovulačním cyklům.",
       definition: "Poruchy menstruačního cyklu a dysfunkce osy hypothalamus-hypofýza-ovaria (HPO), projevující se jako amenorea, nepravidelné krvácení nebo anovulační cykly.",
       etiology: [
         "Syndrom polycystických ovarií (PCOS) – nejčastější příčina anovulační neplodnosti.",
@@ -592,6 +620,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-13": {
     richContent: {
+      clinicalPearl: "U osteomalacie (rachitidy u dětí) dochází k poruše mineralizace nově tvořeného osteoidu z důvodu nedostatku vitamínu D, na rozdíl od osteoporózy, kde klesá celkové množství kostní hmoty.",
       definition: "Metabolická onemocnění skeletu charakterizovaná poklesem celkové kostní hmoty (osteoporóza) nebo poruchou mineralizace nově tvořeného osteoidu (osteomalacie, u dětí rachitida).",
       etiology: [
         "Osteoporóza: postmenopauzální deficit estrogenů, senilní involuce, dlouhodobá léčba glukokortikoidy (steroidní osteoporóza).",
@@ -638,6 +667,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-14": {
     richContent: {
+      clinicalPearl: "Choledocholitiáza (kámen ve žlučovodu) vyvolá obstrukční ikterus (zvýšený konjugovaný bilirubin) a acholickou (světlou) stolici kvůli chybějícímu sterkobilinu.",
       definition: "Zánětlivá a litiatická onemocnění žlučníku (cholecystolitiáza, cholecystitida) a žlučových cest (choledocholitiáza, cholangoitida) s rizikem obstrukce odtoku žluči.",
       etiology: [
         "Supersaturace žluči cholesterolem, snížená sekrece žlučových kyselin a hypomotilita žlučníku.",
@@ -684,6 +714,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-15": {
     richContent: {
+      clinicalPearl: "Snížená sekrece erytropoetinu a porucha hydroxylace vitamínu D na aktivní kalcitriol jsou hlavními endokrinními důsledky chronického selhání ledvin.",
       definition: "Ledviny mají významné endokrinní funkce, produkují hormony (renin, erytropoetin, aktivní vitamin D - kalcitriol) a působí jako cílový orgán pro jiné hormony. Poruchy těchto funkcí doprovázejí zejména chronická onemocnění ledvin.",
       etiology: [
         "Chronické selhání ledvin (CKD) s progresivním zánikem funkčního parenchymu ledvin.",
@@ -728,6 +759,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-16": {
     richContent: {
+      clinicalPearl: "U Parkinsonovy nemoci vede degenerace dopaminergních neuronů v substantia nigra k převaze cholinergní aktivity v bazálních gangliích, což způsobuje rigiditu, tremor a hypokinézi.",
       definition: "Poruchy bazálních ganglií (např. Parkinsonova nemoc) vedou k narušení kontroly a modulace volní motoriky. Poruchy limbického systému postihují zpracování emocí, paměť a autonomní reakce.",
       etiology: [
         "Parkinsonova nemoc: neurodegenerativní proces spojený s degenerací dopaminergních neuronů v substantia nigra pars compacta a hromaděním Lewyho tělísek (alfa-synuklein).",
@@ -769,6 +801,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-17": {
     richContent: {
+      clinicalPearl: "Míšní šok po akutním poranění míchy se projevuje dočasnou ztrátou všech reflexů, motorické a senzorické aktivity pod úrovní léze a rozvojem chabé parézy.",
       definition: "Poranění míchy a transverzální léze míšní vedou k přerušení motorických, senzitivních a autonomních drah mezi mozkem a periferií pod úrovní poškození, což vede k plegii, anestezii a dysfunkci vnitřních orgánů.",
       etiology: [
         "Trauma páteře (autonehody, pády, sportovní úrazy, skoky do vody) s frakturou a dislokací obratlů.",
@@ -828,6 +861,11 @@ const SPECIAL_2_DETAILS = {
             <li><strong>Cholinergní deficit:</strong> Výrazná degenerace neuronů v **nucleus basalis Meynerti** vede k těžkému nedostatku acetylcholinu, což je klíčový neurotransmiter pro kognitivní procesy.</li>
           </ul>
         </section>
+
+        <section class="clinical-pearl">
+          <h3>Klinická perla</h3>
+          <p>U Alzheimerovy choroby dochází k extracelulárnímu ukládání beta-amyloidových plaků a intracelulární akumulaci hyperfosforylovaného tau proteinu s následnou atrofií kůry.</p>
+        </section>
       </div>
     `,
     quiz: [
@@ -854,6 +892,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-19": {
     richContent: {
+      clinicalPearl: "Krvácení z ruptury aneuryzmatu v oblasti circulus Willisi vede k subarachnoidálnímu krvácení, které se typicky projevuje náhlou krutou bolestí hlavy ('nejhorší bolest v životě') a meningismem.",
       definition: "Hemoragická cévní mozková příhoda (hCMP) vzniká v důsledku netraumatické ruptury mozkové cévy s následným krvácením do mozkového parenchymu nebo subarachnoidálního prostoru.",
       etiology: [
         "Chronická arteriální hypertenze (způsobuje sklerózu malých cév a vznik Charcot-Bouchardových mikroaneuryzmat).",
@@ -901,6 +940,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-20": {
     richContent: {
+      clinicalPearl: "Crohnova choroba postihuje kteroukoli část trávicí trubice segmentálně a transmurálně (hrozí píštěle a striktury), zatímco ulcerózní kolitida postihuje pouze tlusté střevo a sliznici kontinuálně.",
       definition: "Chronická imunitně mediovaná zánětlivá onemocnění gastrointestinálního traktu. Zahrnují Crohnovu chorobu (CD) a ulcerózní kolitidu (UC).",
       etiology: [
         "Abnormální slizniční imunitní odpověď na složky normálního střevního mikrobiomu u geneticky náchylných jedinců.",
@@ -947,6 +987,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-21": {
     richContent: {
+      clinicalPearl: "Gastroezofageální refluxní choroba (GERD) může vede k rozvoji Barrettova jícnu, což je metaplazie dlaždicového epitelu na cylindrický a představuje prekancerózu adenokarcinomu.",
       definition: "Patologie horní části zažívacího traktu zahrnující poruchy polykání (dysfágie), dyspeptický syndrom a refluxní chorobu jícnu (GERD).",
       etiology: [
         "GERD: snížení tonu dolního jícnového svěrače (LES), hiátová hernie, obezita, kouření, potraviny (kofein, alkohol).",
@@ -993,6 +1034,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-22": {
     richContent: {
+      clinicalPearl: "Masivní rhabdomyolýza uvolňuje do oběhu myoglobin, který precipituje v tubulech a přímo poškozuje ledviny; diagnostickým markerem je extrémní vzestup kreatinkinázy (CK).",
       definition: "Myopatie jsou onemocnění postihující kosterní svalovinu, vedoucí k její strukturální a funkční dysfunkci. Rhabdomyolýza je akutní syndrom charakterizovaný rychlým rozpadem poškozených vláken kosterního svalstva a uvolněním svalových komponent (zejména myoglobinu a draslíku) do systémového oběhu.",
       etiology: [
         "Myopatie: dědičné (Duchennova svalová dystrofie), zánětlivé (polymyozitida, dermatomyozitida) nebo toxické (vyvolané statiny, alkoholem).",
@@ -1037,6 +1079,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-23": {
     richContent: {
+      clinicalPearl: "Krvácení z horní části GIT (nad Treitzovým ligamentem) se projevuje hematemézou nebo melénou (černou stolicí vzniklou působením HCl na hemoglobin), z dolní části pak enteroragií.",
       definition: "Krvácení do gastrointestinálního traktu (GIT) je závažný stav rozdělovaný podle lokalizace na horní (nad Treitzovým ligamentem) a dolní (pod Treitzovým ligamentem), který může vést k rozvoji hemoragického šoku.",
       etiology: [
         "Horní GIT: peptické vředy žaludku a duodena (nejčastější), jícnové varixy (při portální hypertenzi), Mallory-Weissův syndrom (trhliny sliznice jícnu při zvracení), gastropatie.",
@@ -1080,6 +1123,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-24": {
     richContent: {
+      clinicalPearl: "Locked-in syndrom je způsoben oboustrannou lézí pontu (např. při trombóze a. basilaris), kdy je zachováno vědomí i citlivost, ale pacient je schopen komunikovat pouze vertikálními pohyby očí.",
       definition: "Kóma je stav hlubokého bezvědomí, z něhož pacienta nelze probrat ani silnými zevními podněty. Locked-in syndrom je stav kompletní motorické plegie při zachovalém vědomí. Smrt mozku je ireverzibilní ztráta všech mozkových funkcí včetně mozkového kmene.",
       etiology: [
         "Kóma: strukturální poškození mozku (trauma, masivní krvácení, rozsáhlá CMP, tumory) nebo metabolické příčiny (hypoglykémie, urémie, jaterní kóma, intoxikace).",
@@ -1124,6 +1168,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-25": {
     richContent: {
+      clinicalPearl: "Transitorní ischemická ataka (TIA) je definována jako přechodný neurologický deficit způsobený ložiskovou ischemií mozku, jehož symptomy plně odezní do 24 hodin bez průkazu infarktu na MRI.",
       definition: "Ischemická cévní mozková příhoda (iCMP) je ložiskové poškození mozkové tkáně způsobené náhlým přerušením nebo výrazným snížením přítoku krve do určité oblasti mozku.",
       etiology: [
         "Aterotrombóza velkých mozkových a krčních tepen (např. a. carotis interna).",
@@ -1168,6 +1213,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-26": {
     richContent: {
+      clinicalPearl: "Cushingův reflex (triáda: hypertenze, bradykardie a nepravidelné dýchání) je pozdní známkou nitrolební hypertenze a hrozící herniace mozkového kmene.",
       definition: "Intrakraniální hypertenze je stav zvýšeného tlaku uvnitř lebky (nad 15-20 mmHg). Autoregulace mozkového oběhu je schopnost udržovat konstantní průtok krve mozkem (CBF) v rozmezí středního arteriálního tlaku (MAP) 50-150 mmHg.",
       etiology: [
         "Expanzivní nitrolební procesy: hematomy (epidurální, subdurální), tumory, abscesy.",
@@ -1213,6 +1259,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-27": {
     richContent: {
+      clinicalPearl: "Jaterní cirhóza vede k portální hypertenzi, hypoalbuminémii (pokles onkotického tlaku) a aktivaci RAAS, což jsou klíčové mechanismy vzniku ascitu.",
       definition: "Jaterní cirhóza je konečné stadium chronických jaterních procesů charakterizované uzlovou přestavbou parenchymu a fibrotizací. Hepatorenální syndrom (HRS) je funkční selhání ledvin u pacientů s pokročilou jaterní cirhózou a ascitem.",
       etiology: [
         "Chronický abúzus alkoholu.",
@@ -1260,6 +1307,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-28": {
     richContent: {
+      clinicalPearl: "Chronická pankreatitida se projevuje chronickou bolestí, steatoreou (mastné stolice z nedostatku lipázy) a sekundárním diabetem mellitus v důsledku destrukce Langerhansových ostrůvků.",
       definition: "Chronické zánětlivé onemocnění slinivky břišní charakterizované progresivní destrukcí acinárních a duktálních buněk a jejich náhradou vazivem, což vede ke ztrátě exokrinní a endokrinní funkce.",
       etiology: [
         "Chronický abúzus alkoholu (způsobuje 70-80 % případů) a kouření.",
@@ -1307,6 +1355,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-29": {
     richContent: {
+      clinicalPearl: "Myxedém u hypotyreózy je způsoben hromaděním glykosaminoglykanů (kyseliny hyaluronové) v intersticiu, což váže vodu a vede k tuhému, neprosákavému otoku kůže.",
       definition: "Hypotyreóza je stav způsobený nedostatečnou koncentrací hormonů štítné žlázy (T3, T4) v tkáních. Struma označuje jakékoli zvětšení štítné žlázy nad normu.",
       etiology: [
         "Hashimotova tyroiditida: chronický autoimunitní zánět s destrukcí folikulů (nejčastější příčina).",
@@ -1354,6 +1403,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-30": {
     richContent: {
+      clinicalPearl: "U Sheehanova syndromu (poporodní nekróza hypofýzy) dochází k ischemické destrukci adenohypofýzy v důsledku masivního krvácení při porodu a hypotenze.",
       definition: "Hypotalamo-hypofyzární systém reguluje většinu endokrinních žláz v těle. Poruchy mohou postihnout hypothalamus (produkce liberinů/statinů), adenohypofýzu (tropní hormony) nebo neurohypofýzu (skladování ADH a oxytocinu).",
       etiology: [
         "Tumory: adenomy hypofýzy (prolaktinom, somatotropní adenom), kraniofaryngeom.",
@@ -1400,6 +1450,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-31": {
     richContent: {
+      clinicalPearl: "Akutní pankreatitida je charakterizována předčasnou intracinární aktivací trypsinu, což spustí autotrávení (autodigesci) pankreatické tkáně a rozvoj systémové zánětlivé odpovědi.",
       definition: "Akutní pankreatitida je akutní zánětlivé onemocnění slinivky břišní charakterizované předčasnou aktivací pankreatických enzymů přímo v parenchymu, což vede k autodigesi (samotrávení) žlázy a rozvoji systémové zánětlivé reakce.",
       etiology: [
         "Biliární příčiny (40 %): zaklesnutí žlučového kamene ve společné ampule (papilla Vateri) blokuje odtok pankreatické šťávy.",
@@ -1446,6 +1497,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-32": {
     richContent: {
+      clinicalPearl: "Gravesova-Basedowova choroba je autoimunitní hypertyreóza způsobená tvorbou protilátek proti TSH receptoru (TRAb), které receptor trvale stimulují a vyvolávají tyreotoxikózu.",
       definition: "Hypertyreóza je syndrom způsobený nadbytkem cirkulujících hormonů štítné žlázy (T3, T4), což vede k hypermetabolickému stavu tkání.",
       etiology: [
         "Graves-Basedowova choroba: autoimunitní stimulace receptoru pro TSH protilátkami (nejčastější příčina).",
@@ -1492,6 +1544,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-33": {
     richContent: {
+      clinicalPearl: "Primární hyperparatyreóza se projevuje hyperkalcémií, hypofosfatémií a zvýšeným PTH; klinicky se manifestuje litiázou, kostní resorpcí a peptickými vředy.",
       definition: "Hyperparatyreóza je stav charakterizovaný nadměrnou sekrecí parathormonu (PTH) příštítnými tělísky, což narušuje homeostázu vápníku a fosforu.",
       etiology: [
         "Primární (pHPT): autonomně fungující adenom příštítného tělíska (85 %) nebo hyperplázie.",
@@ -1539,6 +1592,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-34": {
     richContent: {
+      clinicalPearl: "Klinickým rozlišovacím znakem Cushingovy nemoci (hypofyzární hypersekrece ACTH) od periferních forem je supresní test s vysokou dávkou dexamethasonu, který u centrální formy sekreci ACTH utlumí.",
       definition: "Cushingův syndrom je soubor klinických příznaků způsobených dlouhodobou expozicí vysokým hladinám glukokortikoidů (kortizolu).",
       etiology: [
         "Exogenní (iatrogenní): dlouhodobé podávání farmakologických dávek glukokortikoidů (nejčastější příčina).",
@@ -1585,6 +1639,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-35": {
     richContent: {
+      clinicalPearl: "Connův syndrom (primární hyperaldosteronismus) se projevuje hypertenzí refrakterní na léčbu, hypokalémií a nízkou aktivitou reninu v plazmě.",
       definition: "Stavy spojené s nadměrnou produkcí mineralokortikoidního hormonu aldosteronu, což vede k retenci sodíku, hypertenzi a ztrátám draslíku.",
       etiology: [
         "Primární (PA - Connův syndrom): bilaterální hyperplázie kůry nadledvin (60 %) nebo aldosteron-secernující adenom (Connův adenom - 35 %).",
@@ -1631,6 +1686,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-36": {
     richContent: {
+      clinicalPearl: "Mechanický ileus se vyznačuje vlnami kolikovité bolesti a zesílenou peristaltikou (úsilné šelesty), zatímco paralytický ileus je spojen s tichým břichem a chybějící peristaltikou.",
       definition: "Patologie tlustého střeva (divertikulóza, polypy, kolorektální karcinom) a syndrom střevní neprůchodnosti (ileus).",
       etiology: [
         "Divertikulóza: nedostatek vlákniny, chronická zácpa, zvýšený intraluminální tlak.",
@@ -1678,6 +1734,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-37": {
     richContent: {
+      clinicalPearl: "Feochromocytom je nádor dřeně nadledvin secernující katecholaminy, což vyvolá paroxysmální hypertenzi doprovázenou triádou: bolesti hlavy, pocení a palpitace.",
       definition: "Feochromocytom je nádor z chromafinních buněk dřeně nadledvin secernující katecholaminy. Syndrom MEN (mnohočetné endokrinní neoplazie) představuje dědičné syndromy s výskytem více endokrinních nádorů. Zollinger-Ellisonův syndrom je charakterizován gastrinomem secernujícím gastrin.",
       etiology: [
         "Feochromocytom: z 25-30 % geneticky podmíněný (mutace v RET, VHL, NF1 genech).",
@@ -1722,6 +1779,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-38": {
     richContent: {
+      clinicalPearl: "Patofyziologickým podkladem epileptického záchvatu je náhlá, synchronní a nadměrná elektrická aktivita skupiny neuronů v kůře mozku způsobená nerovnováhou mezi excitací (glutamát) a inhibicí (GABA).",
       definition: "Epilepsie je chronické onemocnění mozku charakterizované trvalou predispozicí k rozvoji epileptických záchvatů, které jsou způsobeny abnormální, synchronní a nadměrnou aktivitou skupin neuronů v mozku.",
       etiology: [
         "Strukturální: poškození mozku po traumatu, CMP, jizvy po infekcích (encefalitida), mozkové nádory.",
@@ -1766,6 +1824,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-39": {
     richContent: {
+      clinicalPearl: "Vazogenní edém mozku vzniká porušením hematoencefalické bariéry s průnikem proteinů a tekutiny do extracelulárního prostoru, na rozdíl od cytotoxického edému, kde tekutina bobtná uvnitř buněk z důvodu selhání Na+/K+-ATPázy.",
       definition: "Edém mozku je patologické zvýšení obsahu vody v mozkovém parenchymu, které vede ke zvětšení objemu mozku a riziku rozvoje nitrolební hypertenze.",
       etiology: [
         "Cytotoxický edém: ischémie mozku (iCMP, stav po srdeční zástavě), těžká hypoxie, intoxikace (oxid uhelnatý).",
@@ -1809,6 +1868,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-40": {
     richContent: {
+      clinicalPearl: "U diabetu 1. typu dochází k absolutnímu nedostatku inzulínu v důsledku autoimunitní destrukce beta buněk, zatímco u diabetu 2. typu dominuje inzulínová rezistence a relativní deficit inzulínu.",
       definition: "Diabetes mellitus (DM) je skupina chronických metabolických onemocnění charakterizovaných hyperglykémií, která vzniká v důsledku absolutního nebo relativního nedostatku inzulínu a/nebo jeho účinku.",
       etiology: [
         "DM 1. typu: autoimunitní destrukce beta-buněk Langerhansových ostrůvků slinivky břišní u geneticky predisponovaných jedinců.",
@@ -1853,6 +1913,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-41": {
     richContent: {
+      clinicalPearl: "Diabetická ketoacidóza (DKA) vzniká u diabetu 1. typu při deficitu inzulínu; dochází k nekontrolované lipolýze a tvorbě ketolátek (kyseliny acetoctové a beta-hydroxymáselné), což vyvolá metabolickou acidózu.",
       definition: "Komplikace diabetu se dělí na akutní metabolické krize (DKA, HHS, hypoglykémie) a chronické postižení cév (mikroangiopatie, makroangiopatie).",
       etiology: [
         "DKA: absolutní nedostatek inzulínu (typicky DM1) kombinovaný se stresem (infekce).",
@@ -1902,6 +1963,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-42": {
     richContent: {
+      clinicalPearl: "U roztroušené sklerózy jsou autoimunitním zánětem napadány myelinové pochvy v CNS tvořené oligodendrocyty, což vede k poruše slanění (saltatorního) vedení vzruchů.",
       definition: "Roztroušená skleróza (RS) je chronické autoimunitní demyelinizační onemocnění centrálního nervového systému (CNS), které vede k postupné neurodegeneraci a neurologickému deficitu.",
       etiology: [
         "Autoimunitní reakce vyvolaná kombinací genetické náchylnosti (HLA-DRB1) a faktorů prostředí.",
@@ -1947,6 +2009,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-43": {
     richContent: {
+      clinicalPearl: "Transitorní ischemická ataka (TIA) představuje varovný signál hrozící velké CMP; symptomy (parézy, afázie, amauróza) odeznívají obvykle do několika minut až hodin bez trvalého poškození.",
       definition: "Cévní mozková příhoda (CMP) je náhle vzniklý neurologický deficit způsobený ložiskovou poruchou mozkového oběhu. TIA je přechodná ischémie bez strukturálního infarktu.",
       etiology: [
         "Ischemická CMP (80 %): trombóza na aterosklerotickém plátu, kardioembolizace (fibrilace síní), hemodynamické selhání.",
@@ -1993,6 +2056,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-44": {
     richContent: {
+      clinicalPearl: "Periferní paréza (léze dolního motoneuronu) se projevuje svalovou atrofií, hypotonií a hyporeflexií, zatímco centrální paréza (léze horního motoneuronu) vyvolá spasticitu a hyperreflexii.",
       definition: "Paréza je částečné ochrnutí svalstva. Centrální (spastická) paréza postihuje horní motoneuron, periferní (chabá) paréza postihuje dolní motoneuron.",
       etiology: [
         "Centrální paréza: cévní mozkové příhody, traumatické poranění mozku či míchy, roztroušená skleróza, nádory CNS.",
@@ -2036,6 +2100,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-45": {
     richContent: {
+      clinicalPearl: "Diabetická autonomní neuropatie postihuje kardiovaskulární systém (ztráta variability srdeční frekvence, tichá ischemie myokardu) a GIT (diabetická gastroparéza).",
       definition: "Poruchy autonomního (vegetativního) nervového systému (dysautonomie) narušují mimovolní regulaci kardiovaskulárního, trávicího a urogenitálního traktu.",
       etiology: [
         "Diabetická autonomní neuropatie (nejčastější příčina sekundární dysautonomie).",
@@ -2084,6 +2149,7 @@ const SPECIAL_2_DETAILS = {
 
 "spec-2-46": {
     richContent: {
+      clinicalPearl: "Osteoartróza je degenerativní kloubní onemocnění začínající degradací kloubní chrupavky a reaktivní tvorbou osteofytů na okrajích kostí, na rozdíl od revmatoidní artritidy, což je primární autoimunitní zánět synovie.",
       definition: "Osteoartróza (OA) je chronické degenerativní onemocnění kloubů charakterizované postupnou destrukcí kloubní chrupavky, sklerotizací subchondrální kosti a sekundárním zánětem synovie.",
       etiology: [
         "Mechanické přetěžování kloubů: obezita (klíčový rizikový faktor u gonartrózy), těžká manuální práce, vrcholový sport.",
@@ -2131,6 +2197,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-47": {
     richContent: {
+      clinicalPearl: "U akutního selhání jater vzniká jaterní encefalopatie v důsledku hromadění amoniaku (který játra nestíhají přeměnit na močovinu), což poškozuje astrocyty v mozku.",
       definition: "Akutní selhání jater (ALF) je náhlé selhání jaterních funkcí u jedince bez předchozího jaterního onemocnění, charakterizované rozvojem jaterní encefalopatie a koagulopatie do 26 týdnů od prvních symptomů.",
       etiology: [
         "Předávkování paracetamolem (nejčastější toxická příčina).",
@@ -2177,6 +2244,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-48": {
     richContent: {
+      clinicalPearl: "Nedostatek parathormonu (např. po iatrogenním odstranění příštítných tělísek) vede k těžké hypokalcémii, která se klinicky projevuje neuromuskulární dráždivostí až tetanií.",
       definition: "Hypoparatyreóza je endokrinní porucha charakterizovaná nedostatečnou sekrecí parathormonu (PTH) z příštítných tělísek, což vede k hypokalcémii a hyperfosfatémii.",
       etiology: [
         "Iatrogenní poškození: náhodné odstranění nebo poškození cévního zásobení příštítných tělísek při operaci štítné žlázy (tyroidektomii) - nejčastější příčina.",
@@ -2221,6 +2289,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-49": {
     richContent: {
+      clinicalPearl: "Chronická hepatitida B a C může vést k dlouhodobému zánětu a postupné nekrotizaci hepatocytů, což stimuluje jaterní hvězdicové buňky k produkci kolagenu a rozvoji jaterní cirhózy.",
       definition: "Hepatitida je zánětlivé onemocnění jaterního parenchymu, které může mít akutní (trvání do 6 měsíců) nebo chronický (trvání nad 6 měsíců) průběh, a může vyústit v cirhózu jater.",
       etiology: [
         "Virové hepatitidy: hepatotropní viry A, B, C, D, E.",
@@ -2263,6 +2332,7 @@ const SPECIAL_2_DETAILS = {
 
   "spec-2-50": {
     richContent: {
+      clinicalPearl: "Adrenální krize je akutní život ohrožující stav vyvolaný náhlým nedostatkem kortizolu při stresu, projevující se těžkým šokem refrakterním na katecholaminy, hyponatrémií a hyperkalémií.",
       definition: "Addisonova choroba (primární insuficience kůry nadledvin) je stav způsobený destrukcí kůry nadledvin, vedoucí k deficitu glukokortikoidů, mineralokortikoidů i androgenů. Adrenální krize je akutní, život ohrožující zhoršení tohoto stavu při zátěži.",
       etiology: [
         "Autoimunitní adrenalitida (příčina až 80 % případů v rozvinutých zemích, často doprovází jiné autoimunity).",
@@ -2315,7 +2385,7 @@ function getExtendedSpecial2Content(q) {
         <h3>1. Etiologie a patofyziologický úvod</h3>
         <p>Téma <strong>${q.title}</strong> představuje důležitý patofyziologický okruh v rámci <em>${q.organSystem}</em>. Tento stav vzniká působením specifických etiologických vlivů (např. autoimunita, degenerativní změny tkání, metabolické dysbalance), které narušují normální fyziologii a regulaci.</p>
       </section>
-      
+
       <section>
         <h3>2. Patofyziologické mechanismy</h3>
         <p>Během rozvoje tohoto stavu dochází k postupnému zapojení poškození buněčných membrán, receptorových dysfunkcí a narušení nervových či hormonálních zpětných vazeb.</p>
@@ -2332,7 +2402,7 @@ function getExtendedSpecial2Content(q) {
 // Dynamické sloučení podrobností do globální databáze COMPLETE_QUESTIONS
 function mergeSpecial2Details() {
   const completeList = window.COMPLETE_QUESTIONS || [];
-  
+
   completeList.forEach(q => {
     if (q.category === "Speciální II.") {
       const rich = SPECIAL_2_DETAILS[q.id];
@@ -2340,11 +2410,12 @@ function mergeSpecial2Details() {
         if (rich.detailContent) {
           q.detailContent = rich.detailContent;
         } else if (rich.richContent) {
-          const etiolHTML = rich.richContent.etiology.map(e => `<li>${e}</li>`).join("");
-          const pathoHTML = rich.richContent.pathogenesis.map(p => `<li>${p}</li>`).join("");
-          const clinHTML = rich.richContent.clinicalManifestation.map(c => `<li>${c}</li>`).join("");
-          const diagHTML = rich.richContent.diagnostics.map(d => `<li>${d}</li>`).join("");
-          
+          const etiolHTML = (rich.richContent.etiology || []).map(e => `<li>${e}</li>`).join("");
+          const pathoHTML = (rich.richContent.pathogenesis || []).map(p => `<li>${p}</li>`).join("");
+          const clinHTML = (rich.richContent.clinicalManifestation || []).map(c => `<li>${c}</li>`).join("");
+          const diagHTML = (rich.richContent.diagnostics || []).map(d => `<li>${d}</li>`).join("");
+          const pearlHTML = rich.richContent.clinicalPearl ? `<section class="clinical-pearl"><h3>Klinická perla</h3><p>${rich.richContent.clinicalPearl}</p></section>` : "";
+
           const diagramHTML = window.generatePathogenesisDiagram ? window.generatePathogenesisDiagram(rich.richContent.pathogenesis) : `
 [Vyvolávající příčina / Inzult]
                │
@@ -2361,7 +2432,7 @@ function mergeSpecial2Details() {
                 <h3>1. Definice a úvod do patofyziologie</h3>
                 <p><strong>${q.title}</strong>: ${rich.richContent.definition}</p>
               </section>
-              
+
               <section>
                 <h3>2. Etiologie a rizikové faktory</h3>
                 <ul>
@@ -2394,6 +2465,7 @@ function mergeSpecial2Details() {
                   ${diagHTML}
                 </ul>
               </section>
+              ${pearlHTML}
             </div>
           `;
         }

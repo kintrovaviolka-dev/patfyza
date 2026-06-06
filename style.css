@@ -1137,3 +1137,34 @@ body:not(.dark-mode) .theme-toggle-btn .moon-icon {
     opacity: 0;
   }
 }
+
+/* Klinická perla styling */
+.clinical-pearl {
+  margin-top: 24px;
+  padding: 16px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+  border-left: 4px solid var(--color-success);
+  border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.clinical-pearl h3 {
+  font-size: 1.05rem !important;
+  color: var(--color-success) !important;
+  margin: 0 0 8px 0 !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.clinical-pearl h3::before {
+  content: '💡';
+  font-size: 1.2rem;
+}
+
+.clinical-pearl p {
+  margin: 0 !important;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.5;
+}

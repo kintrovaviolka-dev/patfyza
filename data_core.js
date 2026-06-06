@@ -5,8 +5,8 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Základní charakteristika plicních onemocnění: obstrukce a restrikce etiopatogeneze",
   "Portální hypertenze - etiopatogeneze, projevy, následky",
   "Trombocytopenie a trombocytopatie - etiopatogeneze, projevy, následky",
-  "Systémová arteriální hypotenze etiopatogeneze and následky",
-  "Tachyarytmie: supraventrikulární a ventrikulární - etiopatogeneze, rozdělení, následky. Fibrilace a flutter síní. Extrasytoly. Reentry. Preexcitační syndromy",
+  "Systémová arteriální hypotenze etiopatogeneze a následky",
+  "Tachyarytmie: supraventrikulární a ventrikulární - etiopatogeneze, rozdělení, následky. Fibrilace a flutter síní. Extrasystoly. Reentry. Preexcitační syndromy",
   "Pravostranné srdeční selhání - akutní a chronická etiologie, patogeneze, projevy, následky",
   "Srdeční selhání - obecná charakteristika etiopatogeneze, projevy, následky. Systolická a diastolická dysfunkce",
   "Akutní tubulární nekróza - etiopatogeneze, projevy, následky",
@@ -86,9 +86,9 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Akutní pankreatitida - etiopatogeneze, projevy, následky.",
   "Hypertyreóza - etiopatogeneze, projevy, následky",
   "Hyperparatyreóza - etiopatogeneze, projevy, následky",
-  "Hyperkotizolizmus. Cushingova nemoc a syndrom - etiopatogeneze, projevy, následky",
+  "Hyperkortizolismus. Cushingova nemoc a syndrom - etiopatogeneze, projevy, následky",
   "Hyperaldosteronismus - etiopatogeneze, rozdělení, projevy, následky. Connův syndrom",
-  "Onemocnění tlustého střeva divertikulóza, polypóza a karcinom- etiopatogeneze a následky. Ileus - etiopatogeneze, projevy, následky",
+  "Onemocnění tlustého střeva divertikulóza, polypóza a karcinom - etiopatogeneze a následky. Ileus - etiopatogeneze, projevy, následky",
   "Feochromocytom, mnohočetné endokrinní neoplazie - etiopatogeneze, projevy, následky. Zollinger Ellisonův syndrom. Gastroenteropankreatický hormonální systém.",
   "Epilepsie - etiopatogeneze, klasifikace, projevy, následky.",
   "Edém mozku - etiopatogeneze, projevy, následky. Cytotoxický edém a vazogenní edém, intersticiální edém.",
@@ -100,7 +100,7 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Autonomní nervový systém - poruchy funkce, efekt na orgánové systémy",
   "Artróza - etiopatogeneze, projevy, následky",
   "Akutní selhání jater - etiopatogeneze, projevy, následky. Jaterní encefalopatie.",
-  "Hypoparathyreóza - etiopatogeneze, projevy, následky.",
+  "Hypoparatyreóza - etiopatogeneze, projevy, následky.",
   "Akutní a chronické hepatitidy - etiopatogeneze, rozdělení, projevy, následky.",
   "Adenokortikální insuficience - Addisonova choroba. Adrenální (addisonská) krize - etiopatogeneze, projevy, následky."
 ];
@@ -163,10 +163,10 @@ const RAW_QUESTIONS_GENERAL = [
   "Ateroskleróza. Poruchy metabolismu lipidů - etiopatogeneze, akutní a chronické komplikace, následky.",
   "Poruchy bilance kalia (K+) - etiopatogeneze, následky.",
   "Trombóza - rozdělení a příklady, projevy, následky.",
-  "Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.",
+  "Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.",
   "Stres a všeobecný adaptační syndrom - charakteristika, fáze, etiopatogeneze.",
   "Vliv celkové a částečné imobilizace.",
-  "Systémová zánětlivá odpověď- etiopatogeneze, následky.",
+  "Systémová zánětlivá odpověď - etiopatogeneze, následky.",
   "Nespecifický a specifický imunitní systém - poruchy funkce, principy.",
   "Imunopatologické reakce - rozdělení, etiopatogeneze. Principy autoimunitních reakcí - mechanizmy. Atopie. Imunotolerance.",
   "Poškození vlivem fyzikálních vlivů - chlad, teplo, el. proudu, elektromagnetické a ionizující záření.",
@@ -178,10 +178,10 @@ const RAW_QUESTIONS_GENERAL = [
   "Reaktivní kyslíkové a dusíkové sloučeniny - role za fyziologického stavu a v patogenezi nemocí. Ischemicko-reperfúzní syndrom - etiopatogeneze, příklady.",
   "Hyperhydratace - etiopatogeneze, následky.",
   "Obezita - etiopatogeneze, následky, role v patogenezi nemocí.",
-  "Šok-definice, etiopatogeneze, rozdělení.",
+  "Šok - definice, etiopatogeneze, rozdělení.",
   "Poškození a smrt buňky - reversibilní a ireversibilní, nekróza, apoptóza, autofagie.",
-  "Horečka - etiopatogenze, průběh (fáze) horečky, pozitivní a negativní vliv horečky na organismus.",
-  "Nadjádorové bujení - teorie vzniku nádorů, růst nádoru, tvorba metastáz, příčiny smrti u nádorových onemocnění, nádorové markery, paraneoplastický syndrom.",
+  "Horečka - etiopatogeneze, průběh (fáze) horečky, pozitivní a negativní vliv horečky na organismus.",
+  "Nádorové bujení - teorie vzniku nádorů, růst nádoru, tvorba metastáz, příčiny smrti u nádorových onemocnění, nádorové markery, paraneoplastický syndrom.",
   "Malnutrice - etiopatogeneze, následky, role v patogenezi nemocí.",
   "Hypoxie a hyperoxie buňky - příčiny, adaptace, následky.",
   "Edém - rozdělení, etiopatogeneze, klinická manifestace, následky.",
@@ -193,7 +193,7 @@ const RAW_QUESTIONS_GENERAL = [
   "Septický a anafylaktický šok - etiopatogeneze a následky.",
   "Obstipace a průjem - etiopatogeneze a následky. Syndrom dráždivého tračníku, pseudomembranózní kolitida.",
   "Poruchy metabolismu železa (Fe2+/Fe3+) - etiopatogeneze a následky.",
-  "Ikterus- etiopatogeneze.",
+  "Ikterus - etiopatogeneze.",
   "Poruchy bilance kalcia (Ca2+) a fosfátů - etiopatogeneze, projevy, následky.",
   "Sepse, syndrom multiorgánové dysfunkce (MODS) - etiopatogeneze, projevy a následky.",
   "Krvácení - etiopatogeneze, rozdělení, následky.",
@@ -211,8 +211,7 @@ const RAW_QUESTIONS_GENERAL = [
   "Poškození vlivem fyzikálních vlivů tlaku, crush syndrom (rhabdomyolýza), zvuk."
 ];
 
-// Repair "Nadjádorové bujení" typo from raw copy if present
-RAW_QUESTIONS_GENERAL[22] = "Nádorové bujení - teorie vzniku nádorů, růst nádoru, tvorba metastáz, příčiny smrti u nádorových onemocnění, nádorové markery, paraneoplastický syndrom.";
+
 
 function getOrganSystem(title) {
   const lower = title.toLowerCase();
