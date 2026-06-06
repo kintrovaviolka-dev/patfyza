@@ -948,7 +948,7 @@ const SPECIAL_1_DETAILS = {
       pathogenesis: [
         "Vazokonstrikce, proliferace intimy a hypertrofie medie plicních cév vedou k fixní redukci průřezu plicního řečiště.",
         "Zvýšení plicní cévní rezistence (PVR) nutí pravou komoru generovat vyšší tlak.",
-        "Rozvíjí se hypertrofie a následná dilatace pravé kom komory (cor pulmonale), což končí jejím selháním."
+        "Rozvíjí se hypertrofie a následná dilatace pravé komory (cor pulmonale), což končí jejím selháním."
       ],
       clinicalManifestation: [
         "Progresivní námahová dušnost (způsobená fixním srdečním výdejem, který nelze při zátěži zvýšit).",
