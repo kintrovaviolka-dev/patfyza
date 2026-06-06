@@ -1797,7 +1797,7 @@ const SPECIAL_2_DETAILS = {
         "Generalizované záchvaty: postihují obě hemisféry současně. Typy: absence (krátkodobý záraz v činnosti bez křečí), tonicko-klonické záchvaty (grand mal - ztráta vědomí, pád, fáze křeče celého těla, pomočení, pokousání jazyka)."
       ],
       diagnostics: [
-        "EEG (elektroencefalografie): klíčové vyšetření k zachycení specifických epileptiformních výbojů (hroty, ostré vlny, komplety hrot-vlna).",
+        "EEG (elektroencefalografie): klíčové vyšetření k zachycení specifických epileptiformních výbojů (hroty, ostré vlny, komplexy hrot-vlna).",
         "MRI mozku k detekci strukturálních příčin (např. meziální temporální skleróza, tumor).",
         "Laboratorní vyšetření k vyloučení iontových dysbalancí (hyponatrémie, hypokalcémie) a glykémie."
       ]
