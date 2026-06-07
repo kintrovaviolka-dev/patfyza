@@ -168,7 +168,7 @@ const RAW_QUESTIONS_GENERAL = [
   "Vliv celkové a částečné imobilizace.",
   "Systémová zánětlivá odpověď- etiopatogeneze, následky.",
   "Nespecifický a specifický imunitní systém - poruchy funkce, principy.",
-  "Imunopatologické reakce - rozdělení, etiopatogeneze. Principy autoimunitních reakcí - mechanizmy. Atopie. Imunotolerance.",
+  "Imunopatologické reakce - rozdělení, etiopatogeneze. Principy autoimunitních reakcí - mechanismy. Atopie. Imunotolerance.",
   "Poškození vlivem fyzikálních vlivů - chlad, teplo, el. proudu, elektromagnetické a ionizující záření.",
   "Embolie - rozdělení. Plicní embolie - etiopatogeneze, projevy, následky. Periferní a paradoxní embolie.",
   "Poruchy acidobazické rovnováhy - klasifikace poruch, kompenzace a korekce, příčiny a následky. Příčiny smrti při poruchách acidobazické rovnováhy.",
