@@ -4,10 +4,10 @@
 const RAW_QUESTIONS_SPECIAL_1 = [
   "Srdeční zástava. Maligní arytmie: fibrilace komor, setrvalá komorová tachykardie a asystolie - etiopatogeneze a následky. Elektromechanická disociace",
   "Anemie - obecná charakteristika, etiopatogeneze, rozdělení, následky. Anemický syndrom",
-  "Základní charakteristika plicních onemocnění: obstrukce a restrikce etiopatogeneze",
+  "Základní charakteristika plicních onemocnění: obstrukce a restrikce - etiopatogeneze",
   "Portální hypertenze - etiopatogeneze, projevy, následky",
   "Trombocytopenie a trombocytopatie - etiopatogeneze, projevy, následky",
-  "Systémová arteriální hypotenze etiopatogeneze a následky",
+  "Systémová arteriální hypotenze - etiopatogeneze a následky",
   "Regulace funkce endokrinního systému - negativní zpětná vazba, příklady etiopatogeneze poruch endokrinního systému",
   "Tachyarytmie: supraventrikulární a ventrikulární - etiopatogeneze, rozdělení, následky. Fibrilace a flutter síní. Extrasystoly. Reentry. Preexcitační syndromy",
   "Pravostranné srdeční selhání - akutní a chronická etiologie, patogeneze, projevy, následky",
@@ -16,7 +16,7 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Srdeční arytmie - etiopatogeneze, klasifikace, projevy, následky",
   "Sekundární hypertenze - etiopatogeneze, akutní a chronické komplikace, následky",
   "Restrikční plicní nemoci - etiopatogeneze, symptomy a následky. Vnější a vnitřní příčiny restrikce",
-  "Primární (esenciální) hypertenze etiopatogeneze, akutní a chronické komplikace, následky",
+  "Primární (esenciální) hypertenze - etiopatogeneze, akutní a chronické komplikace, následky",
   "Transfúze krve a krevních derivátů - etiopatogeneze nejčastějších komplikací. Základy problematiky transplantace kostní dřeně. GvH a HvG reakce",
   "Poruchy ventilačně-perfúzního poměru - etiopatogeneze, projevy, následky",
   "Poruchy venózního řečiště. - etiopatogeneze, projevy, následky. Poruchy lymfatického cévního systému - etiopatogeneze, projevy, následky",
@@ -26,7 +26,7 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Polycytémie - etiopatogeneze, následky. Hyperviskózní syndrom",
   "Pneumothorax - etiopatogeneze, typy projevy, následky. Fluidothorax etiopatogeneze, typy, projevy, následky",
   "Pneumonie - etiopatogeneze, rozdělení, projevy, následky",
-  "Plicní edém etiopatogeneze, rozdělení, projevy, následky",
+  "Plicní edém - etiopatogeneze, rozdělení, projevy, následky",
   "Patofyziologie sleziny - splenomegalie, hypersplenismus, následky splenektomie",
   "Obstrukční plicní nemoci - obecná charakteristika, etiopatogeneze, projevy, následky",
   "Obstrukce horních dýchacích cest - etiopatogeneze, projevy, následky",
@@ -49,7 +49,7 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Bradyarytmie - etiopatogeneze a následky poruch tvorby a vedení vzruchu. Sinoatriální, atrioventrikulární a raménkové blokády",
   "Anémie ze zvýšených ztrát a snížené produkce erytrocytů - etiopatogeneze, následky",
   "Anemie ze zvýšené konsumpce erytrocytů. Hemolýza - etiopatogeneze, následky",
-  "Atelektáza. etiopatogeneze, projevy, následky",
+  "Atelektáza - etiopatogeneze, projevy, následky",
   "ARDS-etiopatogeneze, klasifikace, projevy, následky. Akutní respirační selhání - rozdělení, etiopatogeneze, následky",
   "Akutní ischemie myokardu - etiopatogeneze, následky. Akutní infarkt myokardu - etiopatogeneze, rozdělení, akutní a chronické komplikace",
   "Akutní poškození ledvin - etiopatogeneze, rozdělení podle příčin, projevy, následky"
@@ -242,7 +242,7 @@ const SPECIFIC_RICH_DATA = {
   },
 
   // 3. Obstrukce a restrikce
-  "Základní charakteristika plicních onemocnění: obstrukce a restrikce etiopatogeneze": {
+  "Základní charakteristika plicních onemocnění: obstrukce a restrikce - etiopatogeneze": {
     keyTerms: ["Obstrukce", "Restrikce", "FVC", "FEV1", "Tiffeneauův index", "Plicní poddajnost"],
     detailContent: `
       <div class="medical-detail">
