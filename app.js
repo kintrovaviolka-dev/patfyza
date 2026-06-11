@@ -532,9 +532,33 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         const imported = JSON.parse(event.target.result);
         
-        if (imported.progress) state.userProgress = imported.progress;
-        if (imported.notes) state.userNotes = imported.notes;
-        if (imported.quiz) state.quizStats = imported.quiz;
+        const isObj = (obj) => obj !== null && typeof obj === "object" && !Array.isArray(obj);
+
+        if (!isObj(imported)) throw new Error("Invalid format");
+
+        if (imported.progress !== undefined) {
+          if (!isObj(imported.progress)) throw new Error("Invalid progress format");
+          for (const key of Object.keys(imported.progress)) {
+             if (typeof imported.progress[key] !== "string") throw new Error("Invalid progress value");
+          }
+          state.userProgress = imported.progress;
+        }
+
+        if (imported.notes !== undefined) {
+          if (!isObj(imported.notes)) throw new Error("Invalid notes format");
+          for (const key of Object.keys(imported.notes)) {
+             if (typeof imported.notes[key] !== "string") throw new Error("Invalid notes value");
+          }
+          state.userNotes = imported.notes;
+        }
+
+        if (imported.quiz !== undefined) {
+          if (!isObj(imported.quiz)) throw new Error("Invalid quiz format");
+          if (typeof imported.quiz.correctCount !== "number" || typeof imported.quiz.totalCount !== "number") {
+            throw new Error("Invalid quiz stats format");
+          }
+          state.quizStats = imported.quiz;
+        }
 
         saveState();
         alert("Data byla úspěšně importována. Stránka se nyní obnoví.");
