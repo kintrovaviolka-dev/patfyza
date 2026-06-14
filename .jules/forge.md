@@ -7,3 +7,7 @@
 ## 2024-06-11 - JSON Parse Security Vulnerability
 **Learning:** Parsing user-provided JSON files using FileReader and simply assigning their values to the application state without strict type and structure validation opens up risks of Prototype Pollution, state corruption, and runtime crashes.
 **Action:** Always validate the structure and type of data imported from untrusted JSON strings before merging it with internal application state.
+
+## 2024-06-14 - String referential integrity and list structures
+**Learning:** Medical topic strings frequently use a specific structure `[Disease] - [Topic 1], [Topic 2], [Topic 3]`. When standardizing spacing around hyphens, it is critical not to accidentally convert commas into hyphens, which breaks the grammar of the list. These exact strings are also used as object keys and within stringified test explanations in multiple files (`data.js`, `data_core.js`, `data_general.js`), so changes must be perfectly synchronized to avoid breaking referential integrity.
+**Action:** When fixing punctuation in static strings, review the grammatical structure (e.g., lists) to ensure meanings are preserved. Always use cross-file regex replacements and verify the exact strings match in all dependent files.
