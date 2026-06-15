@@ -7,3 +7,6 @@
 ## 2024-06-11 - JSON Parse Security Vulnerability
 **Learning:** Parsing user-provided JSON files using FileReader and simply assigning their values to the application state without strict type and structure validation opens up risks of Prototype Pollution, state corruption, and runtime crashes.
 **Action:** Always validate the structure and type of data imported from untrusted JSON strings before merging it with internal application state.
+## 2026-06-15 - Content formatting and data integrity updates
+**Learning:** Fixed missing hyphens and hyphen spacing in medical string terminology (e.g. 'Atelektáza. etiopatogeneze'). Verified that matching string references must be updated synchronously across multiple files (data_core.js, data.js, and data_general.js) to avoid breaking test logic and mapping dictionaries.
+**Action:** When replacing strings globally, ensure all instances (including quiz explanations, mapping keys, and list items) are covered to maintain referential integrity. Always clean up scratch files using git status before committing.
