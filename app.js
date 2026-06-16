@@ -613,6 +613,277 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
+  // ==========================================
+  // --- LOGIKA GEMINI CHATBOTA (Patofyziologie) ---
+  // ==========================================
+  const chatbotContainer = document.getElementById("gemini-chatbot-container");
+  const chatbotFab = document.getElementById("chatbot-fab");
+  const chatbotPanel = document.getElementById("chatbot-panel");
+  const chatbotMessages = document.getElementById("chatbot-messages");
+  const chatbotInput = document.getElementById("chatbot-input");
+  const chatbotInputForm = document.getElementById("chatbot-input-form");
+  const chatbotTypingIndicator = document.getElementById("chatbot-typing-indicator");
+  const chatbotSettingsBtn = document.getElementById("chatbot-settings-btn");
+  const chatbotSettingsOverlay = document.getElementById("chatbot-settings-overlay");
+  const chatbotApiKeyInput = document.getElementById("chatbot-api-key-input");
+  const chatbotSaveKeyBtn = document.getElementById("chatbot-save-key-btn");
+  const chatbotClearKeyBtn = document.getElementById("chatbot-clear-key-btn");
+  const chatbotSettingsCloseBtn = document.getElementById("chatbot-settings-close-btn");
+  const chatbotSuggestions = document.getElementById("chatbot-suggestions");
+  const chatbotBadge = document.getElementById("chatbot-badge");
+  const statusDot = chatbotContainer.querySelector(".avatar-status-dot");
+
+  let chatHistory = [
+    { role: "assistant", text: "Ahoj! Jsem tvůj asistent pro **patofyziologii**. Pomůžu ti pochopit mechanismy vzniku nemocí, funkční poruchy orgánů a kompenzační reakce těla. Na co se chceš zeptat?" }
+  ];
+
+  // Load key from localStorage
+  const getSavedKey = () => localStorage.getItem("gemini_chat_local_key") || "";
+  chatbotApiKeyInput.value = getSavedKey();
+
+  // Rate limiting (client-side)
+  let lastMessageTime = 0;
+  const CLIENT_MIN_INTERVAL = 3000; // 3 seconds between messages
+
+  // Open/Close Chat
+  chatbotFab.addEventListener("click", () => {
+    const isOpen = chatbotPanel.classList.toggle("open");
+    chatbotFab.classList.toggle("open");
+    if (isOpen) {
+      chatbotBadge.style.display = "none";
+      chatbotInput.focus();
+      scrollToBottom();
+    }
+  });
+
+  document.getElementById("chatbot-close-btn").addEventListener("click", () => {
+    chatbotPanel.classList.remove("open");
+    chatbotFab.classList.remove("open");
+  });
+
+  // Settings Panel Toggle
+  chatbotSettingsBtn.addEventListener("click", () => {
+    chatbotSettingsOverlay.classList.add("open");
+  });
+
+  chatbotSettingsCloseBtn.addEventListener("click", () => {
+    chatbotSettingsOverlay.classList.remove("open");
+  });
+
+  // Save/Clear key locally
+  chatbotSaveKeyBtn.addEventListener("click", () => {
+    const key = chatbotApiKeyInput.value.trim();
+    if (key) {
+      localStorage.setItem("gemini_chat_local_key", key);
+      alert("API klíč byl uložen do vašeho prohlížeče.");
+      chatbotSettingsOverlay.classList.remove("open");
+    } else {
+      alert("Prosím zadejte platný klíč.");
+    }
+  });
+
+  chatbotClearKeyBtn.addEventListener("click", () => {
+    localStorage.removeItem("gemini_chat_local_key");
+    chatbotApiKeyInput.value = "";
+    alert("API klíč byl vymazán. Nyní se dotazy posílají přes proxy server.");
+  });
+
+  // Simple Markdown Parser for UI Bubble rendering
+  const parseMarkdown = (text) => {
+    let html = text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+
+    // Bold (**text**)
+    html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    
+    // Code blocks (```code```)
+    html = html.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
+    
+    // Inline code (`code`)
+    html = html.replace(/`(.*?)`/g, '<code>$1</code>');
+    
+    // Bullet lists
+    const lines = html.split('\n');
+    let inList = false;
+    const processedLines = lines.map(line => {
+      const trimmed = line.trim();
+      if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+        const content = trimmed.substring(2);
+        if (!inList) {
+          inList = true;
+          return '<ul><li>' + content + '</li>';
+        }
+        return '<li>' + content + '</li>';
+      } else {
+        if (inList) {
+          inList = false;
+          return '</ul><p>' + line + '</p>';
+        }
+        return trimmed ? '<p>' + line + '</p>' : '';
+      }
+    });
+    
+    html = processedLines.join('');
+    if (inList) {
+      html += '</ul>';
+    }
+    
+    return html;
+  };
+
+  const scrollToBottom = () => {
+    chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+  };
+
+  // Add Message to DOM and History
+  const addMessage = (role, text) => {
+    chatHistory.push({ role, text });
+    
+    if (chatHistory.length > 15) {
+      chatHistory.shift();
+    }
+
+    const messageDiv = document.createElement("div");
+    messageDiv.className = `message ${role}`;
+    
+    const contentDiv = document.createElement("div");
+    contentDiv.className = "message-content";
+    contentDiv.innerHTML = role === "assistant" ? parseMarkdown(text) : text;
+    
+    messageDiv.appendChild(contentDiv);
+    chatbotMessages.appendChild(messageDiv);
+    scrollToBottom();
+
+    if (!chatbotPanel.classList.contains("open") && role === "assistant") {
+      chatbotBadge.style.display = "block";
+    }
+  };
+
+  // Send request via backend proxy (connected to main domain proxy)
+  const callProxyServer = async (messages) => {
+    const response = await fetch("https://verysadanyway.vercel.app/api/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ messages, subject: "patfyz" })
+    });
+
+    if (!response.ok) {
+      const errData = await response.json().catch(() => ({}));
+      throw new Error(errData.error || `Server vrátil chybu ${response.status}.`);
+    }
+
+    const data = await response.json();
+    return data.text;
+  };
+
+  // Send request directly to Gemini API
+  const callGeminiDirectly = async (key, messages) => {
+    const systemInstructionText = "Jste odborník na patofyziologii. Pomáháte studentům lékařství porozumět funkčním změnám v organismu při nemoci, mechanismům patogeneze, kompenzačním reakcím a klinickým souvislostem. Odpovídejte věcně, stručně a odborně česky. Používejte markdown pro přehlednost.";
+    
+    const contents = messages.map(msg => ({
+      role: msg.role === "assistant" ? "model" : "user",
+      parts: [{ text: msg.text }]
+    }));
+
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        contents,
+        systemInstruction: {
+          parts: [{ text: systemInstructionText }]
+        },
+        generationConfig: {
+          temperature: 0.7,
+          maxOutputTokens: 800
+        }
+      })
+    });
+
+    if (!response.ok) {
+      const errData = await response.json().catch(() => ({}));
+      throw new Error(errData.error?.message || `Gemini API vrátilo chybu ${response.status}.`);
+    }
+
+    const data = await response.json();
+    const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    if (!text) throw new Error("Chybí text v odpovědi z Gemini.");
+    return text;
+  };
+
+  // Submit Handler
+  chatbotInputForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    
+    const now = Date.now();
+    if (now - lastMessageTime < CLIENT_MIN_INTERVAL) {
+      const errorDiv = document.createElement("div");
+      errorDiv.className = "message system";
+      errorDiv.innerHTML = '<div class="message-content">Příliš rychlé dotazy. Zkuste to za chvíli.</div>';
+      chatbotMessages.appendChild(errorDiv);
+      scrollToBottom();
+      return;
+    }
+
+    const query = chatbotInput.value.trim();
+    if (!query) return;
+
+    addMessage("user", query);
+    chatbotInput.value = "";
+    chatbotInput.disabled = true;
+    chatbotInputForm.querySelector("button").disabled = true;
+    
+    chatbotTypingIndicator.classList.add("active");
+    statusDot.className = "avatar-status-dot typing";
+    scrollToBottom();
+
+    lastMessageTime = Date.now();
+
+    try {
+      const savedKey = getSavedKey();
+      let responseText = "";
+      
+      if (savedKey) {
+        responseText = await callGeminiDirectly(savedKey, chatHistory);
+      } else {
+        responseText = await callProxyServer(chatHistory);
+      }
+
+      chatbotTypingIndicator.classList.remove("active");
+      statusDot.className = "avatar-status-dot online";
+      addMessage("assistant", responseText);
+    } catch (err) {
+      console.error(err);
+      chatbotTypingIndicator.classList.remove("active");
+      statusDot.className = "avatar-status-dot online";
+      
+      const errorDiv = document.createElement("div");
+      errorDiv.className = "message system";
+      errorDiv.innerHTML = `<div class="message-content">Chyba: ${err.message}</div>`;
+      chatbotMessages.appendChild(errorDiv);
+      scrollToBottom();
+    } finally {
+      chatbotInput.disabled = false;
+      chatbotInputForm.querySelector("button").disabled = false;
+      chatbotInput.focus();
+    }
+  });
+
+  // Setup suggestion chip event listeners
+  chatbotSuggestions.querySelectorAll(".suggestion-chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      chatbotInput.value = chip.getAttribute("data-query");
+      chatbotInputForm.dispatchEvent(new Event("submit"));
+    });
+  });
+
+
   // --- INICIALIZACE STRÁNKY ---
   renderCards();
   updateDashboard();
