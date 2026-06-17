@@ -221,7 +221,13 @@ const PRACTICAL_DETAILS = {
           "Správně! Zvětšená masa levé komory generuje silnější elektrické vektory směřující doleva a dozadu, což se na EKG projeví hlubokým S ve V1 a vysokým R ve V5/V6.",
           "Nesprávně. Delta vlna je typická pro WPW syndrom.",
           "Nesprávně. Hypertrofie levé komory otáčí osu doleva."
-        ]
+        ],
+        ekgConfig: {
+          rhythmType: "sinus",
+          heartRate: 60,
+          voltageScaling: 1.6,
+          hasArtifacts: false
+        }
       }
     ]
   },
@@ -333,7 +339,13 @@ const PRACTICAL_DETAILS = {
           "Nesprávně. RCx zásobuje laterální stěnu (I, aVL, V5-V6).",
           "Správně! RIA (LAD - Left Anterior Descending) zásobuje přední stěnu levé komory a mezikomorové septum, což na EKG reprezentují hrudní svody V1-V4.",
           "Nesprávně. Tato arterie zásobuje sinusový uzel, nezpůsobuje infarkt přední stěny."
-        ]
+        ],
+        ekgConfig: {
+          rhythmType: "stemi",
+          heartRate: 95,
+          voltageScaling: 1.0,
+          hasArtifacts: true
+        }
       }
     ]
   },
@@ -557,7 +569,13 @@ const PRACTICAL_DETAILS = {
           "Správně! Síňová depolarizace je chaotická (chybí P vlna, vidíme jen drobné f vlnky). AV uzel propouští impulsy nepravidelně, což vyvolá nepravidelný rytmus komor (QRS jsou úzké, ale intervaly R-R jsou zcela chaotické).",
           "Nesprávně. Široký QRS svědčí pro raménkovou blokádu nebo komorový původ vzruchu.",
           "Nesprávně. Polarita kmitů závisí na elektrické ose, ne na fibrilaci síní."
-        ]
+        ],
+        ekgConfig: {
+          rhythmType: "atrial_fibrillation",
+          heartRate: 130,
+          voltageScaling: 0.9,
+          hasArtifacts: false
+        }
       }
     ]
   },

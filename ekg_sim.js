@@ -1,7 +1,6 @@
 // EKG Simulator - Core Script
-document.addEventListener("DOMContentLoaded", () => {
-  // --- PRESETS DATABASE (21 RHYTHMS) ---
-  const EKG_PRESETS = [
+// --- PRESETS DATABASE (21 RHYTHMS) ---
+const EKG_PRESETS = [
     {
       id: "sinus",
       name: "Fyziologický sinusový rytmus",
@@ -418,8 +417,342 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   ];
 
-  // --- STATE MANAGEMENT ---
-  const simState = {
+  // --- CANVAS-BASED PROGRAMMATIC EKG SIMULATION API ---
+  const presetMap = {
+    "sinus": "sinus",
+    "sinus_rhythm": "sinus",
+    "atrial_fibrillation": "afib",
+    "afib": "afib",
+    "atrial_flutter": "flutter",
+    "flutter": "flutter",
+    "av_block_1": "avblock1",
+    "av_block_2_mob1": "avblock2_mob1",
+    "av_block_2_mob2": "avblock2_mob2",
+    "av_block_3": "avblock3",
+    "ventricular_tachycardia": "vt",
+    "vt": "vt",
+    "ventricular_fibrillation": "vfib",
+    "vfib": "vfib",
+    "asystole": "asystole",
+    "stemi": "stemi",
+    "ischemia": "ischemia",
+    "hyperkalemia": "hyperkalemia",
+    "hypokalemia": "hypokalemia",
+    "torsades": "torsades",
+    "pea": "pea",
+    "lbbb": "lbbb",
+    "rbbb": "rbbb"
+  };
+
+  function drawEkgOnCanvas(canvas, time, preset, params, config = {}) {
+    const ctx = canvas.getContext("2d");
+    const width = 600;
+    const height = 280;
+    const baseline = 140;
+    
+    // Handle devicePixelRatio and dynamic resizing for Retina/iPad screens
+    const dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    const expectedW = Math.floor(rect.width);
+    const expectedH = Math.floor(rect.height);
+    
+    if (canvas.width !== expectedW * dpr || canvas.height !== expectedH * dpr) {
+      canvas.width = expectedW * dpr;
+      canvas.height = expectedH * dpr;
+      canvas._lastW = expectedW;
+      canvas._lastH = expectedH;
+    }
+    
+    // Clear and apply devicePixelRatio scaling
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.save();
+    ctx.scale(dpr, dpr);
+    
+    // Scale coordinate system to fit local canvas client dimensions relative to canonical 600x280
+    ctx.scale(expectedW / width, expectedH / height);
+    
+    // Draw standard EKG grid
+    ctx.fillStyle = "#020617";
+    ctx.fillRect(0, 0, width, height);
+    
+    // Thin grid lines (1mm -> 5px)
+    ctx.strokeStyle = "rgba(16, 185, 129, 0.05)";
+    ctx.lineWidth = 0.5;
+    ctx.beginPath();
+    for (let x = 0; x < width; x += 5) {
+      ctx.moveTo(x, 0); ctx.lineTo(x, height);
+    }
+    for (let y = 0; y < height; y += 5) {
+      ctx.moveTo(0, y); ctx.lineTo(width, y);
+    }
+    ctx.stroke();
+    
+    // Thick grid lines (5mm -> 25px)
+    ctx.strokeStyle = "rgba(16, 185, 129, 0.15)";
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    for (let x = 0; x < width; x += 25) {
+      ctx.moveTo(x, 0); ctx.lineTo(x, height);
+    }
+    for (let y = 0; y < height; y += 25) {
+      ctx.moveTo(0, y); ctx.lineTo(width, y);
+    }
+    ctx.stroke();
+    
+    // Wave parameters
+    const hr = params.hr;
+    const pAmp = params.pAmp;
+    const prInterval = params.prInterval;
+    const qrsDuration = params.qrsDuration;
+    const stOffset = params.stOffset;
+    const tAmp = params.tAmp;
+    const voltageScaling = config.voltageScaling !== undefined ? config.voltageScaling : 1.0;
+    const hasArtifacts = !!config.hasArtifacts;
+
+    const points = [];
+    
+    if (preset.chaotic) {
+      for (let x = 0; x <= width; x += 2) {
+        const phase1 = (x / 14) + (time / 8);
+        const phase2 = (x / 5) - (time / 4);
+        let noise = Math.sin(phase1) * 35 + Math.cos(phase2) * 15 + Math.sin(x / 2.5) * 8;
+        
+        noise = noise * voltageScaling;
+        
+        if (hasArtifacts) {
+          noise += (Math.random() - 0.5) * 3.5;
+        }
+        
+        points.push({ x, y: baseline + noise });
+      }
+    } else {
+      const triggers = [];
+      const pTriggers = [];
+      const isAsystole = preset.id === "asystole";
+      const beatWidth = isAsystole ? 99999 : (7500 / hr);
+      const afibFactors = [0.65, 1.25, 0.75, 1.45, 0.8, 1.15, 0.6, 1.35];
+      
+      if (!isAsystole) {
+        let currentX = 25;
+        let idx = 0;
+        while (currentX < width + 150) {
+          const isWenckebachDrop = (preset.id === "avblock2_mob1" && (idx % 4 === 3));
+          const isMobitzDrop = (preset.id === "avblock2_mob2" && (idx % 2 === 1));
+          
+          if (preset.id !== "afib" && preset.id !== "flutter" && preset.id !== "avblock3") {
+            pTriggers.push(currentX);
+          }
+          
+          if (!isWenckebachDrop && !isMobitzDrop && preset.id !== "avblock3") {
+            let pqDelay = prInterval;
+            if (preset.id === "avblock2_mob1") {
+              const step = idx % 4;
+              pqDelay = prInterval + step * 40;
+            }
+            const pqOffsetPx = (pqDelay / 160) * 35;
+            triggers.push(currentX + pqOffsetPx);
+          }
+          
+          const factor = preset.id === "afib" ? afibFactors[idx % afibFactors.length] : 1.0;
+          currentX += beatWidth * factor;
+          idx++;
+        }
+      }
+      
+      for (let x = 0; x <= width; x++) {
+        let dy = 0;
+        
+        for (let i = 0; i < triggers.length; i++) {
+          const x0 = triggers[i];
+          const dx = x - x0;
+          if (dx < -40 || dx > 130) continue;
+          
+          const qrsHalfWidth = (qrsDuration / 80) * 8;
+          const qStart = -qrsHalfWidth;
+          const sEnd = qrsHalfWidth;
+          
+          if (dx >= qStart && dx <= sEnd) {
+            const t = (dx - qStart) / (sEnd - qStart);
+            
+            let ampFactor = 1.0;
+            if (preset.id === "torsades") {
+              ampFactor = Math.sin(x0 / 80 + time / 8) * 1.2;
+            }
+            
+            if (t < 0.2) {
+              dy += (t / 0.2) * 8 * ampFactor;
+            } else if (t >= 0.2 && t < 0.5) {
+              const pct = (t - 0.2) / 0.3;
+              dy += (8 - pct * 113) * ampFactor;
+            } else if (t >= 0.5 && t < 0.8) {
+              const pct = (t - 0.5) / 0.3;
+              dy += (-105 + pct * 130) * ampFactor;
+            } else {
+              const pct = (t - 0.8) / 0.2;
+              dy += (25 - pct * (25 - stOffset)) * ampFactor;
+            }
+          }
+          
+          const stLength = (preset.id === "qt_prolongation") ? 45 : 18;
+          const tStart = sEnd;
+          const tEnd = tStart + stLength + 35;
+          
+          if (dx > sEnd && dx <= tEnd) {
+            let ampFactor = 1.0;
+            if (preset.id === "torsades") {
+              ampFactor = Math.sin(x0 / 80 + time / 8) * 1.2;
+            }
+            
+            if (dx <= sEnd + stLength) {
+              dy += stOffset * ampFactor;
+            } else {
+              const t = (dx - (sEnd + stLength)) / 35;
+              let shape = Math.sin(t * Math.PI);
+              if (preset.id === "hyperkalemia") {
+                shape = Math.pow(shape, 1.8);
+              }
+              dy += (stOffset + shape * tAmp) * ampFactor;
+            }
+          }
+          
+          if (preset.id === "hypokalemia" && dx > tEnd && dx <= tEnd + 25) {
+            const t = (dx - tEnd) / 25;
+            dy += Math.sin(t * Math.PI) * 7;
+          }
+        }
+        
+        for (let i = 0; i < pTriggers.length; i++) {
+          const px0 = pTriggers[i];
+          const dx = x - px0;
+          if (dx >= -8 && dx <= 8) {
+            const t = (dx + 8) / 16;
+            dy -= Math.sin(t * Math.PI) * pAmp;
+          }
+        }
+        
+        if (preset.id === "avblock3") {
+          const pFrequency = 100;
+          const pOffset = x % pFrequency;
+          if (pOffset >= 10 && pOffset <= 28) {
+            const t = (pOffset - 10) / 18;
+            dy -= Math.sin(t * Math.PI) * pAmp;
+          }
+        } else if (preset.id === "afib") {
+          let noiseScale = 1;
+          for (let i = 0; i < triggers.length; i++) {
+            const dx = Math.abs(x - triggers[i]);
+            if (dx < 12) noiseScale = dx / 12;
+          }
+          const fWave = (Math.sin(x * 0.7 + time / 8) * 3.5 + Math.cos(x * 1.4 - time / 6) * 2.2) * noiseScale;
+          dy += fWave;
+        } else if (preset.id === "flutter") {
+          let scale = 1.0;
+          for (let i = 0; i < triggers.length; i++) {
+            const dx = x - triggers[i];
+            if (dx > -5 && dx < 15) scale = 0.1;
+          }
+          const sawtoothPeriod = 20;
+          const phase = (x - time / 2) % sawtoothPeriod;
+          const sawtoothVal = ((phase / sawtoothPeriod) - 0.5) * -15 * scale;
+          dy += sawtoothVal;
+        }
+        
+        dy += Math.sin(x * 0.3) * 0.65;
+        
+        let finalY = baseline + dy * voltageScaling;
+        
+        if (hasArtifacts) {
+          finalY += Math.sin(x * 0.015 + time * 0.05) * 14;
+          finalY += (Math.random() - 0.5) * 3.5;
+        }
+        
+        points.push({ x, y: finalY });
+      }
+    }
+    
+    ctx.strokeStyle = "#10b981";
+    ctx.lineWidth = 2.2;
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ctx.shadowColor = "rgba(16, 185, 129, 0.8)";
+    ctx.shadowBlur = 6;
+    
+    ctx.beginPath();
+    if (points.length > 0) {
+      ctx.moveTo(points[0].x, points[0].y);
+      for (let i = 1; i < points.length; i++) {
+        ctx.lineTo(points[i].x, points[i].y);
+      }
+    }
+    ctx.stroke();
+    
+    ctx.shadowBlur = 0;
+    const sweepX = time;
+    const beamWidth = 15;
+    const grad = ctx.createLinearGradient(sweepX - beamWidth, 0, sweepX, 0);
+    grad.addColorStop(0, "transparent");
+    grad.addColorStop(0.4, "rgba(16, 185, 129, 0.1)");
+    grad.addColorStop(1, "rgba(16, 185, 129, 0.35)");
+    ctx.fillStyle = grad;
+    ctx.fillRect(sweepX - beamWidth, 0, beamWidth, height);
+    
+    ctx.restore();
+  }
+
+  window.initEkgSimulation = function(canvasId, config) {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+
+    if (canvas._ekgDestroy) {
+      canvas._ekgDestroy();
+    }
+
+    const rhythmType = config.rhythmType || "sinus";
+    const mappedPresetId = presetMap[rhythmType.toLowerCase()] || "sinus";
+    const preset = EKG_PRESETS.find(p => p.id === mappedPresetId) || EKG_PRESETS[0];
+
+    const params = {
+      hr: config.heartRate || preset.hr,
+      pAmp: preset.pAmp,
+      prInterval: preset.prInterval,
+      qrsDuration: preset.qrsDuration,
+      stOffset: preset.stOffset,
+      tAmp: preset.tAmp
+    };
+
+    let time = 0;
+    let animId = null;
+    let isDestroyed = false;
+
+    const loop = () => {
+      if (isDestroyed) return;
+      time = (time + 1.25) % 600;
+      drawEkgOnCanvas(canvas, time, preset, params, config);
+      animId = requestAnimationFrame(loop);
+    };
+
+    loop();
+
+    canvas._ekgDestroy = () => {
+      isDestroyed = true;
+      if (animId) {
+        cancelAnimationFrame(animId);
+        animId = null;
+      }
+      canvas._ekgDestroy = null;
+    };
+  };
+
+  window.destroyEkgSimulation = function(canvasId) {
+    const canvas = document.getElementById(canvasId);
+    if (canvas && canvas._ekgDestroy) {
+      canvas._ekgDestroy();
+    }
+  };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // --- STATE MANAGEMENT ---
+    const simState = {
     activePresetId: "sinus",
     isPlaying: true,
     soundEnabled: false,

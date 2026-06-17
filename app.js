@@ -1,21 +1,52 @@
 // Aplikace Patofyziologie SPA - Klientský kód
 document.addEventListener("DOMContentLoaded", () => {
+  // --- BEZPEČNÉ ÚLOŽIŠTĚ (LOCALSTORAGE WRAPPER) ---
+  const StorageUtil = {
+    save(key, value) {
+      try {
+        localStorage.setItem(key, JSON.stringify(value));
+        return true;
+      } catch (e) {
+        console.error("Chyba při zápisu do localStorage:", e);
+        return false;
+      }
+    },
+    load(key, defaultValue) {
+      try {
+        const item = localStorage.getItem(key);
+        return item ? JSON.parse(item) : defaultValue;
+      } catch (e) {
+        console.error("Chyba při čtení z localStorage:", e);
+        return defaultValue;
+      }
+    }
+  };
+
   // --- INICIALIZACE STAVU ---
   const state = {
     questions: window.COMPLETE_QUESTIONS || [],
-    userProgress: JSON.parse(localStorage.getItem("pathophys_progress")) || {},
-    userNotes: JSON.parse(localStorage.getItem("pathophys_notes")) || {},
-    quizStats: JSON.parse(localStorage.getItem("pathophys_quiz")) || { correctCount: 0, totalCount: 0 },
+    userProgress: StorageUtil.load("pathophys_progress", {}),
+    userNotes: StorageUtil.load("pathophys_notes", {}),
+    quizStats: StorageUtil.load("pathophys_quiz", { correctCount: 0, totalCount: 0 }),
+    
+    // Nové datové struktury pro sledování pokroku a chyb na úrovni podotázek
+    completedQuestions: StorageUtil.load("pathophys_completed", {}),
+    wrongQuestions: StorageUtil.load("pathophys_wrong", {}),
+    savedSessions: StorageUtil.load("pathophys_sessions", null),
+
     theme: localStorage.getItem("pathophys_theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"),
     activeQuestion: null,
     activeTab: "panel-study"
   };
 
-  // Uložení výchozího stavu do localStorage, pokud neexistuje
+  // Uložení výchozího stavu do localStorage
   const saveState = () => {
-    localStorage.setItem("pathophys_progress", JSON.stringify(state.userProgress));
-    localStorage.setItem("pathophys_notes", JSON.stringify(state.userNotes));
-    localStorage.setItem("pathophys_quiz", JSON.stringify(state.quizStats));
+    StorageUtil.save("pathophys_progress", state.userProgress);
+    StorageUtil.save("pathophys_notes", state.userNotes);
+    StorageUtil.save("pathophys_quiz", state.quizStats);
+    StorageUtil.save("pathophys_completed", state.completedQuestions);
+    StorageUtil.save("pathophys_wrong", state.wrongQuestions);
+    StorageUtil.save("pathophys_sessions", state.savedSessions);
   };
 
   // Použití barevného motivu
@@ -93,6 +124,85 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       statQuizScore.textContent = "0 %";
       statQuizCount.textContent = "Zodpovězeno 0 otázek";
+    }
+
+    // Celkový počet chyb v aplikaci
+    const totalMistakes = Object.keys(state.wrongQuestions).length;
+    const statMistakesEl = document.getElementById("stat-mistakes");
+    const statMistakesDescEl = document.getElementById("stat-mistakes-desc");
+    const btnMistakesCountEl = document.getElementById("btn-mistakes-count");
+    
+    if (statMistakesEl) statMistakesEl.textContent = totalMistakes;
+    if (statMistakesDescEl) {
+      statMistakesDescEl.textContent = totalMistakes > 0 ? "Kliknutím spustíte Smart Review" : "Žádné nevyřešené chyby";
+    }
+    if (btnMistakesCountEl) btnMistakesCountEl.textContent = totalMistakes;
+
+    // Klientská analytika podle kategorií
+    const categories = [
+      { id: "Obecná", label: "Obecná patofyziologie" },
+      { id: "Speciální I.", label: "Speciální I." },
+      { id: "Speciální II.", label: "Speciální II." },
+      { id: "Praktická", label: "Praktická témata" }
+    ];
+
+    const analyticsGrid = document.getElementById("analytics-grid");
+    if (analyticsGrid) {
+      analyticsGrid.innerHTML = "";
+      
+      categories.forEach(cat => {
+        const catQuestions = state.questions.filter(q => q.category === cat.id);
+        
+        let totalSubQuestions = 0;
+        let completedSubQuestions = 0;
+        let correctSubQuestions = 0;
+        let categoryMistakes = 0;
+
+        catQuestions.forEach(q => {
+          const quizQuestions = q.quiz || [];
+          totalSubQuestions += quizQuestions.length;
+          
+          quizQuestions.forEach((item, questionIndex) => {
+            const subQId = `${q.id}_q${questionIndex}`;
+            if (state.completedQuestions[subQId]) {
+              completedSubQuestions++;
+              if (state.completedQuestions[subQId].isCorrect) {
+                correctSubQuestions++;
+              }
+            }
+            if (state.wrongQuestions[subQId]) {
+              categoryMistakes++;
+            }
+          });
+        });
+
+        const completionPct = totalSubQuestions > 0 ? Math.round((completedSubQuestions / totalSubQuestions) * 100) : 0;
+        const accuracyPct = completedSubQuestions > 0 ? Math.round((correctSubQuestions / completedSubQuestions) * 100) : 0;
+
+        let badgeClass = "badge-red";
+        if (accuracyPct >= 80) {
+          badgeClass = "badge-green";
+        } else if (accuracyPct >= 50) {
+          badgeClass = "badge-orange";
+        }
+
+        const card = document.createElement("div");
+        card.className = "category-card";
+        card.innerHTML = `
+          <div class="category-header">
+            <span class="category-name">${cat.label}</span>
+            <span class="accuracy-badge ${badgeClass}">${completedSubQuestions > 0 ? accuracyPct + ' %' : 'N/A'}</span>
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill" style="width: ${completionPct}%;"></div>
+          </div>
+          <div class="category-footer">
+            <span class="completed-text">${completionPct}% (${completedSubQuestions} / ${totalSubQuestions})</span>
+            <span class="mistakes-count ${categoryMistakes === 0 ? 'zero' : ''}">${categoryMistakes} chyb</span>
+          </div>
+        `;
+        analyticsGrid.appendChild(card);
+      });
     }
   };
 
@@ -245,6 +355,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!q) return;
 
     state.activeQuestion = q;
+    StorageUtil.save("pathophys_active_q", q.id);
     
     // Nastavení hlavičky
     modalCategory.textContent = `${q.category.toUpperCase()} | ${q.organSystem.toUpperCase()}`;
@@ -263,8 +374,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     modalTitle.textContent = q.title;
 
-    // Vyčištění panelu a přepnutí na první záložku
-    switchTab("panel-study");
+    // Přepnutí na uloženou záložku nebo výchozí studium
+    const lastTab = StorageUtil.load("pathophys_active_tab", "panel-study");
+    switchTab(lastTab);
 
     // Načtení výkladu
     studyContent.innerHTML = q.detailContent || "";
@@ -293,7 +405,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeModal = () => {
     detailModal.close();
     state.activeQuestion = null;
+    StorageUtil.save("pathophys_active_q", null);
     document.body.style.overflow = ""; // Obnovení rolování
+    if (window.destroyEkgSimulation) {
+      window.destroyEkgSimulation('quiz-ekg-canvas');
+    }
     renderCards();
     updateDashboard();
   };
@@ -310,6 +426,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- LOGIKA ZÁLOŽEK ---
   const switchTab = (tabId) => {
     state.activeTab = tabId;
+    StorageUtil.save("pathophys_active_tab", tabId);
     
     // Deaktivace všech tlačítek a panelů
     document.querySelectorAll(".tab-btn").forEach(btn => {
@@ -327,6 +444,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const activePanel = document.getElementById(tabId);
     if (activePanel) {
       activePanel.classList.add("active");
+    }
+
+    // Dynamic EKG rendering toggle on tab switch to optimize CPU usage on mobile/iPad
+    if (tabId === "panel-quiz") {
+      const q = state.activeQuestion;
+      if (q && q.quiz) {
+        q.quiz.forEach(item => {
+          if (item.ekgConfig && window.initEkgSimulation) {
+            setTimeout(() => {
+              window.initEkgSimulation('quiz-ekg-canvas', item.ekgConfig);
+            }, 50);
+          }
+        });
+      }
+    } else {
+      if (window.destroyEkgSimulation) {
+        window.destroyEkgSimulation('quiz-ekg-canvas');
+      }
     }
   };
 
@@ -411,34 +546,67 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- LOGIKA INTERAKTIVNÍHO KVÍZU ---
   const renderQuiz = (q) => {
+    if (window.destroyEkgSimulation) {
+      window.destroyEkgSimulation('quiz-ekg-canvas');
+    }
     quizContainer.innerHTML = "";
     const quizQuestions = q.quiz || [];
 
     quizQuestions.forEach((item, questionIndex) => {
+      const subQId = `${q.id}_q${questionIndex}`;
+      const savedAnswer = state.completedQuestions[subQId];
+      const hasAnswered = !!savedAnswer;
+
       const quizCard = document.createElement("div");
       quizCard.className = "quiz-card";
       
       const optionsHTML = item.options.map((opt, optIndex) => {
         const letter = String.fromCharCode(65 + optIndex); // A, B, C, D
+        
+        let extraClasses = "";
+        if (hasAnswered) {
+          extraClasses += " disabled";
+          if (optIndex === item.correct) {
+            extraClasses += " correct";
+          } else if (optIndex === savedAnswer.answeredIndex && !savedAnswer.isCorrect) {
+            extraClasses += " incorrect";
+          }
+        }
+
         return `
-          <button class="quiz-option" data-question-idx="${questionIndex}" data-opt-idx="${optIndex}">
+          <button class="quiz-option${extraClasses}" data-question-idx="${questionIndex}" data-opt-idx="${optIndex}">
             <span class="quiz-option-letter">${letter}</span>
             <span class="quiz-option-text">${opt}</span>
           </button>
         `;
       }).join("");
 
+      const ekgCanvasHTML = item.ekgConfig ? `<canvas id="quiz-ekg-canvas"></canvas>` : "";
+
       quizCard.innerHTML = `
         <div class="quiz-question">${questionIndex + 1}. ${item.question}</div>
+        ${ekgCanvasHTML}
         <div class="quiz-options">
           ${optionsHTML}
         </div>
         <div class="quiz-explanation-container" id="explanation-${questionIndex}"></div>
       `;
 
+      const expContainer = quizCard.querySelector(`#explanation-${questionIndex}`);
+      if (hasAnswered) {
+        const isCorrect = savedAnswer.isCorrect;
+        const optIdx = savedAnswer.answeredIndex;
+        const explanationText = item.explanations ? item.explanations[optIdx] : (isCorrect ? "Správná patofyziologická úvaha!" : "Nesprávná úvaha. Přečtěte si výklad k tématu.");
+        expContainer.innerHTML = `
+          <div class="quiz-explanation ${isCorrect ? 'correct' : 'incorrect'}">
+            <strong>${isCorrect ? 'Správně!' : 'Nesprávně.'}</strong> ${explanationText}
+          </div>
+        `;
+      }
+
       // Event listener pro volbu odpovědi
       const optionsButtons = quizCard.querySelectorAll(".quiz-option");
-      let questionAnswered = false;
+      let questionAnswered = hasAnswered;
 
       optionsButtons.forEach(btn => {
         btn.addEventListener("click", () => {
@@ -447,6 +615,18 @@ document.addEventListener("DOMContentLoaded", () => {
           questionAnswered = true;
           const optIdx = parseInt(btn.getAttribute("data-opt-idx"));
           const isCorrect = optIdx === item.correct;
+
+          // Uložit do stavu
+          state.completedQuestions[subQId] = {
+            answeredIndex: optIdx,
+            isCorrect: isCorrect
+          };
+
+          if (isCorrect) {
+            delete state.wrongQuestions[subQId];
+          } else {
+            state.wrongQuestions[subQId] = true;
+          }
 
           // Vypnutí všech možností v této otázce
           optionsButtons.forEach(b => b.classList.add("disabled"));
@@ -469,7 +649,6 @@ document.addEventListener("DOMContentLoaded", () => {
           updateDashboard();
 
           // Zobrazení detailního vysvětlení
-          const expContainer = quizCard.querySelector(`#explanation-${questionIndex}`);
           const explanationText = item.explanations ? item.explanations[optIdx] : (isCorrect ? "Správná patofyziologická úvaha!" : "Nesprávná úvaha. Přečtěte si výklad k tématu.");
           
           expContainer.innerHTML = `
@@ -481,6 +660,11 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       quizContainer.appendChild(quizCard);
+
+      // Initialize quiz EKG animation if present in configuration and quiz panel is active
+      if (item.ekgConfig && window.initEkgSimulation && state.activeTab === "panel-quiz") {
+        window.initEkgSimulation('quiz-ekg-canvas', item.ekgConfig);
+      }
     });
   };
 
@@ -507,7 +691,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const exportData = {
       progress: state.userProgress,
       notes: state.userNotes,
-      quiz: state.quizStats
+      quiz: state.quizStats,
+      completedQuestions: state.completedQuestions,
+      wrongQuestions: state.wrongQuestions,
+      savedSessions: state.savedSessions
     };
 
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportData));
@@ -558,6 +745,20 @@ document.addEventListener("DOMContentLoaded", () => {
             throw new Error("Invalid quiz stats format");
           }
           state.quizStats = imported.quiz;
+        }
+
+        if (imported.completedQuestions !== undefined) {
+          if (!isObj(imported.completedQuestions)) throw new Error("Invalid completedQuestions format");
+          state.completedQuestions = imported.completedQuestions;
+        }
+
+        if (imported.wrongQuestions !== undefined) {
+          if (!isObj(imported.wrongQuestions)) throw new Error("Invalid wrongQuestions format");
+          state.wrongQuestions = imported.wrongQuestions;
+        }
+
+        if (imported.savedSessions !== undefined) {
+          state.savedSessions = imported.savedSessions;
         }
 
         saveState();
@@ -920,6 +1121,364 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
+  // ==========================================
+  // --- LOGIKA SMART REVIEW KVÍZU (CHYBY) ---
+  // ==========================================
+  const quizSessionModal = document.getElementById("quiz-session-modal");
+  const quizModalClose = document.getElementById("quiz-modal-close");
+  const quizSetupView = document.getElementById("quiz-setup-view");
+  const quizActiveView = document.getElementById("quiz-active-view");
+  const quizCompletedView = document.getElementById("quiz-completed-view");
+  const setupCategoriesList = document.getElementById("setup-categories-list");
+  
+  const startNewQuizBtn = document.getElementById("start-new-quiz-btn");
+  const resumeQuizBtn = document.getElementById("resume-quiz-btn");
+  const pauseSaveQuizBtn = document.getElementById("pause-save-quiz-btn");
+  const nextQuizQuestionBtn = document.getElementById("next-quiz-question-btn");
+  const closeCompletedQuizBtn = document.getElementById("close-completed-quiz-btn");
+  
+  // Prvky uvnitř aktivního kvízu
+  const quizProgressText = document.getElementById("quiz-progress-text");
+  const quizScoreText = document.getElementById("quiz-score-text");
+  const quizProgressFill = document.getElementById("quiz-progress-fill");
+  const quizQuestionMeta = document.getElementById("quiz-question-meta");
+  const quizQuestionText = document.getElementById("quiz-question-text");
+  const quizOptionsContainer = document.getElementById("quiz-options-container");
+  const quizSessionExplanation = document.getElementById("quiz-session-explanation");
+  
+  // Prvky uvnitř dokončeného kvízu
+  const quizFinalScore = document.getElementById("quiz-final-score");
+  const quizFinalRatio = document.getElementById("quiz-final-ratio");
+  const quizCompletionMessage = document.getElementById("quiz-completion-message");
+
+  const openQuizModal = () => {
+    renderQuizSetup();
+    quizSessionModal.showModal();
+    document.body.style.overflow = "hidden";
+    StorageUtil.save("pathophys_quiz_modal_open", true);
+  };
+
+  const closeQuizModal = () => {
+    quizSessionModal.close();
+    document.body.style.overflow = "";
+    StorageUtil.save("pathophys_quiz_modal_open", false);
+    if (window.destroyEkgSimulation) {
+      window.destroyEkgSimulation('quiz-ekg-canvas');
+    }
+    renderCards();
+    updateDashboard();
+  };
+
+  const renderQuizSetup = () => {
+    setupCategoriesList.innerHTML = "";
+    
+    const categories = [
+      { id: "Obecná", label: "Obecná patofyziologie" },
+      { id: "Speciální I.", label: "Speciální I." },
+      { id: "Speciální II.", label: "Speciální II." },
+      { id: "Praktická", label: "Praktická témata" }
+    ];
+
+    categories.forEach(cat => {
+      let categoryMistakes = 0;
+      state.questions.filter(q => q.category === cat.id).forEach(q => {
+        (q.quiz || []).forEach((item, questionIndex) => {
+          const subQId = `${q.id}_q${questionIndex}`;
+          if (state.wrongQuestions[subQId]) {
+            categoryMistakes++;
+          }
+        });
+      });
+
+      const itemDiv = document.createElement("div");
+      itemDiv.className = "setup-category-item";
+      itemDiv.innerHTML = `
+        <label class="setup-category-label">
+          <input type="checkbox" name="quiz-category" value="${cat.id}" ${categoryMistakes > 0 ? 'checked' : 'disabled'}>
+          <span>${cat.label}</span>
+          <span class="setup-category-mistakes ${categoryMistakes === 0 ? 'zero' : ''}">${categoryMistakes} chyb</span>
+        </label>
+      `;
+      setupCategoriesList.appendChild(itemDiv);
+    });
+
+    if (state.savedSessions && state.savedSessions.isActive) {
+      resumeQuizBtn.style.display = "inline-flex";
+    } else {
+      resumeQuizBtn.style.display = "none";
+    }
+
+    quizSetupView.style.display = "block";
+    quizActiveView.style.display = "none";
+    quizCompletedView.style.display = "none";
+  };
+
+  const renderActiveQuizQuestion = () => {
+    if (window.destroyEkgSimulation) {
+      window.destroyEkgSimulation('quiz-ekg-canvas');
+    }
+    const session = state.savedSessions;
+    if (!session || !session.isActive) return;
+
+    const currentIdx = session.currentIndex;
+    const totalQ = session.questionList.length;
+
+    if (currentIdx >= totalQ) {
+      showQuizCompleted();
+      return;
+    }
+
+    quizSetupView.style.display = "none";
+    quizActiveView.style.display = "block";
+    quizCompletedView.style.display = "none";
+
+    quizProgressText.textContent = `Otázka ${currentIdx + 1} z ${totalQ}`;
+    const progressPct = Math.round((currentIdx / totalQ) * 100);
+    quizProgressFill.style.width = `${progressPct}%`;
+    
+    const accuracy = session.totalCount > 0 ? Math.round((session.correctCount / session.totalCount) * 100) : 100;
+    quizScoreText.textContent = `Úspěšnost: ${accuracy}% (${session.correctCount}/${session.totalCount})`;
+
+    const qInfo = session.questionList[currentIdx];
+    const topic = state.questions.find(item => item.id === qInfo.topicId);
+    const item = topic.quiz[qInfo.qIndex];
+
+    quizQuestionMeta.textContent = `${topic.category.toUpperCase()} | ${topic.title.toUpperCase()}`;
+    quizQuestionText.textContent = item.question;
+    
+    // Inject or destroy dynamic EKG canvas for Smart Review
+    let ekgCanvas = document.getElementById("quiz-ekg-canvas");
+    if (item.ekgConfig) {
+      if (!ekgCanvas) {
+        ekgCanvas = document.createElement("canvas");
+        ekgCanvas.id = "quiz-ekg-canvas";
+        quizOptionsContainer.parentNode.insertBefore(ekgCanvas, quizOptionsContainer);
+      }
+      ekgCanvas.style.display = "block";
+      if (window.initEkgSimulation) {
+        window.initEkgSimulation('quiz-ekg-canvas', item.ekgConfig);
+      }
+    } else {
+      if (ekgCanvas) {
+        ekgCanvas.remove();
+      }
+    }
+
+    quizOptionsContainer.innerHTML = "";
+    quizSessionExplanation.innerHTML = "";
+    nextQuizQuestionBtn.style.display = "none";
+
+    const hasAnswered = session.answers[currentIdx] !== undefined;
+
+    item.options.forEach((opt, optIndex) => {
+      const letter = String.fromCharCode(65 + optIndex);
+      const btn = document.createElement("button");
+      btn.className = "quiz-option";
+      btn.innerHTML = `
+        <span class="quiz-option-letter">${letter}</span>
+        <span class="quiz-option-text">${opt}</span>
+      `;
+      
+      if (hasAnswered) {
+        btn.classList.add("disabled");
+        if (optIndex === item.correct) {
+          btn.classList.add("correct");
+        } else if (optIndex === session.answers[currentIdx] && optIndex !== item.correct) {
+          btn.classList.add("incorrect");
+        }
+      }
+
+      btn.addEventListener("click", () => {
+        if (session.answers[currentIdx] !== undefined) return;
+
+        const optIdx = optIndex;
+        const isCorrect = optIdx === item.correct;
+        session.answers[currentIdx] = optIdx;
+        session.totalCount++;
+        
+        const allBtns = quizOptionsContainer.querySelectorAll(".quiz-option");
+        allBtns.forEach(b => b.classList.add("disabled"));
+
+        if (isCorrect) {
+          btn.classList.add("correct");
+          triggerConfetti(btn);
+          session.correctCount++;
+          
+          delete state.wrongQuestions[qInfo.subQId];
+          
+          state.completedQuestions[qInfo.subQId] = {
+            answeredIndex: optIdx,
+            isCorrect: true
+          };
+        } else {
+          btn.classList.add("incorrect");
+          allBtns[item.correct].classList.add("correct");
+          
+          state.wrongQuestions[qInfo.subQId] = true;
+          state.completedQuestions[qInfo.subQId] = {
+            answeredIndex: optIdx,
+            isCorrect: false
+          };
+        }
+
+        saveState();
+        updateDashboard();
+
+        const newAccuracy = Math.round((session.correctCount / session.totalCount) * 100);
+        quizScoreText.textContent = `Úspěšnost: ${newAccuracy}% (${session.correctCount}/${session.totalCount})`;
+
+        const explanationText = item.explanations ? item.explanations[optIndex] : (isCorrect ? "Správná patofyziologická úvaha!" : "Nesprávná úvaha.");
+        quizSessionExplanation.innerHTML = `
+          <div class="quiz-explanation ${isCorrect ? 'correct' : 'incorrect'}">
+            <strong>${isCorrect ? 'Správně!' : 'Nesprávně.'}</strong> ${explanationText}
+          </div>
+        `;
+
+        nextQuizQuestionBtn.style.display = "inline-flex";
+      });
+
+      quizOptionsContainer.appendChild(btn);
+    });
+
+    if (hasAnswered) {
+      const savedAnsIdx = session.answers[currentIdx];
+      const isCorrect = savedAnsIdx === item.correct;
+      const explanationText = item.explanations ? item.explanations[savedAnsIdx] : (isCorrect ? "Správná patofyziologická úvaha!" : "Nesprávná úvaha.");
+      quizSessionExplanation.innerHTML = `
+        <div class="quiz-explanation ${isCorrect ? 'correct' : 'incorrect'}">
+          <strong>${isCorrect ? 'Správně!' : 'Nesprávně.'}</strong> ${explanationText}
+        </div>
+      `;
+      nextQuizQuestionBtn.style.display = "inline-flex";
+    }
+  };
+
+  const showQuizCompleted = () => {
+    quizSetupView.style.display = "none";
+    quizActiveView.style.display = "none";
+    quizCompletedView.style.display = "block";
+    if (window.destroyEkgSimulation) {
+      window.destroyEkgSimulation('quiz-ekg-canvas');
+    }
+
+    const session = state.savedSessions;
+    const accuracy = session.totalCount > 0 ? Math.round((session.correctCount / session.totalCount) * 100) : 100;
+
+    quizFinalScore.textContent = `${accuracy}%`;
+    quizFinalRatio.textContent = `${session.correctCount} z ${session.totalCount} správně`;
+    
+    state.savedSessions = null;
+    saveState();
+    updateDashboard();
+  };
+
+  startNewQuizBtn.addEventListener("click", () => {
+    const checkboxes = setupCategoriesList.querySelectorAll("input[name='quiz-category']:checked");
+    const selectedCats = Array.from(checkboxes).map(cb => cb.value);
+
+    if (selectedCats.length === 0) {
+      alert("Vyberte prosím alespoň jednu kategorii s chybami.");
+      return;
+    }
+
+    const questionList = [];
+    selectedCats.forEach(catId => {
+      state.questions.filter(q => q.category === catId).forEach(q => {
+        (q.quiz || []).forEach((item, questionIndex) => {
+          const subQId = `${q.id}_q${questionIndex}`;
+          if (state.wrongQuestions[subQId]) {
+            questionList.push({
+              subQId: subQId,
+              topicId: q.id,
+              qIndex: questionIndex
+            });
+          }
+        });
+      });
+    });
+
+    if (questionList.length === 0) {
+      alert("Ve vybraných kategoriích nemáte žádné uložené chyby.");
+      return;
+    }
+
+    for (let i = questionList.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [questionList[i], questionList[j]] = [questionList[j], questionList[i]];
+    }
+
+    state.savedSessions = {
+      questionList: questionList,
+      currentIndex: 0,
+      correctCount: 0,
+      totalCount: 0,
+      isActive: true,
+      answers: {}
+    };
+
+    saveState();
+    updateDashboard();
+    renderActiveQuizQuestion();
+  });
+
+  resumeQuizBtn.addEventListener("click", () => {
+    if (state.savedSessions && state.savedSessions.isActive) {
+      renderActiveQuizQuestion();
+    }
+  });
+
+  nextQuizQuestionBtn.addEventListener("click", () => {
+    if (state.savedSessions) {
+      state.savedSessions.currentIndex++;
+      saveState();
+      renderActiveQuizQuestion();
+    }
+  });
+
+  pauseSaveQuizBtn.addEventListener("click", () => {
+    if (state.savedSessions) {
+      saveState();
+    }
+    closeQuizModal();
+  });
+
+  if (closeCompletedQuizBtn) {
+    closeCompletedQuizBtn.addEventListener("click", closeQuizModal);
+  }
+
+  const reviewMistakesBtn = document.getElementById("review-mistakes-btn");
+  const statMistakesCard = document.getElementById("stat-mistakes-card");
+
+  if (reviewMistakesBtn) {
+    reviewMistakesBtn.addEventListener("click", openQuizModal);
+  }
+  if (statMistakesCard) {
+    statMistakesCard.addEventListener("click", openQuizModal);
+  }
+  if (quizModalClose) {
+    quizModalClose.addEventListener("click", closeQuizModal);
+  }
+
+  quizSessionModal.addEventListener("click", (e) => {
+    if (e.target === quizSessionModal) {
+      closeQuizModal();
+    }
+  });
+
+  // Obnovení stavu po reloadu stránky
+  const restoredActiveQ = StorageUtil.load("pathophys_active_q", null);
+  if (restoredActiveQ) {
+    openModal(restoredActiveQ);
+  }
+  
+  const quizModalOpen = StorageUtil.load("pathophys_quiz_modal_open", false);
+  if (quizModalOpen) {
+    openQuizModal();
+    if (state.savedSessions && state.savedSessions.isActive) {
+      renderActiveQuizQuestion();
+    }
+  }
 
   // --- INICIALIZACE STRÁNKY ---
   renderCards();

@@ -80,6 +80,24 @@
         <span class="stat-value" id="stat-quiz-score">0 %</span>
         <span class="stat-desc" id="stat-quiz-count">Zodpovězeno 0 otázek</span>
       </div>
+      <div class="stat-card stat-mistakes" id="stat-mistakes-card" title="Kliknutím spustíte Smart Review chyb" style="cursor: pointer;">
+        <span class="stat-label">Chyby k procvičení</span>
+        <span class="stat-value" id="stat-mistakes">0</span>
+        <span class="stat-desc" id="stat-mistakes-desc">Žádné nevyřešené chyby</span>
+      </div>
+    </section>
+
+    <!-- Klientská analytika pokroku podle kategorií -->
+    <section class="category-analytics" id="category-analytics">
+      <div class="category-analytics-header">
+        <h2>Pokrok a úspěšnost v tématech</h2>
+        <button id="review-mistakes-btn" class="btn btn-warning" title="Procvičit nesprávně zodpovězené otázky">
+          <span class="btn-icon">🔁</span> Smart Review chyb (<span id="btn-mistakes-count">0</span>)
+        </button>
+      </div>
+      <div class="analytics-grid" id="analytics-grid">
+        <!-- Zde se vygenerují progress bary a odznaky pro jednotlivé kategorie -->
+      </div>
     </section>
 
     <!-- Filtry a Vyhledávání -->
@@ -284,8 +302,80 @@
           </svg>
         </button>
       </form>
+  <!-- Modální okno pro Smart Review / Kvízy chyb -->
+  <dialog id="quiz-session-modal" class="slide-over">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title-area">
+          <span class="modal-category">SMART REVIEW CHYB</span>
+          <h2 class="modal-title" id="quiz-modal-title">Procvičování chyb</h2>
+        </div>
+        <button class="modal-close-btn" id="quiz-modal-close" aria-label="Zavřít panel">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        <!-- 1. OBRAZOVKA NASTAVENÍ A VÝBĚRU KATEGORIÍ -->
+        <div id="quiz-setup-view" class="quiz-step-view">
+          <h3>Výběr témat pro procvičování</h3>
+          <p>Vyberte kategorie, ze kterých chcete vytvořit kvíz z vašich předchozích chyb.</p>
+          
+          <div class="setup-categories-list" id="setup-categories-list">
+            <!-- Dynamicky naplněné checkbox listy s počtem chyb -->
+          </div>
+          
+          <div class="setup-actions" style="margin-top: 24px; display: flex; gap: 12px;">
+            <button id="start-new-quiz-btn" class="btn btn-primary btn-large">Spustit nové procvičování</button>
+            <button id="resume-quiz-btn" class="btn btn-secondary btn-large" style="display: none;">Pokračovat v uloženém kvízu</button>
+          </div>
+        </div>
+
+        <!-- 2. OBRAZOVKA AKTIVNÍHO KVÍZU -->
+        <div id="quiz-active-view" class="quiz-step-view" style="display: none;">
+          <div class="quiz-progress-bar-wrapper" style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid var(--border-color);">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem; font-weight: 500;">
+              <span id="quiz-progress-text" style="color: var(--text-primary);">Otázka 1 z X</span>
+              <span id="quiz-score-text" style="color: var(--text-secondary);">Úspěšnost: 0% (0/0)</span>
+            </div>
+            <div class="progress-bar-container" style="height: 6px; margin-top: 8px;">
+              <div class="progress-bar-fill" id="quiz-progress-fill" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <div class="quiz-question-container">
+            <div class="quiz-question-meta" id="quiz-question-meta" style="font-size: 0.85rem; color: var(--text-secondary); text-transform: uppercase; font-weight: bold; margin-bottom: 8px;">KATEGORIE | TÉMA</div>
+            <div class="quiz-question" id="quiz-question-text" style="font-size: 1.2rem; font-weight: 600; margin-bottom: 20px; line-height: 1.4;">Text otázky?</div>
+            <div class="quiz-options" id="quiz-options-container" style="display: grid; gap: 10px; margin-top: 15px;">
+              <!-- Možnosti A, B, C, D -->
+            </div>
+            <div class="quiz-explanation-container" id="quiz-session-explanation" style="margin-top: 20px;"></div>
+          </div>
+
+          <div class="quiz-footer-actions" style="margin-top: 32px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 20px;">
+            <button id="pause-save-quiz-btn" class="btn btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+              Pozastavit a uložit
+            </button>
+            <button id="next-quiz-question-btn" class="btn btn-primary" style="display: none;">Další otázka</button>
+          </div>
+        </div>
+
+        <!-- 3. OBRAZOVKA DOKONČENÍ KVÍZU -->
+        <div id="quiz-completed-view" class="quiz-step-view" style="display: none; text-align: center; padding: 40px 20px;">
+          <div style="font-size: 4rem; margin-bottom: 16px;">🏆</div>
+          <h2>Smart Review Dokončen!</h2>
+          <p style="margin-top: 8px; color: var(--text-secondary);" id="quiz-completion-message">Výborně! Prošli jste všechny vybrané chyby.</p>
+          <div class="final-score-box" style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; margin: 24px auto; max-width: 300px;">
+            <div style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-muted);">Vaše skóre</div>
+            <div id="quiz-final-score" style="font-size: 2.2rem; font-weight: 700; color: var(--color-primary); margin: 8px 0;">85%</div>
+            <div id="quiz-final-ratio" style="font-size: 1rem; color: var(--text-secondary);">17 z 20 správně</div>
+          </div>
+          <button id="close-completed-quiz-btn" class="btn btn-primary btn-large" style="width: 100%; max-width: 250px;">Zpět na hlavní menu</button>
+        </div>
+      </div>
     </div>
-  </div>
+  </dialog>
 
   <!-- Načtení dat a skriptů -->
   <script src="data_core.js?v=1.1.0"></script>
