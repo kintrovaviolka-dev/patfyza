@@ -81,7 +81,7 @@ const GENERAL_DETAILS = {
                         ],
                         "correct": 2,
                         "explanations": [
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ateroskleróza. Poruchy metabolismu lipidů - etiopatogeneze, akutní a chronické komplikace, následky.\".",
                               "Správně! Tento mechanismus popisuje patogenezi děje.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Stres a všeobecný adaptační syndrom - charakteristika, fáze, etiopatogeneze.\"."
@@ -192,7 +192,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Správně! Toto je klíčový etiologický faktor.",
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"pokles\", nikoli k \"vzestup\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy růstu. Poruchy puberty. Stárnutí a smrt organismu.\"."
                         ]
                   },
@@ -450,8 +450,8 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy růstu. Poruchy puberty. Stárnutí a smrt organismu.\".",
                               "Správně! Tento mechanismus popisuje patogenezi děje.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus- etiopatogeneze.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\"."
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus - etiopatogeneze.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\"."
                         ]
                   },
                   {
@@ -466,7 +466,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Správně! Toto je typický klinický projev.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poškození a smrt buňky - reversibilní a ireversibilní, nekróza, apoptóza, autofagie.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ateroskleróza. Poruchy metabolismu lipidů - etiopatogeneze, akutní a chronické komplikace, následky.\"."
                         ]
                   },
@@ -483,7 +483,7 @@ const GENERAL_DETAILS = {
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Edém - rozdělení, etiopatogeneze, klinická manifestace, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy růstu. Poruchy puberty. Stárnutí a smrt organismu.\".",
                               "Správně! Tato referenční hodnota je správná.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus- etiopatogeneze.\"."
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus - etiopatogeneze.\"."
                         ]
                   }
             ]
@@ -696,7 +696,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"aktivace\", nikoli k \"inhibice\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Imunopatologické reakce - rozdělení, etiopatogeneze. Principy autoimunitních reakcí - mechanismy. Atopie. Imunotolerance.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Správně! Tento mechanismus popisuje patogenezi děje."
                         ]
                   },
@@ -833,7 +833,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Nauzea, zvracení - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy acidobazické rovnováhy - klasifikace poruch, kompenzace a korekce, příčiny a následky. Příčiny smrti při poruchách acidobazické rovnováhy.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Správně! Toto je typický klinický projev."
                         ]
                   },
@@ -899,7 +899,7 @@ const GENERAL_DETAILS = {
             ],
             "quiz": [
                   {
-                        "question": "Které tvrzení nejlépe definuje nebo popisuje téma: Systémová zánětlivá odpověď- etiopatogeneze, následky?",
+                        "question": "Které tvrzení nejlépe definuje nebo popisuje téma: Systémová zánětlivá odpověď - etiopatogeneze, následky?",
                         "options": [
                               "Sepse je život ohrožující orgánová dysfunkce způsobená dysregulovanou odpovědí hostitele na infekci. MODS je konečné stadium představující selhání funkce dvou nebo více orgánových systémů.",
                               "Horečka (febris) je řízená hypertermie charakterizovaná přenastavením termoregulačního centra v hypothalamu (set-point) na vyšší hodnotu působením pyrogenů.",
@@ -915,7 +915,7 @@ const GENERAL_DETAILS = {
                         ]
                   },
                   {
-                        "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Systémová zánětlivá odpověď- etiopatogeneze, následky?",
+                        "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Systémová zánětlivá odpověď - etiopatogeneze, následky?",
                         "options": [
                               "Infekční příčiny (sepse, těžká pneumonie, urosepse).",
                               "Neinfekční záněty, nekróza tkáně (infarkt), nádorová onemocnění.",
@@ -931,7 +931,7 @@ const GENERAL_DETAILS = {
                         ]
                   },
                   {
-                        "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Systémová zánětlivá odpověď- etiopatogeneze, následky?",
+                        "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Systémová zánětlivá odpověď - etiopatogeneze, následky?",
                         "options": [
                               "Průnik LDL do intimy a jeho následná oxidace (oxLDL) spouští lokální zánětlivou reakci.",
                               "Předčasná puberta je aktivována předčasným uvolněním GnRH. Opožděná puberta je způsobena poruchou osy hypothalamus-hypofýza-gonády.",
@@ -947,7 +947,7 @@ const GENERAL_DETAILS = {
                         ]
                   },
                   {
-                        "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Systémová zánětlivá odpověď- etiopatogeneze, následky?",
+                        "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Systémová zánětlivá odpověď - etiopatogeneze, následky?",
                         "options": [
                               "Obstipace: bolesti břicha, nadýmání, pocit neúplného vyprázdnění, riziko vzniku hemoroidů a divertiklů.",
                               "Hyperkalcémie: svalová slabost, zácpa, nevolnost, peptické vředy (vápník stimuluje gastrin), nefrolitiáza, poruchy rytmu.",
@@ -963,7 +963,7 @@ const GENERAL_DETAILS = {
                         ]
                   },
                   {
-                        "question": "Která z následujících hodnot, referenčních rozmezí nebo kritérií je správná pro téma: Systémová zánětlivá odpověď- etiopatogeneze, následky?",
+                        "question": "Která z následujících hodnot, referenčních rozmezí nebo kritérií je správná pro téma: Systémová zánětlivá odpověď - etiopatogeneze, následky?",
                         "options": [
                               "Pravděpodobnost nemocného potomka u dvou AR přenašečů je: 25 %",
                               "Teplota pro kritérium SIRS je: < 36 °C nebo > 38 °C",
@@ -1051,7 +1051,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Správně! Toto je klíčový etiologický faktor.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Bolest - etiopatogeneze, klasifikace, poruchy vnímání bolesti, principy farmakologického ovlivnění.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Dehydratace - etiopatogeneze, následky.\"."
                         ]
                   },
@@ -1099,7 +1099,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Správně! Tato referenční hodnota je správná.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Definice nemoci a zdraví - pojmy: etiologie, patogeneze, etiopatogeneze, symptom, syndrom. Průběh a zakončení nemocí. Iatrogenita. Psychosomatika.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Nauzea, zvracení - etiopatogeneze, následky.\"."
                         ]
                   }
@@ -1204,7 +1204,7 @@ const GENERAL_DETAILS = {
                         "correct": 3,
                         "explanations": [
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"vazodilatace\", nikoli k \"vazokonstrikce\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Bolest - etiopatogeneze, klasifikace, poruchy vnímání bolesti, principy farmakologického ovlivnění.\".",
                               "Správně! Toto je typický klinický projev."
                         ]
@@ -1400,7 +1400,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Obstipace a průjem - etiopatogeneze a následky. Syndrom dráždivého tračníku, pseudomembranózní kolitida.\".",
                               "Správně! Toto je přesná definice.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Krvácení - etiopatogeneze, rozdělení, následky.\"."
                         ]
                   },
@@ -1446,7 +1446,7 @@ const GENERAL_DETAILS = {
                         ],
                         "correct": 3,
                         "explanations": [
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Časový faktor v patogenezi nemocí, pojmy kompenzace a dekompenzace, strukturální a funkční orgánová/tkáňová dysfunkce.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Obezita - etiopatogeneze, následky, role v patogenezi nemocí.\".",
                               "Správně! Toto je typický klinický projev."
@@ -1546,7 +1546,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Správně! Toto je klíčový etiologický faktor.",
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"acidóza\", nikoli k \"alkalóza\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poškození a smrt buňky - reversibilní a ireversibilní, nekróza, apoptóza, autofagie.\"."
                         ]
                   },
@@ -1684,7 +1684,7 @@ const GENERAL_DETAILS = {
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Definice nemoci a zdraví - pojmy: etiologie, patogeneze, etiopatogeneze, symptom, syndrom. Průběh a zakončení nemocí. Iatrogenita. Psychosomatika.\".",
                               "Správně! Tento mechanismus popisuje patogenezi děje.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Obstipace a průjem - etiopatogeneze a následky. Syndrom dráždivého tračníku, pseudomembranózní kolitida.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus- etiopatogeneze.\"."
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus - etiopatogeneze.\"."
                         ]
                   },
                   {
@@ -1698,7 +1698,7 @@ const GENERAL_DETAILS = {
                         "correct": 2,
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Horečka - etiopatogeneze, průběh (fáze) horečky, pozitivní a negativní vliv horečky na organismus.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Správně! Toto je typický klinický projev.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ateroskleróza. Poruchy metabolismu lipidů - etiopatogeneze, akutní a chronické komplikace, následky.\"."
                         ]
@@ -1716,7 +1716,7 @@ const GENERAL_DETAILS = {
                               "Správně! Tato referenční hodnota je správná.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Bolest - etiopatogeneze, klasifikace, poruchy vnímání bolesti, principy farmakologického ovlivnění.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Kardiogenní a obstrukční šok - etiopatogeneze a následky.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\"."
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\"."
                         ]
                   }
             ]
@@ -1788,7 +1788,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poškození a smrt buňky - reversibilní a ireversibilní, nekróza, apoptóza, autofagie.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Dehydratace - etiopatogeneze, následky.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Správně! Toto je klíčový etiologický faktor."
                         ]
                   },
@@ -1896,7 +1896,7 @@ const GENERAL_DETAILS = {
                         "correct": 0,
                         "explanations": [
                               "Správně! Toto je přesná definice.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Bolest - etiopatogeneze, klasifikace, poruchy vnímání bolesti, principy farmakologického ovlivnění.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poškození vlivem chemických vlivů - intoxikace (paracetamol, metanol, oxid uhelnatý), alkohol, kouření.\"."
                         ]
@@ -2067,7 +2067,7 @@ const GENERAL_DETAILS = {
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Definice nemoci a zdraví - pojmy: etiologie, patogeneze, etiopatogeneze, symptom, syndrom. Průběh a zakončení nemocí. Iatrogenita. Psychosomatika.\".",
                               "Správně! Toto je typický klinický projev.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Geneticky podmíněné nemoci - rozdělení, příklady. Monofaktoriální a multifaktoriální dědičnost.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\"."
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\"."
                         ]
                   },
                   {
@@ -2268,7 +2268,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Nespecifický a specifický imunitní systém - poruchy funkce, principy.\".",
                               "Správně! Toto je přesná definice.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Nauzea, zvracení - etiopatogeneze, následky.\"."
                         ]
                   },
@@ -2331,7 +2331,7 @@ const GENERAL_DETAILS = {
                         "correct": 0,
                         "explanations": [
                               "Správně! Tato referenční hodnota je správná.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Stres a všeobecný adaptační syndrom - charakteristika, fáze, etiopatogeneze.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hyperhydratace - etiopatogeneze, následky.\"."
                         ]
@@ -2437,7 +2437,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"hypotenze\", nikoli k \"hypertenze\".",
                               "Správně! Toto je typický klinický projev.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy bilance natria (Na+) a chloridů (Cl-) - etiopatogeneze, následky, regulace. Osmotický a onkotický tlak.\"."
                         ]
                   },
@@ -2508,7 +2508,7 @@ const GENERAL_DETAILS = {
                         ],
                         "correct": 3,
                         "explanations": [
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Dušnost - rozdělení, etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Horečka - etiopatogeneze, průběh (fáze) horečky, pozitivní a negativní vliv horečky na organismus.\".",
                               "Správně! Toto je přesná definice."
@@ -2754,7 +2754,7 @@ const GENERAL_DETAILS = {
                         "correct": 3,
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Stres a všeobecný adaptační syndrom - charakteristika, fáze, etiopatogeneze.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Obezita - etiopatogeneze, následky, role v patogenezi nemocí.\".",
                               "Správně! Toto je přesná definice."
                         ]
@@ -2892,7 +2892,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Definice nemoci a zdraví - pojmy: etiologie, patogeneze, etiopatogeneze, symptom, syndrom. Průběh a zakončení nemocí. Iatrogenita. Psychosomatika.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Krvácení - etiopatogeneze, rozdělení, následky.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Správně! Toto je klíčový etiologický faktor."
                         ]
                   },
@@ -2908,7 +2908,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy růstu. Poruchy puberty. Stárnutí a smrt organismu.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poškození a smrt buňky - reversibilní a ireversibilní, nekróza, apoptóza, autofagie.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Správně! Tento mechanismus popisuje patogenezi děje."
                         ]
                   },
@@ -2923,9 +2923,9 @@ const GENERAL_DETAILS = {
                         "correct": 2,
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Stres a všeobecný adaptační syndrom - charakteristika, fáze, etiopatogeneze.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Správně! Toto je typický klinický projev.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\"."
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\"."
                         ]
                   },
                   {
@@ -2939,7 +2939,7 @@ const GENERAL_DETAILS = {
                         "correct": 3,
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hyperhydratace - etiopatogeneze, následky.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Obezita - etiopatogeneze, následky, role v patogenezi nemocí.\".",
                               "Správně! Tato referenční hodnota je správná."
                         ]
@@ -3150,7 +3150,7 @@ const GENERAL_DETAILS = {
                         "correct": 0,
                         "explanations": [
                               "Správně! Tento mechanismus popisuje patogenezi děje.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Nauzea, zvracení - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypoxie a hyperoxie buňky - příčiny, adaptace, následky.\"."
                         ]
@@ -3182,7 +3182,7 @@ const GENERAL_DETAILS = {
                         "correct": 0,
                         "explanations": [
                               "Správně! Tato referenční hodnota je správná.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Sepse, syndrom multiorgánové dysfunkce (MODS) - etiopatogeneze, projevy a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Nauzea, zvracení - etiopatogeneze, následky.\"."
                         ]
@@ -3240,7 +3240,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Správně! Toto je přesná definice.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Metabolická acidóza a alkalóza - etiopatogeneze, následky.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy bilance kalia (K+) - etiopatogeneze, následky.\"."
                         ]
                   },
@@ -3377,7 +3377,7 @@ const GENERAL_DETAILS = {
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"obstrukce\", nikoli k \"restrikce\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Metabolická acidóza a alkalóza - etiopatogeneze, následky.\".",
                               "Správně! Toto je klíčový etiologický faktor.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\"."
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\"."
                         ]
                   },
                   {
@@ -3391,7 +3391,7 @@ const GENERAL_DETAILS = {
                         "correct": 0,
                         "explanations": [
                               "Správně! Tento mechanismus popisuje patogenezi děje.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus- etiopatogeneze.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus - etiopatogeneze.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Sepse, syndrom multiorgánové dysfunkce (MODS) - etiopatogeneze, projevy a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Lokální zánětová odpověď - princip a význam, složky zánětové odpovědi.\"."
                         ]
@@ -3424,7 +3424,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"acidóza\", nikoli k \"alkalóza\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Dehydratace - etiopatogeneze, následky.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Správně! Tato referenční hodnota je správná."
                         ]
                   }
@@ -3731,7 +3731,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ateroskleróza. Poruchy metabolismu lipidů - etiopatogeneze, akutní a chronické komplikace, následky.\".",
                               "Správně! Toto je přesná definice.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poškození a smrt buňky - reversibilní a ireversibilní, nekróza, apoptóza, autofagie.\"."
                         ]
                   },
@@ -3868,7 +3868,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Správně! Toto je klíčový etiologický faktor.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Stres a všeobecný adaptační syndrom - charakteristika, fáze, etiopatogeneze.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy bilance kalia (K+) - etiopatogeneze, následky.\"."
                         ]
                   },
@@ -4022,7 +4022,7 @@ const GENERAL_DETAILS = {
                         "correct": 0,
                         "explanations": [
                               "Správně! Toto je typický klinický projev.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Imunopatologické reakce - rozdělení, etiopatogeneze. Principy autoimunitních reakcí - mechanismy. Atopie. Imunotolerance.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy bilance kalia (K+) - etiopatogeneze, následky.\"."
                         ]
@@ -4124,7 +4124,7 @@ const GENERAL_DETAILS = {
                         ],
                         "correct": 2,
                         "explanations": [
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy bilance natria (Na+) a chloridů (Cl-) - etiopatogeneze, následky, regulace. Osmotický a onkotický tlak.\".",
                               "Správně! Tento mechanismus popisuje patogenezi děje.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Horečka - etiopatogeneze, průběh (fáze) horečky, pozitivní a negativní vliv horečky na organismus.\"."
@@ -4204,7 +4204,7 @@ const GENERAL_DETAILS = {
             ],
             "quiz": [
                   {
-                        "question": "Které tvrzení nejlépe definuje nebo popisuje téma: Ikterus- etiopatogeneze?",
+                        "question": "Které tvrzení nejlépe definuje nebo popisuje téma: Ikterus - etiopatogeneze?",
                         "options": [
                               "Ikterus (žloutenka) je žluté zbarvení tkání (sklér, kůže) způsobené sníženou koncentrací bilirubinu v krvi (hyperbilirubinémií). Dělí se na prehepatální, hepatocelulární a posthepatální.",
                               "Ikterus (žloutenka) je žluté zbarvení tkání (sklér, kůže) způsobené zvýšenou koncentrací bilirubinu v krvi (hyperbilirubinémií). Dělí se na prehepatální, hepatocelulární a posthepatální.",
@@ -4220,7 +4220,7 @@ const GENERAL_DETAILS = {
                         ]
                   },
                   {
-                        "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Ikterus- etiopatogeneze?",
+                        "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Ikterus - etiopatogeneze?",
                         "options": [
                               "Tkáňová nekróza jakékoliv etiologie (např. infarkt myokardu).",
                               "Neadekvátní nebo opožděná léčba výchozí lokální infekce.",
@@ -4236,7 +4236,7 @@ const GENERAL_DETAILS = {
                         ]
                   },
                   {
-                        "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Ikterus- etiopatogeneze?",
+                        "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Ikterus - etiopatogeneze?",
                         "options": [
                               "Obstipace: zpomalení střevní pasáže vede k nadměrné reabsorpci vody v tlustém střevě, stolice se stává suchou a tuhou.",
                               "Uvolnění mediátorů zánětu (prostaglandiny, bradykinin) dráždí nociceptory (dolor) a omezuje funkci (functio laesa).",
@@ -4252,7 +4252,7 @@ const GENERAL_DETAILS = {
                         ]
                   },
                   {
-                        "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Ikterus- etiopatogeneze?",
+                        "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Ikterus - etiopatogeneze?",
                         "options": [
                               "Sideropenie: únava, bledost, vypadávání vlasů, lámavost nehtů (koilonychie), pálení jazyka (glositida), mikrocytární anémie.",
                               "Paraneoplastické syndromy: syndromy vyvolané ektopickou produkcí hormonů (např. ACTH u malobuněčného karcinomu plic -> Cushing).",
@@ -4268,7 +4268,7 @@ const GENERAL_DETAILS = {
                         ]
                   },
                   {
-                        "question": "Která z následujících hodnot, referenčních rozmezí nebo kritérií je správná pro téma: Ikterus- etiopatogeneze?",
+                        "question": "Která z následujících hodnot, referenčních rozmezí nebo kritérií je správná pro téma: Ikterus - etiopatogeneze?",
                         "options": [
                               "Fyziologický celkový bilirubin v séru je: 3 - 20 umol/l",
                               "Trvání typické vazovagální synkopy je: < 1 - 2 minuty",
@@ -4352,7 +4352,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Správně! Toto je klíčový etiologický faktor.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Dehydratace - etiopatogeneze, následky.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Horečka - etiopatogeneze, průběh (fáze) horečky, pozitivní a negativní vliv horečky na organismus.\"."
                         ]
                   },
@@ -4398,7 +4398,7 @@ const GENERAL_DETAILS = {
                         ],
                         "correct": 3,
                         "explanations": [
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poškození a smrt buňky - reversibilní a ireversibilní, nekróza, apoptóza, autofagie.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Dušnost - rozdělení, etiopatogeneze, následky.\".",
                               "Správně! Tato referenční hodnota je správná."
@@ -4471,7 +4471,7 @@ const GENERAL_DETAILS = {
                         ],
                         "correct": 1,
                         "explanations": [
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Správně! Toto je klíčový etiologický faktor.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy bilance kalia (K+) - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypoxie a hyperoxie buňky - příčiny, adaptace, následky.\"."
@@ -4505,7 +4505,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"hypotenze\", nikoli k \"hypertenze\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy bilance kalia (K+) - etiopatogeneze, následky.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Správně! Toto je typický klinický projev."
                         ]
                   },
@@ -4520,7 +4520,7 @@ const GENERAL_DETAILS = {
                         "correct": 2,
                         "explanations": [
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"vzestup\", nikoli k \"pokles\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Správně! Tato referenční hodnota je správná.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Septický a anafylaktický šok - etiopatogeneze a následky.\"."
                         ]
@@ -4703,7 +4703,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Edém - rozdělení, etiopatogeneze, klinická manifestace, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy acidobazické rovnováhy - klasifikace poruch, kompenzace a korekce, příčiny a následky. Příčiny smrti při poruchách acidobazické rovnováhy.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Správně! Toto je přesná definice."
                         ]
                   },
@@ -4839,7 +4839,7 @@ const GENERAL_DETAILS = {
                         ],
                         "correct": 3,
                         "explanations": [
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Obezita - etiopatogeneze, následky, role v patogenezi nemocí.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Septický a anafylaktický šok - etiopatogeneze a následky.\".",
                               "Správně! Toto je klíčový etiologický faktor."
@@ -5083,7 +5083,7 @@ const GENERAL_DETAILS = {
                         "correct": 0,
                         "explanations": [
                               "Správně! Toto je klíčový etiologický faktor.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Dehydratace - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy metabolismu železa (Fe2+/Fe3+) - etiopatogeneze a následky.\"."
                         ]
@@ -5188,7 +5188,7 @@ const GENERAL_DETAILS = {
                         "correct": 2,
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy bilance kalcia (Ca2+) a fosfátů - etiopatogeneze, projevy, následky.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Správně! Toto je přesná definice.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Sepse, syndrom multiorgánové dysfunkce (MODS) - etiopatogeneze, projevy a následky.\"."
                         ]
@@ -5347,7 +5347,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Krvácení - etiopatogeneze, rozdělení, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Lokální zánětová odpověď - princip a význam, složky zánětové odpovědi.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Správně! Tento mechanismus popisuje patogenezi děje."
                         ]
                   },
@@ -5439,7 +5439,7 @@ const GENERAL_DETAILS = {
                         "correct": 2,
                         "explanations": [
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"hyperglykemie\", nikoli k \"hypoglykemie\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
                               "Správně! Toto je přesná definice.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypoxie a hyperoxie buňky - příčiny, adaptace, následky.\"."
                         ]
@@ -5560,8 +5560,8 @@ const GENERAL_DETAILS = {
                         "correct": 3,
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Definice nemoci a zdraví - pojmy: etiologie, patogeneze, etiopatogeneze, symptom, syndrom. Průběh a zakončení nemocí. Iatrogenita. Psychosomatika.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď- etiopatogeneze, následky.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Systémová zánětlivá odpověď - etiopatogeneze, následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Správně! Toto je přesná definice."
                         ]
                   },
@@ -5843,7 +5843,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poškození a smrt buňky - reversibilní a ireversibilní, nekróza, apoptóza, autofagie.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy růstu. Poruchy puberty. Stárnutí a smrt organismu.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Správně! Tento mechanismus popisuje patogenezi děje."
                         ]
                   },
@@ -5930,7 +5930,7 @@ const GENERAL_DETAILS = {
                         "correct": 3,
                         "explanations": [
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"hypoglykemie\", nikoli k \"hyperglykemie\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus- etiopatogeneze.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus - etiopatogeneze.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Kardiogenní a obstrukční šok - etiopatogeneze a následky.\".",
                               "Správně! Toto je přesná definice."
                         ]
@@ -5962,7 +5962,7 @@ const GENERAL_DETAILS = {
                         "correct": 2,
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Respirační acidóza a alkalóza - etiopatogeneze, následky.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus- etiopatogeneze.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus - etiopatogeneze.\".",
                               "Správně! Tento mechanismus popisuje patogenezi děje.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Definice nemoci a zdraví - pojmy: etiologie, patogeneze, etiopatogeneze, symptom, syndrom. Průběh a zakončení nemocí. Iatrogenita. Psychosomatika.\"."
                         ]
@@ -6055,7 +6055,7 @@ const GENERAL_DETAILS = {
                         ],
                         "correct": 3,
                         "explanations": [
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok - etiopatogeneze a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy bilance kalia (K+) - etiopatogeneze, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ischemie - etiopatogeneze ischemie, změny na orgánové úrovni: myokard, centrální nervový systém, ledviny, GIT, končetiny.\".",
                               "Správně! Toto je přesná definice."

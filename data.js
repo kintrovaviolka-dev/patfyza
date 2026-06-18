@@ -4,7 +4,7 @@
 const RAW_QUESTIONS_SPECIAL_1 = [
   "Srdeční zástava. Maligní arytmie: fibrilace komor, setrvalá komorová tachykardie a asystolie - etiopatogeneze a následky. Elektromechanická disociace",
   "Anemie - obecná charakteristika, etiopatogeneze, rozdělení, následky. Anemický syndrom",
-  "Základní charakteristika plicních onemocnění: obstrukce a restrikce etiopatogeneze",
+  "Základní charakteristika plicních onemocnění: obstrukce a restrikce, etiopatogeneze",
   "Portální hypertenze - etiopatogeneze, projevy, následky",
   "Trombocytopenie a trombocytopatie - etiopatogeneze, projevy, následky",
   "Systémová arteriální hypotenze etiopatogeneze a následky",
@@ -21,12 +21,12 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Poruchy ventilačně-perfúzního poměru - etiopatogeneze, projevy, následky",
   "Poruchy venózního řečiště. - etiopatogeneze, projevy, následky. Poruchy lymfatického cévního systému - etiopatogeneze, projevy, následky",
   "Poruchy plicní difúze - etiopatogeneze, symptomy a následky. Poruchy alveolo-kapilární membrány. Alveolo-arteriální diference",
-  "Poruchy plicní cirkulace etiopatogeneze, následky. Plicní hypertenze - etiopatogeneze, projevy, následky",
+  "Poruchy plicní cirkulace - etiopatogeneze, následky. Plicní hypertenze - etiopatogeneze, projevy, následky",
   "Trombotické mikroangiopatie (HUS aHUS, TTP) - etiopatogeneze, projevy, následky",
   "Polycytémie - etiopatogeneze, následky. Hyperviskózní syndrom",
-  "Pneumothorax - etiopatogeneze, typy projevy, následky. Fluidothorax etiopatogeneze, typy, projevy, následky",
+  "Pneumothorax - etiopatogeneze, typy, projevy, následky. Fluidothorax - etiopatogeneze, typy, projevy, následky",
   "Pneumonie - etiopatogeneze, rozdělení, projevy, následky",
-  "Plicní edém etiopatogeneze, rozdělení, projevy, následky",
+  "Plicní edém - etiopatogeneze, rozdělení, projevy, následky",
   "Patofyziologie sleziny - splenomegalie, hypersplenismus, následky splenektomie",
   "Obstrukční plicní nemoci - obecná charakteristika, etiopatogeneze, projevy, následky",
   "Obstrukce horních dýchacích cest - etiopatogeneze, projevy, následky",
@@ -45,12 +45,12 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Hemostáza - základní deskripce poruch primární (cévy a trombocyty), sekundární (koagulační kaskáda) a terciární (trombolýza) hemostázy",
   "Endokarditidy. Myokarditidy. Perikarditidy - etiopatogeneze, projevy, následky. Srdeční tamponáda",
   "Glomerulopatie - etiopatogeneze, projevy, následky",
-  "Demyelinizace etiopatogeneze, projevy následky. Roztroušená mozkomíšní skleróza",
+  "Demyelinizace - etiopatogeneze, projevy, následky. Roztroušená mozkomíšní skleróza",
   "Bradyarytmie - etiopatogeneze a následky poruch tvorby a vedení vzruchu. Sinoatriální, atrioventrikulární a raménkové blokády",
   "Anémie ze zvýšených ztrát a snížené produkce erytrocytů - etiopatogeneze, následky",
   "Anemie ze zvýšené konsumpce erytrocytů. Hemolýza - etiopatogeneze, následky",
-  "Atelektáza. etiopatogeneze, projevy, následky",
-  "ARDS-etiopatogeneze, klasifikace, projevy, následky. Akutní respirační selhání - rozdělení, etiopatogeneze, následky",
+  "Atelektáza - etiopatogeneze, projevy, následky",
+  "ARDS - etiopatogeneze, klasifikace, projevy, následky. Akutní respirační selhání - rozdělení, etiopatogeneze, následky",
   "Akutní ischemie myokardu - etiopatogeneze, následky. Akutní infarkt myokardu - etiopatogeneze, rozdělení, akutní a chronické komplikace",
   "Akutní poškození ledvin - etiopatogeneze, rozdělení podle příčin, projevy, následky"
 ];
@@ -67,13 +67,13 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Poruchy sluchu a zraku - etiopatogeneze, projevy, následky",
   "Poruchy menstruačního cyklu - etiopatogeneze. Poruchy hypotalamo-hypofyzárně-ovariální osy",
   "Poruchy kostního metabolismu - osteoporóza, osteomalacie, rachitida",
-  "Onemocnění žlučníku a žlučových cest-cholecystitida a cholangoitida. Cholecystolitiáza a choledocholitiáza - etiopatogeneze, projevy, následky",
+  "Onemocnění žlučníku a žlučových cest - cholecystitida a cholangoitida. Cholecystolitiáza a choledocholitiáza - etiopatogeneze, projevy, následky",
   "Poruchy endokrinních funkcí ledvin - etiopatogeneze, projevy, následky. Poruchy bazálních ganglií - etiopatogeneze, projevy. Parkinsonova nemoc. Poruchy limbického systému a emocí - etiopatogeneze, projevy, následky. Poranění míchy - etiopatogeneze, projevy, následky. Transverzální míšní léze",
   "Poruchy kognitivních funkcí - paměť, pozornost, učení, řeč, vnímání, chápání. Demence. Alzheimerova choroba - etiopatogeneze, projevy, následky",
   "Hemoragické cévní mozkové příhody - etiopatogeneze, projevy, následky",
-  "Nespecifická zánětlivá onemocnění střev-Crohnova choroba, ulcerativní kolitida",
+  "Nespecifická zánětlivá onemocnění střev - Crohnova choroba, ulcerativní kolitida",
   "Nemoci dutiny ústní. Poruchy polykání, Poruchy jícnu - etiopatogeneze, projevy, následky. Dyspepsie. Refluxní choroba jícnu",
-  "Myopatie, rhabdomyolýza - etiopatogeneze, projevy následky. Krvácení do GIT-formy, příčiny, lokalizace, projevy, následky. Kóma etiopatogeneze, projevy a následky. Vegetativní stav, locked-in syndrome. Smrt mozku definice, etiopatogeneze a projevy",
+  "Myopatie, rhabdomyolýza - etiopatogeneze, projevy, následky. Krvácení do GIT - formy, příčiny, lokalizace, projevy, následky. Kóma - etiopatogeneze, projevy a následky. Vegetativní stav, locked-in syndrome. Smrt mozku - definice, etiopatogeneze a projevy",
   "Ischemické cévní mozkové příhody - etiopatogeneze, projevy, následky. Intrakraniální hypertenze - etiopatogeneze, Poruchy autoregulace průtoku krve mozkem. Chronické selhání jater - jaterní steatóza a cirhóza. Hepatorenální syndrom - etiopatogeneze",
   "Chronická pankreatitida a poruchy exokrinní činnosti pankreatu - etiopatogeneze, projevy, následky",
   "Hypotyreóza - etiopatogeneze, projevy, následky. Struma",
@@ -82,7 +82,7 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Hyperparatyreóza - etiopatogeneze, projevy, následky",
   "Hyperkortizolismus. Cushingova nemoc a syndrom - etiopatogeneze, projevy, následky",
   "Hyperaldosteronismus - etiopatogeneze, rozdělení, projevy, následky. Connův syndrom",
-  "Onemocnění tlustého střeva divertikulóza, polypóza a karcinom- etiopatogeneze a následky. Ileus - etiopatogeneze, projevy, následky",
+  "Onemocnění tlustého střeva divertikulóza, polypóza a karcinom - etiopatogeneze a následky. Ileus - etiopatogeneze, projevy, následky",
   "Feochromocytom, mnohočetné endokrinní neoplazie - etiopatogeneze, projevy, následky. Zollinger Ellisonův syndrom. Gastroenteropankreatický hormonální systém. Epilepsie etiopatogeneze, klasifikace, projevy, následky. Edém mozku - etiopatogeneze, projevy, následky. Cytotoxický edém a vazogenní edém, intersticiální edém. Diabetes mellitus - základní rozdělení, etiopatogeneze, projevy, následky",
   "Diabetes mellitus - akutní a chronické komplikace - etiopatogeneze, projevy, následky",
   "Cévní mozkové příhody - etiopatogeneze, základní rozdělení, projevy, následky. Transitorní ischemická ataka",
@@ -242,7 +242,7 @@ const SPECIFIC_RICH_DATA = {
   },
 
   // 3. Obstrukce a restrikce
-  "Základní charakteristika plicních onemocnění: obstrukce a restrikce etiopatogeneze": {
+  "Základní charakteristika plicních onemocnění: obstrukce a restrikce, etiopatogeneze": {
     keyTerms: ["Obstrukce", "Restrikce", "FVC", "FEV1", "Tiffeneauův index", "Plicní poddajnost"],
     detailContent: `
       <div class="medical-detail">
@@ -602,7 +602,7 @@ const SPECIFIC_RICH_DATA = {
   },
 
   // 49. ARDS (Plíce - DETAIL)
-  "ARDS-etiopatogeneze, klasifikace, projevy, následky. Akutní respirační selhání - rozdělení, etiopatogeneze, následky": {
+  "ARDS - etiopatogeneze, klasifikace, projevy, následky. Akutní respirační selhání - rozdělení, etiopatogeneze, následky": {
     keyTerms: ["Difúzní alveolární poškození", "Plicní edém (nekardiogenní)", "Hyalinní blány", "Refrakterní hypoxémie", "Surfaktant", "Ventilační selhání"],
     detailContent: `
       <div class="medical-detail">
