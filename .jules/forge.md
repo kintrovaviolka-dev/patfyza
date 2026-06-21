@@ -7,3 +7,6 @@
 ## 2024-06-11 - JSON Parse Security Vulnerability
 **Learning:** Parsing user-provided JSON files using FileReader and simply assigning their values to the application state without strict type and structure validation opens up risks of Prototype Pollution, state corruption, and runtime crashes.
 **Action:** Always validate the structure and type of data imported from untrusted JSON strings before merging it with internal application state.
+## 2024-05-14 - String Replacement Integrity
+**Learning:** Exact string references in other files (e.g., explanations in `data_general.js`) must be identically updated when modifying text strings in `data_core.js` to maintain referential integrity.
+**Action:** Always search globally for references to a modified string and replace them across all `.js` files using targeted replacements.
