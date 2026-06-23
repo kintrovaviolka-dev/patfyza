@@ -82,7 +82,7 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Hyperparatyreóza - etiopatogeneze, projevy, následky",
   "Hyperkortizolismus. Cushingova nemoc a syndrom - etiopatogeneze, projevy, následky",
   "Hyperaldosteronismus - etiopatogeneze, rozdělení, projevy, následky. Connův syndrom",
-  "Onemocnění tlustého střeva divertikulóza, polypóza a karcinom- etiopatogeneze a následky. Ileus - etiopatogeneze, projevy, následky",
+  "Onemocnění tlustého střeva divertikulóza, polypóza a karcinom - etiopatogeneze a následky. Ileus - etiopatogeneze, projevy, následky",
   "Feochromocytom, mnohočetné endokrinní neoplazie - etiopatogeneze, projevy, následky. Zollinger Ellisonův syndrom. Gastroenteropankreatický hormonální systém. Epilepsie etiopatogeneze, klasifikace, projevy, následky. Edém mozku - etiopatogeneze, projevy, následky. Cytotoxický edém a vazogenní edém, intersticiální edém. Diabetes mellitus - základní rozdělení, etiopatogeneze, projevy, následky",
   "Diabetes mellitus - akutní a chronické komplikace - etiopatogeneze, projevy, následky",
   "Cévní mozkové příhody - etiopatogeneze, základní rozdělení, projevy, následky. Transitorní ischemická ataka",
