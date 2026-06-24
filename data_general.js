@@ -450,7 +450,7 @@ const GENERAL_DETAILS = {
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy růstu. Poruchy puberty. Stárnutí a smrt organismu.\".",
                               "Správně! Tento mechanismus popisuje patogenezi děje.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus- etiopatogeneze.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus - etiopatogeneze.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Hypovolemický šok. Hemoragický šok-etiopatogeneze a následky.\"."
                         ]
                   },
@@ -483,7 +483,7 @@ const GENERAL_DETAILS = {
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Edém - rozdělení, etiopatogeneze, klinická manifestace, následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Poruchy růstu. Poruchy puberty. Stárnutí a smrt organismu.\".",
                               "Správně! Tato referenční hodnota je správná.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus- etiopatogeneze.\"."
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus - etiopatogeneze.\"."
                         ]
                   }
             ]
@@ -1684,7 +1684,7 @@ const GENERAL_DETAILS = {
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Definice nemoci a zdraví - pojmy: etiologie, patogeneze, etiopatogeneze, symptom, syndrom. Průběh a zakončení nemocí. Iatrogenita. Psychosomatika.\".",
                               "Správně! Tento mechanismus popisuje patogenezi děje.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Obstipace a průjem - etiopatogeneze a následky. Syndrom dráždivého tračníku, pseudomembranózní kolitida.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus- etiopatogeneze.\"."
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus - etiopatogeneze.\"."
                         ]
                   },
                   {
@@ -3391,7 +3391,7 @@ const GENERAL_DETAILS = {
                         "correct": 0,
                         "explanations": [
                               "Správně! Tento mechanismus popisuje patogenezi děje.",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus- etiopatogeneze.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus - etiopatogeneze.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Sepse, syndrom multiorgánové dysfunkce (MODS) - etiopatogeneze, projevy a následky.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Lokální zánětová odpověď - princip a význam, složky zánětové odpovědi.\"."
                         ]
@@ -4204,7 +4204,7 @@ const GENERAL_DETAILS = {
             ],
             "quiz": [
                   {
-                        "question": "Které tvrzení nejlépe definuje nebo popisuje téma: Ikterus- etiopatogeneze?",
+                        "question": "Které tvrzení nejlépe definuje nebo popisuje téma: Ikterus - etiopatogeneze?",
                         "options": [
                               "Ikterus (žloutenka) je žluté zbarvení tkání (sklér, kůže) způsobené sníženou koncentrací bilirubinu v krvi (hyperbilirubinémií). Dělí se na prehepatální, hepatocelulární a posthepatální.",
                               "Ikterus (žloutenka) je žluté zbarvení tkání (sklér, kůže) způsobené zvýšenou koncentrací bilirubinu v krvi (hyperbilirubinémií). Dělí se na prehepatální, hepatocelulární a posthepatální.",
@@ -4220,7 +4220,7 @@ const GENERAL_DETAILS = {
                         ]
                   },
                   {
-                        "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Ikterus- etiopatogeneze?",
+                        "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Ikterus - etiopatogeneze?",
                         "options": [
                               "Tkáňová nekróza jakékoliv etiologie (např. infarkt myokardu).",
                               "Neadekvátní nebo opožděná léčba výchozí lokální infekce.",
@@ -4236,7 +4236,7 @@ const GENERAL_DETAILS = {
                         ]
                   },
                   {
-                        "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Ikterus- etiopatogeneze?",
+                        "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Ikterus - etiopatogeneze?",
                         "options": [
                               "Obstipace: zpomalení střevní pasáže vede k nadměrné reabsorpci vody v tlustém střevě, stolice se stává suchou a tuhou.",
                               "Uvolnění mediátorů zánětu (prostaglandiny, bradykinin) dráždí nociceptory (dolor) a omezuje funkci (functio laesa).",
@@ -4252,7 +4252,7 @@ const GENERAL_DETAILS = {
                         ]
                   },
                   {
-                        "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Ikterus- etiopatogeneze?",
+                        "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Ikterus - etiopatogeneze?",
                         "options": [
                               "Sideropenie: únava, bledost, vypadávání vlasů, lámavost nehtů (koilonychie), pálení jazyka (glositida), mikrocytární anémie.",
                               "Paraneoplastické syndromy: syndromy vyvolané ektopickou produkcí hormonů (např. ACTH u malobuněčného karcinomu plic -> Cushing).",
@@ -4268,7 +4268,7 @@ const GENERAL_DETAILS = {
                         ]
                   },
                   {
-                        "question": "Která z následujících hodnot, referenčních rozmezí nebo kritérií je správná pro téma: Ikterus- etiopatogeneze?",
+                        "question": "Která z následujících hodnot, referenčních rozmezí nebo kritérií je správná pro téma: Ikterus - etiopatogeneze?",
                         "options": [
                               "Fyziologický celkový bilirubin v séru je: 3 - 20 umol/l",
                               "Trvání typické vazovagální synkopy je: < 1 - 2 minuty",
@@ -5930,7 +5930,7 @@ const GENERAL_DETAILS = {
                         "correct": 3,
                         "explanations": [
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"hypoglykemie\", nikoli k \"hyperglykemie\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus- etiopatogeneze.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus - etiopatogeneze.\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Kardiogenní a obstrukční šok - etiopatogeneze a následky.\".",
                               "Správně! Toto je přesná definice."
                         ]
@@ -5962,7 +5962,7 @@ const GENERAL_DETAILS = {
                         "correct": 2,
                         "explanations": [
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Respirační acidóza a alkalóza - etiopatogeneze, následky.\".",
-                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus- etiopatogeneze.\".",
+                              "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Ikterus - etiopatogeneze.\".",
                               "Správně! Tento mechanismus popisuje patogenezi děje.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Definice nemoci a zdraví - pojmy: etiologie, patogeneze, etiopatogeneze, symptom, syndrom. Průběh a zakončení nemocí. Iatrogenita. Psychosomatika.\"."
                         ]
