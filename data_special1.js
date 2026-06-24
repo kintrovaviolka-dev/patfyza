@@ -391,7 +391,6 @@ const SPECIAL_1_DETAILS = {
   "spec-1-8": {
     richContent: {
       clinicalPearl: "Chronické pravostranné selhání (cor pulmonale) vzniká nejčastěji retrográdním přenosem tlaku při levostranném srdečním selhání, nikoli izolovaným plicním onemocněním.",
-
       definition: "Pravostranné srdeční selhání je charakterizováno neschopností pravé komory přečerpat krev z venózního systému do plicního řečiště, což vede k městnání krve ve velkém oběhu.",
       etiology: [
         "Levostranné srdeční selhání (nejčastější příčina - retrográdní přenos tlaku přes plicní cirkulaci).",
@@ -400,14 +399,16 @@ const SPECIAL_1_DETAILS = {
         "Chlopenní vady pravého srdce: trikuspidální regurgitace, pulmonální stenóza."
       ],
       pathogenesis: [
-        "Vzestup tlaku v plicní arterii zvyšuje dotížení (afterload) pravé komory.",
-        "Pravá komora reaguje nejprve hypertrofií, následně dilatací a poklesem kontraktility.",
-        "Klesá plnění levého srdce (pokles srdečního výdeje) a stoupá hydrostatický tlak v dutých žílách, což vede k úniku tekutiny do intersticia."
+        "Zvýšení afterloadu pravé komory (např. při plicní hypertenzi) nebo pokles kontraktility (infarkt PK) vede k dilataci PK a zvýšení plnicích tlaků v pravé síni.",
+        "Zvýšený tlak v pravé síni se retrográdně přenáší do horní a dolní duté žíly, což zvyšuje hydrostatický tlak v žilním a kapilárním řečišti velkého oběhu.",
+        "Transudace tekutiny z cévního řečiště do intersticia vlivem zvýšeného hydrostatického tlaku vede k rozvoji otoků a ascitu.",
+        "Chronické městnání v játrech (nutmeg liver / muškátová játra) vede k atrofii hepatocytů kolem centrální žíly a může vyústit v městnavou cirhózu (kardiální cirhóza)."
       ],
       clinicalManifestation: [
-        "Zvýšená náplň krčních žil (jugulární žilní distenze).",
-        "Symetrické otoky dolních končetin (kolem kotníků, u ležících pacientů v oblasti sakra).",
-        "Městnání v břišních orgánech: městnavá hepatomegalie (hepatosplenomegalie, bolestivé napětí v pravém podžebří), ascites."
+        "Zvýšená náplň krčních žil (jugulární žilní distenze) a pozitivní hepatojugulární reflux.",
+        "Symetrické otoky dolních končetin (perimaleolární otoky, u ležících v oblasti sakra) – jsou těstovité, studené a závislé na poloze.",
+        "Městnání v břišních orgánech: bolestivá hepatomegalie (napětí pouzdra jater), dyspeptické potíže při městnání v GIT, ascites.",
+        "Nykturie – v noci při poloze vleže dochází k resorpci otoků a zvýšení perfuze ledvin, což zvyšuje diurézu."
       ],
       diagnostics: [
         "Echokardiografie (hodnocení tlaku v plicnici - sPAP, dilatace a funkce pravé komory - TAPSE).",
@@ -431,6 +432,22 @@ const SPECIAL_1_DETAILS = {
           "Nesprávně. Zkraty mohou vést k selhání, ale jsou méně časté.",
           "Nesprávně. Trombóza dolní duté žíly nezatěžuje komoru přímo tlakem."
         ]
+      },
+      {
+        question: "Co je to hepatojugulární reflux a jak se klinicky vyšetřuje?",
+        options: [
+          "Tlak na játra u pacienta vleže způsobí pokles tlaku v jugulárních žilách v důsledku aktivace baroreflexu.",
+          "Tlak na oblast jater po dobu 10-30 sekund vyvolá viditelné zvýšení náplně krčních žil u pacientů s městnáním v pravém srdci, protože pravá komora nedokáže přečerpat zvýšený venózní návrat.",
+          "Jde o zpětný tok žluči do žaludku při portální hypertenzi vyvolávající zvracení.",
+          "Vyšetření sluchu u pacienta s hepatomegalií."
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. Tlak na játra venózní návrat zvyšuje, což u selhávajícího pravého srdce náplň žil zvýší, nikoli sníží.",
+          "Správně! Hepatojugulární reflux je pozitivní tehdy, když kompresí břicha (jater) zvýšíme venózní návrat a pravé srdce, které je přetížené, nestíhá krev odčerpávat, což vede k trvalému (> 15 s) zvýšení náplně krčních žil o více než 3 cm.",
+          "Nesprávně. Tento pojem popisuje žilní městnání a plnění, nesouvisí se žlučí.",
+          "Nesprávně. Jde o palpační a inspekční vyšetření krčních žil, nikoli sluchu."
+        ]
       }
     ]
   },
@@ -438,7 +455,6 @@ const SPECIAL_1_DETAILS = {
   "spec-1-9": {
     richContent: {
       clinicalPearl: "Ejekční frakce (EF) levé komory rozlišuje srdeční selhání se sníženou EF (HFrEF, pod 40 %, systolická dysfunkce) a se zachovanou EF (HFpEF, nad 50 %, diastolická dysfunkce).",
-
       definition: "Srdeční selhání je klinický syndrom charakterizovaný neschopností srdce zajistit dostatečný minutový výdej pro metabolické potřeby tkání, nebo jen za cenu zvýšení plnicích tlaků.",
       etiology: [
         "Ischemická choroba srdeční (ICHS) a prodělaný infarkt myokardu (ztráta funkčního parenchymu).",
@@ -449,7 +465,9 @@ const SPECIAL_1_DETAILS = {
       pathogenesis: [
         "Systolická dysfunkce: pokles kontraktility (nízká ejekční frakce EF < 40-50 %), srdce se nedokáže dostatečně vyprázdnit.",
         "Diastolická dysfunkce: porucha relaxace a plnění komor (EF je zachována > 50 %, ale stoupají plnicí tlaky z důvodu tuhosti komory).",
-        "Neurohumorální aktivace: pokles tlaku aktivuje sympatikus a RAAS, což vede k retenci sodíku/vody a remodelaci (hypertrofii/fibróze) myokardu."
+        "Neurohumorální aktivace: pokles tlaku aktivuje sympatikus a RAAS, což vede k retenci sodíku/vody a remodelaci (hypertrofii/fibróze) myokardu.",
+        "Remodelace myokardu: Chronické přetížení vede k hypertrofii kardiomyocytů a zmnožení vaziva, což mění tvar a geometrii levé komory (např. z elipsoidu na sféru).",
+        "Úloha natriuretických peptidů (ANP, BNP): Jsou vylučovány kardiomyocyty při napětí stěny. Působí vazodilačně, podporují natriurézu a inhibují RAAS, čímž působí protichůdně k patologické aktivaci."
       ],
       clinicalManifestation: [
         "Dušnost (dyspnoe) – námahová, klidová až ortopnoe (dušnost vleže nutící pacienta se posadit).",
@@ -477,6 +495,22 @@ const SPECIAL_1_DETAILS = {
           "Správně! Systolické selhání (HFrEF) znamená neschopnost komory vypudit dostatek krve (nízká EF). Diastolické selhání (HFpEF) se vyznačuje normální stažlivostí (normální EF), ale komora je tuhá (např. hypertrofovaná u hypertenze) a klade odpor plnění, což zvyšuje tlak v plicních žilách a vyvolává dušnost.",
           "Nesprávně. Obě formy jsou typické pro dospělé a seniory.",
           "Nesprávně. U obou forem dochází k aktivaci RAAS a sympatiku v odpovědi na patologii."
+        ]
+      },
+      {
+        question: "Jaký vliv má dlouhodobá aktivace osy renin-angiotenzin-aldosteron (RAAS) na myokard u srdečního selhání?",
+        options: [
+          "Působí čistě protektivně tím, že snižuje afterload a tlumí hypertrofii komory.",
+          "Podporuje patologickou remodelaci myokardu (hypertrofii kardiomyocytů a proliferaci vaziva), zvyšuje preload (retencí sodíku a vody) a afterload (vazokonstrikcí Angiotenzinem II), což dále zatěžuje selhávající srdce.",
+          "Zvyšuje glomerulární filtraci a odstraňuje otoky bez vedlejších účinků.",
+          "Inhibuje sympatický nervový systém a zpomaluje srdeční frekvenci."
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. RAAS naopak zvyšuje afterload a podporuje nepříznivou remodelaci/fibrotizaci.",
+          "Správně! Osa RAAS je sice zpočátku užitečný kompenzační mechanismus udržující perfuzní tlak, ale dlouhodobě působí vysoce škodlivě. Angiotenzin II a aldosteron přímo stimulují hypertrofii komory, fibrotizaci a apoptózu kardiomyocytů. Zvýšení objemu tekutin (preload) a cévního odporu (afterload) tvoří bludný kruh.",
+          "Nesprávně. Angiotenzin II sice udržuje filtraci za cenu konstrikce vas efferens, ale z dlouhodobého hlediska vede k retenci sodíku a vody, což otoky naopak zhoršuje.",
+          "Nesprávně. RAAS sympatikus spíše stimuluje, nikoli inhibuje."
         ]
       }
     ]
@@ -648,27 +682,28 @@ const SPECIAL_1_DETAILS = {
   "spec-1-13": {
     richContent: {
       clinicalPearl: "U plicních restrikcí (fibróz) se výrazně snižuje plicní poddajnost (compliance) a difuzní kapacita pro oxid uhelnatý (DLCO) v důsledku zesílení alveolo-kapilární membrány.",
-
       definition: "Restrikční plicní nemoci jsou charakterizovány snížením celkové plicní kapacity (TLC) v důsledku omezení expanze plicního parenchymu.",
       etiology: [
-        "Intropulmonální příčiny (plicní fibrózy): idiopatická plicní fibróza, pneumokoniózy (křemík, azbest), sarkoidóza.",
-        "Extrapulmonální příčiny (deformity hrudníku): kyfoskolióza, obezita (Pickwickův syndrom), ankylozující spondylitida.",
-        "Neuromuskulární poruchy: myasthenia gravis, amyotrofická laterální skleróza (ALS), paréza bránice."
+        "Intropulmonální příčiny (plicní fibrózy): idiopatická plicní fibróza (IPF), nespecifická intersticiální pneumonie (NSIP), pneumokoniózy (křemík - silikóza, azbest - azbestóza, uhelný prach - antrakóza), sarkoidóza, polékové poškození (amiodaron, bleomycin, methotrexát).",
+        "Extrapulmonální příčiny (deformity hrudní stěny a páteře): těžká kyfoskolióza, ankylozující spondylitida (Bechtěrevova nemoc), obezita (Pickwickův syndrom / syndrom obezity-hypoventilace).",
+        "Neuromuskulární poruchy: myasthenia gravis, amyotrofická laterální skleróza (ALS), paréza bránice, Guillain-Barré syndrom."
       ],
       pathogenesis: [
-        "U plicních fibróz dochází k ukládání kolagenu v alveolárních stěnách, což zvyšuje tuhost plic a **snižuje poddajnost (compliance)** plic.",
-        "Zesílení alveolo-kapilární membrány narušuje difúzi plynů (pokles DLCO) a zvyšuje alveolo-arteriální gradient (A-aDO2).",
-        "U extrapulmonálních příčin je omezena pohyblivost hrudní stěny, plicní parenchym je zdravý, ale nemůže se rozpínat."
+        "U plicních fibróz dochází k opakovanému mikroskopickému poškození alveolárního epitelu a aberantní reparaci, což vede k aktivaci fibroblastů a myofibroblastů. Ty masivně ukládají kolagen a extracelulární matrix v alveolárních stěnách, což zvyšuje tuhost plic a snižuje poddajnost (compliance) plic (k dosažení stejného objemu plic je zapotřebí vyvinout mnohem větší inspirační úsilí).",
+        "Zesílení alveolo-kapilární membrány a zánik kapilárního řečiště výrazně naruje difúzi plynů (pokles DLCO) a zvětšuje alveolo-arteriální gradient pro kyslík (A-aDO2), což vede k hypoxémii nejprve při námaze a poté i v klidu (hyperkapnie se rozvíjí až v terminálním stadiu kvůli vysoké difuzní schopnosti CO2).",
+        "U extrapulmonálních příčin je plicní parenchym intaktní, avšak mechanické bariéry (tuhost hrudníku, slabost svalů) brání adekvátní expanzi plic, což vede k alveolární hypoventilaci, retenci CO2 (hyperkapnii) a hypoxémii."
       ],
       clinicalManifestation: [
-        "Inhalační námahová dušnost (dyspnoe), která se v pokročilých stádiích mění v klidovou.",
-        "Suchý, dráždivý kašel (typický pro intersticiální procesy).",
-        "Paličkovité prsty a nehty tvaru hodinového sklíčka (důsledek chronické tkáňové hypoxie)."
+        "Námahová dušnost (dyspnoe) – má restrikční charakter (rychlé a mělké dýchání - tachypnoe), která postupně přechází v klidovou dušnost.",
+        "Suchý, dráždivý, neproduktivní kašel způsobený mechanickým drážděním receptorů v remodelovaném intersticiu.",
+        "Paličkovité prsty (digiti hippocratici) a nehty tvaru hodinového sklíčka jako projev chronické hypoxie a lokálního uvolňování růstových faktorů (PDGF, VEGF).",
+        "Poslechově: na konci inspiria je nad plicními bázemi slyšitelný charakteristický jemný krepitus (přirovnávaný k rozepínání suchého zipu - Velcro crackles)."
       ],
       diagnostics: [
-        "Spirometrie a bodypletysmografie (průkaz TLC < 80 % normy při normálním indexu FEV1/FVC).",
-        "HRCT hrudníku (obraz 'voštinové plíce' u pokročilé fibrózy).",
-        "Měření difúzní kapacity (DLCO) – výrazný pokles u intrapulmonálních restrikcí."
+        "Spirometrie a bodypletysmografie: typický nález restrikční ventilační poruchy – snížení celkové plicní kapacity (TLC < 80 % náležité hodnoty) a vitální kapacity (VC), zatímco Tiffeneauův index (FEV1/FVC) je normální nebo zvýšený (nad 70-80 %).",
+        "Vysokorozlišovací výpočetní tomografie (HRCT): typický obraz 'voštinové plíce' (honeycombing) s retikulárními změnami a trakčními bronchiektaziemi v pokročilých stadiích.",
+        "Měření plicní difuzní kapacity pro oxid uhelnatý (DLCO): prokazuje snížení přenosu plynů přes alveolo-kapilární membránu (typické pro intrapulmonální formy, u extrapulmonálních forem je DLCO obvykle v mezích normy při přepočtu na alveolární objem).",
+        "Vyšetření krevních plynů (Astrup): prokazuje parciální respirační insuficienci (hypoxémii s normo- či hypokapnií v důsledku hyperventilace) nebo globální respirační insuficienci (hypoxémie a hyperkapnie u extrapulmonální restrikce či terminálního stadia fibrózy)."
       ]
     },
     quiz: [
@@ -686,6 +721,22 @@ const SPECIAL_1_DETAILS = {
           "Správně! Idiopatická plicní fibróza vede k fibrotizaci plicního intersticia. Plíce ztrácejí schopnost se rozpínat (tuhnou), což vyjádříme jako pokles compliance (poddajnosti) a rozvoj restrikce.",
           "Nesprávně. U emfyzému se elasticita ničí, compliance je naopak zvýšená (plíce jsou příliš poddajné, chybí zpětný ráz).",
           "Nesprávně. Bronchitida je čistě obstrukční onemocnění dýchacích cest."
+        ]
+      },
+      {
+        question: "Jak se liší hodnota Tiffeneauova indexu (FEV1/FVC) u čistě restrikční ventilační poruchy ve srovnání s obstrukční poruchou?",
+        options: [
+          "U restrikce je výrazně snížený (pod 70 %), u obstrukce je normální nebo zvýšený.",
+          "U restrikce je normální nebo dokonce zvýšený (nad 75-80 %), protože dochází k proporcionálnímu poklesu FEV1 i FVC, zatímco u obstrukce klesá primárně FEV1, což index výrazně snižuje.",
+          "U obou typů poruch klesá index na nulu.",
+          "U restrikce nelze tento index vůbec změřit."
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. Toto tvrzení platí pro obstrukční poruchu (např. CHOPN, astma).",
+          "Správně! FEV1/FVC (Tiffeneauův index) vyjadřuje, jaký podíl vitální kapacity dokáže pacient vydechnout za první sekundu. U obstrukce je zúžené dýchací cesty zpomalují (pokles FEV1 je větší než pokles FVC, takže index klesá). U restrikce jsou plíce tuhé a malé (rychlý výdech je zachován, klesají FVC i FEV1 úměrně), proto zůstává index v normě nebo stoupá nad normu (např. > 85 %).",
+          "Nesprávně. Index neklesá na nulu u žádné přežitelné patologie.",
+          "Nesprávně. Spirometrie s měřením FEV1 a FVC je standardní metodou vyšetření obou poruch."
         ]
       }
     ]
@@ -891,27 +942,28 @@ const SPECIAL_1_DETAILS = {
   "spec-1-18": {
     richContent: {
       clinicalPearl: "Kyslík difunduje přes alveolo-kapilární membránu 20krát pomaleji než oxid uhličitý, proto se poruchy difúze projevují hypoxémií při normální nebo snížené hladině paCO2 (hypokapnii).",
-
       definition: "Poruchy plicní difúze jsou charakterizovány zhoršeným přestupem plynů (zejména kyslíku) přes alveolo-kapilární membránu z důvodu jejího zesílení nebo zmenšení celkové plochy.",
       etiology: [
-        "Zesílení alveolo-kapilární membrány (intersticiální plicní procesy): idiopatická plicní fibróza, sarkoidóza, plicní edém (tekutina v intersticiu).",
-        "Redukce plochy alveolo-kapilární membrány: plicní emfyzém (destrukce sept), resekce plic (pneumonektomie).",
-        "Plicní vaskulární onemocnění: plicní hypertenze, plicní embolie (ztráta kapilárního řečiště)."
+        "Zesílení (ztluštění) alveolo-kapilární membrány (intersticiální plicní procesy): idiopatická plicní fibróza (IPF), nespecifická intersticiální pneumonie (NSIP), sarkoidóza, plicní edém (přítomnost tekutiny v intersticiu u levostranného srdečního selhání), azbestóza, silikóza.",
+        "Redukce celkové plochy alveolo-kapilární membrány: plicní emfyzém (destrukce interalveolárních sept a tvorba bul), chirurgické odstranění plicního tkáně (pneumonektomie, lobektomie), těžká destrukce plic záněty (tBC, nekrotizující pneumonie).",
+        "Plicní vaskulární a perfuzní poruchy: chronická tromboembolická plicní hypertenze (CTEPH), plicní embolie (ztráta perfuze kapilár), primární plicní arteriální hypertenze (PAH) s remodelací a obliterací cév."
       ],
       pathogenesis: [
-        "Rychlost difúze plynu je určena Fickovým zákonem ($V = A \cdot D \cdot \Delta P / T$). Zvětšení tloušťky membrány ($T$) nebo pokles plochy ($A$) snižuje difúzi.",
-        "Kyslík má 20krát nižší difuzní koeficient ($D$) než oxid uhličitý. Proto porucha difúze vyvolá **izolovanou hypoxémii** bez hyperkapnie ($paCO_2$ je normální nebo nízké kvůli hyperventilaci).",
-        "Doba průtoku erytrocytu kapilárou je v klidu cca 0.75 s (difúze se stihne za 0.25 s). Při fyzické zátěži se průtok zrychlí (na 0.25 s) a hypoxémie se dramaticky zhorší."
+        "Pasivní transport plynů: Kyslík i oxid uhličitý procházejí přes alveolo-kapilární membránu výhradně pasivní difúzí podle koncentračního gradientu. Rychlost difúze (V_gas) popisuje Fickův zákon: V_gas = (A * D * delta_P) / T, kde A je plocha membrány, D difuzní koeficient plynu, delta_P rozdíl parciálních tlaků a T tloušťka membrány.",
+        "Rozdílné vlastnosti plynů: Kyslík (O2) má mnohem menší rozpustnost (solubilitu) ve vodě/tkáních než oxid uhličitý (CO2). Difuzní koeficient (D) pro CO2 je přibližně 20krát vyšší než pro O2. Při zvětšení tloušťky membrány (T) nebo úbytku plochy (A) je proto jako první a nejvýznamněji postižena difúze O2, což vede k arteriální hypoxémii.",
+        "Kontaktní čas erytrocytu: V klidu protéká erytrocyt plicní kapilárou přibližně 0,75 sekundy. K úplnému vyrovnání parciálních tlaků kyslíku mezi alveolem a krví stačí za normálních okolností pouze 0,25 sekundy (difuzní rezerva). Při poškození membrány se tato doba prodlužuje. Pokud je pacient v klidu, difúze se i přes zpoždění stihne dokončit. Při fyzické zátěži však stoupá srdeční výdej a krev protéká kapilárou mnohem rychleji (čas klesá až k 0,25 s). V této situaci se tlaky nestihnou vyrovnat a dochází k dramatickému poklesu parciálního tlaku kyslíku v odtékající krvi a k těžké námahové hypoxémii.",
+        "Udržení paCO2: Protože CO2 difunduje velmi snadno, jeho vylučování není ztluštěním membrány v časných a středních stadiích narušeno. Rozvíjející se hypoxémie navíc dráždí periferní chemoreceptory, což vede k hyperventilaci. Pacient zvýšeným dýcháním vylučuje CO2 ještě efektivněji, což vede k normokapnii nebo častěji k hypokapnii (poklesu paCO2 pod fyziologické rozmezí)."
       ],
       clinicalManifestation: [
-        "Námahová dušnost, která se při zátěži rychle zhoršuje z důvodu zkrácení kontaktního času erytrocytu.",
-        "Suchý kašel, tachypnoe (zrychlené dýchání stimulované hypoxií přes chemoreceptory).",
-        "Centrální cyanóza (modravé zbarvení sliznic a rtů)."
+        "Námahová dušnost (dyspnoe) – pacient si stěžuje na nedostatek vzduchu při minimální námaze, což je přímý důsledek zkrácení kontaktního času erytrocytu.",
+        "Tachypnoe a hyperventilace – zrychlené a mělké dýchání, vyvolané drážděním periferních chemoreceptorů hypoxií.",
+        "Suchý kašel – způsobený mechanickou stimulací receptorů tahu v ztluštělém intersticiu plic.",
+        "Centrální cyanóza (modravé zbarvení sliznic, jazyka a rtů) – objevuje se při poklesu saturace hemoglobinu pod 85 %."
       ],
       diagnostics: [
-        "Měření difuzní kapacity plic pro oxid uhelnatý (DLCO) – klíčový test, vykazuje pokles.",
-        "Vyšetření krevních plynů (Astrup) – průkaz hypoxémie s hypokapnií ($paCO_2 < 4.8\text{ kPa}$), rostoucí alveolo-arteriální diference ($A-aDO_2$).",
-        "HRCT plic k vizualizaci zesílení sept."
+        "Měření difuzní kapacity plic (DLCO - Diffusing Capacity of the Lung for Carbon Monoxide): Pacient vdechne definovanou nízkou koncentraci oxidu uhelnatého (CO), který má extrémně vysokou afinitu k hemoglobinu. Pokles množství CO ve vydechnutém vzduchu odráží rychlost přenosu přes membránu. Pokles DLCO pod 80 % je citlivým ukazatelem poruchy difúze.",
+        "Vyšetření krevních plynů (Astrup): prokazuje hypoxémii (pokles paO2), doprovázenou normokapnii nebo hypokapnii (snížení paCO2). Dále je patrné zvýšení alveolo-arteriálního gradientu kyslíku (A-aDO2), což ukazuje na neefektivní přenos z alveolů do kapilár.",
+        "Spirometrie a bodypletysmografie: pomáhá odlišit, zda je porucha difúze doprovázena restrikcí (intersticiální procesy - pokles TLC) nebo obstrukcí s destrukcí (emfyzém při CHOPN)."
       ]
     },
     quiz: [
@@ -929,6 +981,22 @@ const SPECIAL_1_DETAILS = {
           "Správně! Vzhledem k vysoké rozpustnosti CO2 ve vodě je jeho difúze extrémně rychlá. Mírné ztluštění membrány transport CO2 nezpomalí. Hypoxie navíc stimuluje dechové centrum k hyperventilaci, což vede k zvýšenému vydýchávání CO2 a poklesu paCO2 (hypokapnii).",
           "Nesprávně. Hemoglobin CO2 váže (karbaminohemoglobin), ale to neurčuje rozdílnou difúzi.",
           "Nesprávně. CO2 je produktem metabolismu tkání a do plic je přinášen krví konstantně."
+        ]
+      },
+      {
+        question: "Jak ovlivňuje fyzická zátěž (cvičení) parciální tlak kyslíku v krvi (paO2) u pacienta s poruchou plicní difúze?",
+        options: [
+          "Fyzická zátěž nemá na paO2 žádný vliv, protože se zvýší spotřeba kyslíku ve svalech, ne v plicích.",
+          "Zátěž výrazně snižuje paO2 (zhoršuje hypoxémii), protože zkracuje dobu pobytu erytrocytu v plicní kapiláře (kontaktní čas) na hodnoty, kdy se parciální tlaky O2 nestihnou přes poškozenou membránu vyrovnat.",
+          "Zátěž paO2 zvyšuje, protože zrychlený tlukot srdce mechanicky protlačuje kyslík přes membránu.",
+          "Zátěž vede k okamžitému vzestupu paCO2 a acidóze bez vlivu na kyslík."
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. Zátěž vykazuje u těchto pacientů zásadní vliv.",
+          "Správně! V klidu protéká erytrocyt kapilárou 0,75 s a difúze kyslíku se stihne vyrovnat i přes poškozenou membránu. Při zátěži stoupá srdeční výdej, průtok krve plicním řečištěm se urychlí a kontaktní čas klesá k 0,25 s. U ztluštělé membrány tato krátká doba k difúzi kyslíku nestačí, což vede k hlubokému poklesu paO2 a těžké námahové hypoxémii.",
+          "Nesprávně. Vyšší průtok krve naopak zkracuje čas na difúzi a tlak kyslíku klesá.",
+          "Nesprávně. CO2 obvykle zůstává normální nebo klesá kvůli hyperventilaci vyvolané hypoxií."
         ]
       }
     ]
@@ -1123,27 +1191,31 @@ const SPECIAL_1_DETAILS = {
   "spec-1-23": {
     richContent: {
       clinicalPearl: "U pneumonie dochází k tvorbě zánětlivého exsudátu v alveolech, což vede k lokálnímu pravolevému zkratu (shunt) a hypoxémii z důvodu perfúze neventilované tkáně.",
-
       definition: "Pneumonie je akutní zánětlivé onemocnění plicního parenchymu (alveolů a intersticia) infekční etiologie, které narušuje výměnu plynů.",
       etiology: [
-        "Komunitní bakterie: *Streptococcus pneumoniae* (nejčastější), *Haemophilus influenzae*, *Moraxella catarrhalis*.",
-        "Atypické bakterie: *Mycoplasma pneumoniae*, *Chlamydia pneumoniae*, *Legionella pneumophila*.",
-        "Nosokomiální patogeny (nemocniční): *Pseudomonas aeruginosa*, *Staphylococcus aureus* (MRSA), klebsiella.",
-        "Virové pneumonie: Influenza, RSV, SARS-CoV-2 (vyvolávají primárně intersticiální zánět)."
+        "Komunitní bakterie: *Streptococcus pneumoniae* (pneumokok – nejčastější původce lobární pneumonie), *Haemophilus influenzae*, *Moraxella catarrhalis*, *Staphylococcus aureus*.",
+        "Atypické bakterie (intracelulární patogeny): *Mycoplasma pneumoniae* (častá u mladých lidí), *Chlamydia pneumoniae*, *Legionella pneumophila* (zdroj v klimatizacích/teplé vodě, těžký průběh s multiorgánovým postižením).",
+        "Nosokomiální patogeny (nemocniční): *Pseudomonas aeruginosa*, *Klebsiella pneumoniae*, kmeny *Staphylococcus aureus* rezistentní na methicilin (MRSA).",
+        "Virové pneumonie: virus chřipky (influenza), respirační syncytiální virus (RSV), SARS-CoV-2, adenoviry. Virová infekce často poškozuje řasinkový epitel a disponuje k sekundární bakteriální superinfekci.",
+        "Aspirační pneumonie: vzniká aspirací žaludečního obsahu nebo ústní mikroflóry u pacientů s poruchou vědomí či polykání (často anaerobní flóra)."
       ],
       pathogenesis: [
-        "Inhalace či mikroaspirace patogenů do alveolů překoná obranné mechanismy (řasinkový epitel, alveolarí makrofágy).",
-        "Rozvíjí se exsudativní zánětlivá reakce: alveoly se plní exsudátem bohatým na neutrofily, fibrin a erytrocyty (fáze hepatizace plíce).",
-        "Zaplavené alveoly nejsou ventilovány, ale jsou perfundovány. Vzniká pravolevý plicní zkrat (V/Q = 0) a rozvíjí se hypoxémie."
+        "Přelom v obraně: Patogeny proniknou do dolních dýchacích cest inhalací kapének nebo mikroaspirací ze sekrétů orofaryngu. Pokud překonají lokální obranu (hlen, řasinkový epitel, alveolární makrofágy, IgA protilátky), usídlí se v alveolech a začnou se množit.",
+        "Fáze zánětlivé reakce (klasická lobární pneumonie): 1. Fáze kongesce (1.-2. den): Cévní dilatace a plnění alveolů tekutinou s bakteriemi. 2. Fáze červené hepatizace (3.-4. den): Alveoly jsou vyplněny erytrocyty, neutrofily a fibrinem (plíce připomíná játra). 3. Fáze šedé hepatizace (5.-7. den): Erytrocyty se rozpadají, v alveolech přetrvává fibrin a neutrofily. 4. Fáze rezoluce (od 8. dne): Enzymatický rozpad fibrinu a vyhojení.",
+        "Ventilačně-perfuzní nepoměr: Alveoly vyplněné exsudátem jsou zcela neventilované (V = 0), ale kapilární perfuze (Q) kolem nich zůstává zachována. Vzniká funkční pravolevý plicní zkrat (shunt), kdy neokysličená krev z plicní tepny protéká nevzdušným lalokem a míjí alveolární plyn. Tato krev se pak smíchá s okysličenou krví ze zdravých částí plic (venózní příměs), což vede k těžké hypoxémii, která špatně reaguje na inhalaci čistého kyslíku.",
+        "Atypické pneumonie: Zánět postihuje primárně intersticium (alveolární septa), alveoly zůstávají volné. Nedochází k masivní tvorbě exsudátu v alveolech, proto bývá chudý poslechový nález (tzv. diskrepance mezi klinickým a RTG nálezem)."
       ],
       clinicalManifestation: [
-        "Horečka s třesavkou a zimnicí.",
-        "Kašel (zpočátku suchý, později produktivní s vykašláváním rezavého či hnisavého sputa).",
-        "Pleurální bolest na hrudi (při postižení pleury, zhoršuje se při nádechu a kašli), dušnost, tachypnoe."
+        "Typická (bakteriální) pneumonie: Náhlý začátek, vysoká horečka s třesavkou a zimnicí, schvácenost.",
+        "Kašel: Zpočátku suchý, během 1-2 dnů produktivní s vykašláváním hustého, hnisavého nebo rezavého sputa.",
+        "Pleurální bolest: Ostrá, bodavá bolest na hrudi lokalizovaná nad ložiskem zánětu, která se zhoršuje při hlubokém nádechu, kašli či pohybu.",
+        "Dušnost a tachypnoe (zrychlené dýchání > 20/min), zatahování pomocných dýchacích svalů.",
+        "Atypická pneumonie: Pozvolný začátek, dominují celkové příznaky (bolesti hlavy, kloubů, svalů, únava), suchý dráždivý kašel, subfebrilie a minimální dušnost."
       ],
       diagnostics: [
-        "Rentgen hrudníku (průkaz infiltrátu – lobární zastínění nebo bronchopneumonické ložiska).",
-        "Laboratorní vyšetření: výrazná leukocytóza s neutrofilií, vysoké CRP a prokalcitonin.",
+        "Fyzikální vyšetření: Poslechově vlhké přízvučné chrůpky nad zánětlivým ložiskem, trubicové dýchání (při konsolidaci plíce). Poklepově zkrácení poklepu nad postiženým lalokem, zvýšené fremitus pectoralis (prsní chvění).",
+        "Rentgen hrudníku: Lobární pneumonie se projevuje jako homogenní zastínění jednoho laloku či segmentu s bronchogramem (kontrast vzdušných bronchů v konsolidované tkáni). Bronchopneumonie vykazuje nehomogenní ložiska postihující více laloků.",
+        "Laboratoř: Výrazná leukocytóza s posunem doleva (bakteriální infekce), vysoké CRP a prokalcitonin.",
         "Mikrobiologické vyšetření sputa a hemokultur před zahájením ATB léčby."
       ]
     },
@@ -1161,7 +1233,23 @@ const SPECIAL_1_DETAILS = {
           "Nesprávně. Hyperventilace je kompenzační mechanismus, ne příčina hypoxie.",
           "Správně! Exsudát vyplní alveoly a zabrání přístupu vzduchu. Krev protékající kapilárami kolem těchto alveolů se neokysličí (zkrat) a mísí se s okysličenou krví ze zdravých částí plic, což vyvolá hypoxémii.",
           "Nesprávně. Difuzní kapacita plic u pneumonie klesá.",
-          "Nesprávně. Bronchospasmus je typický pro astma, pneumonie je zánět parenchymu."
+          "Nesprávně. Bronchospasmus is typický pro astma, pneumonie je zánět parenchymu."
+        ]
+      },
+      {
+        question: "Co je to bronchogram (aerobronchogram) viditelný na RTG snímku hrudníku u lobární pneumonie?",
+        options: [
+          "Jde o zobrazení cizího tělesa v dýchacích cestách.",
+          "Jde o fenomén, kdy jsou v oblasti bezvzdušného, konsolidovaného plicního laloku (zaplaveného exsudátem) viditelné tmavé větve průdušek, které zůstaly naplněné vzduchem.",
+          "Kontrastní vyšetření průdušek pomocí vdechnutého jódu.",
+          "Obraz zúžených dýchacích cest u astmatického záchvatu."
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. Bronchogram je nepřímým znakem konsolidace parenchymu, nikoli cizího tělesa.",
+          "Správně! Když zánětlivý exsudát zaplaví alveoly laloku, tato tkáň na RTG ztmavne (respektive zbělá - stínování). Průdušky (bronchy) však často zůstávají průchodné a naplněné vzduchem. Vzduch v nich tvoří tmavé větvené linie na bílém pozadí konsolidované plíce. Tento nález potvrzuje, že proces postihuje plicní parenchym a dýchací cesty jsou volné.",
+          "Nesprávně. Aerobronchogram je přirozený kontrastní nález na prostém RTG snímku, nepoužívá se při něm jód.",
+          "Nesprávně. U astmatu k zahuštění parenchymu a vzniku bronchogramu nedochází."
         ]
       }
     ]
@@ -1468,7 +1556,6 @@ const SPECIAL_1_DETAILS = {
   "spec-1-30": {
     richContent: {
       clinicalPearl: "Akutní levostranné srdeční selhání se projevuje plicním městnáním (dušnost, ortopnoe, poslechově vlhké fenomény) v důsledku retrográdního hromadění krve před levou síní.",
-
       definition: "Levostranné srdeční selhání je charakterizováno neschopností levé komory přečerpat krev ze systémového plicního oběhu do aorty, což vede k plicnímu městnání a systémové hypoperfuzi.",
       etiology: [
         "Ischemická choroba srdeční: akutní infarkt myokardu levé komory, chronická ischemická kardiomyopatie.",
@@ -1479,12 +1566,14 @@ const SPECIAL_1_DETAILS = {
       pathogenesis: [
         "Selhání systoly (pokles kontraktility) nebo diastoly (tuhost komory) levé komory.",
         "Stoupá koncový diastolický tlak v levé komoře (LVEDP) a retrográdně v levé síni a plicních žilách.",
-        "Vzestup hydrostatického tlaku v plicních kapilárách nad onkotický tlak plazmy vyvolá transsudaci tekutiny do plicního intersticia a alveolů (plicní edém)."
+        "Vzestup hydrostatického tlaku v plicních kapilárách nad onkotický tlak plazmy (obvykle nad 25-30 mmHg) vyvolá transsudaci tekutiny nejprve do plicního intersticia (intersticiální edém) a posléze do alveolů (alveolární edém).",
+        "Městnání v plicích vede k aktivaci J-receptorů (juxtakapilárních receptorů) v plicním intersticiu zvýšeným tlakem, což dráždí k rychlému a mělkému dýchání.",
+        "Klesá plicní poddajnost (compliance) a zvyšuje se odpor dýchacích cest (peribronchiální edém – asthma cardiale)."
       ],
       clinicalManifestation: [
-        "Dušnost (dyspnoe) – námahová, klidová, záchvatovitá noční dušnost (asthma cardiale) a ortopnoe.",
-        "Při rozvoji plicního edému: vykašlávání růžového pěnícího sputa, vlhké chrůpky při poslechu plic.",
-        "Příznaky nízkého srdečního výdeje: svalová slabost, chladná opocená kůže (vazokonstrikce sympatikem), oligurie, zmatenost."
+        "Dušnost (dyspnoe) – námahová, klidová, záchvatovitá noční dušnost (asthma cardiale) a ortopnoe (nutnost sedět vzpřímeně).",
+        "Při rozvoji plicního edému: vykašlávání růžového, pěnícího sputa (způsobené přítomností erytrocytů a surfaktantu v alveolární tekutině), poslechově oboustranné vlhké nevzdušné chrůpky (nejprve od bází plic, postupně stoupající nahoru).",
+        "Příznaky nízkého srdečního výdeje (dopředné selhání): svalová slabost, chladná, bledá a opocená kůže (vazokonstrikce zprostředkovaná sympatikem k udržení tlaku pro mozek a srdce), oligurie (snížená perfuze ledvin), zmatenost až kardiogenní šok."
       ],
       diagnostics: [
         "Echokardiografie (klíč k hodnocení ejekční frakce levé komory a chlopní).",
@@ -1507,6 +1596,22 @@ const SPECIAL_1_DETAILS = {
           "Správně! Horizontální poloha odstraňuje vliv gravitace na žilní krev. Krev z dolní poloviny těla se vrací do hrudníku. Selhávající levá komora nedokáže tento zvýšený přítok (preload) přečerpat, tlak v plicních kapilárách stoupne a tekutina prosakuje do alveolů. Posazením se krev gravitací opět přesune dolů.",
           "Nesprávně. Frekvence se vleže spíše mírně zpomaluje, ale ne na polovinu a není to příčina dušnosti.",
           "Nesprávně. Složení vzduchu v místnosti nezávisí na poloze těla."
+        ]
+      },
+      {
+        question: "Co je to 'asthma cardiale' a jaký je jeho patofyziologický mechanismus?",
+        options: [
+          "Jde o alergickou reakci průdušek na kardiální léky, která způsobuje bronchospasmus.",
+          "Jde o záchvatovitou dušnost vyvolanou městnáním krve v plicích, kde peribronchiální edém stlačuje bronchy a stimuluje vagové reflexy, což vede k bronchokonstrikci a pískotům podobným astmatu.",
+          "Astma způsobené vdechnutím prachu v kardiologických ordinacích.",
+          "Přechodný stav hyperventilace při fyzické námaze zdravého jedince."
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. Asthma cardiale nesouvisí s alergií na léky.",
+          "Správně! Asthma cardiale je klinický syndrom doprovázející levostranné srdeční selhání. Městnání tekutiny v plicním intersticiu vede k otoku kolem průdušek (peribronchiální edém). Ten zužuje jejich lumen a dráždí receptory, což reflexně vyvolává bronchospasmus, kašel a poslechové pískoty, které mohou napodobit bronchiální astma.",
+          "Nesprávně. Jde o kardiální, nikoliv environmentální příčinu.",
+          "Nesprávně. Jde o patologický stav spojený s levostranným srdečním selháním, nikoli o normální reakci."
         ]
       }
     ]
@@ -1562,27 +1667,29 @@ const SPECIAL_1_DETAILS = {
   "spec-1-32": {
     richContent: {
       clinicalPearl: "Akutní koronární syndrom vzniká rupturou vulnerabilního aterosklerotického plátu s nasedající trombózou, což vede k náhlé ischemii a případné nekróze myokardu.",
-
       definition: "Ischemická choroba srdeční (ICHS) je onemocnění myokardu vyvolané nepoměrem mezi dodávkou kyslíku (věnčitými tepnami) a jeho spotřebou. Dělí se na stabilní formy a akutní koronární syndromy.",
       etiology: [
         "Ateroskleróza věnčitých tepen (hlavní příčina - fixní stenóza nebo ruptura plátu).",
-        "Spasmus koronární arterie (Prinzmetalova angina pectoris).",
-        "Rizikové faktory: dyslipidémie (vysoké LDL), hypertenze, diabetes mellitus, kouření, mužské pohlaví, obezita."
+        "Spasmus koronární arterie (Prinzmetalova angina pectoris) způsobený hyperreaktivitou hladké svaloviny cév.",
+        "Nekoronární příčiny: těžká hypertrofie levé komory (např. při aortální stenóze), těžká anémie, hypoxémie.",
+        "Ovlivnitelné rizikové faktory: dyslipidémie (vysoké LDL, nízké HDL), arteriální hypertenze, diabetes mellitus, kouření, sedavý životní styl.",
+        "Neovlivnitelné rizikové faktory: věk, mužské pohlaví, pozitivní rodinná anamnéza."
       ],
       pathogenesis: [
-        "Stabilní AP: stabilní aterosklerotický plát zužuje lumen tepny. V klidu perfuze stačí, při zátěži (tachykardie) roste spotřeba kyslíku, kterou zúžená céva nedokáže pokrýt – vzniká přechodná subendokardiální ischemie (bolest na hrudi).",
-        "Akutní koronární syndrom (AKS): ruptura či eroze nestabilního plátu odhalí subendotelový kolagen, což spustí okamžitou adhezi a agregaci destiček a vznik trombu.",
-        "Kompletní uzávěr tepny vede k transmurální nekróze (STEMI), neúplný uzávěr k subendokardiální nekróze (NSTEMI) nebo nestabilní angině pectoris."
+        "Stabilní AP: fixní aterosklerotický plát zužuje lumen tepny o více než 70 % (kritická stenóza). V klidu perfuze stačí, při zátěži (tachykardie, zvýšený TK) roste spotřeba kyslíku, kterou zúžená céva nedokáže pokrýt – vzniká přechodná subendokardiální ischemie (bolest na hrudi z hromadění adenosinu a laktátu dráždících nociceptory).",
+        "Akutní koronární syndrom (AKS): ruptura či eroze nestabilního plátu (s tenkou vazivovou čepičkou a velkým lipidovým jádrem) odhalí subendotelový kolagen a tkáňový faktor. To spustí okamžitou adhezi, aktivaci a agregaci destiček a koagulační kaskádu, což vede k tvorbě trombu.",
+        "Kompletní uzávěr tepny červeným trombem vede k transmurální nekróze (STEMI) se selháváním myokardu, rizikem arytmií a ruptury srdce. Neúplný uzávěr bílým trombem vede k subendokardiální nekróze (NSTEMI) nebo nestabilní angině pectoris (AP)."
       ],
       clinicalManifestation: [
-        "Anginózní bolest: tlaková, pálivá, svíravá bolest za hrudní kostí (stenokardie) propagující se do levé ruky, krku či dolní čelisti.",
-        "U stabilní AP: bolest vzniká při zátěži a mizí v klidu nebo po nitroglycerinu do 5 minut.",
-        "U AKS: bolest vzniká v klidu, trvá > 20 minut, nereaguje na nitroglycerin, je provázena studeným potem, dušností a zvracením."
+        "Anginózní bolest: tlaková, pálivá, svíravá bolest za hrudní kostí (stenokardie) s typickou propagací do levé horní končetiny (zejména ulnární strana), krku, dolní čelisti, zad (mezi lopatky) nebo epigastria.",
+        "U stabilní AP: bolest vzniká při definované fyzické či psychické zátěži, trvá do 5 minut a rychle mizí v klidu nebo po sublingválním nitroglycerinu.",
+        "U AKS: bolest vzniká typicky v klidu, trvá > 20 minut, nereaguje na nitroglycerin a je často provázena vegetativním doprovodem (studený pot, nauzea, zvrácení), dušností, úzkostí (angor animi) a rizikem náhlé smrti."
       ],
       diagnostics: [
         "EKG (ST elevace u STEMI, deprese ST/inverze T u NSTEMI/stabilní AP).",
         "Kardiální markery: troponiny (vysoké u STEMI/NSTEMI, normální u stabilní a nestabilní AP).",
-        "Koronarografie (zlatý standard k lokalizaci uzávěru/zúžení)."
+        "Echokardiografie: prokazuje poruchy segmentální kinetiky myokardu (hypokineze až akineze v oblasti postižené ischemií).",
+        "Selektivní koronarografie (zlatý standard k lokalizaci uzávěru/zúžení a provedení PCI)."
       ]
     },
     quiz: [
@@ -1600,6 +1707,22 @@ const SPECIAL_1_DETAILS = {
           "Správně! Obě jednotky (NAP i NSTEMI) vznikají na podkladě neúplného uzávěru tepny a mají podobný EKG obraz (deprese ST/inverze T). Klíčovým rozdílem je přítomnost nekrózy buněk – u NSTEMI buňky odumírají a uvolňují troponin, u NAP je ischemie reverzibilní a troponiny zůstávají v normě.",
           "Nesprávně. Elevace ST definují STEMI.",
           "Nesprávně. Infarkt je ischemická nekróza, antibiotika v léčbě nehrají roli."
+        ]
+      },
+      {
+        question: "Co je to Prinzmetalova (variantní) angina pectoris a čím je způsobena?",
+        options: [
+          "Jde o zánětlivé postižení osrdečníku vyvolané viry.",
+          "Jde o ischemii myokardu způsobenou přechodným spasmem (stahem) koronární tepny, často bez fixní aterosklerotické stenózy, doprovázenou přechodnými elevacemi ST úseku na EKG.",
+          "Forma ICHS, která se projevuje pouze při běhu na dlouhé tratě.",
+          "Stav způsobený úplným a trvalým uzávěrem levé věnčité tepny trombem."
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. Zánět osrdečníku je perikarditida, nikoli Prinzmetalova AP.",
+          "Správně! Prinzmetalova (variantní) angina pectoris je charakterizována spasmem koronární tepny, který vede k tranzitorní transmurální ischemii. Ta se na EKG projevuje elevacemi ST úseku, které po odeznění spasmu vymizí. Často se vyskytuje v klidu (typicky k ránu) a může být vyvolána např. chladem či kouřením.",
+          "Nesprávně. Tato forma vzniká typicky v klidu a nezávisí na fyzické námaze.",
+          "Nesprávně. Jde o reverzibilní spasmus, nikoli o fixní a permanentní trombózu."
         ]
       }
     ]
@@ -2088,27 +2211,27 @@ const SPECIAL_1_DETAILS = {
   "spec-1-42": {
     richContent: {
       clinicalPearl: "Imunokomplexová glomerulonefritida (např. poststreptokoková) poškozuje filtrační bariéru zánětem, což vede k hematurii s přítomností dysmorfních erytrocytů a erytrocytárních válců.",
-
       definition: "Glomerulopatie jsou onemocnění postihující strukturu a funkci ledvinných glomerulů. Mohou být primární (omezené na ledviny) nebo sekundární (součást systémových chorob).",
       etiology: [
-        "Imunitní mechanismy: depozice cirkulujících imunokomplexů (poststreptokoková GN) nebo protilátky in situ proti GBM (Goodpasteurův syndrom).",
-        "Systémová onemocnění: diabetes mellitus (diabetická glomeruloskleróza), systémový lupus erythematodes (lupusová nefritida).",
+        "Primární glomerulopatie (omezené na ledviny): nemoc minimálních změn (Minimal Change Disease - MCD), fokálně segmentální glomeruloskleróza (FSGS), membranózní glomerulonefritida (MGN), IgA nefropatie (Bergerova choroba).",
+        "Sekundární glomerulopatie (součást systémových onemocnění): diabetická nefropatie (Kimmelstiel-Wilsonova léze), lupusová nefritida (u SLE), amyloidóza ledvin, postinfekční (poststreptokoková) glomerulonefritida, Goodpastureův syndrom, ANCA-asociovaná vaskulitida.",
         "Genetické vlivy: Alportův syndrom (mutace kolagenu IV).",
         "Léky a toxiny: zlato, penicilamin, NSAID."
       ],
       pathogenesis: [
-        "Zánětlivé glomerulopatie: aktivace komplementu a infiltrace leukocyty vedou k destrukci filtrační bariéry, rupturám kapilár (hematurie) a proliferaci buněk (nefritický syndrom).",
-        "Nezánětlivé glomerulopatie: metabolické změny (glykace u diabetu) nebo imunitní poškození podocytů způsobí ztrátu negativního náboje GBM a fúzi pedicelů, což vyvolá masivní únik proteinů (nefrotický syndrom).",
-        "Sklerotizace glomerulů vede k poklesu celkové GFR a rozvoji CKD."
+        "Filtrační bariéra ledvin se skládá ze tří vrstev: fenestrovaného endotelu, glomerulární bazální membrány (GBM) a podocytů s jejich výběžky (pedicely). Bariéra funguje na principu velikostní selektivity a nábojové selektivity (záporný náboj glykosaminoglykanů v GBM a sialoproteinů podocytů odpuzuje záporně nabité proteiny, zejména albumin).",
+        "Nezánětlivé poškození (typicky vyúsťující v nefrotický syndrom): poškození podocytů (fúze a vyhlazení pedicelů) nebo ztráta záporného náboje filtrační bariéry vede k masivnímu úniku albuminu (proteinurii). Hypoalbuminémie snižuje onkotický tlak plazmy, což vede k otokům a kompenzační stimulaci RAAS a sympatiku. Játra zvyšují syntézu lipoproteinů, což vede k hyperlipidémii.",
+        "Zánětlivé poškození (typicky vyúsťující v nefritický syndrom): ukládání imunitních komplexů in situ či cirkulujících aktivuje komplement a přitahuje leukocyty. Ty uvolňují enzymy poškozující stěnu kapilár, což vede k hematurii (únik erytrocytů) a poklesu GFR (oligurie, hypertenze).",
+        "Sklerotizace glomerulů: Dlouhodobé poškození vede k náhradě glomerulů vazivem (glomeruloskleróza), což snižuje počet funkčních nefronů a vede k chronickému selhání ledvin (CKD)."
       ],
       clinicalManifestation: [
-        "Nefrotický syndrom: proteinurie > 3.5 g/24h, těžké otoky, hypoalbuminémie, hyperlipidémie.",
+        "Nefrotický syndrom: proteinurie > 3.5 g/24h, těžké otoky (obličej, anasarka), hypoalbuminémie, hyperlipidémie, sklon k infekcím a trombózám.",
         "Nefritický syndrom: makroskopická hematurie (barvy čaje), hypertenze, oligurie.",
-        "Plicní krvácení a hemoptýza (u Goodpasteurova syndromu z důvodu zkřížené reakce protilátek proti plicním alveolům)."
+        "Plicní krvácení a hemoptýza (u Goodpastureova syndromu z důvodu zkřížené reakce protilátek proti plicním alveolům)."
       ],
       diagnostics: [
         "Renální biopsie s imunofluorescenčním a elektronovým mikroskopickým vyšetřením (zlatý standard).",
-        "Vyšetření močového sedimentu (dysmorfní erytrocyty) a kvantifikace proteinurie.",
+        "Vyšetření močového sedimentu (dysmorfní erytrocyty, erytrocytární válce) a kvantifikace proteinurie.",
         "Stanovení autoprotilátek (anti-GBM, ANCA, ANA)."
       ]
     },
@@ -2118,7 +2241,7 @@ const SPECIAL_1_DETAILS = {
         options: [
           "Ukládání amyloidových plátů v ledvinných tubulech",
           "Tvorba autoprotilátek proti alfa-3 řetězci kolagenu IV. typu v bazální membráně glomerulů a plicních alveolů, což vyvolá glomerulonefritidu a plicní krvácení",
-          "Nekontrolovaná mutace inzulínového receptoru",
+          "Nekontrolující se mutace inzulínového receptoru",
           "Uzávěr ledvinné žíly krevní sraženinou"
         ],
         correct: 1,
@@ -2127,6 +2250,22 @@ const SPECIAL_1_DETAILS = {
           "Správně! Goodpastureův syndrom je autoimunitní onemocnění s orgánově specifickými protilátkami proti kolagenu IV, který je klíčovou strukturní složkou jak glomerulární bazální membrány (GBM) ledvin, tak alveolární bazální membrány plic. Projevuje se jako plicně-renální syndrom.",
           "Nesprávně. Inzulínový receptor s Goodpastureovým syndromem nesouvisí.",
           "Nesprávně. Jde o imunologickou destrukci, ne o mechanickou venózní trombózu."
+        ]
+      },
+      {
+        question: "Která složka filtrační bariéry glomerulu je primárně poškozena u 'nemoci minimálních změn' (Minimal Change Disease), což vede k masivní selektivní proteinurii?",
+        options: [
+          "Fenestrovaný endotel kapilár, který se zcela rozpadá.",
+          "Podocyty (dochází k fúzi a vyhlazení jejich pedicelů/výběžků) se ztrátou záporného náboje filtrační bariéry, přičemž světelný mikroskop vykazuje normální nález.",
+          "Přívodná tepna (vas afferens), která podléhá spasmu.",
+          "Tubulární buňky proximálního tubulu, které přestávají resorbovat bílkoviny."
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. Endotel kapilár je u MCD intaktní.",
+          "Správně! Nemoc minimálních změn (Minimal Change Disease, MCD) je typická pro děti a projevuje se nefrotickým syndromem. Pod světelným mikroskopem vypadá glomerulus normálně (odtud název), ale elektronový mikroskop odhalí fúzi a vymizení pedicelů (výběžků) podocytů. Ztrácí se záporný náboj bariéry, což umožňuje masivní únik záporně nabitého albuminu do moči (selektivní proteinurie).",
+          "Nesprávně. Jde o glomerulární postižení filtrace, nikoli o spasmus vas afferens.",
+          "Nesprávně. Proximální tubulus sice resorbuje malé proteiny, ale masivní proteinurie u nefrotického syndromu vzniká selháním filtrace v glomerulu, které přesahuje kapacitu tubulů."
         ]
       }
     ]

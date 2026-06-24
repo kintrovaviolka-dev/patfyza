@@ -386,22 +386,22 @@ const SPECIAL_2_DETAILS = {
       clinicalPearl: "Tubulointersticiální nefritida (často indukovaná léky - např. NSAID či antibiotiky) se projevuje sterilní pyurií, eosinofilií a mírnou proteinurií při poklesu renálních funkcí.",
       definition: "Poruchy tubulárního transportu a tubulointersticiální nefritidy představují skupinu onemocnění poškozujících renální tubuly a okolní intersticiální tkáň, což vede k narušení koncentrační schopnosti ledvin, acidobazické rovnováhy a resorpce elektrolytů.",
       etiology: [
-        "Tubulointersticiální nefritida (TIN): nejčastěji poléková (NSAID, peniciliny, sulfonamidy, kličková diuretika) nebo infekční (pyelonefritida).",
-        "Dědičné tubulopatie: Bartterův syndrom (porucha kotransportéru Na-K-2Cl v Henleově kličce), Gitelmanův syndrom (porucha Na-Cl kotransportéru v distálním tubulu), Liddleův syndrom.",
-        "Nefrotoxicita: těžké kovy (olovo, kadmium), analgetická nefropatie."
+        "Akutní tubulointersticiální nefritida (aTIN): nejčastěji poléková (vyvolaná přecitlivělostí na NSAID, beta-laktamová antibiotika, sulfonamidy, PPI), infekční (pyelonefritida, leptospiróza, CMV, EBV) nebo autoimunitní (Sjögrenův syndrom, sarkoidóza).",
+        "Chronická tubulointersticiální nefritida (cTIN): způsobená dlouhodobým užíváním analgetik (analgetická nefropatie), intoxikací těžkými kovy (olovo, kadmium), chronickou obstrukcí/refluxem nebo metabolickými poruchami (urátová nefropatie, hyperkalcémie).",
+        "Dědičné tubulopatie: Bartterův syndrom (porucha Na-K-2Cl v Henleově kličce), Gitelmanův syndrom (porucha Na-Cl v distálním tubulu), Liddleův syndrom, Fanconiho syndrom (generalizovaná dysfunkce proximálního tubulu)."
       ],
       pathogenesis: [
-        "U TIN vyvolá lék imunopatologickou reakci (nejčastěji typ IV nebo typ I) v intersticiu ledvin, doprovázenou infiltrací T-lymfocytů a eozinofilů, což poškozuje tubulární buňky.",
-        "Při poškození tubulů dochází k poruše resorpce vody a solí, což vede k polyurii a ztrátám iontů (Na+, K+, Ca2+, Mg2+).",
-        "Renální tubulární acidóza (RTA) vzniká neschopností tubulů secernovat H+ (typ I - distální) nebo resorbovat HCO3- (typ II - proximální)."
+        "Imunopatologická reakce u aTIN: Lék funguje jako hapten, který vyvolá imunitní odpověď (nejčastěji opožděný IV. typ přecitlivělosti s infiltrací T-lymfocytů a makrofágů, nebo I. typ s účastí IgE a eozinofilů). Zánětlivý infiltrát a edém v intersticiu poškozují tubulární buňky a vedou k poklesu GFR.",
+        "Renální tubulární acidóza (RTA): 1. Distální RTA (typ I): Porucha sekrece H+ v interkalárních buňkách sběrného kanálku, což vede k neschopnosti okyselit moč pod pH 5.3 a metabolické acidóze s hypokalémií. 2. Proximální RTA (typ II): Porucha resorpce HCO3- v proximálním tubulu vedoucí k hydrogenuhličitanovému deficitu. 3. Typ IV RTA: Nedostatek či rezistence na aldosteron, způsobující acidózu s hyperkalémii.",
+        "Bartterův vs. Gitelmanův syndrom: Bartterův syndrom napodobuje účinek kličkových diuretik (ztráty soli, hypokalémie, metabolická alkalóza a hyperkalciurií). Gitelmanův syndrom napodobuje účinek thiazidových diuretik (hypokalémie, metabolická alkalóza, hypomagnezémie, hypokalciurie)."
       ],
       clinicalManifestation: [
         "Polyurie, polydipsie (nadměrná žízeň) a snížená koncentrační schopnost ledvin (isostenurie).",
-        "Svalová slabost a křeče z hypokalémie, případně metabolická acidóza (RTA) s hyperventilací.",
-        "U akutní TIN: horečka, kožní exantém, arthralgie a možný rozvoj akutního poškození ledvin s oligurií."
+        "Svalová slabost a křeče z hypokalémie, případně metabolická acidóza (RTA) s hyperventilací (Kussmaulovo dýchání).",
+        "U akutní TIN: horečka, kožní exantém (vyrážka), arthralgie (bolesti kloubů) a možný rozvoj akutního poškození ledvin s oligurií."
       ],
       diagnostics: [
-        "Vyšetření moči: proteinurie (tubulární - nízká molekulární hmotnost, do 2 g/den), leukocyturie (u TIN s přítomností eozinofilů), glykosurie bez hyperglykémie.",
+        "Vyšetření moči: proteinurie (tubulární - nízká molekulární hmotnost, do 2 g/den), leukocyturie (u TIN s přítomností eozinofilů), glykosurie bez hyperglykémie (Fanconiho syndrom).",
         "Biochemické vyšetření krve: urea, kreatinin, elektrolyty (Na, K, Cl, Ca, Mg), Astrup (pH, HCO3-).",
         "Biopsie ledvin (zlatý standard pro odlišení TIN od glomerulonefritid)."
       ]
@@ -421,6 +421,22 @@ const SPECIAL_2_DETAILS = {
           "Správně! Proximální tubulus resorbuje většinu glukózy, aminokyselin a fosfátů. Jeho selektivní poškození vede k jejich úniku do moči (glykosurie, aminokyselinurie) přestože hladiny v krvi jsou v normě.",
           "Nesprávně. Toto je typické pro infekci ureáza-pozitivními bakteriemi u struvitové litiázy.",
           "Nesprávně. Dysmorfní erytrocyty svědčí o glomerulárním krvácení."
+        ]
+      },
+      {
+        question: "Jak se patofyziologicky liší renální tubulární acidóza typu I (distální) od typu II (proximální)?",
+        options: [
+          "U typu I je zvýšená filtrace glukózy, u typu II je zablokována.",
+          "U typu I (distální) jsou ledviny neschopné secernovat vodíkové ionty (H+) v distálním tubulu a moč zůstává alkalická (pH > 5.3) i při acidóze, zatímco u typu II (proximální) je narušena resorpce hydrogenuhličitanů (HCO3-) v proximálním tubulu.",
+          "Typ I postihuje pouze játra, typ II pouze srdce.",
+          "U typu I dochází k hyperkalémii, u typu II k hypokalémii."
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. RTA se týká výhradně transportu kyselin a zásad, nikoli glukózy.",
+          "Správně! Distální RTA (typ I) je charakterizována selháním H+-ATPázy v interkalárních buňkách sběrného kanálku, takže tělo nedokáže vyloučit H+ a pH moči neklesne pod 5,3 ani při systémové acidóze. Proximální RTA (typ II) je poruchou kotransportéru Na/HCO3 nebo karboanhydrázy v proximálním tubulu, což vede k neschopnosti resorbovat hydrogenuhličitany.",
+          "Nesprávně. Obě formy jsou čistě renální tubulární patologie.",
+          "Nesprávně. U obou forem (typ I i typ II) je typicky přítomna hypokalémie (ztráty draslíku), hyperkalémie je charakteristická pro typ IV RTA."
         ]
       }
     ]
@@ -715,26 +731,28 @@ const SPECIAL_2_DETAILS = {
   "spec-2-15": {
     richContent: {
       clinicalPearl: "Snížená sekrece erytropoetinu a porucha hydroxylace vitamínu D na aktivní kalcitriol jsou hlavními endokrinními důsledky chronického selhání ledvin.",
-      definition: "Ledviny mají významné endokrinní funkce, produkují hormony (renin, erytropoetin, aktivní vitamin D - kalcitriol) a působí jako cílový orgán pro jiné hormony. Poruchy těchto funkcí doprovázejí zejména chronická onemocnění ledvin.",
+      definition: "Ledviny mají významné endokrinní funkce, produkují hormony (renin, erytropoetin, aktivní vitamin D - kalcitriol) a působí jako cílový orgán for jiné hormony. Poruchy těchto funkcí doprovázejí zejména chronická onemocnění ledvin.",
       etiology: [
-        "Chronické selhání ledvin (CKD) s progresivním zánikem funkčního parenchymu ledvin.",
-        "Renální ischémie (stenóza renální tepny stimulující nadprodukci reninu).",
-        "Genetické mutace (např. 1a-hydroxylázy)."
+        "Chronické onemocnění ledvin (CKD) jakékoliv příčiny (diabetická nefropatie, hypertenzní nefroskleróza, chronické glomerulonefritidy), vedoucí k postupnému zániku funkčního parenchymu ledvin.",
+        "Renální ischémie vyvolaná stenózou renální tepny (fibromuskulární dysplázie, ateroskleróza) stimulující juxtaglomerulární buňky.",
+        "Genetické defekty: mutace genu pro 1a-hydroxylázu (způsobuje pseudodeficienci vitaminu D typ I) nebo mutace receptoru pro vitamin D.",
+        "Nádory ledvin produkující hormony (reninom)."
       ],
       pathogenesis: [
-        "Erytropoetin (EPO) je tvořen peritubulárními buňkami v kůře ledvin. Jeho nedostatek při úbytku parenchymu vede k poklesu stimulace erytropoézy v kostní dřeni.",
-        "Kalcitriol (1,25(OH)2D) je aktivován hydroxylací v tubulárních buňkách. Nedostatek kalcitriolu vede k sníženému vstřebávání vápníku ve střevě (hypokalcémie). Hypokalcémie a retence fosfátů stimulují nadprodukci parathormonu (sekundární hyperparatyreóza) vedoucí k odbourávání kostí.",
-        "Renin je produkován juxtaglomerulárním aparátem při poklesu perfuzního tlaku v ledvině. Jeho nadprodukce aktivuje systém RAAS, což zvyšuje resorpci sodíku a vody a vyvolává systémovou vazokonstrikci (renální arteriální hypertenze)."
+        "Erytropoetinová osa: Erytropoetin (EPO) je glykoproteinový hormon syntetizovaný převážně peritubulárními intersticiálními buňkami (fibroblasty) v ledvinné kůře v reakci na hypoxii. Při chronickém poškození a fibrotizaci ledvin tyto buňky zanikají nebo se mění na myofibroblasty, které ztrácejí schopnost produkovat EPO, což vede k poklesu stimulace erytropoézy a rozvoji anémie.",
+        "Osa vitaminu D a vápníku: Ledviny obsahují enzym 1a-hydroxylázu (v buňkách proximálního tubulu), který převádí 25-hydroxyvitamin D na aktivní kalcitriol. Při CKD klesá aktivita 1a-hydroxylázy (vlivem úbytku tubulů a vzestupu FGF-23). Nedostatek kalcitriolu snižuje aktivní vstřebávání vápníku a fosfátů v tenkém střevě, což vede k hypokalcémii.",
+        "Sekundární hyperparatyreóza a kostní obrat: Současně dochází při poklesu GFR k retenci fosfátů, které přímo stimulují sekreci parathormonu (PTH) a vážou volný vápník v krvi. Hypokalcémie, hyperfosfatémie a deficit kalcitriolu stimulují hyperplázii příštítných tělísek a masivní sekreci PTH, což vede k odbourávání kostí (renální osteodystrofie).",
+        "Renin-angiotenzin-aldosteronový systém (RAAS): Juxtaglomerulární buňky secernují renin při poklesu perfuzního tlaku, snížení dodávky NaCl k macula densa nebo stimulaci sympatikem. Renin aktivuje kaskádu RAAS, což vede k tvorbě Angiotenzinu II (silná vazokonstrikce) a aldosteronu (retence sodíku a vody) a rozvoji závažné hypertenze."
       ],
       clinicalManifestation: [
-        "Renální anémie (normocytární, normochromní) projevující se únavou, bledostí a dušností.",
-        "Renální osteodystrofie (bolesti kostí, zvýšené riziko zlomenin) v důsledku sekundární hyperparatyreózy.",
-        "Renální hypertenze (často refrakterní a závažná)."
+        "Renální anémie (normocytární, normochromní) projevující se únavou, bledostí, dušností a sníženou kognitivní funkcí.",
+        "Renální osteodystrofie (bolesti kostí, zvýšené riziko patologických zlomenin, kalcifylaxe) v důsledku sekundární hyperparatyreózy.",
+        "Renální hypertenze (často refrakterní a závažná, zatěžující levé srdce)."
       ],
       diagnostics: [
         "Laboratorní vyšetření: krevní obraz (hemoglobin, hematokrit), vápník, fosfor, PTH (parathormon), urea, kreatinin, eGFR.",
-        "Stanovení hladiny erytropoetinu a vitaminu D v séru.",
-        "Měření krevního tlaku a duplexní sonografie ledvinných tepen."
+        "Stanovení hladiny erytropoetinu a aktivního vitaminu D (kalcitriolu) v séru.",
+        "Měření krevního tlaku a duplexní sonografie ledvinných tepen (u podezření na stenózu)."
       ]
     },
     quiz: [
@@ -752,6 +770,22 @@ const SPECIAL_2_DETAILS = {
           "Nesprávně. Urea přímo příštítná tělíska nestimuluje.",
           "Nesprávně. Renin působí na angiotenzinogen, nikoli na příštítná tělíska.",
           "Nesprávně. PTH se do moči významně neztrácí, jeho hladina v krvi stoupá."
+        ]
+      },
+      {
+        question: "Jaký vliv má zvýšená hladina fibroblastového růstového faktoru 23 (FGF-23) u pacientů s chronickým selháním ledvin?",
+        options: [
+          "FGF-23 stimuluje tvorbu erytropoetinu v ledvinách.",
+          "FGF-23 je secernován osteocyty v reakci na retenci fosfátů; zvyšuje vylučování fosfátů močí a tlumí aktivitu 1a-hydroxylázy v ledvinách, což vede k dalšímu poklesu hladiny kalcitriolu.",
+          "FGF-23 působí jako silný vazodilatátor snižující krevní tlak.",
+          "Způsobuje ukládání cholesterolu do stěny cév."
+        ],
+        correct: 1,
+        explanations: [
+          "Nesprávně. FGF-23 nemá přímou souvislost s erytropoézou.",
+          "Správně! FGF-23 (fibroblast growth factor 23) je tvořen osteocyty při hyperfosfatémii. Zvyšuje vylučování fosfátů v proximálním tubulu a zároveň potlačuje syntézu kalcitriolu (tlumí 1a-hydroxylázu), což dále prohlubuje hypokalcémii.",
+          "Nesprávně. FGF-23 neovlivňuje cévní tonus přímo jako vazodilatátor.",
+          "Nesprávně. FGF-23 přímo neovlivňuje metabolismus a ukládání lipidů."
         ]
       }
     ]
