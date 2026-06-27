@@ -50,7 +50,7 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Anémie ze zvýšených ztrát a snížené produkce erytrocytů - etiopatogeneze, následky",
   "Anemie ze zvýšené konsumpce erytrocytů. Hemolýza - etiopatogeneze, následky",
   "Atelektáza. etiopatogeneze, projevy, následky",
-  "ARDS-etiopatogeneze, klasifikace, projevy, následky. Akutní respirační selhání - rozdělení, etiopatogeneze, následky",
+  "ARDS - etiopatogeneze, klasifikace, projevy, následky. Akutní respirační selhání - rozdělení, etiopatogeneze, následky",
   "Akutní ischemie myokardu - etiopatogeneze, následky. Akutní infarkt myokardu - etiopatogeneze, rozdělení, akutní a chronické komplikace",
   "Akutní poškození ledvin - etiopatogeneze, rozdělení podle příčin, projevy, následky"
 ];
@@ -602,7 +602,7 @@ const SPECIFIC_RICH_DATA = {
   },
 
   // 49. ARDS (Plíce - DETAIL)
-  "ARDS-etiopatogeneze, klasifikace, projevy, následky. Akutní respirační selhání - rozdělení, etiopatogeneze, následky": {
+  "ARDS - etiopatogeneze, klasifikace, projevy, následky. Akutní respirační selhání - rozdělení, etiopatogeneze, následky": {
     keyTerms: ["Difúzní alveolární poškození", "Plicní edém (nekardiogenní)", "Hyalinní blány", "Refrakterní hypoxémie", "Surfaktant", "Ventilační selhání"],
     detailContent: `
       <div class="medical-detail">

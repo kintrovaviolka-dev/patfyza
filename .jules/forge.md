@@ -7,3 +7,6 @@
 ## 2024-06-11 - JSON Parse Security Vulnerability
 **Learning:** Parsing user-provided JSON files using FileReader and simply assigning their values to the application state without strict type and structure validation opens up risks of Prototype Pollution, state corruption, and runtime crashes.
 **Action:** Always validate the structure and type of data imported from untrusted JSON strings before merging it with internal application state.
+## 2026-06-27 - Referential Integrity in Data Files
+**Learning:** Modifying string data in `RAW_QUESTIONS_SPECIAL_1` (or similar arrays) without simultaneously updating the identical string used as a key in `SPECIFIC_RICH_DATA` (or similar detail objects) completely breaks the UI logic for that topic, resulting in un-renderable content.
+**Action:** When standardizing formatting or making string corrections in a topic title, ALWAYS trace the string across the codebase and apply identical changes to its corresponding dictionary keys or reference strings to maintain referential integrity.
