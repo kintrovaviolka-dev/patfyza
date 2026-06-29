@@ -71,7 +71,7 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Poruchy endokrinních funkcí ledvin - etiopatogeneze, projevy, následky. Poruchy bazálních ganglií - etiopatogeneze, projevy. Parkinsonova nemoc. Poruchy limbického systému a emocí - etiopatogeneze, projevy, následky. Poranění míchy - etiopatogeneze, projevy, následky. Transverzální míšní léze",
   "Poruchy kognitivních funkcí - paměť, pozornost, učení, řeč, vnímání, chápání. Demence. Alzheimerova choroba - etiopatogeneze, projevy, následky",
   "Hemoragické cévní mozkové příhody - etiopatogeneze, projevy, následky",
-  "Nespecifická zánětlivá onemocnění střev - Crohnova choroba, ulcerativní kolitida",
+  "Nespecifická zánětlivá onemocnění střev - Crohnova choroba, ulcerózní kolitida",
   "Nemoci dutiny ústní. Poruchy polykání, Poruchy jícnu - etiopatogeneze, projevy, následky. Dyspepsie. Refluxní choroba jícnu",
   "Myopatie, rhabdomyolýza - etiopatogeneze, projevy následky. Krvácení do GIT-formy, příčiny, lokalizace, projevy, následky. Kóma etiopatogeneze, projevy a následky. Vegetativní stav, locked-in syndrome. Smrt mozku definice, etiopatogeneze a projevy",
   "Ischemické cévní mozkové příhody - etiopatogeneze, projevy, následky. Intrakraniální hypertenze - etiopatogeneze, Poruchy autoregulace průtoku krve mozkem. Chronické selhání jater - jaterní steatóza a cirhóza. Hepatorenální syndrom - etiopatogeneze",
