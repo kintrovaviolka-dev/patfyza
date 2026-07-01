@@ -622,7 +622,7 @@ const GENERAL_DETAILS = {
                         "Narušení biologických rytmů a spánková deprivace."
                   ],
                   "pathogenesis": [
-                        "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradreanalin). Reakce 'boj nebo útěk'.",
+                        "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradrenalin). Reakce 'boj nebo útěk'.",
                         "Fáze 2: Rezistence. Aktivace osy hypothalamus-hypofýza-kůra nadledvin (osa HPA). Uvolnění CRH, ACTH a následně kortizolu, který mobilizuje energetické zásoby.",
                         "Fáze 3: Vyčerpání. Nastává při dlouhodobém působení stresoru. Dochází k depleci glukokortikoidů, atrofii kůry nadledvin a selhání adaptace."
                   ],
@@ -687,10 +687,10 @@ const GENERAL_DETAILS = {
                   {
                         "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Stres a všeobecný adaptační syndrom?",
                         "options": [
-                              "Fáze 1: Poplachová reakce. Okamžitá inhibice osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradreanalin). Reakce 'boj nebo útěk'.",
+                              "Fáze 1: Poplachová reakce. Okamžitá inhibice osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradrenalin). Reakce 'boj nebo útěk'.",
                               "Typ IV (opožděný): T-lymfocyty (CD4+ a CD8+) přímo ničí tkáně nebo uvolňují cytokiny aktivující makrofágy (např. kontaktní ekzém, tuberkulinový test).",
                               "Aktivace baroreceptorů spouští sympatoadrenální systém a RAAS, což vyvolá vazokonstrikci a tachykardii pro udržení MAP.",
-                              "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradreanalin). Reakce 'boj nebo útěk'."
+                              "Fáze 1: Poplachová reakce. Okamžitá aktivace osy sympatikus-dřeň nadledvin s uvolněním katecholaminů (adrenalin, noradrenalin). Reakce 'boj nebo útěk'."
                         ],
                         "correct": 3,
                         "explanations": [
