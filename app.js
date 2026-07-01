@@ -951,7 +951,11 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const contentDiv = document.createElement("div");
     contentDiv.className = "message-content";
-    contentDiv.innerHTML = role === "assistant" ? parseMarkdown(text) : text;
+    if (role === "assistant") {
+      contentDiv.innerHTML = typeof DOMPurify !== "undefined" ? DOMPurify.sanitize(parseMarkdown(text)) : parseMarkdown(text);
+    } else {
+      contentDiv.textContent = text;
+    }
     
     messageDiv.appendChild(contentDiv);
     chatbotMessages.appendChild(messageDiv);
@@ -1203,7 +1207,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const onChunk = (text) => {
         responseText += text;
         if (contentDiv) {
-          contentDiv.innerHTML = parseMarkdown(responseText);
+          contentDiv.innerHTML = typeof DOMPurify !== "undefined" ? DOMPurify.sanitize(parseMarkdown(responseText)) : parseMarkdown(responseText);
           scrollToBottom();
         }
       };
