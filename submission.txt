@@ -1,0 +1,16 @@
+⚒️ Forge: 🔒 Fix DOM-based XSS vulnerability in chat message rendering
+
+💡 **What**:
+- Modifies `app.js` to assign user-submitted messages strictly using `textContent`, which safely escapes all HTML.
+- Adds DOMPurify library (via CDN) to `index.html`.
+- Updates `app.js` to sanitize the markdown output from the assistant utilizing `DOMPurify.sanitize(parseMarkdown(text))` before inserting it via `innerHTML`.
+
+🎯 **Why**:
+A Cross-Site Scripting (XSS) vulnerability was found in the chatbot markdown rendering logic. User input was being assigned directly to `innerHTML`, which could allow malicious scripts (e.g., `<img src=x onerror=alert(1)>`) to execute within the context of the user's browser if injected into the chat.
+
+📊 **Impact**:
+- Mitigates the risk of DOM-based XSS attacks via chat inputs.
+- Preserves the markdown formatting functionalities (bolding, lists, code blocks) in assistant replies without exposing the application to injection vulnerabilities.
+
+🔬 **Measurement**:
+- Validated functionality with local server tests and node syntax scripts simulating both safe markdown inputs and malicious XSS payloads. XSS payloads are successfully rendered as plain text (user) or stripped (assistant), while formatting stays intact.
