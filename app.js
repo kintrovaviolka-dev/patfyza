@@ -990,7 +990,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!response.ok) {
       const errData = await response.json().catch(() => ({}));
-      throw new Error(errData.error || `Server vrátil chybu ${response.status}.`);
+      throw new Error(errData?.error || `Server vrátil chybu ${response.status}.`);
     }
 
     onStart();
@@ -1097,7 +1097,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!response.ok) {
       const errData = await response.json().catch(() => ({}));
-      throw new Error(errData.error?.message || `Gemini API vrátilo chybu ${response.status}.`);
+      throw new Error(errData?.error?.message || `Gemini API vrátilo chybu ${response.status}.`);
     }
 
     onStart();
