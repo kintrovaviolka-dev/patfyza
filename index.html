@@ -377,6 +377,69 @@
     </div>
   </dialog>
 
+  <!-- Floating Feedback Button (FAB) -->
+  <button class="feedback-fab" id="feedback-fab" aria-label="Napsat zpětnou vazbu nebo tip">
+    <span class="feedback-fab-icon">💡</span>
+  </button>
+
+  <!-- Feedback Dialog Modal -->
+  <dialog id="feedback-dialog" class="feedback-modal">
+    <div class="feedback-dialog-content">
+      <div class="feedback-dialog-header">
+        <h3>💡 Zpětná vazba & Tipy (Patofyziologie)</h3>
+        <button id="feedback-close-btn" class="feedback-close-btn" aria-label="Zavřít formulář">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <form id="feedback-form" class="feedback-form">
+        <div class="form-group">
+          <label for="feedback-type">Typ zprávy</label>
+          <select id="feedback-type" class="select-custom" required>
+            <option value="improvement">💡 Návrh na vylepšení</option>
+            <option value="tip">📝 Tip / trik k učení patofyziologie</option>
+            <option value="error">💬 Nahlášení chyby v otázce</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="feedback-name">Vaše jméno (nepovinné)</label>
+          <input type="text" id="feedback-name" class="input-custom" placeholder="Anonymní" maxlength="50">
+        </div>
+
+        <div class="form-group">
+          <label for="feedback-message">Vaše zpráva / tip / trik</label>
+          <textarea id="feedback-message" class="textarea-custom" placeholder="Napište nám svůj nápad, chybějící informaci nebo tip k učení..." required maxlength="1500"></textarea>
+          <div class="char-count"><span id="feedback-char-count">0</span> / 1500</div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" id="feedback-submit-btn">Odeslat</button>
+        </div>
+      </form>
+
+      <!-- Status states -->
+      <div id="feedback-status-sending" class="feedback-status-state" style="display: none;">
+        <div class="feedback-spinner"></div>
+        <p>Odesílám zpětnou vazbu...</p>
+      </div>
+
+      <div id="feedback-status-success" class="feedback-status-state" style="display: none;">
+        <div class="status-icon success">✓</div>
+        <p>Děkujeme! Vaše zpětná vazba byla úspěšně uložena.</p>
+      </div>
+
+      <div id="feedback-status-error" class="feedback-status-state" style="display: none;">
+        <div class="status-icon error">✗</div>
+        <p id="feedback-error-msg">Odeslání se nezdařilo. Zkuste to prosím znovu.</p>
+        <button type="button" id="feedback-error-back-btn" class="btn btn-secondary btn-sm" style="margin-top: 12px;">Zpět na formulář</button>
+      </div>
+    </div>
+  </dialog>
+
   <!-- Načtení dat a skriptů -->
   <script src="data_core.js?v=1.1.0"></script>
   <script src="data_general.js?v=1.1.0"></script>

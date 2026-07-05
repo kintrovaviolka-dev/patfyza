@@ -1613,6 +1613,146 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // --- FEEDBACK & TIPS DIALOG LOGIC ---
+  const feedbackFab = document.getElementById("feedback-fab");
+  const feedbackDialog = document.getElementById("feedback-dialog");
+  const feedbackCloseBtn = document.getElementById("feedback-close-btn");
+  const feedbackForm = document.getElementById("feedback-form");
+  const feedbackTypeSelect = document.getElementById("feedback-type");
+  const feedbackNameInput = document.getElementById("feedback-name");
+  const feedbackMessageInput = document.getElementById("feedback-message");
+  const feedbackCharCount = document.getElementById("feedback-char-count");
+
+  const statusSending = document.getElementById("feedback-status-sending");
+  const statusSuccess = document.getElementById("feedback-status-success");
+  const statusError = document.getElementById("feedback-status-error");
+  const errorMsg = document.getElementById("feedback-error-msg");
+  const errorBackBtn = document.getElementById("feedback-error-back-btn");
+
+  const escapeHTML = (str) => {
+    if (!str) return "";
+    return str.toString()
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;")
+      .trim();
+  };
+
+  if (feedbackFab && feedbackDialog) {
+    feedbackFab.addEventListener("click", () => {
+      feedbackForm.style.display = "flex";
+      statusSending.style.display = "none";
+      statusSuccess.style.display = "none";
+      statusError.style.display = "none";
+      
+      feedbackForm.reset();
+      if (feedbackCharCount && feedbackMessageInput) {
+        feedbackCharCount.textContent = "0";
+      }
+      feedbackDialog.showModal();
+    });
+  }
+
+  if (feedbackCloseBtn && feedbackDialog) {
+    feedbackCloseBtn.addEventListener("click", () => {
+      feedbackDialog.close();
+    });
+  }
+
+  if (feedbackDialog) {
+    feedbackDialog.addEventListener("click", (e) => {
+      const rect = feedbackDialog.getBoundingClientRect();
+      const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
+        rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
+      if (!isInDialog) {
+        feedbackDialog.close();
+      }
+    });
+  }
+
+  if (feedbackMessageInput && feedbackCharCount) {
+    feedbackMessageInput.addEventListener("input", () => {
+      feedbackCharCount.textContent = feedbackMessageInput.value.length;
+    });
+  }
+
+  if (errorBackBtn && feedbackForm && statusError) {
+    errorBackBtn.addEventListener("click", () => {
+      statusError.style.display = "none";
+      feedbackForm.style.display = "flex";
+    });
+  }
+
+  if (feedbackForm) {
+    feedbackForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const lastSent = localStorage.getItem("feedback_last_sent_patfyz");
+      const now = Date.now();
+      if (lastSent && (now - parseInt(lastSent) < 60 * 1000)) {
+        const remaining = Math.ceil((60 * 1000 - (now - parseInt(lastSent))) / 1000);
+        alert(`Prosím počkejte ještě ${remaining} sekund před dalším odesláním.`);
+        return;
+      }
+
+      const feedbackType = escapeHTML(feedbackTypeSelect.value);
+      const feedbackName = escapeHTML(feedbackNameInput.value) || "Anonymní";
+      const feedbackMessage = escapeHTML(feedbackMessageInput.value);
+
+      if (!feedbackMessage) {
+        alert("Zpráva nesmí být prázdná.");
+        return;
+      }
+
+      feedbackForm.style.display = "none";
+      statusSending.style.display = "flex";
+
+      try {
+        const response = await fetch("https://verysadanyway.vercel.app/api/feedback", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${clientToken}`
+          },
+          body: JSON.stringify({
+            type: feedbackType,
+            subject: "patfyz",
+            name: feedbackName,
+            message: feedbackMessage
+          })
+        });
+
+        if (!response.ok) {
+          throw new Error("Chyba při odesílání na server.");
+        }
+
+        const data = await response.json();
+        if (data.status === "error") {
+          throw new Error(data.message || "Chyba při zpracování požadavku.");
+        }
+
+        statusSending.style.display = "none";
+        statusSuccess.style.display = "flex";
+        
+        localStorage.setItem("feedback_last_sent_patfyz", Date.now().toString());
+
+        setTimeout(() => {
+          feedbackDialog.close();
+        }, 2000);
+
+      } catch (err) {
+        statusSending.style.display = "none";
+        statusError.style.display = "flex";
+        if (errorMsg) {
+          errorMsg.textContent = `Chyba při odesílání: ${err.message || "Zkuste to znovu."}`;
+        }
+      }
+    });
+  }
+
+
   // --- INICIALIZACE STRÁNKY ---
   renderCards();
   updateDashboard();
