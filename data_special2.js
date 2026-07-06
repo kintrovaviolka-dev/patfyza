@@ -337,7 +337,7 @@ const SPECIAL_2_DETAILS = {
   "spec-2-7": {
     richContent: {
       clinicalPearl: "Preeklampsie je charakterizována triádou hypertenze, proteinurie a otoků po 20. týdnu těhotenství; patofyziologickým základem je porucha placentace a endoteliální dysfunkce.",
-      definition: "Preeklampsie je multiorgánový syndrom specifický pro těhotenství, charakterizovaný nově vzniklou hypertenzí a proteinuriou po 20. týdnu gestace, způsobený generalizovanou dysfunkcí mateřského cévního endotelu.",
+      definition: "Preeklampsie je multiorgánový syndrom specifický pro těhotenství, charakterizovaný nově vzniklou hypertenzí a proteinurií po 20. týdnu gestace, způsobený generalizovanou dysfunkcí mateřského cévního endotelu.",
       etiology: [
         "Porucha invaze trofoblastu do mateřských spirálních arterií v děloze, což brání jejich adekvátní remodelaci.",
         "Placentární ischémie s následným uvolňováním humorálních faktorů do oběhu matky.",
