@@ -1683,7 +1683,7 @@ const SPECIAL_1_DETAILS = {
       clinicalManifestation: [
         "Anginózní bolest: tlaková, pálivá, svíravá bolest za hrudní kostí (stenokardie) s typickou propagací do levé horní končetiny (zejména ulnární strana), krku, dolní čelisti, zad (mezi lopatky) nebo epigastria.",
         "U stabilní AP: bolest vzniká při definované fyzické či psychické zátěži, trvá do 5 minut a rychle mizí v klidu nebo po sublingválním nitroglycerinu.",
-        "U AKS: bolest vzniká typicky v klidu, trvá > 20 minut, nereaguje na nitroglycerin a je často provázena vegetativním doprovodem (studený pot, nauzea, zvrácení), dušností, úzkostí (angor animi) a rizikem náhlé smrti."
+        "U AKS: bolest vzniká typicky v klidu, trvá > 20 minut, nereaguje na nitroglycerin a je často provázena vegetativním doprovodem (studený pot, nauzea, zvracení), dušností, úzkostí (angor animi) a rizikem náhlé smrti."
       ],
       diagnostics: [
         "EKG (ST elevace u STEMI, deprese ST/inverze T u NSTEMI/stabilní AP).",
