@@ -10,3 +10,6 @@
 ## 2026-06-27 - Referential Integrity in Data Files
 **Learning:** Modifying string data in `RAW_QUESTIONS_SPECIAL_1` (or similar arrays) without simultaneously updating the identical string used as a key in `SPECIFIC_RICH_DATA` (or similar detail objects) completely breaks the UI logic for that topic, resulting in un-renderable content.
 **Action:** When standardizing formatting or making string corrections in a topic title, ALWAYS trace the string across the codebase and apply identical changes to its corresponding dictionary keys or reference strings to maintain referential integrity.
+## 2026-07-08 - Correcting UI Verification Scripts
+**Learning:** When writing a playwright script to verify the site, ensure you're using a selector that exists on initial load, such as '.app-container', instead of dynamic ones that might timeout.
+**Action:** Inspect index.html first to find valid, persistent selectors before running playwright scripts.
