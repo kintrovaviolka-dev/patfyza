@@ -1737,7 +1737,8 @@ const GENERAL_DETAILS = {
                   "clinicalManifestation": [
                         "Těžká arteriální hypotenze (MAP < 65 mmHg) refrakterní na volumoterapii.",
                         "Bledost, studený pot, oligurie, poruchy vědomí z hypoperfuze mozku.",
-                        "U kardiogenního šoku: dušnost a vlhké chropky na plicích (plicní edém); u obstrukčního: distenze krčních žil (městnání před pravým srdcem)."
+                        // Oprava překlepu: standardizace na "chrůpky" z "chropky"
+                        "U kardiogenního šoku: dušnost a vlhké chrůpky na plicích (plicní edém); u obstrukčního: distenze krčních žil (městnání před pravým srdcem)."
                   ],
                   "diagnostics": [
                         "Echokardiografie (klíčová k průkazu tamponády, plicní embolie nebo dyskineze komory).",
