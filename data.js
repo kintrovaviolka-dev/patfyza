@@ -67,7 +67,7 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Poruchy sluchu a zraku - etiopatogeneze, projevy, následky",
   "Poruchy menstruačního cyklu - etiopatogeneze. Poruchy hypotalamo-hypofyzárně-ovariální osy",
   "Poruchy kostního metabolismu - osteoporóza, osteomalacie, rachitida",
-  "Onemocnění žlučníku a žlučových cest-cholecystitida a cholangoitida. Cholecystolitiáza a choledocholitiáza - etiopatogeneze, projevy, následky",
+  "Onemocnění žlučníku a žlučových cest - cholecystitida a cholangoitida. Cholecystolitiáza a choledocholitiáza - etiopatogeneze, projevy, následky",
   "Poruchy endokrinních funkcí ledvin - etiopatogeneze, projevy, následky. Poruchy bazálních ganglií - etiopatogeneze, projevy. Parkinsonova nemoc. Poruchy limbického systému a emocí - etiopatogeneze, projevy, následky. Poranění míchy - etiopatogeneze, projevy, následky. Transverzální míšní léze",
   "Poruchy kognitivních funkcí - paměť, pozornost, učení, řeč, vnímání, chápání. Demence. Alzheimerova choroba - etiopatogeneze, projevy, následky",
   "Hemoragické cévní mozkové příhody - etiopatogeneze, projevy, následky",
