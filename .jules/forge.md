@@ -10,3 +10,6 @@
 ## 2026-06-27 - Referential Integrity in Data Files
 **Learning:** Modifying string data in `RAW_QUESTIONS_SPECIAL_1` (or similar arrays) without simultaneously updating the identical string used as a key in `SPECIFIC_RICH_DATA` (or similar detail objects) completely breaks the UI logic for that topic, resulting in un-renderable content.
 **Action:** When standardizing formatting or making string corrections in a topic title, ALWAYS trace the string across the codebase and apply identical changes to its corresponding dictionary keys or reference strings to maintain referential integrity.
+## 2024-07-28 - Dependency Pollution during Testing
+**Learning:** Installing testing libraries (like Playwright via npm) in this package-manager-free repository creates `node_modules`, `package.json`, and `package-lock.json`. If left uncleaned, they pollute the Git state and potentially the final PR.
+**Action:** Always immediately delete `node_modules`, `package.json`, and `package-lock.json` after running ad-hoc test scripts using `npm` in repositories that don't natively use a package manager.
