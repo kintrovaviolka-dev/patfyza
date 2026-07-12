@@ -10,3 +10,6 @@
 ## 2026-06-27 - Referential Integrity in Data Files
 **Learning:** Modifying string data in `RAW_QUESTIONS_SPECIAL_1` (or similar arrays) without simultaneously updating the identical string used as a key in `SPECIFIC_RICH_DATA` (or similar detail objects) completely breaks the UI logic for that topic, resulting in un-renderable content.
 **Action:** When standardizing formatting or making string corrections in a topic title, ALWAYS trace the string across the codebase and apply identical changes to its corresponding dictionary keys or reference strings to maintain referential integrity.
+## 2026-07-12 - Intentional grammatical distractors in quiz options
+**Learning:** In quiz data (e.g., `data_general.js`), grammatical errors in option strings (such as incorrect gender/case agreement like 'chronickáho') may be intentional distractors designed to test knowledge.
+**Action:** Verify the intent of the question and all other options before correcting such grammatical 'typos' to avoid creating duplicate options or breaking the quiz logic.

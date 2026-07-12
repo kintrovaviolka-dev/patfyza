@@ -24,7 +24,7 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Poruchy plicní cirkulace etiopatogeneze, následky. Plicní hypertenze - etiopatogeneze, projevy, následky",
   "Trombotické mikroangiopatie (HUS aHUS, TTP) - etiopatogeneze, projevy, následky",
   "Polycytémie - etiopatogeneze, následky. Hyperviskózní syndrom",
-  "Pneumothorax - etiopatogeneze, typy projevy, následky. Fluidothorax etiopatogeneze, typy, projevy, následky",
+  "Pneumothorax - etiopatogeneze, typy, projevy, následky. Fluidothorax - etiopatogeneze, typy, projevy, následky",
   "Pneumonie - etiopatogeneze, rozdělení, projevy, následky",
   "Plicní edém etiopatogeneze, rozdělení, projevy, následky",
   "Patofyziologie sleziny - splenomegalie, hypersplenismus, následky splenektomie",
