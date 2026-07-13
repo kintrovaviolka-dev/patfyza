@@ -10,3 +10,6 @@
 ## 2026-06-27 - Referential Integrity in Data Files
 **Learning:** Modifying string data in `RAW_QUESTIONS_SPECIAL_1` (or similar arrays) without simultaneously updating the identical string used as a key in `SPECIFIC_RICH_DATA` (or similar detail objects) completely breaks the UI logic for that topic, resulting in un-renderable content.
 **Action:** When standardizing formatting or making string corrections in a topic title, ALWAYS trace the string across the codebase and apply identical changes to its corresponding dictionary keys or reference strings to maintain referential integrity.
+## 2026-11-20 - Missing Hyphens and Referential Integrity
+**Learning:** Found several strings in `RAW_QUESTIONS_SPECIAL_1` (e.g. "Základní charakteristika plicních onemocnění: obstrukce a restrikce etiopatogeneze") missing a hyphen before "etiopatogeneze", deviating from the established convention. Fixing these required identical updates to both `data.js` and `data_core.js`, including the keys in `window.COMPLETE_QUESTIONS` generation block, highlighting the risk of breaking structural linkages when making simple typo fixes.
+**Action:** Always run a full text search (e.g., `grep -rn <string> .`) before making any string formatting changes in arrays, and identically update all references, especially object keys mapping to those strings, to ensure referential integrity.
