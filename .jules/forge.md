@@ -13,3 +13,7 @@
 ## 2026-11-20 - Missing Hyphens and Referential Integrity
 **Learning:** Found several strings in `RAW_QUESTIONS_SPECIAL_1` (e.g. "Základní charakteristika plicních onemocnění: obstrukce a restrikce etiopatogeneze") missing a hyphen before "etiopatogeneze", deviating from the established convention. Fixing these required identical updates to both `data.js` and `data_core.js`, including the keys in `window.COMPLETE_QUESTIONS` generation block, highlighting the risk of breaking structural linkages when making simple typo fixes.
 **Action:** Always run a full text search (e.g., `grep -rn <string> .`) before making any string formatting changes in arrays, and identically update all references, especially object keys mapping to those strings, to ensure referential integrity.
+
+## 2024-05-18 - [Typo fixes in medical strings]
+**Learning:** Medical typos like 'hyperokalcémii' and 'neatnofují' often slip into lengthy text blocks in data objects without syntax tools catching them.
+**Action:** Regular expressions and substring search over specific properties (e.g. `quiz` or `clinicalManifestation`) are necessary to hunt for specific typographical mistakes in complex static datasets.

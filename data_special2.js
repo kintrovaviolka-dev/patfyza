@@ -1589,7 +1589,7 @@ const SPECIAL_2_DETAILS = {
         "Nadbytek PTH stimuluje osteoklasty k resorpci kosti, což uvolňuje vápník a fosfor do oběhu.",
         "V ledvinách PTH zvyšuje tubulární reabsorpci vápníku, ale **snižuje reabsorpci fosfátů** (phosphaturie).",
         "PTH stimuluje ledvinnou $1\\alpha$-hydroxylázu, což zvyšuje tvorbu kalcitriolu a tím absorpci vápníku ve střevě.",
-        "U primární HPT tyto mechanismy vedou k **hyperokalcémii** a hypofosfatémii."
+        "U primární HPT tyto mechanismy vedou k **hyperkalcémii** a hypofosfatémii."
       ],
       clinicalManifestation: [
         "Renální: nefrolitiáza (ledvinové kameny z hyperkalciurie) a nefrokalcinóza.",
@@ -2101,7 +2101,7 @@ const SPECIAL_2_DETAILS = {
         "Periferní paréza: poškození dolního motoneuronu (v předních rozích míšních nebo v periferním nervu). Přeruší se reflexní oblouk. Sval přichází o veškeré stimuly, což vede k **hypotonii**, **areflexii** a rychlé **denervační atrofii** svalových vláken."
       ],
       clinicalManifestation: [
-        "Centrální: **spastická obrna**, hyperreflexie, přítomnost patologických iritačních reflexů (Babinského příznak), klonus. Svaly neatnofují (jen mírně z nečinnosti).",
+        "Centrální: **spastická obrna**, hyperreflexie, přítomnost patologických iritačních reflexů (Babinského příznak), klonus. Svaly neatrofují (jen mírně z nečinnosti).",
         "Periferní: **chabá obrna**, vymizení reflexů (hypo- až areflexie), těžká svalová atrofie, přítomnost **fascikulací** (jemné záškuby svalových snopců)."
       ],
       diagnostics: [
