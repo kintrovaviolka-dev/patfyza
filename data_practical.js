@@ -1337,7 +1337,7 @@ const PRACTICAL_DETAILS = {
   },
   "pract-48": {
     summary: "Vyšetření funkce štítné žlázy a příštítných tělísek hodnotí endokrinní a vápníkovou homeostázu. Diagnostika se opírá o stanovení TSH, fT4, parathormonu a hladiny vápníku.",
-    keyTerms: ["TSH (thyrotropin)", "Volný tyroxin (fT4)", "Parathormon (PTH)", "Kalcium a Fosfor", "Hypokalcéme vs. Hyperkalcémie", "Zpětná vazba"],
+    keyTerms: ["TSH (thyrotropin)", "Volný tyroxin (fT4)", "Parathormon (PTH)", "Kalcium a Fosfor", "Hypokalcémie vs. Hyperkalcémie", "Zpětná vazba"],
     richContent: {
       significance: "Posouzení sekrece tyroidálních hormonů a hormonů regulujících hladinu ionizovaného vápníku (kalcémie), který je zásadní pro svalové stahy a přenos vzruchů.",
       high: "Vysoké TSH (primární hypotyreóza - chybí zpětná vazba), vysoké fT4 (hypertyreóza, tyreotoxikóza), vysoký parathormon a hyperkalcémie (primární hyperparatyreóza).",
