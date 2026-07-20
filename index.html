@@ -21,6 +21,16 @@
       </div>
       
       <div class="controls">
+        <!-- Zpět na rozcestník -->
+        <button id="back-hub-btn" class="btn btn-secondary" title="Zpět na centrální rozcestník předmětů">
+          ← Rozcestník
+        </button>
+        
+        <!-- Materiály & Kvíz -->
+        <button id="resources-btn" class="btn btn-resources" style="background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); color: white; border: none; font-weight: 500;" title="Doprovodné materiály, PDF skripta a generátor celkových testů">
+          📚 Materiály & Kvíz
+        </button>
+
         <!-- EKG Simulátor -->
         <button id="ekg-sim-btn" class="btn btn-ekg" title="Otevřít interaktivní EKG trenažér a interpretátor">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
@@ -436,6 +446,88 @@
         <div class="status-icon error">✗</div>
         <p id="feedback-error-msg">Odeslání se nezdařilo. Zkuste to prosím znovu.</p>
         <button type="button" id="feedback-error-back-btn" class="btn btn-secondary btn-sm" style="margin-top: 12px;">Zpět na formulář</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal pro Materiály & Kvíz (General Test Generator & Downloads) -->
+  <dialog id="resources-modal" class="slide-over">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title-area">
+          <span class="modal-category">DOPROVODNÉ MATERIÁLY & KVÍZY</span>
+          <h2 class="modal-title">Více možností studia</h2>
+        </div>
+        <button class="modal-close-btn" id="resources-modal-close" aria-label="Zavřít panel">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      
+      <div class="modal-body" style="padding: 24px; display: flex; flex-direction: column; gap: 24px; max-height: calc(100vh - 100px); overflow-y: auto;">
+        
+        <!-- 1. Sekce ke stažení (PDF) -->
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); padding: 20px; border-radius: 12px;">
+          <h4 style="margin-bottom: 12px; font-size: 1.1rem; display: flex; align-items: center; gap: 8px; font-family: var(--font-title); color: #fff;">📁 <span>Materiály ke stažení</span></h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 16px;">Stáhněte si sylaby a vypracovaná témata pro patofyziologii.</p>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="https://verysadanyway.vercel.app/quadruplety_patfyz.pdf" download class="btn btn-secondary btn-sm" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: 6px; font-size: 0.85rem; font-weight: 500;">
+              <span>Seznam zkouškových otázek (Sylabus)</span>
+              <span>⬇️ PDF</span>
+            </a>
+            <a href="https://verysadanyway.vercel.app/patfyza_26.pdf" download class="btn btn-secondary btn-sm" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: 6px; font-size: 0.85rem; font-weight: 500;">
+              <span>Vypracované materiály (LaTeX skripta)</span>
+              <span>⬇️ PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Doprovodná aplikace (Beta) -->
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); padding: 20px; border-radius: 12px;">
+          <h4 style="margin-bottom: 12px; font-size: 1.1rem; display: flex; align-items: center; gap: 8px; font-family: var(--font-title); color: #fff;">🎮 <span>Patfyz Beta</span></h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 16px;">Zkuste si herní a procvičovací verzi patofyziologie s trenažéry koagulace a EKG.</p>
+          <a href="https://ai.studio/apps/74714c95-1dc9-4fd2-afea-37fb70cdc32c" target="_blank" class="btn btn-primary" style="background: var(--color-primary); border: none; text-align: center; display: block; padding: 10px 14px; color: #fff; font-weight: 600; border-radius: 6px; font-size: 0.9rem;">Spustit Beta Aplikaci 🚀</a>
+        </div>
+
+        <!-- 3. Dopaminový Testovací Generátor -->
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); padding: 20px; border-radius: 12px;">
+          <h4 style="margin-bottom: 12px; font-size: 1.1rem; display: flex; align-items: center; gap: 8px; font-family: var(--font-title); color: #fff;">🔥 <span>Generátor celkových testů</span></h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 16px;">Vygenerujte si náhodný test z celé databáze patofyziologických otázek.</p>
+          
+          <!-- Nastavení testu -->
+          <div id="gen-quiz-setup" style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; gap: 8px; justify-content: center; margin-bottom: 8px;">
+              <button class="notes-btn gen-size-btn active" data-size="10" style="padding: 6px 12px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.05); color: var(--text-primary); border-radius: 4px; font-size: 0.8rem; cursor: pointer;">10 otázek</button>
+              <button class="notes-btn gen-size-btn" data-size="20" style="padding: 6px 12px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.05); color: var(--text-primary); border-radius: 4px; font-size: 0.8rem; cursor: pointer;">20 otázek</button>
+              <button class="notes-btn gen-size-btn" data-size="50" style="padding: 6px 12px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.05); color: var(--text-primary); border-radius: 4px; font-size: 0.8rem; cursor: pointer;">50 otázek</button>
+            </div>
+            <button id="gen-start-btn" class="btn btn-primary" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); border: none; padding: 12px; color: #fff; font-weight: bold; border-radius: 6px; font-size: 0.9rem; cursor: pointer;">Generovat test ✍️</button>
+          </div>
+
+          <!-- Kvízové rozhraní (skryté ve výchozím stavu) -->
+          <div id="gen-quiz-active" style="display: none; flex-direction: column; gap: 16px; margin-top: 16px; border-top: 1px solid var(--border-color); padding-top: 16px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary);">
+              <span id="gen-quiz-progress">Otázka 1 z X</span>
+              <span id="gen-quiz-score">Úspěšnost: 0%</span>
+            </div>
+            <div style="font-size: 1rem; font-weight: 600; color: #fff; line-height: 1.4;" id="gen-question-text">Otázka...</div>
+            <div id="gen-options-container" style="display: grid; gap: 8px;">
+              <!-- options dynamically injected -->
+            </div>
+            <div id="gen-explanation" style="display: none; padding: 12px; border-radius: 8px; font-size: 0.85rem; line-height: 1.5; color: #fff;">
+              Vysvětlení...
+            </div>
+            <button id="gen-next-btn" class="btn btn-secondary" style="display: none; margin-top: 8px; padding: 10px; width: 100%; border-radius: 6px; background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); color: var(--text-primary); font-weight: bold; cursor: pointer;">Další otázka</button>
+          </div>
+
+          <!-- Výsledky testu (skryté) -->
+          <div id="gen-quiz-results" style="display: none; flex-direction: column; align-items: center; gap: 12px; margin-top: 16px; text-align: center; border-top: 1px solid var(--border-color); padding-top: 16px;">
+            <div style="font-size: 3rem;">🏆</div>
+            <h5 style="font-size: 1.2rem; font-weight: bold; color: #fff; font-family: var(--font-title);">Test dokončen!</h5>
+            <p style="font-size: 0.95rem; color: var(--text-secondary);" id="gen-results-score-text">Úspěšnost: 0% (0 z 10)</p>
+            <button id="gen-restart-btn" class="btn btn-secondary" style="width: 100%; padding: 10px; border-radius: 6px; background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); color: var(--text-primary); font-weight: bold; cursor: pointer;">Spustit nový test</button>
+          </div>
+        </div>
+
       </div>
     </div>
   </dialog>

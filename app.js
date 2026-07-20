@@ -1752,6 +1752,189 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // --- LOGIKA POUTÁNÍ NAVIGACE A RESOURCÍ ---
+  const backHubBtn = document.getElementById("back-hub-btn");
+  if (backHubBtn) {
+    backHubBtn.addEventListener("click", () => {
+      if (window.location.protocol === 'file:') {
+        window.location.href = '../index.html';
+      } else {
+        window.location.href = 'https://verysadanyway.vercel.app/';
+      }
+    });
+  }
+
+  const resourcesBtn = document.getElementById("resources-btn");
+  const resourcesModal = document.getElementById("resources-modal");
+  const resourcesModalClose = document.getElementById("resources-modal-close");
+  if (resourcesBtn && resourcesModal && resourcesModalClose) {
+    resourcesBtn.addEventListener("click", () => {
+      resourcesModal.showModal();
+    });
+    resourcesModalClose.addEventListener("click", () => {
+      resourcesModal.close();
+    });
+  }
+
+  // --- LOGIKA CELKOVÉHO TESTOVACÍHO GENERÁTORU ---
+  const getAllQuizQuestions = () => {
+    let pool = [];
+    if (state && state.questions) {
+      state.questions.forEach(topic => {
+        if (topic.quiz && Array.isArray(topic.quiz)) {
+          topic.quiz.forEach(q => {
+            pool.push({
+              ...q,
+              topicTitle: topic.title,
+              category: topic.category
+            });
+          });
+        }
+      });
+    }
+    return pool;
+  };
+
+  let genQuizQuestions = [];
+  let genCurrentIndex = 0;
+  let genCorrectCount = 0;
+  let genSelectedSize = 10;
+  let genIsAnswered = false;
+
+  const genSizeBtns = document.querySelectorAll(".gen-size-btn");
+  genSizeBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      genSizeBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      genSelectedSize = parseInt(btn.getAttribute("data-size"));
+    });
+  });
+
+  const genStartBtn = document.getElementById("gen-start-btn");
+  const genQuizSetup = document.getElementById("gen-quiz-setup");
+  const genQuizActive = document.getElementById("gen-quiz-active");
+  const genQuizResults = document.getElementById("gen-quiz-results");
+
+  if (genStartBtn) {
+    genStartBtn.addEventListener("click", () => {
+      const allPool = getAllQuizQuestions();
+      if (allPool.length === 0) {
+        alert("Nepodařilo se načíst databázi otázek.");
+        return;
+      }
+      const shuffled = [...allPool].sort(() => Math.random() - 0.5);
+      genQuizQuestions = shuffled.slice(0, Math.min(genSelectedSize, shuffled.length));
+      genCurrentIndex = 0;
+      genCorrectCount = 0;
+      
+      genQuizSetup.style.display = "none";
+      genQuizActive.style.display = "flex";
+      genQuizResults.style.display = "none";
+      
+      loadGenQuestion();
+    });
+  }
+
+  const loadGenQuestion = () => {
+    genIsAnswered = false;
+    const item = genQuizQuestions[genCurrentIndex];
+    
+    document.getElementById("gen-quiz-progress").textContent = `Otázka ${genCurrentIndex + 1} z ${genQuizQuestions.length}`;
+    const pctScore = genCurrentIndex > 0 ? Math.round((genCorrectCount / genCurrentIndex) * 100) : 0;
+    document.getElementById("gen-quiz-score").textContent = `Úspěšnost: ${pctScore}%`;
+    
+    document.getElementById("gen-question-text").textContent = `${genCurrentIndex + 1}. [${item.category}] ${item.question}`;
+    
+    const container = document.getElementById("gen-options-container");
+    container.innerHTML = "";
+    
+    const explanation = document.getElementById("gen-explanation");
+    explanation.style.display = "none";
+    
+    const nextBtn = document.getElementById("gen-next-btn");
+    nextBtn.style.display = "none";
+
+    item.options.forEach((opt, idx) => {
+      const btn = document.createElement("button");
+      btn.className = "quiz-option";
+      btn.style.width = "100%";
+      btn.style.textAlign = "left";
+      btn.style.padding = "10px 14px";
+      btn.style.background = "rgba(255,255,255,0.03)";
+      btn.style.border = "1px solid var(--border-color)";
+      btn.style.color = "var(--text-primary)";
+      btn.style.borderRadius = "6px";
+      btn.style.cursor = "pointer";
+      btn.style.display = "flex";
+      btn.style.gap = "10px";
+      btn.style.transition = "var(--transition-fast)";
+      
+      btn.innerHTML = `<span style="font-weight: bold; color: var(--color-primary);">${String.fromCharCode(65 + idx)}</span> <span>${opt}</span>`;
+      
+      btn.addEventListener("click", () => {
+        if (genIsAnswered) return;
+        genIsAnswered = true;
+        
+        const allBtns = container.querySelectorAll(".quiz-option");
+        allBtns.forEach(b => b.style.pointerEvents = "none");
+        
+        const isCorrect = idx === item.correct;
+        if (isCorrect) {
+          btn.style.borderColor = "var(--color-success)";
+          btn.style.background = "rgba(16, 185, 129, 0.1)";
+          genCorrectCount++;
+        } else {
+          btn.style.borderColor = "var(--color-danger)";
+          btn.style.background = "rgba(239, 68, 68, 0.1)";
+          allBtns[item.correct].style.borderColor = "var(--color-success)";
+          allBtns[item.correct].style.background = "rgba(16, 185, 129, 0.1)";
+        }
+        
+        const defaultExp = isCorrect ? "Správná odpověď!" : "Tato možnost není správná.";
+        const expText = item.explanations ? item.explanations[idx] : defaultExp;
+        explanation.textContent = expText;
+        explanation.style.background = isCorrect ? "rgba(16, 185, 129, 0.1)" : "rgba(239, 68, 68, 0.1)";
+        explanation.style.borderColor = isCorrect ? "var(--color-success)" : "var(--color-danger)";
+        explanation.style.borderStyle = "solid";
+        explanation.style.borderWidth = "1px";
+        explanation.style.display = "block";
+        
+        nextBtn.style.display = "block";
+        nextBtn.textContent = genCurrentIndex + 1 === genQuizQuestions.length ? "Vyhodnotit test" : "Další otázka";
+      });
+      
+      container.appendChild(btn);
+    });
+  };
+
+  const nextBtn = document.getElementById("gen-next-btn");
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      genCurrentIndex++;
+      if (genCurrentIndex < genQuizQuestions.length) {
+        loadGenQuestion();
+      } else {
+        showGenResults();
+      }
+    });
+  }
+
+  const showGenResults = () => {
+    genQuizActive.style.display = "none";
+    genQuizResults.style.display = "flex";
+    
+    const finalPct = Math.round((genCorrectCount / genQuizQuestions.length) * 100);
+    document.getElementById("gen-results-score-text").textContent = `Úspěšnost: ${finalPct}% (${genCorrectCount} z ${genQuizQuestions.length} správně)`;
+  };
+
+  const genRestartBtn = document.getElementById("gen-restart-btn");
+  if (genRestartBtn) {
+    genRestartBtn.addEventListener("click", () => {
+      genQuizSetup.style.display = "flex";
+      genQuizActive.style.display = "none";
+      genQuizResults.style.display = "none";
+    });
+  }
 
   // --- INICIALIZACE STRÁNKY ---
   renderCards();
