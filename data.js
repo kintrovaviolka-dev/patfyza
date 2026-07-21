@@ -45,7 +45,7 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Hemostáza - základní deskripce poruch primární (cévy a trombocyty), sekundární (koagulační kaskáda) a terciární (trombolýza) hemostázy",
   "Endokarditidy. Myokarditidy. Perikarditidy - etiopatogeneze, projevy, následky. Srdeční tamponáda",
   "Glomerulopatie - etiopatogeneze, projevy, následky",
-  "Demyelinizace etiopatogeneze, projevy následky. Roztroušená mozkomíšní skleróza",
+  "Demyelinizace - etiopatogeneze, projevy, následky. Roztroušená mozkomíšní skleróza.",
   "Bradyarytmie - etiopatogeneze a následky poruch tvorby a vedení vzruchu. Sinoatriální, atrioventrikulární a raménkové blokády",
   "Anémie ze zvýšených ztrát a snížené produkce erytrocytů - etiopatogeneze, následky",
   "Anemie ze zvýšené konsumpce erytrocytů. Hemolýza - etiopatogeneze, následky",
