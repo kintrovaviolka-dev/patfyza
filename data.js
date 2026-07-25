@@ -45,7 +45,7 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Hemostáza - základní deskripce poruch primární (cévy a trombocyty), sekundární (koagulační kaskáda) a terciární (trombolýza) hemostázy",
   "Endokarditidy. Myokarditidy. Perikarditidy - etiopatogeneze, projevy, následky. Srdeční tamponáda",
   "Glomerulopatie - etiopatogeneze, projevy, následky",
-  "Demyelinizace etiopatogeneze, projevy následky. Roztroušená mozkomíšní skleróza",
+  "Demyelinizace - etiopatogeneze, projevy, následky. Roztroušená mozkomíšní skleróza",
   "Bradyarytmie - etiopatogeneze a následky poruch tvorby a vedení vzruchu. Sinoatriální, atrioventrikulární a raménkové blokády",
   "Anémie ze zvýšených ztrát a snížené produkce erytrocytů - etiopatogeneze, následky",
   "Anemie ze zvýšené konsumpce erytrocytů. Hemolýza - etiopatogeneze, následky",
@@ -73,7 +73,7 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Hemoragické cévní mozkové příhody - etiopatogeneze, projevy, následky",
   "Nespecifická zánětlivá onemocnění střev - Crohnova choroba, ulcerativní kolitida",
   "Nemoci dutiny ústní. Poruchy polykání, Poruchy jícnu - etiopatogeneze, projevy, následky. Dyspepsie. Refluxní choroba jícnu",
-  "Myopatie, rhabdomyolýza - etiopatogeneze, projevy následky. Krvácení do GIT-formy, příčiny, lokalizace, projevy, následky. Kóma etiopatogeneze, projevy a následky. Vegetativní stav, locked-in syndrome. Smrt mozku definice, etiopatogeneze a projevy",
+  "Myopatie, rhabdomyolýza - etiopatogeneze, projevy, následky. Krvácení do GIT - formy, příčiny, lokalizace, projevy, následky. Kóma - etiopatogeneze, projevy a následky. Vegetativní stav, locked-in syndrome. Smrt mozku - definice, etiopatogeneze a projevy",
   "Ischemické cévní mozkové příhody - etiopatogeneze, projevy, následky. Intrakraniální hypertenze - etiopatogeneze, Poruchy autoregulace průtoku krve mozkem. Chronické selhání jater - jaterní steatóza a cirhóza. Hepatorenální syndrom - etiopatogeneze",
   "Chronická pankreatitida a poruchy exokrinní činnosti pankreatu - etiopatogeneze, projevy, následky",
   "Hypotyreóza - etiopatogeneze, projevy, následky. Struma",
@@ -83,14 +83,14 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Hyperkortizolismus. Cushingova nemoc a syndrom - etiopatogeneze, projevy, následky",
   "Hyperaldosteronismus - etiopatogeneze, rozdělení, projevy, následky. Connův syndrom",
   "Onemocnění tlustého střeva - divertikulóza, polypóza a karcinom - etiopatogeneze a následky. Ileus - etiopatogeneze, projevy, následky",
-  "Feochromocytom, mnohočetné endokrinní neoplazie - etiopatogeneze, projevy, následky. Zollinger Ellisonův syndrom. Gastroenteropankreatický hormonální systém. Epilepsie etiopatogeneze, klasifikace, projevy, následky. Edém mozku - etiopatogeneze, projevy, následky. Cytotoxický edém a vazogenní edém, intersticiální edém. Diabetes mellitus - základní rozdělení, etiopatogeneze, projevy, následky",
+  "Feochromocytom, mnohočetné endokrinní neoplazie - etiopatogeneze, projevy, následky. Zollinger Ellisonův syndrom. Gastroenteropankreatický hormonální systém. Epilepsie - etiopatogeneze, klasifikace, projevy, následky. Edém mozku - etiopatogeneze, projevy, následky. Cytotoxický edém a vazogenní edém, intersticiální edém. Diabetes mellitus - základní rozdělení, etiopatogeneze, projevy, následky",
   "Diabetes mellitus - akutní a chronické komplikace - etiopatogeneze, projevy, následky",
   "Cévní mozkové příhody - etiopatogeneze, základní rozdělení, projevy, následky. Transitorní ischemická ataka",
   "Centrální a periferní paréza - etiopatogeneze, projevy, následky",
   "Autonomní nervový systém - poruchy funkce, efekt na orgánové systémy",
   "Artróza - etiopatogeneze, projevy, následky",
   "Akutní selhání jater - etiopatogeneze, projevy, následky. Jaterní encefalopatie. Hypoparatyreóza - etiopatogeneze, projevy, následky",
-  "Akutní a chronické hepatitidy - etiopatogeneze, rozdělení, projevy, následky. Adenokortikální insuficience Addisonova choroba. Adrenální (addisonská) krize - etiopatogeneze, projevy, následky"
+  "Akutní a chronické hepatitidy - etiopatogeneze, rozdělení, projevy, následky. Adenokortikální insuficience - Addisonova choroba. Adrenální (addisonská) krize - etiopatogeneze, projevy, následky"
 ];
 
 // Kategorie "Praktická" - 50 nových klinických/laboratorních otázek
