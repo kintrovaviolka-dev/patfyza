@@ -17,3 +17,6 @@
 ## 2024-05-18 - [Typo fixes in medical strings]
 **Learning:** Medical typos like 'hyperokalcémii' and 'neatnofují' often slip into lengthy text blocks in data objects without syntax tools catching them.
 **Action:** Regular expressions and substring search over specific properties (e.g. `quiz` or `clinicalManifestation`) are necessary to hunt for specific typographical mistakes in complex static datasets.
+## 2024-07-26 - Anatomical terminology accuracy
+**Learning:** Found an inaccurate medical phrase "systémového plicního oběhu" (systemic pulmonary circulation) describing left-sided heart failure. Systemic and pulmonary circulations are separate. Left heart pumps from the pulmonary to the systemic.
+**Action:** When updating medical definitions, ensure that physiological concepts (like circulation pathways) are completely accurate and do not conflate terms like "systemic" and "pulmonary".

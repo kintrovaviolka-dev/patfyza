@@ -1556,7 +1556,7 @@ const SPECIAL_1_DETAILS = {
   "spec-1-30": {
     richContent: {
       clinicalPearl: "Akutní levostranné srdeční selhání se projevuje plicním městnáním (dušnost, ortopnoe, poslechově vlhké fenomény) v důsledku retrográdního hromadění krve před levou síní.",
-      definition: "Levostranné srdeční selhání je charakterizováno neschopností levé komory přečerpat krev ze systémového plicního oběhu do aorty, což vede k plicnímu městnání a systémové hypoperfuzi.",
+      definition: "Levostranné srdeční selhání je charakterizováno neschopností levé komory přečerpat krev z plicního oběhu do aorty, což vede k plicnímu městnání a systémové hypoperfuzi.",
       etiology: [
         "Ischemická choroba srdeční: akutní infarkt myokardu levé komory, chronická ischemická kardiomyopatie.",
         "Arteriální hypertenze: hypertenzní krize výrazně zvýší afterload levé komory.",
