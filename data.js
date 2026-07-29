@@ -41,7 +41,7 @@ const RAW_QUESTIONS_SPECIAL_1 = [
   "Chronická obstrukční plicní nemoc (chronická bronchitida a emfyzém plic) a astma bronchiale - etiopatogeneze a rozdíly, symptomy",
   "Hypokoagulační stavy - etiopatogeneze, projevy, následky",
   "Hyperkoagulační stavy - etiopatogeneze, projevy, následky. Trombofilní stavy",
-  "Hlavní vrozené a získané srdeční vady příčiny, projevy, následky, kompenzační mechanismy. Kardiomyopatie - rozdělení, etiopatogeneze, projevy, následky",
+  "Hlavní vrozené a získané srdeční vady - příčiny, projevy, následky, kompenzační mechanismy. Kardiomyopatie - rozdělení, etiopatogeneze, projevy, následky",
   "Hemostáza - základní deskripce poruch primární (cévy a trombocyty), sekundární (koagulační kaskáda) a terciární (trombolýza) hemostázy",
   "Endokarditidy. Myokarditidy. Perikarditidy - etiopatogeneze, projevy, následky. Srdeční tamponáda",
   "Glomerulopatie - etiopatogeneze, projevy, následky",
