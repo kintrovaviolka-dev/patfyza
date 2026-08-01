@@ -20,3 +20,6 @@
 ## 2024-07-26 - Anatomical terminology accuracy
 **Learning:** Found an inaccurate medical phrase "systémového plicního oběhu" (systemic pulmonary circulation) describing left-sided heart failure. Systemic and pulmonary circulations are separate. Left heart pumps from the pulmonary to the systemic.
 **Action:** When updating medical definitions, ensure that physiological concepts (like circulation pathways) are completely accurate and do not conflate terms like "systemic" and "pulmonary".
+## 2026-08-01 - Intentional distractors in quiz data
+**Learning:** Found a grammatical error ('chronickáho') in `data_general.js`. However, upon closer inspection of the context (quiz options), it became apparent that this error was an intentional distractor to test the user's knowledge, and correcting it would alter the quiz's difficulty/intent.
+**Action:** Always verify the context of a typo, especially in quiz options or similar testing scenarios, before attempting to correct it.

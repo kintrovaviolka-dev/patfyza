@@ -2468,7 +2468,7 @@ const GENERAL_DETAILS = {
                         "Fyziologické procesy remodelace tkání (apoptóza při embryogenezi)."
                   ],
                   "pathogenesis": [
-                        "Reversibilní poškození: zduření buňky (hydroptická dystrofie) z důvodu mírného poklesu ATP a dysfunkce Na+/K+-ATPázy.",
+                        "Reversibilní poškození: zduření buňky (hydropická dystrofie) z důvodu mírného poklesu ATP a dysfunkce Na+/K+-ATPázy.",
                         "Ireversibilní poškození (bod zlomu): těžká destrukce mitochondrií (otevření MPTP), masivní influx Ca2+ do cytosolu a degradace membrán.",
                         "Mechanismus apoptózy: aktivace kaspáz (vnitřní cestou přes cytochrom c z mitochondrií nebo vnější přes receptory smrti), tvorba apoptotických tělísek."
                   ],
@@ -2533,7 +2533,7 @@ const GENERAL_DETAILS = {
                   {
                         "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Poškození a smrt buňky?",
                         "options": [
-                              "Reversibilní poškození: zduření buňky (hydroptická dystrofie) z důvodu mírného poklesu ATP a dysfunkce Na+/K+-ATPázy.",
+                              "Reversibilní poškození: zduření buňky (hydropická dystrofie) z důvodu mírného poklesu ATP a dysfunkce Na+/K+-ATPázy.",
                               "Teplo: denaturace proteinů, tepelná koagulace cév a buněčná nekróza.",
                               "Generalizovaná endoteliální dysfunkce vyvolá mikrovaskulární únik tekutin, aktivaci koagulace (mikrotrombózu) a masivní vasodilataci.",
                               "Buněčná infiltrace: exprese selektinů a integrinů na endotelu umožňuje marginaci, diapedézu a chemotaxi neutrofilů a makrofágů do místa poškození."
@@ -5094,7 +5094,7 @@ const GENERAL_DETAILS = {
                               "Ischemie postihuje tkáň hůře než prostá hyperoxie, protože chybí odplavování toxických metabolitů (laktát, H+).",
                               "Pokles energetického stavu tlumí imunitní funkce a regeneraci tkání.",
                               "Ischemie postihuje tkáň hůře než prostá hypoxie, protože chybí odplavování toxických metabolitů (laktát, H+).",
-                              "Reversibilní poškození: zduření buňky (hydroptická dystrofie) z důvodu mírného poklesu ATP a dysfunkce Na+/K+-ATPázy."
+                              "Reversibilní poškození: zduření buňky (hydropická dystrofie) z důvodu mírného poklesu ATP a dysfunkce Na+/K+-ATPázy."
                         ],
                         "correct": 2,
                         "explanations": [
@@ -5834,7 +5834,7 @@ const GENERAL_DETAILS = {
                   {
                         "question": "Jaký patofyziologický mechanismus (patogeneze) je klíčový v rozvoji tématu: Metabolický syndrom X?",
                         "options": [
-                              "Reversibilní poškození: zduření buňky (hydroptická dystrofie) z důvodu mírného poklesu ATP a dysfunkce Na+/K+-ATPázy.",
+                              "Reversibilní poškození: zduření buňky (hydropická dystrofie) z důvodu mírného poklesu ATP a dysfunkce Na+/K+-ATPázy.",
                               "Stárnutí: Hayflickův limit omezuje dělení buněk; dochází k buněčné senescenci a ztrátě kmenových buněk.",
                               "Pokles venózního návratu (preloadu) vede ke snížení tepového objemu a srdečního výdeje.",
                               "Viscerální tuk je metabolicky vysoce aktivní a secernuje prozánětlivé adipokiny a uvolňuje volné mastné kyseliny (FFA) přímo do v. portae."
