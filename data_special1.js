@@ -2075,7 +2075,7 @@ const SPECIAL_1_DETAILS = {
 
       definition: "Srdeční vady jsou strukturální anomálie chlopní či přepážek (vrozené/získané). Kardiomyopatie jsou primární onemocnění myokardu spojená s mechanickou nebo elektrickou dysfunkcí.",
       etiology: [
-        "Získané vady chlopní: degenerativní kalcifikace (aortální stenóza u seniorů), porematická horečka, infekční endokarditida.",
+        "Získané vady chlopní: degenerativní kalcifikace (aortální stenóza u seniorů), porevmatická horečka, infekční endokarditida.",
         "Vrozené vady: defekt síňového/komorového septa (ASD/VSD), koarktace aorty.",
         "Kardiomyopatie (KMP): dilatovaná (alkohol, myokarditida, genetika), hypertrofická (mutace sarkomer - příčina náhlé smrti sportovců), restrikční (amyloidóza)."
       ],

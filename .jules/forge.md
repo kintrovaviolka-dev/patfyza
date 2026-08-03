@@ -23,3 +23,6 @@
 ## 2026-08-01 - Intentional distractors in quiz data
 **Learning:** Found a grammatical error ('chronickáho') in `data_general.js`. However, upon closer inspection of the context (quiz options), it became apparent that this error was an intentional distractor to test the user's knowledge, and correcting it would alter the quiz's difficulty/intent.
 **Action:** Always verify the context of a typo, especially in quiz options or similar testing scenarios, before attempting to correct it.
+## 2024-05-18 - Typo fix in data_special1.js
+**Learning:** Found typo "porematická" (instead of "porevmatická") in data_special1.js. When fixing typos in deep data objects, it is safer to use grep to find exact occurrences rather than assuming keys. Also, PR descriptions should not reference specific IDs if they were not explicitly found in exploration.
+**Action:** Use specific strings when doing replacements instead of assuming object keys that were not completely verified during exploration.
