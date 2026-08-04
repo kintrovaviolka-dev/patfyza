@@ -481,7 +481,7 @@ const SPECIAL_2_DETAILS = {
         ],
         correct: 0,
         explanations: [
-          "Správně! SLE is prototypem onemocnění vyvolaného imunokomplexy (reakce III. typu). Protilátky proti jaderným strukturám (např. anti-dsDNA) tvoří s antigeny komplexy, které se zachycují v cévách a glomerulech (lupusová nefritida), kde vyvolají zánět a poškození tkání.",
+          "Správně! SLE je prototypem onemocnění vyvolaného imunokomplexy (reakce III. typu). Protilátky proti jaderným strukturám (např. anti-dsDNA) tvoří s antigeny komplexy, které se zachycují v cévách a glomerulech (lupusová nefritida), kde vyvolají zánět a poškození tkání.",
           "Nesprávně. Reakce I. typu (IgE) se uplatňuje u alergií a anafylaxe.",
           "Nesprávně. Kyselina močová způsobuje dnu, nikoliv SLE.",
           "Nesprávně. Protilátky proti AChR způsobují myasthenia gravis."
@@ -1729,7 +1729,7 @@ const SPECIAL_2_DETAILS = {
         "Paralytický ileus: pooperační stav, peritonitida, těžká hypokalémie."
       ],
       pathogenesis: [
-        "Divertikulóza: herniace sliznice skrze svalovou vrstvu střeva. Divertikulitida vzniká stagnation stolice v divertiklu s rozvojem mikroperforace a zánětu.",
+        "Divertikulóza: herniace sliznice skrze svalovou vrstvu střeva. Divertikulitida vzniká stagnací stolice v divertiklu s rozvojem mikroperforace a zánětu.",
         "CRC: progrese z benigního polypu (adenomu) akumulací genetických mutací (kaskáda APC -> KRAS -> p53).",
         "Ileus: zástava pasáže vede k hromadění tekutiny a plynů nad překážkou, což zvýší intraluminální tlak. Dochází k útlaku žilního odtoku stěny (venostáza), prosáknutí stěny, bakteriální translokaci a hrozí ischemie (gangréna) s perforací střeva a peritonitidou."
       ],
