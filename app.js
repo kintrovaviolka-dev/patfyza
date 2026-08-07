@@ -150,8 +150,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (analyticsGrid) {
       analyticsGrid.innerHTML = "";
       
+      const questionsByCategory = {};
+      for (let i = 0; i < state.questions.length; i++) {
+        const q = state.questions[i];
+        if (!questionsByCategory[q.category]) {
+          questionsByCategory[q.category] = [];
+        }
+        questionsByCategory[q.category].push(q);
+      }
+
       categories.forEach(cat => {
-        const catQuestions = state.questions.filter(q => q.category === cat.id);
+        const catQuestions = questionsByCategory[cat.id] || [];
         
         let totalSubQuestions = 0;
         let completedSubQuestions = 0;
@@ -1318,9 +1327,18 @@ document.addEventListener("DOMContentLoaded", () => {
       { id: "Praktická", label: "Praktická témata" }
     ];
 
+    const questionsByCategoryForMistakes = {};
+    for (let i = 0; i < state.questions.length; i++) {
+      const q = state.questions[i];
+      if (!questionsByCategoryForMistakes[q.category]) {
+        questionsByCategoryForMistakes[q.category] = [];
+      }
+      questionsByCategoryForMistakes[q.category].push(q);
+    }
+
     categories.forEach(cat => {
       let categoryMistakes = 0;
-      state.questions.filter(q => q.category === cat.id).forEach(q => {
+      (questionsByCategoryForMistakes[cat.id] || []).forEach(q => {
         (q.quiz || []).forEach((item, questionIndex) => {
           const subQId = `${q.id}_q${questionIndex}`;
           if (state.wrongQuestions[subQId]) {
