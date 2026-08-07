@@ -382,7 +382,7 @@ document.addEventListener("DOMContentLoaded", () => {
     studyContent.innerHTML = q.detailContent || "";
 
     // Načtení poznámek do editoru
-    editorContent.innerHTML = state.userNotes[q.id] || "";
+    editorContent.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(state.userNotes[q.id] || "") : "<i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Poznámky nelze bezpečně zobrazit.</i>";
 
     // Nastavení stavu učení v modálu
     const currentStatus = state.userProgress[q.id] || "not-started";
