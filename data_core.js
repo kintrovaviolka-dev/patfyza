@@ -72,7 +72,7 @@ const RAW_QUESTIONS_SPECIAL_2 = [
   "Poranění míchy - etiopatogeneze, projevy, následky. Transverzální míšní léze",
   "Poruchy kognitivních funkcí - paměť, pozornost, učení, řeč, vnímání, chápání. Demence. Alzheimerova choroba - etiopatogeneze, projevy, následky",
   "Hemoragické cévní mozkové příhody - etiopatogeneze, projevy, následky",
-  "Nespecifická zánětlivá onemocnění střev - Crohnova choroba, ulcerativní kolitida",
+  "Nespecifická zánětlivá onemocnění střev - Crohnova choroba, ulcerózní kolitida",
   "Nemoci dutiny ústní. Poruchy polykání, Poruchy jícnu - etiopatogeneze, projevy, následky. Dyspepsie. Refluxní choroba jícnu",
   "Myopatie, rhabdomyolýza - etiopatogeneze, projevy, následky.",
   "Krvácení do GIT - formy, příčiny, lokalizace, projevy, následky.",
