@@ -4,3 +4,6 @@
 ## 2024-08-08 - Translation Consistency in Data Structure
 **Learning:** Found literal English-to-Czech translations (e.g., "ulcerativní kolitida" instead of "ulcerózní kolitida") present in root-level data array mappings (`data_core.js`, `data.js`) while being correctly translated in nested explanation text (`data_special2.js`).
 **Action:** When updating incorrect terminology, globally search the codebase (including array strings, not just JSON properties) to ensure the terminology is consistent across both high-level topic arrays and detailed explanation keys.
+## 2024-08-09 - Hyphenation and Terminology Consistency
+**Learning:** Found inconsistent terminology usage ("locked-in syndrome" vs. "locked-in syndrom") and missing hyphens in dual-name eponyms ("Zollinger Ellisonův" vs. "Zollinger-Ellisonův").
+**Action:** Always verify proper Czech spelling of medical syndromes (using "syndrom" instead of "syndrome") and ensure hyphenation between multiple surnames in eponymous diseases (e.g., "Zollinger-Ellisonův") during content audits.
