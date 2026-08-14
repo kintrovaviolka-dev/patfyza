@@ -4,3 +4,6 @@
 ## 2024-08-08 - Translation Consistency in Data Structure
 **Learning:** Found literal English-to-Czech translations (e.g., "ulcerativní kolitida" instead of "ulcerózní kolitida") present in root-level data array mappings (`data_core.js`, `data.js`) while being correctly translated in nested explanation text (`data_special2.js`).
 **Action:** When updating incorrect terminology, globally search the codebase (including array strings, not just JSON properties) to ensure the terminology is consistent across both high-level topic arrays and detailed explanation keys.
+## 2026-08-14 - Consistent Hyphenation for Eponymous Syndromes
+**Learning:** Two-name eponymous syndromes (like Zollinger-Ellisonův syndrom) must be consistently hyphenated across both main and core data arrays.
+**Action:** Ensure to search across both `data.js` and `data_core.js` for missing hyphens when updating terminology formatting.
