@@ -640,7 +640,7 @@ const SPECIAL_1_DETAILS = {
       etiology: [
         "Renální příčiny: chronická parenchymová onemocnění ledvin (glomerulonefritidy, polycystóza).",
         "Renovaskulární příčiny: stenóza renální arterie (ateroskleróza u starších, fibromuskulární dysplazie u mladých žen).",
-        "Endokrinní příčiny: primární hyperaldosteronismus (Connův sy), feochromocytom, Cushingův syndrom.",
+        "Endokrinní příčiny: primární hyperaldosteronismus (Connův syndrom), feochromocytom, Cushingův syndrom.",
         "Mechanické příčiny: koarktace aorty (vrozené zúžení aorty)."
       ],
       pathogenesis: [
