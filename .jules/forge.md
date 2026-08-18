@@ -7,3 +7,7 @@
 ## 2026-08-14 - Consistent Hyphenation for Eponymous Syndromes
 **Learning:** Two-name eponymous syndromes (like Zollinger-Ellisonův syndrom) must be consistently hyphenated across both main and core data arrays.
 **Action:** Ensure to search across both `data.js` and `data_core.js` for missing hyphens when updating terminology formatting.
+
+## 2026-08-18 - Handling Truncated Bash Outputs in Data Replacements
+**Learning:** When using grep to find text to replace, long lines in data structures (like arrays in 'data_general.js') may be truncated in the bash output trace, leading to hallucinated or incorrect assumptions about the rest of the string if it is used directly in a diff.
+**Action:** Before writing an execution plan that involves replacing a long string discovered via grep, always use `sed -n '<line_number>p' <file>` in an exploration step to retrieve and verify the exact, fully untruncated content of the line.
