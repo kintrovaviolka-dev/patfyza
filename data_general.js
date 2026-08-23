@@ -3194,7 +3194,7 @@ const GENERAL_DETAILS = {
                   "definition": "Poruchy růstu a puberty představují odchylky od fyziologického somatického a pohlavního vývoje. Stárnutí je postupné, univerzální zhoršování biologických funkcí končící smrtí organismu.",
                   "etiology": [
                         "Poruchy růstu: deficit růstového hormonu (nanismus), nadbytek (gigantismus, akromegalie), celiakie, hypotyreóza.",
-                        "Poruchy puberty: předčasná puberta (nádory, idiopatická), opožděná puberta (Turnerův/Klinefelterův sy, hypogonadotropní hypogonadismus).",
+                        "Poruchy puberty: předčasná puberta (nádory, idiopatická), opožděná puberta (Turnerův/Klinefelterův syndrom, hypogonadotropní hypogonadismus).",
                         "Stárnutí: zkracování telomer, akumulace somatických mutací, poškození buněk kyslíkovými radikály."
                   ],
                   "pathogenesis": [
@@ -5322,7 +5322,7 @@ const GENERAL_DETAILS = {
                   {
                         "question": "Který z následujících etiologických faktorů (příčin/rizikových faktorů) je specifický pro téma: Poškození vlivem chemických vlivů?",
                         "options": [
-                              "Poruchy puberty: předčasná puberta (nádory, idiopatická), opožděná puberta (Turnerův/Klinefelterův sy, hypogonadotropní hypogonadismus).",
+                              "Poruchy puberty: předčasná puberta (nádory, idiopatická), opožděná puberta (Turnerův/Klinefelterův syndrom, hypogonadotropní hypogonadismus).",
                               "Hyperkatabolismus při těžkých chronických zánětech, sepse, nádorových onemocněních (kachexie).",
                               "Metabolická alkalóza: ztráta H+ (zvracení) nebo nadbytek HCO3- (podání hydrogenuhličitanu).",
                               "Akutní otravy: předávkování paracetamolem, požití metanolu (zaměněného za etanol), vdechnutí oxidu uhelnatého (CO) při požáru."
