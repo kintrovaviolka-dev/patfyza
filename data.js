@@ -279,7 +279,7 @@ const SPECIFIC_RICH_DATA = {
       <div class="medical-detail">
         <section>
           <h3>1. Etiopatogeneze</h3>
-          <p>Trvalý vzestup tlaku v vrátnicové žíle (vena portae) nad 10-12 mmHg. Hlavní příčinou je <strong>jaterní cirhóza</strong> (intrahepatální sinusoidální překážka). Dále dělíme na prehepatální (trombóza v. portae) a posthepatální (Budd-Chiariho sy, pravostranné srdeční selhání).</p>
+          <p>Trvalý vzestup tlaku v vrátnicové žíle (vena portae) nad 10-12 mmHg. Hlavní příčinou je <strong>jaterní cirhóza</strong> (intrahepatální sinusoidální překážka). Dále dělíme na prehepatální (trombóza v. portae) a posthepatální (Budd-Chiariho syndrom, pravostranné srdeční selhání).</p>
         </section>
       </div>
     `,
