@@ -961,10 +961,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentDiv = document.createElement("div");
     contentDiv.className = "message-content";
 
-    if (role === "assistant") {
-      contentDiv.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(parseMarkdown(text)) : parseMarkdown(text);
+    if (typeof DOMPurify !== 'undefined') {
+      if (role === "assistant") {
+        contentDiv.innerHTML = DOMPurify.sanitize(parseMarkdown(text));
+      } else {
+        contentDiv.innerHTML = DOMPurify.sanitize(text);
+      }
     } else {
-      contentDiv.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(text) : text;
+      contentDiv.textContent = "Chyba: Nepodařilo se načíst bezpečnostní modul. Zprávu nelze bezpečně zobrazit.";
     }
     
     messageDiv.appendChild(contentDiv);
@@ -1217,7 +1221,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const onChunk = (text) => {
         responseText += text;
         if (contentDiv) {
-          contentDiv.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(parseMarkdown(responseText)) : parseMarkdown(responseText);
+          if (typeof DOMPurify !== 'undefined') {
+            contentDiv.innerHTML = DOMPurify.sanitize(parseMarkdown(responseText));
+          } else {
+            contentDiv.textContent = "Chyba: Nepodařilo se načíst bezpečnostní modul. Zprávu nelze bezpečně zobrazit.";
+          }
           scrollToBottom();
         }
       };
