@@ -961,10 +961,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentDiv = document.createElement("div");
     contentDiv.className = "message-content";
 
-    if (role === "assistant") {
-      contentDiv.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(parseMarkdown(text)) : parseMarkdown(text);
+    if (typeof DOMPurify !== 'undefined') {
+      if (role === "assistant") {
+        contentDiv.innerHTML = DOMPurify.sanitize(parseMarkdown(text));
+      } else {
+        contentDiv.innerHTML = DOMPurify.sanitize(text);
+      }
     } else {
-      contentDiv.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(text) : text;
+      if (role === "assistant") {
+        contentDiv.textContent = parseMarkdown(text);
+      } else {
+        contentDiv.textContent = text;
+      }
     }
     
     messageDiv.appendChild(contentDiv);
