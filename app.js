@@ -962,9 +962,17 @@ document.addEventListener("DOMContentLoaded", () => {
     contentDiv.className = "message-content";
 
     if (role === "assistant") {
-      contentDiv.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(parseMarkdown(text)) : parseMarkdown(text);
+      if (typeof DOMPurify !== "undefined") {
+        contentDiv.innerHTML = DOMPurify.sanitize(parseMarkdown(text));
+      } else {
+        contentDiv.textContent = text;
+      }
     } else {
-      contentDiv.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(text) : text;
+      if (typeof DOMPurify !== "undefined") {
+        contentDiv.innerHTML = DOMPurify.sanitize(text);
+      } else {
+        contentDiv.textContent = text;
+      }
     }
     
     messageDiv.appendChild(contentDiv);
@@ -1217,7 +1225,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const onChunk = (text) => {
         responseText += text;
         if (contentDiv) {
-          contentDiv.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(parseMarkdown(responseText)) : parseMarkdown(responseText);
+          if (typeof DOMPurify !== "undefined") {
+            contentDiv.innerHTML = DOMPurify.sanitize(parseMarkdown(responseText));
+          } else {
+            contentDiv.textContent = responseText;
+          }
           scrollToBottom();
         }
       };

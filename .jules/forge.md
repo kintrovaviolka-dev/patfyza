@@ -7,3 +7,6 @@
 ## 2026-08-14 - Consistent Hyphenation for Eponymous Syndromes
 **Learning:** Two-name eponymous syndromes (like Zollinger-Ellisonův syndrom) must be consistently hyphenated across both main and core data arrays.
 **Action:** Ensure to search across both `data.js` and `data_core.js` for missing hyphens when updating terminology formatting.
+## 2024-11-20 - Ensure Safe Fallbacks for Chatbot UI
+**Learning:** Found insecure fallback when rendering chatbot markdown if DOMPurify is not available.
+**Action:** Always use `textContent` instead of `innerHTML` when DOMPurify or other HTML sanitization libraries fail to load.
