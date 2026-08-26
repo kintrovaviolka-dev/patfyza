@@ -1773,21 +1773,21 @@ const SPECIAL_2_DETAILS = {
       etiology: [
         "Feochromocytom: z 25-30 % geneticky podmíněný (mutace v RET, VHL, NF1 genech).",
         "MEN 1 a MEN 2: autozomálně dominantní syndromy způsobené mutacemi v genu MEN1 (menin) resp. RET protoonkoproteinu.",
-        "Zollinger-Ellison: gastrin-secernující tumor obvykle lokalizovaný v duodenu nebo pankreatu."
+        "Zollinger-Ellisonův syndrom: gastrin-secernující tumor obvykle lokalizovaný v duodenu nebo pankreatu."
       ],
       pathogenesis: [
         "Feochromocytom: nekontrolovaná sekrece adrenalinu a noradrenalinu působí na a1 receptory (vazokonstrikce - hypertenze) a b1 receptory (tachykardie, zvýšená kontraktilita).",
         "MEN: zárodečné mutace tumor-supresorových genů vedou k hyperplázii a neoplázii žláz (příštítná tělíska, pankreas, hypofýza u MEN 1; medulární karcinom štítné žlázy, feochromocytom u MEN 2).",
-        "Zollinger-Ellison: gastrin masivně stimuluje parietální buňky žaludku k produkci HCl a působí troficky na sliznici. Extrémní překyselení vede k mnohačetným peptickým vředům."
+        "Zollinger-Ellisonův syndrom: gastrin masivně stimuluje parietální buňky žaludku k produkci HCl a působí troficky na sliznici. Extrémní překyselení vede k mnohačetným peptickým vředům."
       ],
       clinicalManifestation: [
         "Feochromocytom: paroxysmální hypertenze (záchvaty extrémního tlaku), klasická triáda - bolesti hlavy, profúzní pocení a palpitace.",
-        "Zollinger-Ellison: mnohočetné, atypicky lokalizované vředy rezistentní k léčbě, těžký průjem (kyselina inaktivuje pankreatickou lipázu).",
+        "Zollinger-Ellisonův syndrom: mnohočetné, atypicky lokalizované vředy rezistentní k léčbě, těžký průjem (kyselina inaktivuje pankreatickou lipázu).",
         "MEN: příznaky podle postižených žláz (např. hyperkalcémie u hyperparatyreózy)."
       ],
       diagnostics: [
         "Feochromocytom: stanovení volných metanefrinů a normetanefrinů v plazmě nebo moči za 24 hodin; CT/MRI nadledvin.",
-        "Zollinger-Ellison: průkaz extrémního nárůstu gastrinu v séru nalačno a stanovení žaludeční sekrece acidity (BAO > 15 mmol/h).",
+        "Zollinger-Ellisonův syndrom: průkaz extrémního nárůstu gastrinu v séru nalačno a stanovení žaludeční sekrece acidity (BAO > 15 mmol/h).",
         "Genetické testování u podezření na syndromy MEN."
       ]
     },
