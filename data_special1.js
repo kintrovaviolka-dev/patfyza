@@ -1488,7 +1488,7 @@ const SPECIAL_1_DETAILS = {
     `,
     quiz: [
       {
-        question: "Proč jsou pacienti s nefrotickým syndromem ve vysokém riziku vzniku tromoembolických komplikací?",
+        question: "Proč jsou pacienti s nefrotickým syndromem ve vysokém riziku vzniku tromboembolických komplikací?",
         options: [
           "Dochází k nadměrné produkci destiček ve slezině",
           "Dochází k masivní ztrátě antitrombinu III močí spolu se zvýšenou syntézou prokoagulačních faktorů v játrech",
