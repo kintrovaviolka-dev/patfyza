@@ -7,3 +7,6 @@
 ## 2026-08-14 - Consistent Hyphenation for Eponymous Syndromes
 **Learning:** Two-name eponymous syndromes (like Zollinger-Ellisonův syndrom) must be consistently hyphenated across both main and core data arrays.
 **Action:** Ensure to search across both `data.js` and `data_core.js` for missing hyphens when updating terminology formatting.
+## 2024-08-09 - Capitalization and English terminology
+**Learning:** Found English capitalization and terminology (e.g., "Sick Sinus Syndrome" instead of "sick sinus syndrom") in Czech data strings, violating local medical phrasing conventions for non-proper medical syndromes.
+**Action:** Always use lowercase for non-proper medical syndromes and translate to Czech ("syndrom" instead of "Syndrome") consistently across all data arrays.
