@@ -2283,7 +2283,7 @@ const SPECIAL_1_DETAILS = {
         "Zvýšený tonus parasympatiku (např. u trénovaných sportovců, vazovagální stavy) a hypotyreóza."
       ],
       pathogenesis: [
-        "Dysfunkce SA uzlu (Sick Sinus Syndrome): selhání tvorby impulsů (sinusová bradykardie, sinusový arrest).",
+        "Dysfunkce SA uzlu (sick sinus syndrom): selhání tvorby impulsů (sinusová bradykardie, sinusový arrest).",
         "AV blokády (porucha vedení ze síní na komory): I. stupeň (prodloužení PQ > 200 ms), II. stupeň (Mobitz I / Wenckebach s postupným prodlužováním PQ, Mobitz II s náhlým vypadnutím QRS), III. stupeň (kompletní blok s AV disociací a pomalým náhradním rytmem).",
         "Pokles frekvence pod kritickou mez vyvolá hypoperfuzi mozku."
       ],
