@@ -786,7 +786,7 @@ const PRACTICAL_DETAILS = {
     },
     quiz: [
       {
-        question: "Co na EEG vyšetření potvrzuje diagnózu smrti mozku u pacienta v hlubokém komatu?",
+        question: "Co na EEG vyšetření potvrzuje diagnózu smrti mozku u pacienta v hlubokém kómatu?",
         options: [
           "Převaha alfa rytmu v týlních svodech",
           "Izoelektrická linie (plochá křivka bez bioelektrické aktivity mozkové kůry trvající i při stimulaci)",
@@ -1029,7 +1029,7 @@ const PRACTICAL_DETAILS = {
   },
   "pract-37": {
     summary: "Posouzení stavu vědomí rozlišuje kvantitativní a kvalitativní poruchy. Glasgow Coma Scale (GCS) objektivně hodnotí hloubku bezvědomí na základě reakcí očí, řeči a motoriky.",
-    keyTerms: ["Glasgow Coma Scale (GCS)", "Kvantitativní poruchy (somnolence, sopor, koma)", "Kvalitativní poruchy (delirium, zmatenost)", "Motorická odpověď", "Otevírání očí"],
+    keyTerms: ["Glasgow Coma Scale (GCS)", "Kvantitativní poruchy (somnolence, sopor, kóma)", "Kvalitativní poruchy (delirium, zmatenost)", "Motorická odpověď", "Otevírání očí"],
     richContent: {
       significance: "Rychlé, objektivní zhodnocení závažnosti postižení CNS a hloubky bezvědomí, klíčové pro triage a indikaci zajištění dýchacích cest.",
       high: "GCS 15 bodů (plně orientovaný pacient). Kvalitativní poruchy (delirium se zvýšenou aktivitou sympatiku, neklidem, halucinacemi).",

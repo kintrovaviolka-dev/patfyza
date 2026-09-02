@@ -112,7 +112,7 @@ const SPECIAL_2_DETAILS = {
   // spec-2-3: Urgentní stavy z endokrinních příčin,
 
 "spec-2-3": {
-    keyTerms: ["Tyreotoxická krize", "Myxedémové koma", "Adrenální krize", "Diabetická ketoacidóza", "Hyperosmolární hyperglykemický syndrom"],
+    keyTerms: ["Tyreotoxická krize", "Myxedémové kóma", "Adrenální krize", "Diabetická ketoacidóza", "Hyperosmolární hyperglykemický syndrom"],
     detailContent: `
       <div class="medical-detail">
         <section>
@@ -121,7 +121,7 @@ const SPECIAL_2_DETAILS = {
         </section>
 
         <section>
-          <h3>2. Myxedémové koma</h3>
+          <h3>2. Myxedémové kóma</h3>
           <p>Terminální stádium neléčené hypotyreózy. Dochází k extrémnímu poklesu metabolismu buněk. Projevy: těžká hypotermie, bradykardie, hypoventilace (hromadění $CO_2$), hyponatrémie, generalizované myxedémové otoky a kóma.</p>
         </section>
 
