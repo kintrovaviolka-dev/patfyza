@@ -1859,7 +1859,7 @@ const SPECIAL_1_DETAILS = {
       ],
       clinicalManifestation: [
         "Námahová až klidová dušnost, tachypnoe.",
-        "Symptomy hyperkapnie: bolesti hlavy (vazodilatace cév v mozku), teplá kůže, opocení, třes rukou (asterixis), spavost až koma (CO2 narkóza).",
+        "Symptomy hyperkapnie: bolesti hlavy (vazodilatace cév v mozku), teplá kůže, opocení, třes rukou (asterixis), spavost až kóma (CO2 narkóza).",
         "Polycytémie vyvolaná chronickou hypoxií (nadprodukce EPO ledvinami)."
       ],
       diagnostics: [
@@ -2517,7 +2517,7 @@ const SPECIAL_1_DETAILS = {
         "Typ II (ventilační selhání / hypoventilace): dochází k selhání respirační pumpy k odvětrání alveolů. Oxid uhličitý se hromadí v těle (hyperkapnie), což vede k respirační acidóze."
       ],
       clinicalManifestation: [
-        "Dušnost, tachypnoe, zapojení pomocného svalstva, neklid, úzkost, zmatenost až poruchy vědomí (somnolence, koma u hyperkapnie).",
+        "Dušnost, tachypnoe, zapojení pomocného svalstva, neklid, úzkost, zmatenost až poruchy vědomí (somnolence, kóma u hyperkapnie).",
         "Cyanóza (modravé zbarvení kůže a sliznic při vzestupu redukovaného hemoglobinu nad 50 g/l).",
         "Respirační acidóza (pokles pH, vzestup paCO2) doprovázená hypoxémií (pokles paO2)."
       ],
