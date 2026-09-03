@@ -1082,7 +1082,7 @@ document.addEventListener("DOMContentLoaded", () => {
       throw new Error("Žádné platné zprávy k odeslání.");
     }
 
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse`, {
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:streamGenerateContent?alt=sse`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
