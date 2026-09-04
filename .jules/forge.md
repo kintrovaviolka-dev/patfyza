@@ -10,3 +10,6 @@
 ## 2024-08-09 - Capitalization and English terminology
 **Learning:** Found English capitalization and terminology (e.g., "Sick Sinus Syndrome" instead of "sick sinus syndrom") in Czech data strings, violating local medical phrasing conventions for non-proper medical syndromes.
 **Action:** Always use lowercase for non-proper medical syndromes and translate to Czech ("syndrom" instead of "Syndrome") consistently across all data arrays.
+## 2024-09-03 - Cross-Origin Request Errors in Local Environment
+ **Learning:** When running the static application locally (e.g., using python3 -m http.server), the app attempts to fetch an external config (`https://verysadanyway.vercel.app/api/config`), which fails due to CORS. This does not block local static scripts or object instantiations like `window.PRACTICAL_DETAILS`.
+ **Action:** Ignore CORS fetch errors in the Playwright console logs when evaluating static data in UI tests, as long as the necessary static objects populate correctly.
