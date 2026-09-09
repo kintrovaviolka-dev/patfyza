@@ -5354,7 +5354,7 @@ const GENERAL_DETAILS = {
                   {
                         "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Poškození vlivem chemických vlivů?",
                         "options": [
-                              "Paracetamol: iniciálně asymptomatický, po 24-48 h rozvoj chronickáho jaterního selhání (ikterus, koagulopatie, encefalopatie).",
+                              "Paracetamol: iniciálně asymptomatický, po 24-48 h rozvoj chronického jaterního selhání (ikterus, koagulopatie, encefalopatie).",
                               "Paracetamol: iniciálně asymptomatický, po 24-48 h rozvoj chronického jaterního selhání (ikterus, koagulopatie, encefalopatie).",
                               "Úbytek hmotnosti, atrofie kosterního svalstva (sarkopenie), vymizení podkožního tuku.",
                               "Paracetamol: iniciálně asymptomatický, po 24-48 h rozvoj akutního jaterního selhání (ikterus, koagulopatie, encefalopatie)."
