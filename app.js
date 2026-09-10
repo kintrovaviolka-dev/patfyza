@@ -592,14 +592,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const ekgCanvasHTML = item.ekgConfig ? `<canvas id="quiz-ekg-canvas"></canvas>` : "";
 
-      quizCard.innerHTML = `
+      quizCard.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(`
         <div class="quiz-question">${questionIndex + 1}. ${item.question}</div>
         ${ekgCanvasHTML}
         <div class="quiz-options">
           ${optionsHTML}
         </div>
         <div class="quiz-explanation-container" id="explanation-${questionIndex}"></div>
-      `;
+      `) : "<i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Kvíz nelze bezpečně zobrazit.</i>";
 
       const expContainer = quizCard.querySelector(`#explanation-${questionIndex}`);
       if (hasAnswered) {
