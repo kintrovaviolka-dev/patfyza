@@ -111,6 +111,11 @@ a:hover {
   color: var(--color-primary-hover);
 }
 
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 /* Kontejnery */
 .app-container {
   max-width: 1400px;
@@ -163,7 +168,8 @@ header {
 .controls {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 /* Dashboard Statistik */
