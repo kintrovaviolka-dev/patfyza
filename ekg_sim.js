@@ -1190,7 +1190,8 @@ const EKG_PRESETS = [
     
     // Features list
     const featuresList = document.getElementById("ekg-clinical-features");
-    featuresList.innerHTML = preset.features.map(f => `<li class="ekg-bullet-item">${f}</li>`).join("");
+    const rawFeaturesHtml = preset.features.map(f => `<li class="ekg-bullet-item">${f}</li>`).join("");
+    featuresList.innerHTML = typeof DOMPurify !== "undefined" ? DOMPurify.sanitize(rawFeaturesHtml) : "<i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Zprávu nelze bezpečně zobrazit.</i>";
     
     // Pathophysiology deeper details
     document.getElementById("ekg-clinical-pathology").textContent = preset.pathology;
