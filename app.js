@@ -388,7 +388,7 @@ document.addEventListener("DOMContentLoaded", () => {
     switchTab(lastTab);
 
     // Načtení výkladu
-    studyContent.innerHTML = q.detailContent || "";
+    studyContent.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(q.detailContent || "") : "<i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Výklad nelze bezpečně zobrazit.</i>";
 
     // Načtení poznámek do editoru
     editorContent.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(state.userNotes[q.id] || "") : "<i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Poznámky nelze bezpečně zobrazit.</i>";
