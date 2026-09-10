@@ -969,7 +969,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } else {
       if (role === "assistant") {
-        contentDiv.textContent = parseMarkdown(text);
+        contentDiv.innerHTML = "<i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Zprávu nelze bezpečně zobrazit.</i>";
       } else {
         contentDiv.textContent = text;
       }
@@ -1226,7 +1226,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const onChunk = (text) => {
         responseText += text;
         if (contentDiv) {
-          contentDiv.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(parseMarkdown(responseText)) : parseMarkdown(responseText);
+          contentDiv.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(parseMarkdown(responseText)) : "<i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Zprávu nelze bezpečně zobrazit.</i>";
           scrollToBottom();
         }
       };
