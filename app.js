@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const card = document.createElement("div");
         card.className = "category-card";
-        card.innerHTML = `
+        const rawHTML = `
           <div class="category-header">
             <span class="category-name">${cat.label}</span>
             <span class="accuracy-badge ${badgeClass}">${completedSubQuestions > 0 ? accuracyPct + ' %' : 'N/A'}</span>
@@ -210,6 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <span class="mistakes-count ${categoryMistakes === 0 ? 'zero' : ''}">${categoryMistakes} chyb</span>
           </div>
         `;
+        card.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(rawHTML) : "<i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Obsah nelze bezpečně zobrazit.</i>";
         analyticsGrid.appendChild(card);
       });
     }
@@ -267,6 +268,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       return;
     }
+
+    const fragment = document.createDocumentFragment();
 
     filtered.forEach((q, index) => {
       const cardContainer = document.createElement("div");
@@ -354,8 +357,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      cardsGrid.appendChild(cardContainer);
+      fragment.appendChild(cardContainer);
     });
+
+    cardsGrid.appendChild(fragment);
   };
 
   // --- MODÁLNÍ OKNO / OTEVŘENÍ DETAILU ---
@@ -388,7 +393,7 @@ document.addEventListener("DOMContentLoaded", () => {
     switchTab(lastTab);
 
     // Načtení výkladu
-    studyContent.innerHTML = q.detailContent || "";
+    studyContent.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(q.detailContent || "") : "<i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Výklad nelze bezpečně zobrazit.</i>";
 
     // Načtení poznámek do editoru
     editorContent.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(state.userNotes[q.id] || "") : "<i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Poznámky nelze bezpečně zobrazit.</i>";
@@ -592,14 +597,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const ekgCanvasHTML = item.ekgConfig ? `<canvas id="quiz-ekg-canvas"></canvas>` : "";
 
-      quizCard.innerHTML = `
+      quizCard.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(`
         <div class="quiz-question">${questionIndex + 1}. ${item.question}</div>
         ${ekgCanvasHTML}
         <div class="quiz-options">
           ${optionsHTML}
         </div>
         <div class="quiz-explanation-container" id="explanation-${questionIndex}"></div>
-      `;
+      `) : "<i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Kvíz nelze bezpečně zobrazit.</i>";
 
       const expContainer = quizCard.querySelector(`#explanation-${questionIndex}`);
       if (hasAnswered) {
