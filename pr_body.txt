@@ -1,0 +1,5 @@
+🎯 **What:** Wrapped `q.detailContent` in `DOMPurify.sanitize()` before assigning it to `studyContent.innerHTML` in `app.js`.
+
+⚠️ **Risk:** Unsanitized assignment to `innerHTML` allows DOM-based Cross-Site Scripting (XSS). An attacker could potentially inject malicious scripts if `q.detailContent` is dynamically loaded or user-influenced, leading to account compromise or unauthorized actions.
+
+🛡️ **Solution:** Used the already included `DOMPurify` library to sanitize the HTML content before assignment, with a fallback error message if the library fails to load.
