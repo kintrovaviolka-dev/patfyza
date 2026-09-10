@@ -269,6 +269,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    const fragment = document.createDocumentFragment();
+
     filtered.forEach((q, index) => {
       const cardContainer = document.createElement("div");
       cardContainer.className = "card-container";
@@ -355,8 +357,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      cardsGrid.appendChild(cardContainer);
+      fragment.appendChild(cardContainer);
     });
+
+    cardsGrid.appendChild(fragment);
   };
 
   // --- MODÁLNÍ OKNO / OTEVŘENÍ DETAILU ---
