@@ -1310,7 +1310,7 @@ const EKG_PRESETS = [
     feedbackBox.style.display = "flex";
     feedbackBox.className = `ekg-quiz-feedback ${isCorrect ? "correct" : "incorrect"}`;
     
-    feedbackBox.innerHTML = `
+    const feedbackContent = `
       <div style="font-weight: bold; font-size: 11px; display: flex; align-items: center; gap: 4px;">
         ${isCorrect ? '✅ Správná diagnóza!' : '❌ Nesprávná diagnóza!'}
       </div>
@@ -1321,6 +1321,12 @@ const EKG_PRESETS = [
         <strong>EKG Znaky:</strong> ${simState.quizPreset.features.join(", ")}
       </div>
     `;
+
+    if (typeof DOMPurify !== 'undefined') {
+      feedbackBox.innerHTML = DOMPurify.sanitize(feedbackContent);
+    } else {
+      feedbackBox.textContent = "Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Zpětnou vazbu nelze bezpečně zobrazit.";
+    }
     
     document.getElementById("ekg-quiz-submit-btn").style.display = "none";
     document.getElementById("ekg-quiz-next-btn").style.display = "block";
