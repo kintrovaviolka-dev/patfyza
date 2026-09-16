@@ -303,7 +303,7 @@ const SPECIAL_2_DETAILS = {
       ],
       clinicalManifestation: [
         "Syndromy z nadbytku hormonů (hyperfunkce – např. Cushingův syndrom, hypertyreóza, akromegalie).",
-        "Syndromy z nedostatku hormonů (hypofunkce – napž. Addisonova choroba, myxedém, hypopituitarismus).",
+        "Syndromy z nedostatku hormonů (hypofunkce – např. Addisonova choroba, myxedém, hypopituitarismus).",
         "Poruchy vnitřního prostředí (glykémie, elektrolytů, osmolality) a celkového metabolismu."
       ],
       diagnostics: [
