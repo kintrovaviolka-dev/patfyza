@@ -452,22 +452,69 @@ const SPECIAL_1_DETAILS = {
     ]
   },
 
+  "spec-1-8": {
+    richContent: {
+      clinicalPearl: "V moderní 5. univerzální definici infarktu myokardu (ESC) striktně rozlišujeme Typ 1 IM (primární atherotrombóza a prasknutí plátu) a Typ 2 IM (ischemická neproporcionalita nabídky a poptávky po kyslíku, např. při těžké anémii či rychlé tachyarytmii bez akutní léze koronární tepny).",
+      definition: "Akutní infarkt myokardu (AIM) je ložisková nekróza kardiomyocytů způsobená náhlou neproporcionalitou mezi dodávkou a spotřebou kyslíku v myokardu, nejčastěji v důsledku uzávěru nebo kritického zúžení koronární tepny.",
+      etiology: [
+        "Ateroskleróza koronárních tepen (rupatura nebo eroze aterosklerotického plátu s nasedající trombózou).",
+        "Koronární spazmy (Prinzmetalova angina pectoris).",
+        "Embolizace do koronárního řečiště (např. z infekční endokarditidy nebo levé síně při AFib).",
+        "Spontánní disekce koronární tepny (SCAD) nebo koronární vaskulitida."
+      ],
+      pathogenesis: [
+        "Ischemická kaskáda: během několika sekund od zástavy průtoku klesá ATP, selhávají iontové pumpy ($Na^+/K^+$-ATPáza, $Ca^{2+}$-ATPáza), kardiomyocyty přecházejí na anaerobní glykolýzu s hromaděním laktaátu a acidózou.",
+        "Reverzibilní vs. Ireverzibilní poškození: ischemie trvající do 20 minut vede k reverzibilnímu omráčení (stunned myocardium). Po 20 minutách nastává ireverzibilní nekróza kardiomyocytů postupující od subendokardu k subepikardu (vlnovitý frontální postup nekrózy).",
+        "Reperfuzní poškození: po obnovení průtoku dochází k masivní tvorbě reaktivních forem kyslíku (ROS), přetížení vápníkem a otevření porů přechodné permeability v mitochondriích (mPTP), což vyvolá další apoptózu a nekrózu."
+      ],
+      clinicalManifestation: [
+        "Typická stenokardie (tlaková, svíravá bolest za hrudní kostí propagující se do levé ruky, čelisti nebo záda) trvající > 20 minut, nereagující na nitroglycerin.",
+        "Vegetativní doprovod: opocení, úzkost, strach ze smrti (angor animi), nauzea a zvracení (zejména u infarktu spodní stěny).",
+        "Kardiogenní šok a akutní selhání při nekróze > 40 % hmoty levé komory."
+      ],
+      diagnostics: [
+        "EKG (elevace ST úseku u STEMI, depresí ST či T-vlnové změny u NSTEMI).",
+        "Kardiální biomarkery: dynamický vzestup a/nebo pokles vysoko-senzitivního troponinu I nebo T (hs-cTn) nad 99. percentil horní referenční meze URL.",
+        "Koronarografie (vyšetření volby pro identifikaci uzávěru a provedení PCI)."
+      ]
+    },
+    quiz: [
+      {
+        question: "Jaký je zásadní patofyziologický rozdíl mezi infarktem myokardu Typu 1 a Typu 2 dle 5. univerzální definice infarktu myokardu?",
+        options: [
+          "Typ 1 je způsoben akutní aterotrombózou (rupturou/erozí plátu), zatímco Typ 2 vzniká ischemickou neproporcionalitou dodávky/spotřeby O2 bez akutní ruptury plátu (např. anémie, šok, tachyarytmie)",
+          "Typ 1 postihuje výhradně pravou komoru, Typ 2 levou komoru",
+          "Typ 2 nevylučuje do krve troponin",
+          "Typ 1 je vyvolán virovou infekcí myokardu"
+        ],
+        correct: 0,
+        explanations: [
+          "Správně! Typ 1 IM je primárně koronární příhoda s trombem na plátu. Typ 2 IM vzniká sekundárně při zvýšených nárocích (tachyarytmie) nebo snížené nabídce O2 (těžká anémie, hypoxemie, hypotenze) na podkladě stávajícího zúžení či i bez něj.",
+          "Nesprávně. Anatomická lokalizace neodlišuje typ 1 a 2.",
+          "Nesprávně. Obě formy vedou k nekróze kardiomyocytů a uvolnění troponinu nad 99. percentil.",
+          "Nesprávně. Virová infekce vyvolává myokarditidu."
+        ]
+      }
+    ]
+  },
+
   "spec-1-9": {
     richContent: {
-      clinicalPearl: "Ejekční frakce (EF) levé komory rozlišuje srdeční selhání se sníženou EF (HFrEF, pod 40 %, systolická dysfunkce) a se zachovanou EF (HFpEF, nad 50 %, diastolická dysfunkce).",
-      definition: "Srdeční selhání je klinický syndrom charakterizovaný neschopností srdce zajistit dostatečný minutový výdej pro metabolické potřeby tkání, nebo jen za cenu zvýšení plnicích tlaků.",
+      clinicalPearl: "Dle nejnovějších guidelines ESC 2026 definujeme srdeční selhání se sníženou ejekční frakcí (HFrEF) při LVEF ≤ 50 % a se zachovanou ejekční frakcí (HFpEF) při LVEF ≥ 50 % (kategorie HFmrEF byla zrušena). Základní farmakoterapie (FMT) stojí na 4 pilířích (SGLT2i a MRA jsou indikována pro VŠECHNY pacienty nezávisle na LVEF).",
+
+      definition: "Srdeční selhání je klinický syndrom charakterizovaný neschopností srdce zajistit dostatečný minutový výdej pro metabolické potřeby tkání, nebo jen za cenu patologického zvýšení plnicích tlaků komor. Terminologicky se dřívější pojem 'akutní srdeční selhání' nahrazuje termínem dekompenzované srdeční selhání (DHF).",
       etiology: [
         "Ischemická choroba srdeční (ICHS) a prodělaný infarkt myokardu (ztráta funkčního parenchymu).",
         "Arteriální hypertenze (dlouhodobé zvýšení afterloadu vyvolá hypertrofii a následné selhání).",
-        "Kardiomyopatie (dilatovaná, hypertrofická, restrikční).",
+        "Kardiomyopatie (dilatovaná, hypertrofická, restrikční, amyloidoza myokardu).",
         "Chlopenní vady (stenóza aorty, regurgitace mitrální chlopně)."
       ],
       pathogenesis: [
-        "Systolická dysfunkce: pokles kontraktility (nízká ejekční frakce EF < 40-50 %), srdce se nedokáže dostatečně vyprázdnit.",
-        "Diastolická dysfunkce: porucha relaxace a plnění komor (EF je zachována > 50 %, ale stoupají plnicí tlaky z důvodu tuhosti komory).",
-        "Neurohumorální aktivace: pokles tlaku aktivuje sympatikus a RAAS, což vede k retenci sodíku/vody a remodelaci (hypertrofii/fibróze) myokardu.",
-        "Remodelace myokardu: Chronické přetížení vede k hypertrofii kardiomyocytů a zmnožení vaziva, což mění tvar a geometrii levé komory (např. z elipsoidu na sféru).",
-        "Úloha natriuretických peptidů (ANP, BNP): Jsou vylučovány kardiomyocyty při napětí stěny. Působí vazodilačně, podporují natriurézu a inhibují RAAS, čímž působí protichůdně k patologické aktivaci."
+        "Systolická dysfunkce: pokles kontraktility (ejekční frakce LVEF ≤ 50 % u HFrEF), srdce se nedokáže dostatečně vyprázdnit.",
+        "Diastolická dysfunkce: porucha relaxace a plnění komor (LVEF ≥ 50 % u HFpEF), kdy tuhost komory vyvolává zvýšení plnicích tlaků a městnání v plicním/systémovém oběhu.",
+        "Neurohumorální aktivace: pokles perfuzního tlaku stimuluje sympatikus a RAAS, což vyvolá vazokonstrikci a retenci Na+/vody k udržení MAP, ale dlouhodobě podporuje patologickou remodelaci.",
+        "Remodelace myokardu: Chronické tlakové či objemové přetížení vyvolá hypertrofii kardiomyocytů a fibrotizaci intersticia, což mění geometrii levé komory a zhoršuje její funkci.",
+        "Úloha natriuretických peptidů (ANP, NT-proBNP/BNP): Jsou vylučovány kardiomyocyty při zvětšení nástěnného napětí. Působí natriuresticky a vasodilatačně k potlačení RAAS; slouží jako klíčový diagnostický biomarker pro vyloučení selhání."
       ],
       clinicalManifestation: [
         "Dušnost (dyspnoe) – námahová, klidová až ortopnoe (dušnost vleže nutící pacienta se posadit).",
@@ -482,17 +529,17 @@ const SPECIAL_1_DETAILS = {
     },
     quiz: [
       {
-        question: "Jak se patofyziologicky liší srdeční selhání se zachovanou ejekční frakcí (HFpEF) od selhání se sníženou ejekční frakcí (HFrEF)?",
+        question: "Jak se patofyziologicky a dle nových guidelines ESC 2026 liší srdeční selhání se zachovanou ejekční frakcí (HFpEF) od selhání se sníženou ejekční frakcí (HFrEF)?",
         options: [
           "U HFpEF je poškozena systolická kontrakce komory, zatímco u HFrEF je poškozeno plnění",
-          "U HFpEF (diastolické selhání) je poškozena relaxace a plnění tuhé komory při normální kontraktilitě, zatímco u HFrEF (systolické selhání) selhává vyprazdňování a klesá EF",
+          "U HFpEF (LVEF ≥ 50 %) je poškozena relaxace a plnění tuhé komory při zachované kontraktilitě, zatímco u HFrEF (LVEF ≤ 50 %) selhává systolické vyprazdňování komory (kategorie HFmrEF byla zrušena)",
           "HFpEF se vyskytuje výhradně u dětí",
           "U HFrEF nedochází k aktivaci systému RAAS"
         ],
         correct: 1,
         explanations: [
           "Nesprávně. Tvrzení je obráceně.",
-          "Správně! Systolické selhání (HFrEF) znamená neschopnost komory vypudit dostatek krve (nízká EF). Diastolické selhání (HFpEF) se vyznačuje normální stažlivostí (normální EF), ale komora je tuhá (např. hypertrofovaná u hypertenze) a klade odpor plnění, což zvyšuje tlak v plicních žilách a vyvolává dušnost.",
+          "Správně! Dle ESC Guidelines 2026 definuje HFrEF systolické selhání s LVEF ≤ 50 %, zatímco HFpEF charakterizuje diastolická dysfunkce s LVEF ≥ 50 %. SGLT2 inhibitory a MRA tvoří základní pilíře léčby obou fenotypů.",
           "Nesprávně. Obě formy jsou typické pro dospělé a seniory.",
           "Nesprávně. U obou forem dochází k aktivaci RAAS a sympatiku v odpovědi na patologii."
         ]

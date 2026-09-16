@@ -482,7 +482,7 @@ const PRACTICAL_DETAILS = {
         correct: 1,
         explanations: [
           "Nesprávně. Zvýšená EF se u selhání nevyskytuje.",
-          "Správně! Ejekční frakce vyjadřuje poměr tepového objemu k objemu komory na konci diastoly. Pokles pod 40 % je definičním znakem srdečního selhání se sníženou ejekční frakcí (HFrEF).",
+          "Správně! Ejekční frakce vyjadřuje poměr tepového objemu k objemu komory na konci diastoly. Dle ESC Guidelines 2026 definujeme srdeční selhání se sníženou ejekční frakcí (HFrEF) při LVEF ≤ 50 % (kategorie HFmrEF byla zrušena).",
           "Nesprávně. Fluidotorax je sice komplikací selhání, ale nejedná se o echokardiografický parametr srdce.",
           "Nesprávně. Krční tepny nejsou předmětem srdeční echokardiografie."
         ]
