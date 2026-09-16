@@ -852,8 +852,8 @@ document.addEventListener("DOMContentLoaded", () => {
     { role: "assistant", text: "Ahoj! Jsem tvůj asistent pro **patofyziologii**. Pomůžu ti pochopit mechanismy vzniku nemocí, funkční poruchy orgánů a kompenzační reakce těla. Na co se chceš zeptat?" }
   ];
 
-  // Load key from localStorage
-  const getSavedKey = () => localStorage.getItem("gemini_chat_local_key") || "";
+  // Load key from sessionStorage
+  const getSavedKey = () => sessionStorage.getItem("gemini_chat_local_key") || "";
   chatbotApiKeyInput.value = getSavedKey();
 
   // Rate limiting (client-side)
@@ -889,8 +889,8 @@ document.addEventListener("DOMContentLoaded", () => {
   chatbotSaveKeyBtn.addEventListener("click", () => {
     const key = chatbotApiKeyInput.value.trim();
     if (key) {
-      localStorage.setItem("gemini_chat_local_key", key);
-      alert("API klíč byl uložen do vašeho prohlížeče.");
+      sessionStorage.setItem("gemini_chat_local_key", key);
+      alert("API klíč byl uložen pro toto sezení.");
       chatbotSettingsOverlay.classList.remove("open");
     } else {
       alert("Prosím zadejte platný klíč.");
@@ -898,7 +898,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   chatbotClearKeyBtn.addEventListener("click", () => {
-    localStorage.removeItem("gemini_chat_local_key");
+    sessionStorage.removeItem("gemini_chat_local_key");
     chatbotApiKeyInput.value = "";
     alert("API klíč byl vymazán. Nyní se dotazy posílají přes proxy server.");
   });
