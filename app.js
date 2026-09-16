@@ -1366,13 +1366,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const itemDiv = document.createElement("div");
       itemDiv.className = "setup-category-item";
-      itemDiv.innerHTML = `
+      const rawHTML = `
         <label class="setup-category-label">
           <input type="checkbox" name="quiz-category" value="${cat.id}" ${categoryMistakes > 0 ? 'checked' : 'disabled'}>
           <span>${cat.label}</span>
           <span class="setup-category-mistakes ${categoryMistakes === 0 ? 'zero' : ''}">${categoryMistakes} chyb</span>
         </label>
       `;
+      itemDiv.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(rawHTML) : "<i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Obsah nelze bezpečně zobrazit.</i>";
       setupCategoriesList.appendChild(itemDiv);
     });
 
