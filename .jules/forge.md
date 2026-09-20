@@ -17,3 +17,6 @@
 ## 2024-09-10 - Secure `innerHTML` assignment with DOMPurify
 **Learning:** `DOMPurify` should always be used as a safeguard when dynamically assigning content to `innerHTML`, especially for data that could be user-influenced. It's crucial to provide a safe fallback when external security libraries might fail to load (e.g., using `typeof DOMPurify !== 'undefined'`).
 **Action:** When implementing or fixing HTML rendering logic, always check if the string comes from an unsanitized source and wrap it in `DOMPurify.sanitize()` with an appropriate fail-closed error message.
+## 2024-12-05 - Quiz Setup XSS Fix
+**Learning:** When generating interactive DOM elements using template literals that include user-influenced data, always sanitize the resulting HTML before assigning it to `innerHTML`.
+**Action:** Consistently use `DOMPurify.sanitize()` with a fail-secure fallback when injecting dynamic HTML.
