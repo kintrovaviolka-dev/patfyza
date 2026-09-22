@@ -611,11 +611,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const isCorrect = savedAnswer.isCorrect;
         const optIdx = savedAnswer.answeredIndex;
         const explanationText = item.explanations ? item.explanations[optIdx] : (isCorrect ? "Správná patofyziologická úvaha!" : "Nesprávná úvaha. Přečtěte si výklad k tématu.");
-        expContainer.innerHTML = `
+        const explanationHTML = `
           <div class="quiz-explanation ${isCorrect ? 'correct' : 'incorrect'}">
             <strong>${isCorrect ? 'Správně!' : 'Nesprávně.'}</strong> ${explanationText}
           </div>
         `;
+        expContainer.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(explanationHTML) : "<i>Chyba zabezpečení.</i>";
       }
 
       // Event listener pro volbu odpovědi
@@ -665,11 +666,12 @@ document.addEventListener("DOMContentLoaded", () => {
           // Zobrazení detailního vysvětlení
           const explanationText = item.explanations ? item.explanations[optIdx] : (isCorrect ? "Správná patofyziologická úvaha!" : "Nesprávná úvaha. Přečtěte si výklad k tématu.");
           
-          expContainer.innerHTML = `
+          const explanationHTML = `
             <div class="quiz-explanation ${isCorrect ? 'correct' : 'incorrect'}">
               <strong>${isCorrect ? 'Správně!' : 'Nesprávně.'}</strong> ${explanationText}
             </div>
           `;
+          expContainer.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(explanationHTML) : "<i>Chyba zabezpečení.</i>";
         });
       });
 
@@ -1449,10 +1451,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const letter = String.fromCharCode(65 + optIndex);
       const btn = document.createElement("button");
       btn.className = "quiz-option";
-      btn.innerHTML = `
+      const btnHTML = `
         <span class="quiz-option-letter">${letter}</span>
         <span class="quiz-option-text">${opt}</span>
       `;
+      btn.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(btnHTML) : "<i>Chyba zabezpečení.</i>";
       
       if (hasAnswered) {
         btn.classList.add("disabled");
@@ -1503,11 +1506,12 @@ document.addEventListener("DOMContentLoaded", () => {
         quizScoreText.textContent = `Úspěšnost: ${newAccuracy}% (${session.correctCount}/${session.totalCount})`;
 
         const explanationText = item.explanations ? item.explanations[optIndex] : (isCorrect ? "Správná patofyziologická úvaha!" : "Nesprávná úvaha.");
-        quizSessionExplanation.innerHTML = `
+        const sessionExplanationHTML = `
           <div class="quiz-explanation ${isCorrect ? 'correct' : 'incorrect'}">
             <strong>${isCorrect ? 'Správně!' : 'Nesprávně.'}</strong> ${explanationText}
           </div>
         `;
+        quizSessionExplanation.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(sessionExplanationHTML) : "<i>Chyba zabezpečení.</i>";
 
         nextQuizQuestionBtn.style.display = "inline-flex";
       });
@@ -1519,11 +1523,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const savedAnsIdx = session.answers[currentIdx];
       const isCorrect = savedAnsIdx === item.correct;
       const explanationText = item.explanations ? item.explanations[savedAnsIdx] : (isCorrect ? "Správná patofyziologická úvaha!" : "Nesprávná úvaha.");
-      quizSessionExplanation.innerHTML = `
+      const sessionExplanationHTML = `
         <div class="quiz-explanation ${isCorrect ? 'correct' : 'incorrect'}">
           <strong>${isCorrect ? 'Správně!' : 'Nesprávně.'}</strong> ${explanationText}
         </div>
       `;
+      quizSessionExplanation.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(sessionExplanationHTML) : "<i>Chyba zabezpečení.</i>";
       nextQuizQuestionBtn.style.display = "inline-flex";
     }
   };
@@ -1915,7 +1920,8 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.style.gap = "10px";
       btn.style.transition = "var(--transition-fast)";
       
-      btn.innerHTML = `<span style="font-weight: bold; color: var(--color-primary);">${String.fromCharCode(65 + idx)}</span> <span>${opt}</span>`;
+      const btnHTML = `<span style="font-weight: bold; color: var(--color-primary);">${String.fromCharCode(65 + idx)}</span> <span>${opt}</span>`;
+      btn.innerHTML = typeof DOMPurify !== 'undefined' ? DOMPurify.sanitize(btnHTML) : "<i>Chyba zabezpečení.</i>";
       
       btn.addEventListener("click", () => {
         if (genIsAnswered) return;
