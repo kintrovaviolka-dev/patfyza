@@ -782,6 +782,7 @@ body.dark-mode .ekg-quiz-feedback.incorrect {
 /* Responsive fixes */
 @media (max-width: 768px) {
   #ekg-modal .modal-content {
-    height: 100%;
+    height: 100vh;
+    height: 100dvh;
   }
 }
