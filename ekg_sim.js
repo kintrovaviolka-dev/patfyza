@@ -1190,7 +1190,13 @@ const EKG_PRESETS = [
     
     // Features list
     const featuresList = document.getElementById("ekg-clinical-features");
-    featuresList.innerHTML = preset.features.map(f => `<li class="ekg-bullet-item">${f}</li>`).join("");
+    featuresList.textContent = ""; // Clear existing content securely
+    preset.features.forEach(f => {
+      const li = document.createElement("li");
+      li.className = "ekg-bullet-item";
+      li.textContent = f;
+      featuresList.appendChild(li);
+    });
     
     // Pathophysiology deeper details
     document.getElementById("ekg-clinical-pathology").textContent = preset.pathology;
