@@ -1856,6 +1856,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const genQuizActive = document.getElementById("gen-quiz-active");
   const genQuizResults = document.getElementById("gen-quiz-results");
 
+  const genQuizProgressEl = document.getElementById("gen-quiz-progress");
+  const genQuizScoreEl = document.getElementById("gen-quiz-score");
+  const genQuestionTextEl = document.getElementById("gen-question-text");
+  const genOptionsContainerEl = document.getElementById("gen-options-container");
+  const genExplanationEl = document.getElementById("gen-explanation");
+  const genNextBtnEl = document.getElementById("gen-next-btn");
+  const genResultsScoreTextEl = document.getElementById("gen-results-score-text");
+
   if (genStartBtn) {
     genStartBtn.addEventListener("click", () => {
       const allPool = getAllQuizQuestions();
@@ -1880,20 +1888,17 @@ document.addEventListener("DOMContentLoaded", () => {
     genIsAnswered = false;
     const item = genQuizQuestions[genCurrentIndex];
     
-    document.getElementById("gen-quiz-progress").textContent = `Otázka ${genCurrentIndex + 1} z ${genQuizQuestions.length}`;
+    genQuizProgressEl.textContent = `Otázka ${genCurrentIndex + 1} z ${genQuizQuestions.length}`;
     const pctScore = genCurrentIndex > 0 ? Math.round((genCorrectCount / genCurrentIndex) * 100) : 0;
-    document.getElementById("gen-quiz-score").textContent = `Úspěšnost: ${pctScore}%`;
+    genQuizScoreEl.textContent = `Úspěšnost: ${pctScore}%`;
     
-    document.getElementById("gen-question-text").textContent = `${genCurrentIndex + 1}. [${item.category}] ${item.question}`;
+    genQuestionTextEl.textContent = `${genCurrentIndex + 1}. [${item.category}] ${item.question}`;
     
-    const container = document.getElementById("gen-options-container");
-    container.innerHTML = "";
+    genOptionsContainerEl.innerHTML = "";
     
-    const explanation = document.getElementById("gen-explanation");
-    explanation.style.display = "none";
+    genExplanationEl.style.display = "none";
     
-    const nextBtn = document.getElementById("gen-next-btn");
-    nextBtn.style.display = "none";
+    genNextBtnEl.style.display = "none";
 
     item.options.forEach((opt, idx) => {
       const btn = document.createElement("button");
@@ -1916,7 +1921,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (genIsAnswered) return;
         genIsAnswered = true;
         
-        const allBtns = container.querySelectorAll(".quiz-option");
+        const allBtns = genOptionsContainerEl.querySelectorAll(".quiz-option");
         allBtns.forEach(b => b.style.pointerEvents = "none");
         
         const isCorrect = idx === item.correct;
@@ -1933,24 +1938,23 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const defaultExp = isCorrect ? "Správná odpověď!" : "Tato možnost není správná.";
         const expText = item.explanations ? item.explanations[idx] : defaultExp;
-        explanation.textContent = expText;
-        explanation.style.background = isCorrect ? "rgba(16, 185, 129, 0.1)" : "rgba(239, 68, 68, 0.1)";
-        explanation.style.borderColor = isCorrect ? "var(--color-success)" : "var(--color-danger)";
-        explanation.style.borderStyle = "solid";
-        explanation.style.borderWidth = "1px";
-        explanation.style.display = "block";
+        genExplanationEl.textContent = expText;
+        genExplanationEl.style.background = isCorrect ? "rgba(16, 185, 129, 0.1)" : "rgba(239, 68, 68, 0.1)";
+        genExplanationEl.style.borderColor = isCorrect ? "var(--color-success)" : "var(--color-danger)";
+        genExplanationEl.style.borderStyle = "solid";
+        genExplanationEl.style.borderWidth = "1px";
+        genExplanationEl.style.display = "block";
         
-        nextBtn.style.display = "block";
-        nextBtn.textContent = genCurrentIndex + 1 === genQuizQuestions.length ? "Vyhodnotit test" : "Další otázka";
+        genNextBtnEl.style.display = "block";
+        genNextBtnEl.textContent = genCurrentIndex + 1 === genQuizQuestions.length ? "Vyhodnotit test" : "Další otázka";
       });
       
-      container.appendChild(btn);
+      genOptionsContainerEl.appendChild(btn);
     });
   };
 
-  const nextBtn = document.getElementById("gen-next-btn");
-  if (nextBtn) {
-    nextBtn.addEventListener("click", () => {
+  if (genNextBtnEl) {
+    genNextBtnEl.addEventListener("click", () => {
       genCurrentIndex++;
       if (genCurrentIndex < genQuizQuestions.length) {
         loadGenQuestion();
@@ -1965,7 +1969,7 @@ document.addEventListener("DOMContentLoaded", () => {
     genQuizResults.style.display = "flex";
     
     const finalPct = Math.round((genCorrectCount / genQuizQuestions.length) * 100);
-    document.getElementById("gen-results-score-text").textContent = `Úspěšnost: ${finalPct}% (${genCorrectCount} z ${genQuizQuestions.length} správně)`;
+    genResultsScoreTextEl.textContent = `Úspěšnost: ${finalPct}% (${genCorrectCount} z ${genQuizQuestions.length} správně)`;
   };
 
   const genRestartBtn = document.getElementById("gen-restart-btn");
