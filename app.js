@@ -993,10 +993,20 @@ document.addEventListener("DOMContentLoaded", () => {
   let clientToken = "";
   const loadClientToken = async () => {
     try {
+      const cachedTokenStr = localStorage.getItem("patfyz_client_token");
+      if (cachedTokenStr) {
+        const cachedTokenObj = JSON.parse(cachedTokenStr);
+        // 12 hours expiry
+        if (Date.now() - cachedTokenObj.timestamp < 12 * 60 * 60 * 1000) {
+          clientToken = cachedTokenObj.token;
+          return;
+        }
+      }
       const res = await fetch("https://verysadanyway.vercel.app/api/config");
       if (res.ok) {
         const data = await res.json();
         clientToken = data.clientToken;
+        localStorage.setItem("patfyz_client_token", JSON.stringify({ token: clientToken, timestamp: Date.now() }));
       }
     } catch (e) {
       console.error("Failed to load client token", e);
