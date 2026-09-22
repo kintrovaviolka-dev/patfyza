@@ -1209,7 +1209,11 @@ const EKG_PRESETS = [
     // EKG monitor text label
     const monitorTextLabel = document.getElementById("ekg-monitor-label");
     if (monitorTextLabel) {
-      monitorTextLabel.innerHTML = `Patologie: <strong style="color: #ffffff;">${preset.name}</strong>`;
+      if (typeof DOMPurify !== 'undefined') {
+        monitorTextLabel.innerHTML = DOMPurify.sanitize(`Patologie: <strong style="color: #ffffff;">${preset.name}</strong>`);
+      } else {
+        monitorTextLabel.textContent = `Patologie: ${preset.name}`;
+      }
     }
     
     const heartTextBpm = document.getElementById("ekg-heart-bpm");
