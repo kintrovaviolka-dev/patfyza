@@ -894,14 +894,27 @@ const EKG_PRESETS = [
     
     // Generate the path coordinates
     let path = "";
+
+    // Optimization: Track start indices for inner loops to avoid O(N^2) complexity
+    let tStartIdx = 0;
+    let pStartIdx = 0;
+    let nStartIdx = 0;
+    let fStartIdx = 0;
+
     for (let x = 0; x <= width; x++) {
       let y = baseline;
       
+      // Advance start pointers so we skip triggers that are too far behind x
+      while (tStartIdx < triggers.length && x - triggers[tStartIdx] > 130) tStartIdx++;
+      while (pStartIdx < pTriggers.length && x - pTriggers[pStartIdx] > 8) pStartIdx++;
+      while (nStartIdx < triggers.length && x - triggers[nStartIdx] > 12) nStartIdx++;
+      while (fStartIdx < triggers.length && x - triggers[fStartIdx] > 15) fStartIdx++;
+
       // A) Sum contributions of nearby QRS triggers (and their subsequent ST and T waves)
-      for (let i = 0; i < triggers.length; i++) {
+      for (let i = tStartIdx; i < triggers.length; i++) {
         const x0 = triggers[i];
         const dx = x - x0;
-        if (dx < -40 || dx > 130) continue;
+        if (dx < -40) break; // Optimization: remaining triggers are too far ahead
         
         // QRS shape parameters
         const qrsHalfWidth = (qrsDuration / 80) * 8;
@@ -968,10 +981,11 @@ const EKG_PRESETS = [
       }
       
       // B) Sum standard P-wave contributions
-      for (let i = 0; i < pTriggers.length; i++) {
+      for (let i = pStartIdx; i < pTriggers.length; i++) {
         const px0 = pTriggers[i];
         const dx = x - px0;
-        if (dx >= -8 && dx <= 8) {
+        if (dx < -8) break; // Optimization: remaining triggers are too far ahead
+        if (dx <= 8) {
           const t = (dx + 8) / 16;
           y -= Math.sin(t * Math.PI) * pAmp;
         }
@@ -990,8 +1004,10 @@ const EKG_PRESETS = [
         // Atrial fibrillation continuous f-waves
         let noiseScale = 1;
         // Suppress noise directly inside the sharp QRS complexes
-        for (let i = 0; i < triggers.length; i++) {
-          const dx = Math.abs(x - triggers[i]);
+        for (let i = nStartIdx; i < triggers.length; i++) {
+          const dxRaw = x - triggers[i];
+          if (dxRaw < -12) break; // Optimization
+          const dx = Math.abs(dxRaw);
           if (dx < 12) noiseScale = dx / 12;
         }
         const fWave = (Math.sin(x * 0.7 + simState.time / 8) * 3.5 + Math.cos(x * 1.4 - simState.time / 6) * 2.2) * noiseScale;
@@ -999,9 +1015,10 @@ const EKG_PRESETS = [
       } else if (activePreset.id === "flutter") {
         // Atrial flutter continuous sawtooth waves (sawtooth period = 20 pixels)
         let scale = 1.0;
-        for (let i = 0; i < triggers.length; i++) {
+        for (let i = fStartIdx; i < triggers.length; i++) {
           const dx = x - triggers[i];
-          if (dx > -5 && dx < 15) scale = 0.1;
+          if (dx < -5) break; // Optimization
+          if (dx < 15) scale = 0.1;
         }
         const sawtoothPeriod = 20;
         const phase = (x - simState.time / 2) % sawtoothPeriod;
