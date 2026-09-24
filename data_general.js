@@ -5361,8 +5361,8 @@ const GENERAL_DETAILS = {
                         ],
                         "correct": 3,
                         "explanations": [
-                              "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"akutní\", nikoli k \"chronická\".",
-                              "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"akutní\", nikoli k \"chronické\".",
+                              "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"akutnímu\", nikoli k \"chronickému\".",
+                              "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"akutnímu\", nikoli k \"chronickému\".",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Malnutrice - etiopatogeneze, následky, role v patogenezi nemocí.\".",
                               "Správně! Toto je typický klinický projev."
                         ]
