@@ -117,7 +117,7 @@ const SPECIAL_2_DETAILS = {
       <div class="medical-detail">
         <section>
           <h3>1. Tyreotoxická krize</h3>
-          <p>Živatele ohrožující vystupňování hypertyreózy vyvolané zátěží (infekce, operace). Dochází k masivnímu zaplavení organismu hormony $T_3$ a $T_4$ a hyperreaktivitě na katecholaminy. Projevy: těžká tachykardie, arytmie (fibrilace síní), hypertermie (až > 41 °C), dehydratace, neklid, delirium a srdeční selhání.</p>
+          <p>Život ohrožující vystupňování hypertyreózy vyvolané zátěží (infekce, operace). Dochází k masivnímu zaplavení organismu hormony $T_3$ a $T_4$ a hyperreaktivitě na katecholaminy. Projevy: těžká tachykardie, arytmie (fibrilace síní), hypertermie (až > 41 °C), dehydratace, neklid, delirium a srdeční selhání.</p>
         </section>
 
         <section>
