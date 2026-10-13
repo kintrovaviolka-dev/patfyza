@@ -5355,14 +5355,14 @@ const GENERAL_DETAILS = {
                         "question": "Jaký klinický projev, symptom nebo následek je typický pro téma: Poškození vlivem chemických vlivů?",
                         "options": [
                               "Paracetamol: iniciálně asymptomatický, po 24-48 h rozvoj chronického jaterního selhání (ikterus, koagulopatie, encefalopatie).",
-                              "Paracetamol: iniciálně asymptomatický, po 24-48 h rozvoj chronického jaterního selhání (ikterus, koagulopatie, encefalopatie).",
+                              "Paracetamol: okamžitý rozvoj akutního jaterního selhání (ikterus, koagulopatie, encefalopatie) bez asymptomatické fáze.",
                               "Úbytek hmotnosti, atrofie kosterního svalstva (sarkopenie), vymizení podkožního tuku.",
                               "Paracetamol: iniciálně asymptomatický, po 24-48 h rozvoj akutního jaterního selhání (ikterus, koagulopatie, encefalopatie)."
                         ],
                         "correct": 3,
                         "explanations": [
                               "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"akutnímu\", nikoli k \"chronickému\".",
-                              "Nesprávně. Pozor na záměnu: v tomto patofyziologickém kontextu dochází k \"akutnímu\", nikoli k \"chronickému\".",
+                              "Nesprávně. Paracetamolová intoxikace má typicky iniciální asymptomatickou fázi před rozvojem jaterního selhání.",
                               "Nesprávně. Toto tvrzení se týká jiného patofyziologického tématu: \"Malnutrice - etiopatogeneze, následky, role v patogenezi nemocí.\".",
                               "Správně! Toto je typický klinický projev."
                         ]
