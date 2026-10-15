@@ -1902,7 +1902,7 @@ const EKG_PRESETS = [
       const btn = document.createElement("button");
       btn.className = "ekg-preset-btn";
       btn.id = `ekg-preset-${p.id}`;
-      btn.innerHTML = `
+      const rawHTML = `
         <span>
           <span class="ekg-preset-dot ${dotType}"></span>
           <span>${p.name}</span>
@@ -1910,6 +1910,25 @@ const EKG_PRESETS = [
         <span class="ekg-preset-hr-tag">${hrText}</span>
       `;
       
+      if (typeof DOMPurify !== 'undefined') {
+        btn.innerHTML = DOMPurify.sanitize(rawHTML);
+      } else {
+        const spanWrapper = document.createElement("span");
+        const dotSpan = document.createElement("span");
+        dotSpan.className = `ekg-preset-dot ${dotType}`;
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = p.name;
+        spanWrapper.appendChild(dotSpan);
+        spanWrapper.appendChild(nameSpan);
+
+        const hrSpan = document.createElement("span");
+        hrSpan.className = "ekg-preset-hr-tag";
+        hrSpan.textContent = hrText;
+
+        btn.appendChild(spanWrapper);
+        btn.appendChild(hrSpan);
+      }
+
       btn.addEventListener("click", () => {
         loadPreset(p.id);
       });
