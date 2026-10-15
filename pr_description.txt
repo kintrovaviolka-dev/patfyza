@@ -1,10 +1,5 @@
-🔒 [security fix] Fix unsafe innerHTML assignments in app.js
+🎯 What: Replaced direct, unsanitized assignment to `innerHTML` when generating EKG preset buttons with a secure approach.
 
-🎯 What:
-Replaced dynamic innerHTML assignments in quiz generation and rendering with DOMPurify.sanitize() wrapped assignments.
+⚠️ Risk: User input within `p.name` or `hrText` could potentially contain malicious HTML or scripts. If injected into the page via `innerHTML` without sanitization, this could lead to Cross-Site Scripting (XSS) attacks.
 
-⚠️ Risk:
-The previous code was vulnerable to Cross-Site Scripting (XSS) attacks, as unsanitized quiz options (opt) and explanation texts (explanationText) were directly assigned to innerHTML without validation. If this data were ever sourced from external or user-influenced inputs, malicious scripts could be injected and executed.
-
-🛡️ Solution:
-Wrapped the dynamic HTML strings in DOMPurify.sanitize() before assignment. Implemented a secure fallback (typeof DOMPurify !== 'undefined') that gracefully handles cases where the DOMPurify library might fail to load, replacing the content with a safe placeholder string ("<i>Chyba zabezpečení.</i>") rather than failing open. This aligns with other safe practices found throughout the codebase.
+🛡️ Solution: Implemented a secure fallback mechanism. The code now first attempts to use `DOMPurify` to sanitize the HTML string before assignment. If `DOMPurify` is unavailable, it gracefully degrades to dynamically creating DOM elements (`createElement`) and safely assigning text using `textContent`, which intrinsically escapes HTML entities.
