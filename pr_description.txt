@@ -1,10 +1,3 @@
-🔒 [security fix] Fix unsafe innerHTML assignments in app.js
-
-🎯 What:
-Replaced dynamic innerHTML assignments in quiz generation and rendering with DOMPurify.sanitize() wrapped assignments.
-
-⚠️ Risk:
-The previous code was vulnerable to Cross-Site Scripting (XSS) attacks, as unsanitized quiz options (opt) and explanation texts (explanationText) were directly assigned to innerHTML without validation. If this data were ever sourced from external or user-influenced inputs, malicious scripts could be injected and executed.
-
-🛡️ Solution:
-Wrapped the dynamic HTML strings in DOMPurify.sanitize() before assignment. Implemented a secure fallback (typeof DOMPurify !== 'undefined') that gracefully handles cases where the DOMPurify library might fail to load, replacing the content with a safe placeholder string ("<i>Chyba zabezpečení.</i>") rather than failing open. This aligns with other safe practices found throughout the codebase.
+🎯 **What:** Fixed an XSS vulnerability in `ekg_sim.js` where `dialogMarkup` was injected directly into the DOM using `insertAdjacentHTML` without sanitization.
+⚠️ **Risk:** If any interpolated variables in the `dialogMarkup` template (such as `preset.name` or `simState.score`) were manipulated by an attacker or sourced from unvalidated inputs, it could lead to arbitrary JavaScript execution in the context of the user's browser, potentially compromising session data or user actions.
+🛡️ **Solution:** Wrapped `dialogMarkup` in `DOMPurify.sanitize()` before injecting it via `insertAdjacentHTML`. Implemented a fail-secure fallback replacing the modal with an error message if DOMPurify fails to load, consistent with other security fixes in the codebase.

@@ -1636,7 +1636,10 @@ const EKG_PRESETS = [
       </dialog>
     `;
     
-    document.body.insertAdjacentHTML("beforeend", dialogMarkup);
+    const sanitizedMarkup = typeof DOMPurify !== 'undefined'
+      ? DOMPurify.sanitize(dialogMarkup)
+      : "<div style='color:red; padding:20px; text-align:center;'><i>Chyba: Nepodařilo se načíst bezpečnostní modul (DOMPurify). Simulátor nelze bezpečně zobrazit.</i></div>";
+    document.body.insertAdjacentHTML("beforeend", sanitizedMarkup);
   };
 
   // --- BIND INTERFACES EVENTS AND ACTIONS ---
