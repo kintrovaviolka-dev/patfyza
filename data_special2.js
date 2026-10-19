@@ -1158,25 +1158,28 @@ const SPECIAL_2_DETAILS = {
   "spec-2-24": {
     richContent: {
       clinicalPearl: "Locked-in syndrom je způsoben oboustrannou lézí pontu (např. při trombóze a. basilaris), kdy je zachováno vědomí i citlivost, ale pacient je schopen komunikovat pouze vertikálními pohyby očí.",
-      definition: "Kóma je stav hlubokého bezvědomí, z něhož pacienta nelze probrat ani silnými zevními podněty. Locked-in syndrom je stav kompletní motorické plegie při zachovalém vědomí. Smrt mozku je ireverzibilní ztráta všech mozkových funkcí včetně mozkového kmene.",
+      definition: "Kóma je stav hlubokého bezvědomí, z něhož pacienta nelze probrat ani silnými zevními podněty. Vegetativní stav je ztráta kognitivních funkcí kůry při zachování kmenových funkcí (bdělost, dýchání). Locked-in syndrom je stav kompletní motorické plegie při zachovalém vědomí. Smrt mozku je ireverzibilní ztráta všech mozkových funkcí včetně mozkového kmene.",
       etiology: [
         "Kóma: strukturální poškození mozku (trauma, masivní krvácení, rozsáhlá CMP, tumory) nebo metabolické příčiny (hypoglykémie, urémie, jaterní kóma, intoxikace).",
+        "Vegetativní stav: difuzní postižení mozkové kůry (např. po globální ischemii, kraniotraumatu) s ušetřením kmene.",
         "Locked-in syndrom: oboustranný infarkt pontu (např. při uzávěru a. basilaris).",
         "Smrt mozku: těžký edém mozku s nitrolební hypertenzí překračující perfuzní tlak, traumatické přerušení kmene."
       ],
       pathogenesis: [
         "Kóma: narušení buď oboustranných hemisfér mozkové kůry, nebo retikulárního aktivačního systému (ARAS) v mozkovém kmeni, který udržuje bdělost.",
+        "Vegetativní stav: ztráta funkce obou hemisfér (výpadek kognice a uvědomování) při zachované funkci retikulární formace (zachován cyklus spánku a bdění).",
         "Locked-in: selektivní léze eferentních motorických drah (pyramidová dráha, kortikobulbární dráha) v pontu. Ascendentní dráhy (čití) a retikulární formace (vědomí) jsou nepoškozené.",
         "Smrt mozku: úplné a nevratné vymizení perfuze mozku. Tlak v lebce (ICP) převýší střední arteriální tlak (MAP), což zastaví přísun kyslíku a živin, a nastává autolýza mozkové tkáně."
       ],
       clinicalManifestation: [
         "Kóma: oči jsou zavřené, absence smysluplné odpovědi na bolest, nepravidelné dechové vzory, vyhasnutí nebo patologie kmenových reflexů.",
+        "Vegetativní stav: pacient má otevřené oči, střídá spánek a bdění, spontánně dýchá, ale nevykazuje žádné smysluplné reakce na okolí (nemluví, neplní výzvy).",
         "Locked-in: pacient si plně uvědomuje okolí, slyší a vidí, ale je schopen komunikovat pouze vertikálními pohyby očí a mrkáním.",
         "Smrt mozku: hluboké kóma, areflexie nad úrovní míchy, fixovaná oboustranná mydriáza bez fotoreakce, chybění spontánního dýchání (potvrzeno apnoickým testem)."
       ],
       diagnostics: [
         "Neurologické vyšetření kmenových reflexů (pupilární, korneální, vestibulookulární).",
-        "CT a MRI mozku k identifikaci strukturální léze.",
+        "CT a MRI mozku k identifikaci strukturální léze (např. difuzní atrofie kůry u vegetativního stavu).",
         "Potvrzení smrti mozku: panangiografie mozku (průkaz absence toku), transkraniální dopplerovská sonografie, izoelektrické EEG (plochá křivka)."
       ]
     },
