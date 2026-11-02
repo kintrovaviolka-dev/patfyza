@@ -1370,7 +1370,7 @@ const GENERAL_DETAILS = {
                   "diagnostics": [
                         "CT pulmonální angiografie (CTPA) - zlatý standard diagnostiky PE.",
                         "Vyšetření D-dimerů v plazmě (vysoká negativní předpovědní hodnota).",
-                        "Echokardiografie (známky přetížení pravé komory - McConnelův příznak, dilatace PK)."
+                        "Echokardiografie (známky přetížení pravé komory - McConnellův příznak, dilatace PK)."
                   ]
             },
             "tableData": [
