@@ -506,7 +506,7 @@ const SPECIAL_1_DETAILS = {
       etiology: [
         "Ischemická choroba srdeční (ICHS) a prodělaný infarkt myokardu (ztráta funkčního parenchymu).",
         "Arteriální hypertenze (dlouhodobé zvýšení afterloadu vyvolá hypertrofii a následné selhání).",
-        "Kardiomyopatie (dilatovaná, hypertrofická, restrikční, amyloidoza myokardu).",
+        "Kardiomyopatie (dilatovaná, hypertrofická, restrikční, amyloidóza myokardu).",
         "Chlopenní vady (stenóza aorty, regurgitace mitrální chlopně)."
       ],
       pathogenesis: [
